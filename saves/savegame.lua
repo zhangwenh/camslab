@@ -14,21 +14,52 @@ local function init ( objects )
 	table [ "currentSaveSlot" ] = 1
 	table [ "xp" ] = 5030
 	table [ "num_campaigns" ] = 62
-	table [ "logs" ] = objects [ 0x000000FE ]
-	table [ "num_games" ] = 268
+	table [ "logs" ] = objects [ 0x000000F9 ]
+	table [ "num_games" ] = 269
 	table [ "name" ] = [==[default]==]
-	table [ "saveScumDaySlots" ] = objects [ 0x0000010B ]
-	table [ "top_games" ] = objects [ 0x00000203 ]
+	table [ "saveScumDaySlots" ] = objects [ 0x00000106 ]
+	table [ "top_games" ] = objects [ 0x000001FE ]
 	table [ "storyExperiencedWins" ] = 5
-	table [ "saveScumLevelSlots" ] = objects [ 0x0000057F ]
+	table [ "saveScumLevelSlots" ] = objects [ 0x0000057A ]
 	table [ "storyWins" ] = 8
 
 	table = objects [ 0x00000002 ]
 	table [ 1 ]	= objects [ 0x00000003 ]
-	table [ 2 ]	= objects [ 0x000000AF ]
+	table [ 2 ]	= objects [ 0x000000AA ]
 
 	table = objects [ 0x00000003 ]
 	table [ "customScriptIndex" ] = [==[post_mid_]==]
+	table [ "sim_history" ] = [==[local _ = {}
+_[1]={}
+_[2]={}
+_[2][1]=2
+_[3]={}
+_[3]["\101\118\101\110\116\068\097\116\097"]=false
+_[3]["\117\105\069\118\101\110\116"]=1
+_[2][2]=_[3]
+_[2]["\099\114\099"]=3438025062192
+_[2]["\110\097\109\101"]="\116\114\105\103\103\101\114\065\099\116\105\111\110"
+_[2]["\112\108\097\121\101\114\073\110\100\101\120"]=2
+_[1][1]=_[2]
+_[4]={}
+_[4][1]=2
+_[5]={}
+_[5]["\101\118\101\110\116\068\097\116\097"]=1003
+_[5]["\117\105\069\118\101\110\116"]=2
+_[4][2]=_[5]
+_[4]["\099\114\099"]=2022866052912
+_[4]["\110\097\109\101"]="\116\114\105\103\103\101\114\065\099\116\105\111\110"
+_[4]["\112\108\097\121\101\114\073\110\100\101\120"]=2
+_[1][2]=_[4]
+_[6]={}
+_[6][1]=1002
+_[6][2]=1002
+_[6][3]=1
+_[6]["\099\114\099"]=2022866052912
+_[6]["\110\097\109\101"]="\097\098\105\108\105\116\121\065\099\116\105\111\110"
+_[6]["\112\108\097\121\101\114\073\110\100\101\120"]=2
+_[1][3]=_[6]
+return _[1]]==]
 	table [ "miniserversSeen" ] = 20
 	table [ "campaignEvents" ] = objects [ 0x00000005 ]
 	table [ "agentsFound" ] = 2
@@ -36,23 +67,27 @@ local function init ( objects )
 	table [ "monst3rInject" ] = false
 	table [ "lastEndlessAlert" ] = false
 	table [ "creation_time" ] = 1559449330
+	table [ "uiMemento" ] = objects [ 0x00000009 ]
 	table [ "currentDay" ] = 15
 	table [ "extendedCampaignHours" ] = 72
+	table [ "preMissionNetWorth" ] = 110492
 	table [ "foundPrisoner" ] = true
 	table [ "previousDay" ] = 15
-	table [ "agency" ] = objects [ 0x00000009 ]
+	table [ "agency" ] = objects [ 0x0000000B ]
 	table [ "hours" ] = 374
-	table [ "difficultyOptions" ] = objects [ 0x00000091 ]
-	table [ "save_time" ] = 1561789755
+	table [ "difficultyOptions" ] = objects [ 0x0000008C ]
+	table [ "save_time" ] = 1561790022
 	table [ "version" ] = [==[0.17.18]==]
+	table [ "missionVersion" ] = [==[0.17.18]==]
 	table [ "missionTotal" ] = 63
 	table [ "recent_build_number" ] = [==[BUILD[trunk.282332] LUA[282350] USER[85892043@steam]
 OS: Windows (WOW64).6.1.1DB1]==]
-	table [ "play_t" ] = 61071008
-	table [ "missionEvents" ] = objects [ 0x0000009D ]
+	table [ "play_t" ] = 61071042
+	table [ "situation" ] = objects [ 0x00000098 ]
+	table [ "missionEvents" ] = objects [ 0x00000099 ]
 	table [ "customScriptIndexDay" ] = 12
 	table [ "missionCount" ] = 38
-	table [ "situations" ] = objects [ 0x0000009F ]
+	table [ "situations" ] = objects [ 0x0000009B ]
 	table [ "seed" ] = 3154618241
 	table [ "missionsPlayedThisDay" ] = 1
 	table [ "location" ] = 10
@@ -77,6 +112,17 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "contingency_plan" ] = true
 
 	table = objects [ 0x00000009 ]
+	table [ "cameraState" ] = objects [ 0x0000000A ]
+	table [ "selectedUnitID" ] = 1003
+
+	table = objects [ 0x0000000A ]
+	table [ "targetZ" ] = 0
+	table [ "targetX" ] = 0
+	table [ "orientation" ] = 0
+	table [ "targetZoom" ] = 1
+	table [ "targetY" ] = 0
+
+	table = objects [ 0x0000000B ]
 	table [ "items_earned" ] = 56
 	table [ "security_hacked" ] = 471
 	table [ "guards_kod" ] = 31
@@ -90,120 +136,116 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "nextID" ] = 100
 	table [ "blocker" ] = false
 	table [ "id" ] = 1
-	table [ "upgrades" ] = objects [ 0x0000000A ]
+	table [ "upgrades" ] = objects [ 0x0000000C ]
 	table [ "programs_earned" ] = 5
-	table [ "unitDefsPotential" ] = objects [ 0x00000012 ]
-	table [ "abilities" ] = objects [ 0x00000023 ]
+	table [ "unitDefsPotential" ] = objects [ 0x00000013 ]
+	table [ "abilities" ] = objects [ 0x00000024 ]
 	table [ "name" ] = [==[]==]
 	table [ "cpus" ] = 17
 	table [ "extraPrograms" ] = 1
-	table [ "unitDefs" ] = objects [ 0x00000024 ]
+	table [ "unitDefs" ] = objects [ 0x00000025 ]
 	table [ "alwaysUnlocked" ] = true
-	table [ "cash" ] = 30742
-
-	table = objects [ 0x0000000A ]
-	table [ 1 ]	= objects [ 0x0000000B ]
-	table [ 2 ]	= objects [ 0x0000000E ]
-	table [ 3 ]	= objects [ 0x0000000F ]
-
-	table = objects [ 0x0000000B ]
-	table [ "upgradeParams" ] = objects [ 0x0000000C ]
-	table [ "upgradeName" ] = [==[item_prototype_drive]==]
+	table [ "cash" ] = 35642
 
 	table = objects [ 0x0000000C ]
-	table [ "traits" ] = objects [ 0x0000000D ]
+	table [ 1 ]	= objects [ 0x0000000D ]
+	table [ 2 ]	= objects [ 0x00000010 ]
 
 	table = objects [ 0x0000000D ]
-	table [ "icebreak" ] = 0
+	table [ "upgradeParams" ] = objects [ 0x0000000E ]
+	table [ "upgradeName" ] = [==[item_prototype_drive]==]
 
 	table = objects [ 0x0000000E ]
-	table [ "upgradeName" ] = [==[item_portabledrive_3]==]
+	table [ "traits" ] = objects [ 0x0000000F ]
 
 	table = objects [ 0x0000000F ]
-	table [ "upgradeParams" ] = objects [ 0x00000010 ]
-	table [ "upgradeName" ] = [==[item_tag_pistol]==]
+	table [ "icebreak" ] = 0
 
 	table = objects [ 0x00000010 ]
-	table [ "traits" ] = objects [ 0x00000011 ]
+	table [ "upgradeParams" ] = objects [ 0x00000011 ]
+	table [ "upgradeName" ] = [==[item_tag_pistol]==]
 
 	table = objects [ 0x00000011 ]
-	table [ "autoEquip" ] = true
+	table [ "traits" ] = objects [ 0x00000012 ]
 
 	table = objects [ 0x00000012 ]
-	table [ 1 ]	= objects [ 0x00000013 ]
-	table [ 2 ]	= objects [ 0x00000015 ]
-	table [ 3 ]	= objects [ 0x00000017 ]
-	table [ 4 ]	= objects [ 0x00000019 ]
-	table [ 5 ]	= objects [ 0x0000001B ]
-	table [ 6 ]	= objects [ 0x0000001D ]
-	table [ 7 ]	= objects [ 0x0000001F ]
-	table [ 8 ]	= objects [ 0x00000021 ]
+	table [ "autoEquip" ] = true
 
 	table = objects [ 0x00000013 ]
-	table [ "id" ] = 1
-	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x00000014 ]
+	table [ 1 ]	= objects [ 0x00000014 ]
+	table [ 2 ]	= objects [ 0x00000016 ]
+	table [ 3 ]	= objects [ 0x00000018 ]
+	table [ 4 ]	= objects [ 0x0000001A ]
+	table [ 5 ]	= objects [ 0x0000001C ]
+	table [ 6 ]	= objects [ 0x0000001E ]
+	table [ 7 ]	= objects [ 0x00000020 ]
+	table [ 8 ]	= objects [ 0x00000022 ]
 
 	table = objects [ 0x00000014 ]
-	table [ 1 ]	= [==[augment_deckard]==]
+	table [ "id" ] = 1
+	table [ "template" ] = [==[stealth_1]==]
+	table [ "upgrades" ] = objects [ 0x00000015 ]
 
 	table = objects [ 0x00000015 ]
-	table [ "id" ] = 2
-	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x00000016 ]
+	table [ 1 ]	= [==[augment_deckard]==]
 
 	table = objects [ 0x00000016 ]
-	table [ 1 ]	= [==[augment_shalem]==]
+	table [ "id" ] = 2
+	table [ "template" ] = [==[sharpshooter_1]==]
+	table [ "upgrades" ] = objects [ 0x00000017 ]
 
 	table = objects [ 0x00000017 ]
-	table [ "id" ] = 3
-	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x00000018 ]
+	table [ 1 ]	= [==[augment_shalem]==]
 
 	table = objects [ 0x00000018 ]
-	table [ 1 ]	= [==[augment_tony]==]
+	table [ "id" ] = 3
+	table [ "template" ] = [==[engineer_1]==]
+	table [ "upgrades" ] = objects [ 0x00000019 ]
 
 	table = objects [ 0x00000019 ]
-	table [ "id" ] = 8
-	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x0000001A ]
+	table [ 1 ]	= [==[augment_tony]==]
 
 	table = objects [ 0x0000001A ]
-	table [ 1 ]	= [==[augment_prism_2]==]
+	table [ "id" ] = 8
+	table [ "template" ] = [==[disguise_1]==]
+	table [ "upgrades" ] = objects [ 0x0000001B ]
 
 	table = objects [ 0x0000001B ]
-	table [ "id" ] = 7
-	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x0000001C ]
+	table [ 1 ]	= [==[augment_prism_2]==]
 
 	table = objects [ 0x0000001C ]
-	table [ 1 ]	= [==[augment_sharp_1]==]
+	table [ "id" ] = 7
+	table [ "template" ] = [==[cyborg_1]==]
+	table [ "upgrades" ] = objects [ 0x0000001D ]
 
 	table = objects [ 0x0000001D ]
-	table [ "id" ] = 1000
-	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x0000001E ]
+	table [ 1 ]	= [==[augment_sharp_1]==]
 
 	table = objects [ 0x0000001E ]
-	table [ 1 ]	= [==[augment_ambient_turbine]==]
+	table [ "id" ] = 1000
+	table [ "template" ] = [==[olivia]==]
+	table [ "upgrades" ] = objects [ 0x0000001F ]
 
 	table = objects [ 0x0000001F ]
-	table [ "id" ] = 1002
-	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x00000020 ]
+	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
 	table = objects [ 0x00000020 ]
-	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
+	table [ "id" ] = 1002
+	table [ "template" ] = [==[rush]==]
+	table [ "upgrades" ] = objects [ 0x00000021 ]
 
 	table = objects [ 0x00000021 ]
-	table [ "id" ] = 1003
-	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x00000022 ]
+	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
 	table = objects [ 0x00000022 ]
-	table [ 1 ]	= [==[augment_neural_mapper]==]
+	table [ "id" ] = 1003
+	table [ "template" ] = [==[draco]==]
+	table [ "upgrades" ] = objects [ 0x00000023 ]
 
 	table = objects [ 0x00000023 ]
+	table [ 1 ]	= [==[augment_neural_mapper]==]
+
+	table = objects [ 0x00000024 ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[lockpick_1]==]
 	table [ 3 ]	= [==[bless]==]
@@ -211,464 +253,440 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ 5 ]	= [==[pwr_manager]==]
 	table [ 6 ]	= [==[hammer]==]
 
-	table = objects [ 0x00000024 ]
-	table [ 1 ]	= objects [ 0x00000025 ]
-	table [ 2 ]	= objects [ 0x0000003E ]
-	table [ 3 ]	= objects [ 0x00000059 ]
-	table [ 4 ]	= objects [ 0x00000074 ]
-
 	table = objects [ 0x00000025 ]
-	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x00000026 ]
-	table [ "id" ] = 5
-	table [ "skills" ] = objects [ 0x00000039 ]
-	table [ "deployID" ] = 1
+	table [ 1 ]	= objects [ 0x00000026 ]
+	table [ 2 ]	= objects [ 0x0000003F ]
+	table [ 3 ]	= objects [ 0x00000058 ]
+	table [ 4 ]	= objects [ 0x00000072 ]
 
 	table = objects [ 0x00000026 ]
-	table [ 1 ]	= objects [ 0x00000027 ]
-	table [ 2 ]	= objects [ 0x0000002A ]
-	table [ 3 ]	= objects [ 0x0000002D ]
-	table [ 4 ]	= objects [ 0x00000030 ]
-	table [ 5 ]	= objects [ 0x00000033 ]
-	table [ 6 ]	= objects [ 0x00000034 ]
-	table [ 7 ]	= objects [ 0x00000035 ]
-	table [ 8 ]	= objects [ 0x00000036 ]
-	table [ 9 ]	= objects [ 0x00000037 ]
-	table [ 10 ]	= objects [ 0x00000038 ]
-	table [ 11 ]	= [==[augmentUpgradeSlot]==]
-	table [ 12 ]	= [==[augmentUpgradeSlot]==]
+	table [ "template" ] = [==[engineer_2]==]
+	table [ "upgrades" ] = objects [ 0x00000027 ]
+	table [ "id" ] = 5
+	table [ "skills" ] = objects [ 0x0000003A ]
+	table [ "deployID" ] = 1
 
 	table = objects [ 0x00000027 ]
-	table [ "upgradeParams" ] = objects [ 0x00000028 ]
-	table [ "upgradeName" ] = [==[augment_international_v1]==]
+	table [ 1 ]	= objects [ 0x00000028 ]
+	table [ 2 ]	= objects [ 0x0000002B ]
+	table [ 3 ]	= objects [ 0x0000002E ]
+	table [ 4 ]	= objects [ 0x00000031 ]
+	table [ 5 ]	= [==[augmentUpgradeSlot]==]
+	table [ 6 ]	= [==[augmentUpgradeSlot]==]
+	table [ 7 ]	= objects [ 0x00000034 ]
+	table [ 8 ]	= objects [ 0x00000035 ]
+	table [ 9 ]	= objects [ 0x00000036 ]
+	table [ 10 ]	= objects [ 0x00000037 ]
+	table [ 11 ]	= objects [ 0x00000038 ]
+	table [ 12 ]	= objects [ 0x00000039 ]
 
 	table = objects [ 0x00000028 ]
-	table [ "traits" ] = objects [ 0x00000029 ]
+	table [ "upgradeParams" ] = objects [ 0x00000029 ]
+	table [ "upgradeName" ] = [==[augment_international_v1]==]
 
 	table = objects [ 0x00000029 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
+	table [ "traits" ] = objects [ 0x0000002A ]
 
 	table = objects [ 0x0000002A ]
-	table [ "upgradeParams" ] = objects [ 0x0000002B ]
-	table [ "upgradeName" ] = [==[augment_net_downlink]==]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x0000002B ]
-	table [ "traits" ] = objects [ 0x0000002C ]
+	table [ "upgradeParams" ] = objects [ 0x0000002C ]
+	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
 	table = objects [ 0x0000002C ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
+	table [ "traits" ] = objects [ 0x0000002D ]
 
 	table = objects [ 0x0000002D ]
-	table [ "upgradeParams" ] = objects [ 0x0000002E ]
-	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x0000002E ]
-	table [ "traits" ] = objects [ 0x0000002F ]
+	table [ "upgradeParams" ] = objects [ 0x0000002F ]
+	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
 	table = objects [ 0x0000002F ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
+	table [ "traits" ] = objects [ 0x00000030 ]
 
 	table = objects [ 0x00000030 ]
-	table [ "upgradeParams" ] = objects [ 0x00000031 ]
-	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
-
-	table = objects [ 0x00000031 ]
-	table [ "traits" ] = objects [ 0x00000032 ]
-
-	table = objects [ 0x00000032 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
+	table = objects [ 0x00000031 ]
+	table [ "upgradeParams" ] = objects [ 0x00000032 ]
+	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
+
+	table = objects [ 0x00000032 ]
+	table [ "traits" ] = objects [ 0x00000033 ]
+
 	table = objects [ 0x00000033 ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x00000034 ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
 	table = objects [ 0x00000035 ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
 	table = objects [ 0x00000036 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
 	table = objects [ 0x00000037 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
 	table = objects [ 0x00000038 ]
-	table [ "upgradeName" ] = [==[item_laptop_3]==]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
 	table = objects [ 0x00000039 ]
-	table [ 1 ]	= objects [ 0x0000003A ]
-	table [ 2 ]	= objects [ 0x0000003B ]
-	table [ 3 ]	= objects [ 0x0000003C ]
-	table [ 4 ]	= objects [ 0x0000003D ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x0000003A ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
+	table [ 1 ]	= objects [ 0x0000003B ]
+	table [ 2 ]	= objects [ 0x0000003C ]
+	table [ 3 ]	= objects [ 0x0000003D ]
+	table [ 4 ]	= objects [ 0x0000003E ]
 
 	table = objects [ 0x0000003B ]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[hacking]==]
+	table [ "skillID" ] = [==[stealth]==]
 
 	table = objects [ 0x0000003C ]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
+	table [ "skillID" ] = [==[hacking]==]
 
 	table = objects [ 0x0000003D ]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
+	table [ "skillID" ] = [==[inventory]==]
 
 	table = objects [ 0x0000003E ]
-	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x0000003F ]
-	table [ "id" ] = 4
-	table [ "skills" ] = objects [ 0x00000054 ]
-	table [ "deployID" ] = 1
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x0000003F ]
-	table [ 1 ]	= objects [ 0x00000040 ]
-	table [ 2 ]	= objects [ 0x00000043 ]
-	table [ 3 ]	= objects [ 0x00000046 ]
-	table [ 4 ]	= objects [ 0x00000049 ]
-	table [ 5 ]	= objects [ 0x0000004C ]
-	table [ 6 ]	= objects [ 0x0000004D ]
-	table [ 7 ]	= objects [ 0x0000004E ]
-	table [ 8 ]	= objects [ 0x0000004F ]
-	table [ 9 ]	= objects [ 0x00000050 ]
-	table [ 10 ]	= objects [ 0x00000051 ]
-	table [ 11 ]	= objects [ 0x00000052 ]
-	table [ 12 ]	= objects [ 0x00000053 ]
-	table [ 13 ]	= [==[augmentUpgradeSlot]==]
-	table [ 14 ]	= [==[augmentUpgradeSlot]==]
+	table [ "template" ] = [==[stealth_2]==]
+	table [ "upgrades" ] = objects [ 0x00000040 ]
+	table [ "id" ] = 4
+	table [ "skills" ] = objects [ 0x00000053 ]
+	table [ "deployID" ] = 1
 
 	table = objects [ 0x00000040 ]
-	table [ "upgradeParams" ] = objects [ 0x00000041 ]
-	table [ "upgradeName" ] = [==[augment_banks]==]
+	table [ 1 ]	= objects [ 0x00000041 ]
+	table [ 2 ]	= objects [ 0x00000044 ]
+	table [ 3 ]	= objects [ 0x00000047 ]
+	table [ 4 ]	= objects [ 0x0000004A ]
+	table [ 5 ]	= objects [ 0x0000004D ]
+	table [ 6 ]	= objects [ 0x0000004E ]
+	table [ 7 ]	= [==[augmentUpgradeSlot]==]
+	table [ 8 ]	= [==[augmentUpgradeSlot]==]
+	table [ 9 ]	= objects [ 0x0000004F ]
+	table [ 10 ]	= objects [ 0x00000050 ]
+	table [ 11 ]	= objects [ 0x00000051 ]
+	table [ 12 ]	= objects [ 0x00000052 ]
 
 	table = objects [ 0x00000041 ]
-	table [ "traits" ] = objects [ 0x00000042 ]
+	table [ "upgradeParams" ] = objects [ 0x00000042 ]
+	table [ "upgradeName" ] = [==[augment_banks]==]
 
 	table = objects [ 0x00000042 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
+	table [ "traits" ] = objects [ 0x00000043 ]
 
 	table = objects [ 0x00000043 ]
-	table [ "upgradeParams" ] = objects [ 0x00000044 ]
-	table [ "upgradeName" ] = [==[augment_net_downlink]==]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x00000044 ]
-	table [ "traits" ] = objects [ 0x00000045 ]
+	table [ "upgradeParams" ] = objects [ 0x00000045 ]
+	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
 	table = objects [ 0x00000045 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
+	table [ "traits" ] = objects [ 0x00000046 ]
 
 	table = objects [ 0x00000046 ]
-	table [ "upgradeParams" ] = objects [ 0x00000047 ]
-	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x00000047 ]
-	table [ "traits" ] = objects [ 0x00000048 ]
+	table [ "upgradeParams" ] = objects [ 0x00000048 ]
+	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
 	table = objects [ 0x00000048 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
+	table [ "traits" ] = objects [ 0x00000049 ]
 
 	table = objects [ 0x00000049 ]
-	table [ "upgradeParams" ] = objects [ 0x0000004A ]
-	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
-
-	table = objects [ 0x0000004A ]
-	table [ "traits" ] = objects [ 0x0000004B ]
-
-	table = objects [ 0x0000004B ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
+	table = objects [ 0x0000004A ]
+	table [ "upgradeParams" ] = objects [ 0x0000004B ]
+	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
+
+	table = objects [ 0x0000004B ]
+	table [ "traits" ] = objects [ 0x0000004C ]
+
 	table = objects [ 0x0000004C ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x0000004D ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x0000004E ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x0000004F ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
 	table = objects [ 0x00000050 ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
 	table = objects [ 0x00000051 ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
 	table = objects [ 0x00000052 ]
 	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
 	table = objects [ 0x00000053 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ 1 ]	= objects [ 0x00000054 ]
+	table [ 2 ]	= objects [ 0x00000055 ]
+	table [ 3 ]	= objects [ 0x00000056 ]
+	table [ 4 ]	= objects [ 0x00000057 ]
 
 	table = objects [ 0x00000054 ]
-	table [ 1 ]	= objects [ 0x00000055 ]
-	table [ 2 ]	= objects [ 0x00000056 ]
-	table [ 3 ]	= objects [ 0x00000057 ]
-	table [ 4 ]	= objects [ 0x00000058 ]
-
-	table = objects [ 0x00000055 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000056 ]
+	table = objects [ 0x00000055 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x00000057 ]
+	table = objects [ 0x00000056 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000058 ]
+	table = objects [ 0x00000057 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x00000059 ]
+	table = objects [ 0x00000058 ]
 	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x0000005A ]
+	table [ "upgrades" ] = objects [ 0x00000059 ]
 	table [ "id" ] = 1001
-	table [ "skills" ] = objects [ 0x0000006F ]
+	table [ "skills" ] = objects [ 0x0000006D ]
 	table [ "deployID" ] = 1
 
-	table = objects [ 0x0000005A ]
-	table [ 1 ]	= objects [ 0x0000005B ]
-	table [ 2 ]	= objects [ 0x0000005E ]
-	table [ 3 ]	= objects [ 0x00000061 ]
-	table [ 4 ]	= objects [ 0x00000064 ]
-	table [ 5 ]	= objects [ 0x00000067 ]
-	table [ 6 ]	= objects [ 0x00000068 ]
-	table [ 7 ]	= objects [ 0x00000069 ]
-	table [ 8 ]	= objects [ 0x0000006A ]
-	table [ 9 ]	= objects [ 0x0000006B ]
-	table [ 10 ]	= objects [ 0x0000006C ]
-	table [ 11 ]	= objects [ 0x0000006D ]
-	table [ 12 ]	= objects [ 0x0000006E ]
-	table [ 13 ]	= [==[augmentUpgradeSlot]==]
-	table [ 14 ]	= [==[augmentUpgradeSlot]==]
+	table = objects [ 0x00000059 ]
+	table [ 1 ]	= objects [ 0x0000005A ]
+	table [ 2 ]	= objects [ 0x0000005D ]
+	table [ 3 ]	= objects [ 0x00000060 ]
+	table [ 4 ]	= objects [ 0x00000063 ]
+	table [ 5 ]	= objects [ 0x00000066 ]
+	table [ 6 ]	= objects [ 0x00000067 ]
+	table [ 7 ]	= [==[augmentUpgradeSlot]==]
+	table [ 8 ]	= [==[augmentUpgradeSlot]==]
+	table [ 9 ]	= objects [ 0x00000068 ]
+	table [ 10 ]	= objects [ 0x00000069 ]
+	table [ 11 ]	= objects [ 0x0000006A ]
+	table [ 12 ]	= objects [ 0x0000006B ]
+	table [ 13 ]	= objects [ 0x0000006C ]
 
-	table = objects [ 0x0000005B ]
-	table [ "upgradeParams" ] = objects [ 0x0000005C ]
+	table = objects [ 0x0000005A ]
+	table [ "upgradeParams" ] = objects [ 0x0000005B ]
 	table [ "upgradeName" ] = [==[augment_particle_envelope]==]
 
+	table = objects [ 0x0000005B ]
+	table [ "traits" ] = objects [ 0x0000005C ]
+
 	table = objects [ 0x0000005C ]
-	table [ "traits" ] = objects [ 0x0000005D ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x0000005D ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x0000005E ]
-	table [ "upgradeParams" ] = objects [ 0x0000005F ]
+	table [ "upgradeParams" ] = objects [ 0x0000005E ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
+	table = objects [ 0x0000005E ]
+	table [ "traits" ] = objects [ 0x0000005F ]
+
 	table = objects [ 0x0000005F ]
-	table [ "traits" ] = objects [ 0x00000060 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x00000060 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x00000061 ]
-	table [ "upgradeParams" ] = objects [ 0x00000062 ]
+	table [ "upgradeParams" ] = objects [ 0x00000061 ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
+	table = objects [ 0x00000061 ]
+	table [ "traits" ] = objects [ 0x00000062 ]
+
 	table = objects [ 0x00000062 ]
-	table [ "traits" ] = objects [ 0x00000063 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x00000063 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x00000064 ]
-	table [ "upgradeParams" ] = objects [ 0x00000065 ]
+	table [ "upgradeParams" ] = objects [ 0x00000064 ]
 	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
 
-	table = objects [ 0x00000065 ]
-	table [ "traits" ] = objects [ 0x00000066 ]
+	table = objects [ 0x00000064 ]
+	table [ "traits" ] = objects [ 0x00000065 ]
 
-	table = objects [ 0x00000066 ]
+	table = objects [ 0x00000065 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
+	table = objects [ 0x00000066 ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+
 	table = objects [ 0x00000067 ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x00000068 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x00000069 ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
-
-	table = objects [ 0x0000006A ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
-
-	table = objects [ 0x0000006B ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
-
-	table = objects [ 0x0000006C ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
-
-	table = objects [ 0x0000006D ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
+	table = objects [ 0x0000006A ]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
+
+	table = objects [ 0x0000006B ]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
+
+	table = objects [ 0x0000006C ]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
+
+	table = objects [ 0x0000006D ]
+	table [ 1 ]	= objects [ 0x0000006E ]
+	table [ 2 ]	= objects [ 0x0000006F ]
+	table [ 3 ]	= objects [ 0x00000070 ]
+	table [ 4 ]	= objects [ 0x00000071 ]
+
 	table = objects [ 0x0000006E ]
-	table [ "upgradeName" ] = [==[item_transport_beacon]==]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
 
 	table = objects [ 0x0000006F ]
-	table [ 1 ]	= objects [ 0x00000070 ]
-	table [ 2 ]	= objects [ 0x00000071 ]
-	table [ 3 ]	= objects [ 0x00000072 ]
-	table [ 4 ]	= objects [ 0x00000073 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[hacking]==]
 
 	table = objects [ 0x00000070 ]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
+	table [ "skillID" ] = [==[inventory]==]
 
 	table = objects [ 0x00000071 ]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x00000072 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x00000073 ]
-	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x00000074 ]
+	table = objects [ 0x00000072 ]
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x00000075 ]
+	table [ "upgrades" ] = objects [ 0x00000073 ]
 	table [ "id" ] = 6
-	table [ "skills" ] = objects [ 0x0000008C ]
+	table [ "skills" ] = objects [ 0x00000087 ]
 	table [ "deployID" ] = 1
 
-	table = objects [ 0x00000075 ]
-	table [ 1 ]	= objects [ 0x00000076 ]
-	table [ 2 ]	= objects [ 0x00000079 ]
-	table [ 3 ]	= objects [ 0x0000007C ]
-	table [ 4 ]	= objects [ 0x0000007F ]
-	table [ 5 ]	= objects [ 0x00000082 ]
-	table [ 6 ]	= objects [ 0x00000085 ]
-	table [ 7 ]	= objects [ 0x00000086 ]
-	table [ 8 ]	= objects [ 0x00000087 ]
-	table [ 9 ]	= objects [ 0x00000088 ]
-	table [ 10 ]	= objects [ 0x00000089 ]
-	table [ 11 ]	= objects [ 0x0000008A ]
-	table [ 12 ]	= objects [ 0x0000008B ]
-	table [ 13 ]	= [==[augmentUpgradeSlot]==]
-	table [ 14 ]	= [==[augmentUpgradeSlot]==]
+	table = objects [ 0x00000073 ]
+	table [ 1 ]	= objects [ 0x00000074 ]
+	table [ 2 ]	= objects [ 0x00000077 ]
+	table [ 3 ]	= objects [ 0x0000007A ]
+	table [ 4 ]	= objects [ 0x0000007D ]
+	table [ 5 ]	= objects [ 0x00000080 ]
+	table [ 6 ]	= objects [ 0x00000083 ]
+	table [ 7 ]	= objects [ 0x00000084 ]
+	table [ 8 ]	= [==[augmentUpgradeSlot]==]
+	table [ 9 ]	= [==[augmentUpgradeSlot]==]
+	table [ 10 ]	= objects [ 0x00000085 ]
+	table [ 11 ]	= objects [ 0x00000086 ]
 
-	table = objects [ 0x00000076 ]
-	table [ "upgradeParams" ] = objects [ 0x00000077 ]
+	table = objects [ 0x00000074 ]
+	table [ "upgradeParams" ] = objects [ 0x00000075 ]
 	table [ "upgradeName" ] = [==[augment_nika]==]
 
-	table = objects [ 0x00000077 ]
-	table [ "traits" ] = objects [ 0x00000078 ]
+	table = objects [ 0x00000075 ]
+	table [ "traits" ] = objects [ 0x00000076 ]
 
-	table = objects [ 0x00000078 ]
+	table = objects [ 0x00000076 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000079 ]
-	table [ "upgradeParams" ] = objects [ 0x0000007A ]
+	table = objects [ 0x00000077 ]
+	table [ "upgradeParams" ] = objects [ 0x00000078 ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x0000007A ]
-	table [ "traits" ] = objects [ 0x0000007B ]
+	table = objects [ 0x00000078 ]
+	table [ "traits" ] = objects [ 0x00000079 ]
 
-	table = objects [ 0x0000007B ]
+	table = objects [ 0x00000079 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000007C ]
-	table [ "upgradeParams" ] = objects [ 0x0000007D ]
+	table = objects [ 0x0000007A ]
+	table [ "upgradeParams" ] = objects [ 0x0000007B ]
 	table [ "upgradeName" ] = [==[augment_anatomy_analysis]==]
 
-	table = objects [ 0x0000007D ]
-	table [ "traits" ] = objects [ 0x0000007E ]
+	table = objects [ 0x0000007B ]
+	table [ "traits" ] = objects [ 0x0000007C ]
 
-	table = objects [ 0x0000007E ]
+	table = objects [ 0x0000007C ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000007F ]
-	table [ "upgradeParams" ] = objects [ 0x00000080 ]
+	table = objects [ 0x0000007D ]
+	table [ "upgradeParams" ] = objects [ 0x0000007E ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x00000080 ]
-	table [ "traits" ] = objects [ 0x00000081 ]
+	table = objects [ 0x0000007E ]
+	table [ "traits" ] = objects [ 0x0000007F ]
 
-	table = objects [ 0x00000081 ]
+	table = objects [ 0x0000007F ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000082 ]
-	table [ "upgradeParams" ] = objects [ 0x00000083 ]
+	table = objects [ 0x00000080 ]
+	table [ "upgradeParams" ] = objects [ 0x00000081 ]
 	table [ "upgradeName" ] = [==[item_tag_pistol]==]
 
-	table = objects [ 0x00000083 ]
-	table [ "traits" ] = objects [ 0x00000084 ]
+	table = objects [ 0x00000081 ]
+	table [ "traits" ] = objects [ 0x00000082 ]
 
-	table = objects [ 0x00000084 ]
+	table = objects [ 0x00000082 ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000085 ]
+	table = objects [ 0x00000083 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
-	table = objects [ 0x00000086 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
-
-	table = objects [ 0x00000087 ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
-
-	table = objects [ 0x00000088 ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
-
-	table = objects [ 0x00000089 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
-
-	table = objects [ 0x0000008A ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
-
-	table = objects [ 0x0000008B ]
+	table = objects [ 0x00000084 ]
 	table [ "upgradeName" ] = [==[item_laptop_3]==]
 
-	table = objects [ 0x0000008C ]
-	table [ 1 ]	= objects [ 0x0000008D ]
-	table [ 2 ]	= objects [ 0x0000008E ]
-	table [ 3 ]	= objects [ 0x0000008F ]
-	table [ 4 ]	= objects [ 0x00000090 ]
+	table = objects [ 0x00000085 ]
+	table [ "upgradeName" ] = [==[item_transport_beacon]==]
 
-	table = objects [ 0x0000008D ]
+	table = objects [ 0x00000086 ]
+	table [ "upgradeName" ] = [==[item_laptop_3]==]
+
+	table = objects [ 0x00000087 ]
+	table [ 1 ]	= objects [ 0x00000088 ]
+	table [ 2 ]	= objects [ 0x00000089 ]
+	table [ 3 ]	= objects [ 0x0000008A ]
+	table [ 4 ]	= objects [ 0x0000008B ]
+
+	table = objects [ 0x00000088 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x0000008E ]
+	table = objects [ 0x00000089 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x0000008F ]
+	table = objects [ 0x0000008A ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000090 ]
+	table = objects [ 0x0000008B ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x00000091 ]
+	table = objects [ 0x0000008C ]
 	table [ "firewallMultiplier" ] = 2
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = false
@@ -690,30 +708,45 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "safesPerLevel" ] = 5
 	table [ "koDuration" ] = 0
 	table [ "meleeFromFront" ] = false
-	table [ "enabledDLC" ] = objects [ 0x00000092 ]
+	table [ "enabledDLC" ] = objects [ 0x0000008D ]
 	table [ "timeAttack" ] = 0
 	table [ "daemonQuantity" ] = [==[NORMAL]==]
 	table [ "startingPower" ] = 5
 	table [ "alarmTypes" ] = [==[NORMAL]==]
 
+	table = objects [ 0x0000008D ]
+	table [ "dlc1" ] = objects [ 0x0000008E ]
+
+	table = objects [ 0x0000008E ]
+	table [ "enabled" ] = true
+	table [ "name" ] = [==[Contingency Plan]==]
+	table [ "options" ] = objects [ 0x0000008F ]
+	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
+
+	table = objects [ 0x0000008F ]
+	table [ "programs" ] = objects [ 0x00000090 ]
+	table [ "guards" ] = objects [ 0x00000091 ]
+	table [ "extended_endless" ] = objects [ 0x00000092 ]
+	table [ "extended_campaign" ] = objects [ 0x00000093 ]
+	table [ "endless_mid_mission" ] = objects [ 0x00000094 ]
+	table [ "daemons" ] = objects [ 0x00000095 ]
+	table [ "agents" ] = objects [ 0x00000096 ]
+	table [ "sidemissions" ] = objects [ 0x00000097 ]
+
+	table = objects [ 0x00000090 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000091 ]
+	table [ "enabled" ] = true
+
 	table = objects [ 0x00000092 ]
-	table [ "dlc1" ] = objects [ 0x00000093 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x00000093 ]
 	table [ "enabled" ] = true
-	table [ "name" ] = [==[Contingency Plan]==]
-	table [ "options" ] = objects [ 0x00000094 ]
-	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 
 	table = objects [ 0x00000094 ]
-	table [ "programs" ] = objects [ 0x00000095 ]
-	table [ "guards" ] = objects [ 0x00000096 ]
-	table [ "extended_endless" ] = objects [ 0x00000097 ]
-	table [ "extended_campaign" ] = objects [ 0x00000098 ]
-	table [ "endless_mid_mission" ] = objects [ 0x00000099 ]
-	table [ "daemons" ] = objects [ 0x0000009A ]
-	table [ "agents" ] = objects [ 0x0000009B ]
-	table [ "sidemissions" ] = objects [ 0x0000009C ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x00000095 ]
 	table [ "enabled" ] = true
@@ -725,154 +758,138 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "enabled" ] = true
 
 	table = objects [ 0x00000098 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000099 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000009A ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000009B ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000009C ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000009D ]
-	table [ "advancedAlarm" ] = true
-	table [ "needPowerCells" ] = objects [ 0x0000009E ]
-
-	table = objects [ 0x0000009E ]
-	table [ "type" ] = [==[objective]==]
-	table [ "text" ] = [==[> Find a Power Relay]==]
-	table [ "req" ] = [==[needPowerCells]==]
-
-	table = objects [ 0x0000009F ]
-	table [ 1 ]	= objects [ 0x000000A0 ]
-	table [ 2 ]	= objects [ 0x000000A1 ]
-	table [ 3 ]	= objects [ 0x000000A2 ]
-	table [ 4 ]	= objects [ 0x000000A3 ]
-	table [ 5 ]	= objects [ 0x000000A4 ]
-	table [ 6 ]	= objects [ 0x000000A5 ]
-	table [ 7 ]	= objects [ 0x000000A6 ]
-	table [ 8 ]	= objects [ 0x000000A7 ]
-	table [ 9 ]	= objects [ 0x000000A8 ]
-	table [ 10 ]	= objects [ 0x000000A9 ]
-	table [ 11 ]	= objects [ 0x000000AA ]
-	table [ 12 ]	= objects [ 0x000000AB ]
-	table [ 13 ]	= objects [ 0x000000AC ]
-	table [ 14 ]	= objects [ 0x000000AD ]
-	table [ 15 ]	= objects [ 0x000000AE ]
-
-	table = objects [ 0x000000A0 ]
-	table [ "mapLocation" ] = 52
-	table [ "random_idx" ] = 2
-	table [ "name" ] = [==[detention_centre]==]
-	table [ "difficulty" ] = 17
-
-	table = objects [ 0x000000A1 ]
-	table [ "difficulty" ] = 17
-	table [ "name" ] = [==[executive_terminals]==]
-	table [ "random_idx" ] = 2
-	table [ "mapLocation" ] = 14
-
-	table = objects [ 0x000000A2 ]
-	table [ "mapLocation" ] = 4
-	table [ "random_idx" ] = 2
-	table [ "name" ] = [==[server_farm]==]
-	table [ "difficulty" ] = 17
-
-	table = objects [ 0x000000A3 ]
-	table [ "mapLocation" ] = 23
-	table [ "random_idx" ] = 2
-	table [ "name" ] = [==[executive_terminals]==]
-	table [ "difficulty" ] = 17
-
-	table = objects [ 0x000000A4 ]
-	table [ "mapLocation" ] = 44
-	table [ "name" ] = [==[detention_centre]==]
-	table [ "difficulty" ] = 16
-
-	table = objects [ 0x000000A5 ]
-	table [ "mapLocation" ] = 6
-	table [ "name" ] = [==[vault]==]
-	table [ "difficulty" ] = 17
-
-	table = objects [ 0x000000A6 ]
-	table [ "difficulty" ] = 16
-	table [ "name" ] = [==[ceo_office]==]
-	table [ "random_idx" ] = 1
-	table [ "mapLocation" ] = 29
-
-	table = objects [ 0x000000A7 ]
-	table [ "difficulty" ] = 16
-	table [ "name" ] = [==[vault]==]
-	table [ "random_idx" ] = 2
-	table [ "mapLocation" ] = 16
-
-	table = objects [ 0x000000A8 ]
-	table [ "mapLocation" ] = 8
-	table [ "name" ] = [==[server_farm]==]
-	table [ "difficulty" ] = 16
-
-	table = objects [ 0x000000A9 ]
-	table [ "mapLocation" ] = 5
-	table [ "name" ] = [==[cyberlab]==]
-	table [ "difficulty" ] = 17
-
-	table = objects [ 0x000000AA ]
-	table [ "mapLocation" ] = 45
-	table [ "name" ] = [==[cyberlab]==]
-	table [ "difficulty" ] = 16
-
-	table = objects [ 0x000000AB ]
-	table [ "difficulty" ] = 16
-	table [ "name" ] = [==[ceo_office]==]
-	table [ "mapLocation" ] = 40
-
-	table = objects [ 0x000000AC ]
-	table [ "mapLocation" ] = 39
-	table [ "name" ] = [==[nanofab]==]
-	table [ "difficulty" ] = 17
-
-	table = objects [ 0x000000AD ]
-	table [ "mapLocation" ] = 36
-	table [ "name" ] = [==[nanofab]==]
-	table [ "difficulty" ] = 16
-
-	table = objects [ 0x000000AE ]
 	table [ "mapLocation" ] = 35
 	table [ "difficulty" ] = 16
 	table [ "random_idx" ] = 2
 	table [ "name" ] = [==[security]==]
 
-	table = objects [ 0x000000AF ]
+	table = objects [ 0x00000099 ]
+	table [ "advancedAlarm" ] = true
+	table [ "needPowerCells" ] = objects [ 0x0000009A ]
+
+	table = objects [ 0x0000009A ]
+	table [ "type" ] = [==[objective]==]
+	table [ "text" ] = [==[> Find a Power Relay]==]
+	table [ "req" ] = [==[needPowerCells]==]
+
+	table = objects [ 0x0000009B ]
+	table [ 1 ]	= objects [ 0x0000009C ]
+	table [ 2 ]	= objects [ 0x0000009D ]
+	table [ 3 ]	= objects [ 0x0000009E ]
+	table [ 4 ]	= objects [ 0x0000009F ]
+	table [ 5 ]	= objects [ 0x000000A0 ]
+	table [ 6 ]	= objects [ 0x000000A1 ]
+	table [ 7 ]	= objects [ 0x000000A2 ]
+	table [ 8 ]	= objects [ 0x000000A3 ]
+	table [ 9 ]	= objects [ 0x000000A4 ]
+	table [ 10 ]	= objects [ 0x000000A5 ]
+	table [ 11 ]	= objects [ 0x000000A6 ]
+	table [ 12 ]	= objects [ 0x000000A7 ]
+	table [ 13 ]	= objects [ 0x000000A8 ]
+	table [ 14 ]	= objects [ 0x000000A9 ]
+
+	table = objects [ 0x0000009C ]
+	table [ "mapLocation" ] = 52
+	table [ "random_idx" ] = 2
+	table [ "name" ] = [==[detention_centre]==]
+	table [ "difficulty" ] = 17
+
+	table = objects [ 0x0000009D ]
+	table [ "difficulty" ] = 17
+	table [ "name" ] = [==[executive_terminals]==]
+	table [ "random_idx" ] = 2
+	table [ "mapLocation" ] = 14
+
+	table = objects [ 0x0000009E ]
+	table [ "mapLocation" ] = 4
+	table [ "random_idx" ] = 2
+	table [ "name" ] = [==[server_farm]==]
+	table [ "difficulty" ] = 17
+
+	table = objects [ 0x0000009F ]
+	table [ "mapLocation" ] = 23
+	table [ "random_idx" ] = 2
+	table [ "name" ] = [==[executive_terminals]==]
+	table [ "difficulty" ] = 17
+
+	table = objects [ 0x000000A0 ]
+	table [ "mapLocation" ] = 44
+	table [ "name" ] = [==[detention_centre]==]
+	table [ "difficulty" ] = 16
+
+	table = objects [ 0x000000A1 ]
+	table [ "mapLocation" ] = 6
+	table [ "name" ] = [==[vault]==]
+	table [ "difficulty" ] = 17
+
+	table = objects [ 0x000000A2 ]
+	table [ "difficulty" ] = 16
+	table [ "name" ] = [==[ceo_office]==]
+	table [ "random_idx" ] = 1
+	table [ "mapLocation" ] = 29
+
+	table = objects [ 0x000000A3 ]
+	table [ "difficulty" ] = 16
+	table [ "name" ] = [==[vault]==]
+	table [ "random_idx" ] = 2
+	table [ "mapLocation" ] = 16
+
+	table = objects [ 0x000000A4 ]
+	table [ "mapLocation" ] = 8
+	table [ "name" ] = [==[server_farm]==]
+	table [ "difficulty" ] = 16
+
+	table = objects [ 0x000000A5 ]
+	table [ "mapLocation" ] = 5
+	table [ "name" ] = [==[cyberlab]==]
+	table [ "difficulty" ] = 17
+
+	table = objects [ 0x000000A6 ]
+	table [ "mapLocation" ] = 45
+	table [ "name" ] = [==[cyberlab]==]
+	table [ "difficulty" ] = 16
+
+	table = objects [ 0x000000A7 ]
+	table [ "difficulty" ] = 16
+	table [ "name" ] = [==[ceo_office]==]
+	table [ "mapLocation" ] = 40
+
+	table = objects [ 0x000000A8 ]
+	table [ "mapLocation" ] = 39
+	table [ "name" ] = [==[nanofab]==]
+	table [ "difficulty" ] = 17
+
+	table = objects [ 0x000000A9 ]
+	table [ "mapLocation" ] = 36
+	table [ "name" ] = [==[nanofab]==]
+	table [ "difficulty" ] = 16
+
+	table = objects [ 0x000000AA ]
 	table [ "currentDay" ] = 0
 	table [ "recent_build_number" ] = [==[BUILD[trunk.282332] LUA[282350] USER[85892043@steam]
 OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "miniserversSeen" ] = 0
 	table [ "preMissionNetWorth" ] = 4300
 	table [ "previousDay" ] = -1
-	table [ "uiMemento" ] = objects [ 0x000000B0 ]
+	table [ "uiMemento" ] = objects [ 0x000000AB ]
 	table [ "missionTotal" ] = 1
-	table [ "agency" ] = objects [ 0x000000B2 ]
+	table [ "agency" ] = objects [ 0x000000AD ]
 	table [ "hours" ] = 0
-	table [ "difficultyOptions" ] = objects [ 0x000000CE ]
-	table [ "campaignEvents" ] = objects [ 0x000000DA ]
+	table [ "difficultyOptions" ] = objects [ 0x000000C9 ]
+	table [ "campaignEvents" ] = objects [ 0x000000D5 ]
 	table [ "location" ] = 23
 	table [ "missionVersion" ] = [==[0.17.18]==]
 	table [ "missionCount" ] = 0
-	table [ "missionParams" ] = objects [ 0x000000FA ]
+	table [ "missionParams" ] = objects [ 0x000000F5 ]
 	table [ "missionsPlayedThisDay" ] = 0
-	table [ "situation" ] = objects [ 0x000000FB ]
-	table [ "missionEvents" ] = objects [ 0x000000FC ]
+	table [ "situation" ] = objects [ 0x000000F6 ]
+	table [ "missionEvents" ] = objects [ 0x000000F7 ]
 	table [ "creation_time" ] = 1561198526
 	table [ "save_time" ] = 1561198957
 	table [ "campaignDifficulty" ] = 3
 	table [ "version" ] = [==[0.17.18]==]
 	table [ "seed" ] = 2971242240
-	table [ "situations" ] = objects [ 0x000000FD ]
+	table [ "situations" ] = objects [ 0x000000F8 ]
 	table [ "sim_history" ] = [==[local _ = {}
 _[1]={}
 _[2]={}
@@ -925,151 +942,151 @@ return _[1]]==]
 	table [ "play_t" ] = 126
 	table [ "incognitaLevel" ] = 0
 
-	table = objects [ 0x000000B0 ]
-	table [ "cameraState" ] = objects [ 0x000000B1 ]
+	table = objects [ 0x000000AB ]
+	table [ "cameraState" ] = objects [ 0x000000AC ]
 	table [ "selectedUnitID" ] = 1003
 
-	table = objects [ 0x000000B1 ]
+	table = objects [ 0x000000AC ]
 	table [ "targetZ" ] = 0.00018310546511202
 	table [ "targetX" ] = -177.04494476318
 	table [ "orientation" ] = 0
 	table [ "targetZoom" ] = 0.6561
 	table [ "targetY" ] = -410.73002624512
 
-	table = objects [ 0x000000B2 ]
+	table = objects [ 0x000000AD ]
 	table [ "nextID" ] = 100
-	table [ "unitDefs" ] = objects [ 0x000000B3 ]
+	table [ "unitDefs" ] = objects [ 0x000000AE ]
 	table [ "blocker" ] = false
 	table [ "id" ] = 1
-	table [ "unitDefsPotential" ] = objects [ 0x000000B8 ]
+	table [ "unitDefsPotential" ] = objects [ 0x000000B3 ]
 	table [ "name" ] = [==[]==]
 	table [ "cpus" ] = 10
 	table [ "startLocation" ] = 23
-	table [ "abilities" ] = objects [ 0x000000CD ]
+	table [ "abilities" ] = objects [ 0x000000C8 ]
 	table [ "alwaysUnlocked" ] = true
 	table [ "cash" ] = 500
 
-	table = objects [ 0x000000B3 ]
-	table [ 1 ]	= objects [ 0x000000B4 ]
-	table [ 2 ]	= objects [ 0x000000B6 ]
+	table = objects [ 0x000000AE ]
+	table [ 1 ]	= objects [ 0x000000AF ]
+	table [ 2 ]	= objects [ 0x000000B1 ]
 
-	table = objects [ 0x000000B4 ]
+	table = objects [ 0x000000AF ]
 	table [ "id" ] = 5
 	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x000000B5 ]
+	table [ "upgrades" ] = objects [ 0x000000B0 ]
 
-	table = objects [ 0x000000B5 ]
+	table = objects [ 0x000000B0 ]
 	table [ 1 ]	= [==[augment_international_v1]==]
 	table [ 2 ]	= [==[item_tazer]==]
 
-	table = objects [ 0x000000B6 ]
+	table = objects [ 0x000000B1 ]
 	table [ "id" ] = 3
 	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x000000B7 ]
+	table [ "upgrades" ] = objects [ 0x000000B2 ]
 
-	table = objects [ 0x000000B7 ]
+	table = objects [ 0x000000B2 ]
 	table [ 1 ]	= [==[augment_tony]==]
 	table [ 2 ]	= [==[item_tazer]==]
 	table [ 3 ]	= [==[item_shocktrap_tony]==]
 
-	table = objects [ 0x000000B8 ]
-	table [ 1 ]	= objects [ 0x000000B9 ]
-	table [ 2 ]	= objects [ 0x000000BB ]
-	table [ 3 ]	= objects [ 0x000000BD ]
-	table [ 4 ]	= objects [ 0x000000BF ]
-	table [ 5 ]	= objects [ 0x000000C1 ]
-	table [ 6 ]	= objects [ 0x000000C3 ]
-	table [ 7 ]	= objects [ 0x000000C5 ]
-	table [ 8 ]	= objects [ 0x000000C7 ]
-	table [ 9 ]	= objects [ 0x000000C9 ]
-	table [ 10 ]	= objects [ 0x000000CB ]
+	table = objects [ 0x000000B3 ]
+	table [ 1 ]	= objects [ 0x000000B4 ]
+	table [ 2 ]	= objects [ 0x000000B6 ]
+	table [ 3 ]	= objects [ 0x000000B8 ]
+	table [ 4 ]	= objects [ 0x000000BA ]
+	table [ 5 ]	= objects [ 0x000000BC ]
+	table [ 6 ]	= objects [ 0x000000BE ]
+	table [ 7 ]	= objects [ 0x000000C0 ]
+	table [ 8 ]	= objects [ 0x000000C2 ]
+	table [ 9 ]	= objects [ 0x000000C4 ]
+	table [ 10 ]	= objects [ 0x000000C6 ]
 
-	table = objects [ 0x000000B9 ]
+	table = objects [ 0x000000B4 ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x000000BA ]
+	table [ "upgrades" ] = objects [ 0x000000B5 ]
 
-	table = objects [ 0x000000BA ]
+	table = objects [ 0x000000B5 ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x000000BB ]
+	table = objects [ 0x000000B6 ]
 	table [ "id" ] = 2
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x000000BC ]
+	table [ "upgrades" ] = objects [ 0x000000B7 ]
 
-	table = objects [ 0x000000BC ]
+	table = objects [ 0x000000B7 ]
 	table [ 1 ]	= [==[augment_shalem]==]
 
-	table = objects [ 0x000000BD ]
+	table = objects [ 0x000000B8 ]
 	table [ "id" ] = 4
 	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x000000BE ]
+	table [ "upgrades" ] = objects [ 0x000000B9 ]
 
-	table = objects [ 0x000000BE ]
+	table = objects [ 0x000000B9 ]
 	table [ 1 ]	= [==[augment_banks]==]
 
-	table = objects [ 0x000000BF ]
+	table = objects [ 0x000000BA ]
 	table [ "id" ] = 6
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x000000C0 ]
+	table [ "upgrades" ] = objects [ 0x000000BB ]
 
-	table = objects [ 0x000000C0 ]
+	table = objects [ 0x000000BB ]
 	table [ 1 ]	= [==[augment_nika]==]
 
-	table = objects [ 0x000000C1 ]
+	table = objects [ 0x000000BC ]
 	table [ "id" ] = 8
 	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x000000C2 ]
+	table [ "upgrades" ] = objects [ 0x000000BD ]
 
-	table = objects [ 0x000000C2 ]
+	table = objects [ 0x000000BD ]
 	table [ 1 ]	= [==[augment_prism_2]==]
 
-	table = objects [ 0x000000C3 ]
+	table = objects [ 0x000000BE ]
 	table [ "id" ] = 7
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x000000C4 ]
+	table [ "upgrades" ] = objects [ 0x000000BF ]
 
-	table = objects [ 0x000000C4 ]
+	table = objects [ 0x000000BF ]
 	table [ 1 ]	= [==[augment_sharp_1]==]
 
-	table = objects [ 0x000000C5 ]
+	table = objects [ 0x000000C0 ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x000000C6 ]
+	table [ "upgrades" ] = objects [ 0x000000C1 ]
 
-	table = objects [ 0x000000C6 ]
+	table = objects [ 0x000000C1 ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x000000C7 ]
+	table = objects [ 0x000000C2 ]
 	table [ "id" ] = 1001
 	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x000000C8 ]
+	table [ "upgrades" ] = objects [ 0x000000C3 ]
 
-	table = objects [ 0x000000C8 ]
+	table = objects [ 0x000000C3 ]
 	table [ 1 ]	= [==[augment_particle_envelope]==]
 	table [ 2 ]	= [==[item_transport_beacon]==]
 
-	table = objects [ 0x000000C9 ]
+	table = objects [ 0x000000C4 ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x000000CA ]
+	table [ "upgrades" ] = objects [ 0x000000C5 ]
 
-	table = objects [ 0x000000CA ]
+	table = objects [ 0x000000C5 ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x000000CB ]
+	table = objects [ 0x000000C6 ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x000000CC ]
+	table [ "upgrades" ] = objects [ 0x000000C7 ]
 
-	table = objects [ 0x000000CC ]
+	table = objects [ 0x000000C7 ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x000000CD ]
+	table = objects [ 0x000000C8 ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[lockpick_1]==]
 
-	table = objects [ 0x000000CE ]
+	table = objects [ 0x000000C9 ]
 	table [ "firewallMultiplier" ] = 2
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = true
@@ -1081,7 +1098,7 @@ return _[1]]==]
 	table [ "spawnTable" ] = [==[NORMAL]==]
 	table [ "alarmRaisedOnKO" ] = false
 	table [ "maxHours" ] = 72
-	table [ "enabledDLC" ] = objects [ 0x000000CF ]
+	table [ "enabledDLC" ] = objects [ 0x000000CA ]
 	table [ "drawInterestPoints" ] = false
 	table [ "savescumming" ] = false
 	table [ "powerPerLevel" ] = 10
@@ -1097,24 +1114,39 @@ return _[1]]==]
 	table [ "startingPower" ] = 10
 	table [ "alarmTypes" ] = [==[NORMAL]==]
 
+	table = objects [ 0x000000CA ]
+	table [ "dlc1" ] = objects [ 0x000000CB ]
+
+	table = objects [ 0x000000CB ]
+	table [ "enabled" ] = true
+	table [ "name" ] = [==[Contingency Plan]==]
+	table [ "options" ] = objects [ 0x000000CC ]
+	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
+
+	table = objects [ 0x000000CC ]
+	table [ "programs" ] = objects [ 0x000000CD ]
+	table [ "guards" ] = objects [ 0x000000CE ]
+	table [ "extended_endless" ] = objects [ 0x000000CF ]
+	table [ "extended_campaign" ] = objects [ 0x000000D0 ]
+	table [ "endless_mid_mission" ] = objects [ 0x000000D1 ]
+	table [ "daemons" ] = objects [ 0x000000D2 ]
+	table [ "sidemissions" ] = objects [ 0x000000D3 ]
+	table [ "agents" ] = objects [ 0x000000D4 ]
+
+	table = objects [ 0x000000CD ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x000000CE ]
+	table [ "enabled" ] = true
+
 	table = objects [ 0x000000CF ]
-	table [ "dlc1" ] = objects [ 0x000000D0 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x000000D0 ]
 	table [ "enabled" ] = true
-	table [ "name" ] = [==[Contingency Plan]==]
-	table [ "options" ] = objects [ 0x000000D1 ]
-	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 
 	table = objects [ 0x000000D1 ]
-	table [ "programs" ] = objects [ 0x000000D2 ]
-	table [ "guards" ] = objects [ 0x000000D3 ]
-	table [ "extended_endless" ] = objects [ 0x000000D4 ]
-	table [ "extended_campaign" ] = objects [ 0x000000D5 ]
-	table [ "endless_mid_mission" ] = objects [ 0x000000D6 ]
-	table [ "daemons" ] = objects [ 0x000000D7 ]
-	table [ "sidemissions" ] = objects [ 0x000000D8 ]
-	table [ "agents" ] = objects [ 0x000000D9 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x000000D2 ]
 	table [ "enabled" ] = true
@@ -1126,104 +1158,113 @@ return _[1]]==]
 	table [ "enabled" ] = true
 
 	table = objects [ 0x000000D5 ]
-	table [ "enabled" ] = true
+	table [ 1 ]	= objects [ 0x000000D6 ]
+	table [ 2 ]	= objects [ 0x000000D8 ]
+	table [ 3 ]	= objects [ 0x000000DC ]
+	table [ 4 ]	= objects [ 0x000000DD ]
+	table [ 5 ]	= objects [ 0x000000DF ]
+	table [ 6 ]	= objects [ 0x000000E0 ]
+	table [ 7 ]	= objects [ 0x000000E2 ]
+	table [ 8 ]	= objects [ 0x000000E3 ]
+	table [ 9 ]	= objects [ 0x000000E4 ]
+	table [ 10 ]	= objects [ 0x000000E6 ]
+	table [ 11 ]	= objects [ 0x000000E9 ]
+	table [ 12 ]	= objects [ 0x000000EB ]
+	table [ 13 ]	= objects [ 0x000000ED ]
+	table [ 14 ]	= objects [ 0x000000EF ]
 
 	table = objects [ 0x000000D6 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000000D7 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000000D8 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000000D9 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000000DA ]
-	table [ 1 ]	= objects [ 0x000000DB ]
-	table [ 2 ]	= objects [ 0x000000DD ]
-	table [ 3 ]	= objects [ 0x000000E1 ]
-	table [ 4 ]	= objects [ 0x000000E2 ]
-	table [ 5 ]	= objects [ 0x000000E4 ]
-	table [ 6 ]	= objects [ 0x000000E5 ]
-	table [ 7 ]	= objects [ 0x000000E7 ]
-	table [ 8 ]	= objects [ 0x000000E8 ]
-	table [ 9 ]	= objects [ 0x000000E9 ]
-	table [ 10 ]	= objects [ 0x000000EB ]
-	table [ 11 ]	= objects [ 0x000000EE ]
-	table [ 12 ]	= objects [ 0x000000F0 ]
-	table [ 13 ]	= objects [ 0x000000F2 ]
-	table [ 14 ]	= objects [ 0x000000F4 ]
-
-	table = objects [ 0x000000DB ]
-	table [ "data" ] = objects [ 0x000000DC ]
+	table [ "data" ] = objects [ 0x000000D7 ]
 	table [ "eventType" ] = 4
 
-	table = objects [ 0x000000DC ]
+	table = objects [ 0x000000D7 ]
 	table [ "value" ] = true
 	table [ "hours" ] = 288
 	table [ "param" ] = [==[advanced_scanners]==]
 
-	table = objects [ 0x000000DD ]
+	table = objects [ 0x000000D8 ]
 	table [ "hours" ] = 288
-	table [ "data" ] = objects [ 0x000000DE ]
+	table [ "data" ] = objects [ 0x000000D9 ]
 	table [ "eventType" ] = 11
 
-	table = objects [ 0x000000DE ]
+	table = objects [ 0x000000D9 ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x000000DF ]
+	table [ "groups" ] = objects [ 0x000000DA ]
 
-	table = objects [ 0x000000DF ]
-	table [ 1 ]	= objects [ 0x000000E0 ]
+	table = objects [ 0x000000DA ]
+	table [ 1 ]	= objects [ 0x000000DB ]
 
-	table = objects [ 0x000000E0 ]
+	table = objects [ 0x000000DB ]
 	table [ "text" ] = [==[Caution. Omni corp has upgraded all Enforcer units with XL-5 Scan Grenades. As well as scanning, the XL-5 emits a disruptive field that disables cloaking and Hologram Technology.]==]
 	table [ "title" ] = [==[ADVANCED SCAN GRENADES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/advanced_scan_grenades.png]==]
 
-	table = objects [ 0x000000E1 ]
+	table = objects [ 0x000000DC ]
 	table [ "day" ] = 4
 	table [ "eventType" ] = 13
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000000E2 ]
+	table = objects [ 0x000000DD ]
 	table [ "eventType" ] = 1
-	table [ "data" ] = objects [ 0x000000E3 ]
+	table [ "data" ] = objects [ 0x000000DE ]
 
-	table = objects [ 0x000000E3 ]
+	table = objects [ 0x000000DE ]
 	table [ "name" ] = [==[mid_1]==]
 
-	table = objects [ 0x000000E4 ]
+	table = objects [ 0x000000DF ]
 	table [ "data" ] = 72
 	table [ "eventType" ] = 2
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000000E5 ]
-	table [ "data" ] = objects [ 0x000000E6 ]
+	table = objects [ 0x000000E0 ]
+	table [ "data" ] = objects [ 0x000000E1 ]
 	table [ "eventType" ] = 3
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000000E6 ]
+	table = objects [ 0x000000E1 ]
 	table [ "mission" ] = [==[mid_2]==]
 	table [ "corp" ] = [==[omni2]==]
 
-	table = objects [ 0x000000E7 ]
+	table = objects [ 0x000000E2 ]
 	table [ "eventType" ] = 6
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x000000E8 ]
+	table = objects [ 0x000000E3 ]
 	table [ "data" ] = [==[post_mid_]==]
 	table [ "eventType" ] = 7
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x000000E9 ]
-	table [ "data" ] = objects [ 0x000000EA ]
+	table = objects [ 0x000000E4 ]
+	table [ "data" ] = objects [ 0x000000E5 ]
 	table [ "eventType" ] = 4
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000000EA ]
+	table = objects [ 0x000000E5 ]
 	table [ "param" ] = [==[advancedAlarm]==]
+
+	table = objects [ 0x000000E6 ]
+	table [ "data" ] = objects [ 0x000000E7 ]
+	table [ "eventType" ] = 4
+	table [ "mission" ] = [==[mid_2]==]
+
+	table = objects [ 0x000000E7 ]
+	table [ "value" ] = objects [ 0x000000E8 ]
+	table [ "param" ] = [==[needPowerCells]==]
+
+	table = objects [ 0x000000E8 ]
+	table [ "type" ] = [==[objective]==]
+	table [ "text" ] = [==[> Find a Power Relay]==]
+	table [ "req" ] = [==[needPowerCells]==]
+
+	table = objects [ 0x000000E9 ]
+	table [ "data" ] = objects [ 0x000000EA ]
+	table [ "eventType" ] = 4
+	table [ "mission" ] = [==[mid_2]==]
+
+	table = objects [ 0x000000EA ]
+	table [ "agency" ] = true
+	table [ "value" ] = 1
+	table [ "param" ] = [==[extraPrograms]==]
 
 	table = objects [ 0x000000EB ]
 	table [ "data" ] = objects [ 0x000000EC ]
@@ -1231,101 +1272,77 @@ return _[1]]==]
 	table [ "mission" ] = [==[mid_2]==]
 
 	table = objects [ 0x000000EC ]
-	table [ "value" ] = objects [ 0x000000ED ]
-	table [ "param" ] = [==[needPowerCells]==]
-
-	table = objects [ 0x000000ED ]
-	table [ "type" ] = [==[objective]==]
-	table [ "text" ] = [==[> Find a Power Relay]==]
-	table [ "req" ] = [==[needPowerCells]==]
-
-	table = objects [ 0x000000EE ]
-	table [ "data" ] = objects [ 0x000000EF ]
-	table [ "eventType" ] = 4
-	table [ "mission" ] = [==[mid_2]==]
-
-	table = objects [ 0x000000EF ]
-	table [ "agency" ] = true
-	table [ "value" ] = 1
-	table [ "param" ] = [==[extraPrograms]==]
-
-	table = objects [ 0x000000F0 ]
-	table [ "data" ] = objects [ 0x000000F1 ]
-	table [ "eventType" ] = 4
-	table [ "mission" ] = [==[mid_2]==]
-
-	table = objects [ 0x000000F1 ]
 	table [ "value" ] = 0
 	table [ "param" ] = [==[incognitaLevel]==]
 	table [ "editCampaign" ] = true
 
-	table = objects [ 0x000000F2 ]
-	table [ "data" ] = objects [ 0x000000F3 ]
+	table = objects [ 0x000000ED ]
+	table [ "data" ] = objects [ 0x000000EE ]
 	table [ "eventType" ] = 9
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000000F3 ]
+	table = objects [ 0x000000EE ]
 	table [ "removeMission" ] = [==[mid_2]==]
 	table [ "agent" ] = 100
 
-	table = objects [ 0x000000F4 ]
-	table [ "data" ] = objects [ 0x000000F5 ]
+	table = objects [ 0x000000EF ]
+	table [ "data" ] = objects [ 0x000000F0 ]
 	table [ "eventType" ] = 11
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x000000F5 ]
+	table = objects [ 0x000000F0 ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x000000F6 ]
+	table [ "groups" ] = objects [ 0x000000F1 ]
 
-	table = objects [ 0x000000F6 ]
-	table [ 1 ]	= objects [ 0x000000F7 ]
-	table [ 2 ]	= objects [ 0x000000F8 ]
-	table [ 3 ]	= objects [ 0x000000F9 ]
+	table = objects [ 0x000000F1 ]
+	table [ 1 ]	= objects [ 0x000000F2 ]
+	table [ 2 ]	= objects [ 0x000000F3 ]
+	table [ 3 ]	= objects [ 0x000000F4 ]
 
-	table = objects [ 0x000000F7 ]
+	table = objects [ 0x000000F2 ]
 	table [ "text" ] = [==[The corporations have increased their response to our incursions. Expect higher resistance as the alarm levels increases.]==]
 	table [ "title" ] = [==[ADVANCED ALARM STAGES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/new_alarm.png]==]
 
-	table = objects [ 0x000000F8 ]
+	table = objects [ 0x000000F3 ]
 	table [ "text" ] = [==[Incognita's new portable home consumes a lot of power. You will need to find and bring back a Universal Power Cell from each mission.]==]
 	table [ "title" ] = [==[ACQUIRE UNIVERSAL POWER CELLS]==]
 	table [ "img" ] = [==[gui/icons/item_icons/icon-power_cell.png]==]
 
-	table = objects [ 0x000000F9 ]
+	table = objects [ 0x000000F4 ]
 	table [ "text" ] = [==[It's not all bad news. The Quantum Reservoir has increased Incognita's memory capacity. She has space to install an additional program.]==]
 	table [ "title" ] = [==[INCREASED PROGRAM CAPACITY]==]
 	table [ "img" ] = [==[gui/hud3/hud3_incognita_LG.png]==]
 
-	table = objects [ 0x000000FA ]
+	table = objects [ 0x000000F5 ]
 	table [ "newHiSecExitDay" ] = 7
 	table [ "extended_endless" ] = true
 	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x000000FB ]
+	table = objects [ 0x000000F6 ]
 	table [ "mapLocation" ] = 15
 	table [ "name" ] = [==[executive_terminals]==]
 	table [ "difficulty" ] = 1
 
-	table = objects [ 0x000000FC ]
+	table = objects [ 0x000000F7 ]
 
-	table = objects [ 0x000000FD ]
+	table = objects [ 0x000000F8 ]
 
-	table = objects [ 0x000000FE ]
-	table [ 1 ]	= objects [ 0x000000FF ]
-	table [ 2 ]	= objects [ 0x00000100 ]
-	table [ 3 ]	= objects [ 0x00000101 ]
-	table [ 4 ]	= objects [ 0x00000102 ]
-	table [ 5 ]	= objects [ 0x00000103 ]
-	table [ 6 ]	= objects [ 0x00000104 ]
-	table [ 7 ]	= objects [ 0x00000105 ]
-	table [ 8 ]	= objects [ 0x00000106 ]
-	table [ 9 ]	= objects [ 0x00000107 ]
-	table [ 10 ]	= objects [ 0x00000108 ]
-	table [ 11 ]	= objects [ 0x00000109 ]
-	table [ 12 ]	= objects [ 0x0000010A ]
+	table = objects [ 0x000000F9 ]
+	table [ 1 ]	= objects [ 0x000000FA ]
+	table [ 2 ]	= objects [ 0x000000FB ]
+	table [ 3 ]	= objects [ 0x000000FC ]
+	table [ 4 ]	= objects [ 0x000000FD ]
+	table [ 5 ]	= objects [ 0x000000FE ]
+	table [ 6 ]	= objects [ 0x000000FF ]
+	table [ 7 ]	= objects [ 0x00000100 ]
+	table [ 8 ]	= objects [ 0x00000101 ]
+	table [ 9 ]	= objects [ 0x00000102 ]
+	table [ 10 ]	= objects [ 0x00000103 ]
+	table [ 11 ]	= objects [ 0x00000104 ]
+	table [ 12 ]	= objects [ 0x00000105 ]
 
-	table = objects [ 0x000000FF ]
+	table = objects [ 0x000000FA ]
 	table [ "title" ] = [==[FROM Climb Up! Weekly, NOV 23, 2062]==]
 	table [ "profileAnim" ] = [==[portraits/sharpshooter_face]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1351,7 +1368,7 @@ return _[1]]==]
     
     So thank you, Shalem 11, for making this one reporter's evening just a little more bearable!</>]==]
 
-	table = objects [ 0x00000100 ]
+	table = objects [ 0x000000FB ]
 	table [ "title" ] = [==[K&O Notice of Termination]==]
 	table [ "profileAnim" ] = [==[portraits/stealth_guy_face]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1380,7 +1397,7 @@ Yours in commerce,
 
 Matthias Schmitt</>]==]
 
-	table = objects [ 0x00000101 ]
+	table = objects [ 0x000000FC ]
 	table [ "title" ] = [==[LETTER TO THE EDITOR]==]
 	table [ "profileAnim" ] = [==[portraits/lady_tech_face]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1408,7 +1425,7 @@ Vol 52, Issue 5, May 1, 2060
 For shame.
 Maria Valdez</>]==]
 
-	table = objects [ 0x00000102 ]
+	table = objects [ 0x000000FD ]
 	table [ "title" ] = [==[INTERVIEW TRANSCRIPT]==]
 	table [ "profileAnim" ] = [==[portraits/lady_sharpshooter_face]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1446,7 +1463,7 @@ Central: <c:62B3B3>Approximately?</>
 
 Central: <c:62B3B3>Thank you, Ms Muratova. I think we can make use of your skillset. Welcome to Invisible, Inc.</>]==]
 
-	table = objects [ 0x00000103 ]
+	table = objects [ 0x000000FE ]
 	table [ "title" ] = [==[K&O REHABILITATION REPORT]==]
 	table [ "profileAnim" ] = [==[portraits/dr_tony_face]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1483,7 +1500,7 @@ CASE HISTORY:
 RECOMMENDATION:
 	<c:62B3B3>As of this report, the target's account has been balanced. As per his contract, we have no choice other than to release him. Further monitoring is recommended, however, and any pretense for a further apprehension should be acted upon immediately.</>]==]
 
-	table = objects [ 0x00000104 ]
+	table = objects [ 0x000000FF ]
 	table [ "title" ] = [==[ONLINE REVIEW: "The Istanbul Four" (2070)]==]
 	table [ "profileAnim" ] = [==[portraits/prism_face]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1509,7 +1526,7 @@ RECOMMENDATION:
 
      I give "The Istanbul Four" 4½ stars out of 4. This one is literally off the charts!</>]==]
 
-	table = objects [ 0x00000105 ]
+	table = objects [ 0x00000100 ]
 	table [ "title" ] = [==["THE DATA VAMPIRES" BY MATEI CERNAT]==]
 	table [ "profileAnim" ] = [==[portraits/dracul_build]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1539,7 +1556,7 @@ RECOMMENDATION:
 
 	She was a hunter, and this was her net.</>]==]
 
-	table = objects [ 0x00000106 ]
+	table = objects [ 0x00000101 ]
 	table [ "title" ] = [==[TEXT DUMP OF SUBNET POST]==]
 	table [ "profileAnim" ] = [==[portraits/robo_alex_face]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1579,7 +1596,7 @@ Sometimes, it takes a superhuman to solve a human problem. Let me be your superh
 
 Contact Node</> 209.90.173.94 <c:F48011>with your target and payment information, and leave your problems to a professional! Offer not valid in Brisbane Autonomous Zone, the Singapore industrial exclusion area, or within 200K of the territories of the Hokkaido ReShogunate. Incorporated targets are valid, but additional fees may apply.</>]==]
 
-	table = objects [ 0x00000107 ]
+	table = objects [ 0x00000102 ]
 	table [ "title" ] = [==[PAMPHLET ARTIFACT, DUBLIN NUA]==]
 	table [ "profileAnim" ] = [==[portraits/lady_stealth_face]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1606,7 +1623,7 @@ And so with a little luck, we just might be able to hold out through the winter.
 
 Slán go fóill!</>]==]
 
-	table = objects [ 0x00000108 ]
+	table = objects [ 0x00000103 ]
 	table [ "footerAuthor" ] = [==[Klei]==]
 	table [ "footerIcon" ] = [==[gui/icons/contingency_plan.png]==]
 	table [ "title" ] = [==[DEPROGRAMMING TRANSCRIPT]==]
@@ -1649,7 +1666,7 @@ Subject:  <c:62B3B3>Poor approximation? I'll have you know that that 'poor appro
 
 Now. Let's begin again, shall we? But for real, this time.</>]==]
 
-	table = objects [ 0x00000109 ]
+	table = objects [ 0x00000104 ]
 	table [ "title" ] = [==[2050 AUGMENT GAMES TRANSCRIPT]==]
 	table [ "profileAnim" ] = [==[portraits/rush_face]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1705,7 +1722,7 @@ Now. Let's begin again, shall we? But for real, this time.</>]==]
 
 <c:FF8CFF>ANNOUNCER 1:</> <c:62B3B3>And that wasn't her only event, can we see the 1000 meter dash, too?</>]==]
 
-	table = objects [ 0x0000010A ]
+	table = objects [ 0x00000105 ]
 	table [ "title" ] = [==[INTERCEPTED SUBNET CHAT LOG]==]
 	table [ "profileAnim" ] = [==[portraits/monst3r_face]==]
 	table [ "footerAuthor" ] = [==[Klei]==]
@@ -1740,11 +1757,11 @@ This is all standard business practice, why is it so hard for you to understand?
 
 <c:FF8CFF>ShopCat:</> <c:62B3B3>Goodbye, willing human. Maybe you will buy some soft warez at a later time.</>]==]
 
-	table = objects [ 0x0000010B ]
-	table [ 1 ]	= objects [ 0x0000010C ]
-	table [ 2 ]	= objects [ 0x000001B6 ]
+	table = objects [ 0x00000106 ]
+	table [ 1 ]	= objects [ 0x00000107 ]
+	table [ 2 ]	= objects [ 0x000001B1 ]
 
-	table = objects [ 0x0000010C ]
+	table = objects [ 0x00000107 ]
 	table [ "customScriptIndex" ] = [==[post_mid_]==]
 	table [ "currentDay" ] = 15
 	table [ "recent_build_number" ] = [==[BUILD[trunk.282332] LUA[282350] USER[85892043@steam]
@@ -1753,34 +1770,34 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "play_t" ] = 58181470
 	table [ "foundPrisoner" ] = true
 	table [ "previousDay" ] = 14
-	table [ "agency" ] = objects [ 0x0000010D ]
+	table [ "agency" ] = objects [ 0x00000108 ]
 	table [ "hours" ] = 362
 	table [ "monst3rInject" ] = false
-	table [ "campaignEvents" ] = objects [ 0x00000193 ]
+	table [ "campaignEvents" ] = objects [ 0x0000018E ]
 	table [ "agentsFound" ] = 2
-	table [ "difficultyOptions" ] = objects [ 0x00000196 ]
+	table [ "difficultyOptions" ] = objects [ 0x00000191 ]
 	table [ "endlessAlert" ] = true
 	table [ "missionsPlayedThisDay" ] = 0
 	table [ "customScriptIndexDay" ] = 12
 	table [ "missionTotal" ] = 63
-	table [ "missionParams" ] = objects [ 0x000001A2 ]
+	table [ "missionParams" ] = objects [ 0x0000019D ]
 	table [ "creation_time" ] = 1559449330
 	table [ "save_time" ] = 1561602049
-	table [ "missionEvents" ] = objects [ 0x000001A3 ]
+	table [ "missionEvents" ] = objects [ 0x0000019E ]
 	table [ "lastEndlessAlert" ] = false
 	table [ "missionCount" ] = 37
 	table [ "location" ] = 37
 	table [ "version" ] = [==[0.17.18]==]
 	table [ "seed" ] = 3154618240
-	table [ "situations" ] = objects [ 0x000001A5 ]
+	table [ "situations" ] = objects [ 0x000001A0 ]
 	table [ "extendedCampaignHours" ] = 72
 	table [ "campaignDifficulty" ] = 6
 	table [ "incognitaLevel" ] = 12
 
-	table = objects [ 0x0000010D ]
+	table = objects [ 0x00000108 ]
 	table [ "items_earned" ] = 54
 	table [ "security_hacked" ] = 459
-	table [ "upgrades" ] = objects [ 0x0000010E ]
+	table [ "upgrades" ] = objects [ 0x00000109 ]
 	table [ "missions_completed" ] = 36
 	table [ "missions_completed_1" ] = 3
 	table [ "missions_completed_2" ] = 1
@@ -1791,569 +1808,569 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "blocker" ] = false
 	table [ "id" ] = 1
 	table [ "missions_completed_3" ] = 33
-	table [ "unitDefs" ] = objects [ 0x00000116 ]
-	table [ "unitDefsPotential" ] = objects [ 0x00000181 ]
+	table [ "unitDefs" ] = objects [ 0x00000111 ]
+	table [ "unitDefsPotential" ] = objects [ 0x0000017C ]
 	table [ "name" ] = [==[]==]
 	table [ "cpus" ] = 1
-	table [ "abilities" ] = objects [ 0x00000192 ]
+	table [ "abilities" ] = objects [ 0x0000018D ]
 	table [ "extraPrograms" ] = 1
 	table [ "guards_kod" ] = 31
 	table [ "programs_earned" ] = 5
 	table [ "alwaysUnlocked" ] = true
 	table [ "cash" ] = 29337
 
-	table = objects [ 0x0000010E ]
-	table [ 1 ]	= objects [ 0x0000010F ]
-	table [ 2 ]	= objects [ 0x00000112 ]
-	table [ 3 ]	= objects [ 0x00000113 ]
+	table = objects [ 0x00000109 ]
+	table [ 1 ]	= objects [ 0x0000010A ]
+	table [ 2 ]	= objects [ 0x0000010D ]
+	table [ 3 ]	= objects [ 0x0000010E ]
 
-	table = objects [ 0x0000010F ]
-	table [ "upgradeParams" ] = objects [ 0x00000110 ]
+	table = objects [ 0x0000010A ]
+	table [ "upgradeParams" ] = objects [ 0x0000010B ]
 	table [ "upgradeName" ] = [==[item_prototype_drive]==]
 
-	table = objects [ 0x00000110 ]
-	table [ "traits" ] = objects [ 0x00000111 ]
+	table = objects [ 0x0000010B ]
+	table [ "traits" ] = objects [ 0x0000010C ]
 
-	table = objects [ 0x00000111 ]
+	table = objects [ 0x0000010C ]
 	table [ "icebreak" ] = 0
 
-	table = objects [ 0x00000112 ]
+	table = objects [ 0x0000010D ]
 	table [ "upgradeName" ] = [==[item_portabledrive_3]==]
 
-	table = objects [ 0x00000113 ]
-	table [ "upgradeParams" ] = objects [ 0x00000114 ]
+	table = objects [ 0x0000010E ]
+	table [ "upgradeParams" ] = objects [ 0x0000010F ]
 	table [ "upgradeName" ] = [==[item_tag_pistol]==]
 
-	table = objects [ 0x00000114 ]
-	table [ "traits" ] = objects [ 0x00000115 ]
+	table = objects [ 0x0000010F ]
+	table [ "traits" ] = objects [ 0x00000110 ]
 
-	table = objects [ 0x00000115 ]
+	table = objects [ 0x00000110 ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000116 ]
-	table [ 1 ]	= objects [ 0x00000117 ]
-	table [ 2 ]	= objects [ 0x00000131 ]
-	table [ 3 ]	= objects [ 0x0000014B ]
-	table [ 4 ]	= objects [ 0x00000165 ]
+	table = objects [ 0x00000111 ]
+	table [ 1 ]	= objects [ 0x00000112 ]
+	table [ 2 ]	= objects [ 0x0000012C ]
+	table [ 3 ]	= objects [ 0x00000146 ]
+	table [ 4 ]	= objects [ 0x00000160 ]
 
-	table = objects [ 0x00000117 ]
+	table = objects [ 0x00000112 ]
 	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x00000118 ]
+	table [ "upgrades" ] = objects [ 0x00000113 ]
 	table [ "id" ] = 5
-	table [ "skills" ] = objects [ 0x0000012C ]
+	table [ "skills" ] = objects [ 0x00000127 ]
 	table [ "deployID" ] = 1
 
-	table = objects [ 0x00000118 ]
-	table [ 1 ]	= objects [ 0x00000119 ]
-	table [ 2 ]	= objects [ 0x0000011C ]
-	table [ 3 ]	= objects [ 0x0000011F ]
-	table [ 4 ]	= objects [ 0x00000122 ]
-	table [ 5 ]	= objects [ 0x00000125 ]
-	table [ 6 ]	= objects [ 0x00000126 ]
-	table [ 7 ]	= objects [ 0x00000127 ]
-	table [ 8 ]	= objects [ 0x00000128 ]
-	table [ 9 ]	= objects [ 0x00000129 ]
-	table [ 10 ]	= objects [ 0x0000012A ]
+	table = objects [ 0x00000113 ]
+	table [ 1 ]	= objects [ 0x00000114 ]
+	table [ 2 ]	= objects [ 0x00000117 ]
+	table [ 3 ]	= objects [ 0x0000011A ]
+	table [ 4 ]	= objects [ 0x0000011D ]
+	table [ 5 ]	= objects [ 0x00000120 ]
+	table [ 6 ]	= objects [ 0x00000121 ]
+	table [ 7 ]	= objects [ 0x00000122 ]
+	table [ 8 ]	= objects [ 0x00000123 ]
+	table [ 9 ]	= objects [ 0x00000124 ]
+	table [ 10 ]	= objects [ 0x00000125 ]
 	table [ 11 ]	= [==[augmentUpgradeSlot]==]
 	table [ 12 ]	= [==[augmentUpgradeSlot]==]
-	table [ 13 ]	= objects [ 0x0000012B ]
+	table [ 13 ]	= objects [ 0x00000126 ]
 
-	table = objects [ 0x00000119 ]
-	table [ "upgradeParams" ] = objects [ 0x0000011A ]
+	table = objects [ 0x00000114 ]
+	table [ "upgradeParams" ] = objects [ 0x00000115 ]
 	table [ "upgradeName" ] = [==[augment_international_v1]==]
 
-	table = objects [ 0x0000011A ]
-	table [ "traits" ] = objects [ 0x0000011B ]
+	table = objects [ 0x00000115 ]
+	table [ "traits" ] = objects [ 0x00000116 ]
 
-	table = objects [ 0x0000011B ]
+	table = objects [ 0x00000116 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000011C ]
-	table [ "upgradeParams" ] = objects [ 0x0000011D ]
+	table = objects [ 0x00000117 ]
+	table [ "upgradeParams" ] = objects [ 0x00000118 ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x0000011D ]
-	table [ "traits" ] = objects [ 0x0000011E ]
+	table = objects [ 0x00000118 ]
+	table [ "traits" ] = objects [ 0x00000119 ]
 
-	table = objects [ 0x0000011E ]
+	table = objects [ 0x00000119 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000011F ]
-	table [ "upgradeParams" ] = objects [ 0x00000120 ]
+	table = objects [ 0x0000011A ]
+	table [ "upgradeParams" ] = objects [ 0x0000011B ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x00000120 ]
-	table [ "traits" ] = objects [ 0x00000121 ]
+	table = objects [ 0x0000011B ]
+	table [ "traits" ] = objects [ 0x0000011C ]
 
-	table = objects [ 0x00000121 ]
+	table = objects [ 0x0000011C ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000122 ]
-	table [ "upgradeParams" ] = objects [ 0x00000123 ]
+	table = objects [ 0x0000011D ]
+	table [ "upgradeParams" ] = objects [ 0x0000011E ]
 	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
 
-	table = objects [ 0x00000123 ]
-	table [ "traits" ] = objects [ 0x00000124 ]
+	table = objects [ 0x0000011E ]
+	table [ "traits" ] = objects [ 0x0000011F ]
 
-	table = objects [ 0x00000124 ]
+	table = objects [ 0x0000011F ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000125 ]
+	table = objects [ 0x00000120 ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+
+	table = objects [ 0x00000121 ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+
+	table = objects [ 0x00000122 ]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+
+	table = objects [ 0x00000123 ]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+
+	table = objects [ 0x00000124 ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+
+	table = objects [ 0x00000125 ]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
 	table = objects [ 0x00000126 ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
-
-	table = objects [ 0x00000127 ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
-
-	table = objects [ 0x00000128 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
-
-	table = objects [ 0x00000129 ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
-
-	table = objects [ 0x0000012A ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
-
-	table = objects [ 0x0000012B ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x0000012C ]
-	table [ 1 ]	= objects [ 0x0000012D ]
-	table [ 2 ]	= objects [ 0x0000012E ]
-	table [ 3 ]	= objects [ 0x0000012F ]
-	table [ 4 ]	= objects [ 0x00000130 ]
+	table = objects [ 0x00000127 ]
+	table [ 1 ]	= objects [ 0x00000128 ]
+	table [ 2 ]	= objects [ 0x00000129 ]
+	table [ 3 ]	= objects [ 0x0000012A ]
+	table [ 4 ]	= objects [ 0x0000012B ]
 
-	table = objects [ 0x0000012D ]
+	table = objects [ 0x00000128 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x0000012E ]
+	table = objects [ 0x00000129 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x0000012F ]
+	table = objects [ 0x0000012A ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000130 ]
+	table = objects [ 0x0000012B ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x00000131 ]
+	table = objects [ 0x0000012C ]
 	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x00000132 ]
+	table [ "upgrades" ] = objects [ 0x0000012D ]
 	table [ "id" ] = 4
-	table [ "skills" ] = objects [ 0x00000146 ]
+	table [ "skills" ] = objects [ 0x00000141 ]
 	table [ "deployID" ] = 1
 
-	table = objects [ 0x00000132 ]
-	table [ 1 ]	= objects [ 0x00000133 ]
-	table [ 2 ]	= objects [ 0x00000136 ]
-	table [ 3 ]	= objects [ 0x00000139 ]
-	table [ 4 ]	= objects [ 0x0000013C ]
-	table [ 5 ]	= objects [ 0x0000013F ]
-	table [ 6 ]	= objects [ 0x00000140 ]
-	table [ 7 ]	= objects [ 0x00000141 ]
-	table [ 8 ]	= objects [ 0x00000142 ]
-	table [ 9 ]	= objects [ 0x00000143 ]
-	table [ 10 ]	= objects [ 0x00000144 ]
+	table = objects [ 0x0000012D ]
+	table [ 1 ]	= objects [ 0x0000012E ]
+	table [ 2 ]	= objects [ 0x00000131 ]
+	table [ 3 ]	= objects [ 0x00000134 ]
+	table [ 4 ]	= objects [ 0x00000137 ]
+	table [ 5 ]	= objects [ 0x0000013A ]
+	table [ 6 ]	= objects [ 0x0000013B ]
+	table [ 7 ]	= objects [ 0x0000013C ]
+	table [ 8 ]	= objects [ 0x0000013D ]
+	table [ 9 ]	= objects [ 0x0000013E ]
+	table [ 10 ]	= objects [ 0x0000013F ]
 	table [ 11 ]	= [==[augmentUpgradeSlot]==]
 	table [ 12 ]	= [==[augmentUpgradeSlot]==]
-	table [ 13 ]	= objects [ 0x00000145 ]
+	table [ 13 ]	= objects [ 0x00000140 ]
 
-	table = objects [ 0x00000133 ]
-	table [ "upgradeParams" ] = objects [ 0x00000134 ]
+	table = objects [ 0x0000012E ]
+	table [ "upgradeParams" ] = objects [ 0x0000012F ]
 	table [ "upgradeName" ] = [==[augment_banks]==]
 
-	table = objects [ 0x00000134 ]
-	table [ "traits" ] = objects [ 0x00000135 ]
+	table = objects [ 0x0000012F ]
+	table [ "traits" ] = objects [ 0x00000130 ]
 
-	table = objects [ 0x00000135 ]
+	table = objects [ 0x00000130 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000136 ]
-	table [ "upgradeParams" ] = objects [ 0x00000137 ]
+	table = objects [ 0x00000131 ]
+	table [ "upgradeParams" ] = objects [ 0x00000132 ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x00000137 ]
-	table [ "traits" ] = objects [ 0x00000138 ]
+	table = objects [ 0x00000132 ]
+	table [ "traits" ] = objects [ 0x00000133 ]
 
-	table = objects [ 0x00000138 ]
+	table = objects [ 0x00000133 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000139 ]
-	table [ "upgradeParams" ] = objects [ 0x0000013A ]
+	table = objects [ 0x00000134 ]
+	table [ "upgradeParams" ] = objects [ 0x00000135 ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x0000013A ]
-	table [ "traits" ] = objects [ 0x0000013B ]
+	table = objects [ 0x00000135 ]
+	table [ "traits" ] = objects [ 0x00000136 ]
 
-	table = objects [ 0x0000013B ]
+	table = objects [ 0x00000136 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000013C ]
-	table [ "upgradeParams" ] = objects [ 0x0000013D ]
+	table = objects [ 0x00000137 ]
+	table [ "upgradeParams" ] = objects [ 0x00000138 ]
 	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
 
-	table = objects [ 0x0000013D ]
-	table [ "traits" ] = objects [ 0x0000013E ]
+	table = objects [ 0x00000138 ]
+	table [ "traits" ] = objects [ 0x00000139 ]
 
-	table = objects [ 0x0000013E ]
+	table = objects [ 0x00000139 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
+
+	table = objects [ 0x0000013A ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+
+	table = objects [ 0x0000013B ]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+
+	table = objects [ 0x0000013C ]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+
+	table = objects [ 0x0000013D ]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+
+	table = objects [ 0x0000013E ]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
 	table = objects [ 0x0000013F ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x00000140 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
 
 	table = objects [ 0x00000141 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ 1 ]	= objects [ 0x00000142 ]
+	table [ 2 ]	= objects [ 0x00000143 ]
+	table [ 3 ]	= objects [ 0x00000144 ]
+	table [ 4 ]	= objects [ 0x00000145 ]
 
 	table = objects [ 0x00000142 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
 
 	table = objects [ 0x00000143 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[hacking]==]
 
 	table = objects [ 0x00000144 ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[inventory]==]
 
 	table = objects [ 0x00000145 ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x00000146 ]
-	table [ 1 ]	= objects [ 0x00000147 ]
-	table [ 2 ]	= objects [ 0x00000148 ]
-	table [ 3 ]	= objects [ 0x00000149 ]
-	table [ 4 ]	= objects [ 0x0000014A ]
+	table [ "template" ] = [==[derek]==]
+	table [ "upgrades" ] = objects [ 0x00000147 ]
+	table [ "id" ] = 1001
+	table [ "skills" ] = objects [ 0x0000015B ]
+	table [ "deployID" ] = 1
 
 	table = objects [ 0x00000147 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x00000148 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x00000149 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x0000014A ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x0000014B ]
-	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x0000014C ]
-	table [ "id" ] = 1001
-	table [ "skills" ] = objects [ 0x00000160 ]
-	table [ "deployID" ] = 1
-
-	table = objects [ 0x0000014C ]
-	table [ 1 ]	= objects [ 0x0000014D ]
-	table [ 2 ]	= objects [ 0x00000150 ]
-	table [ 3 ]	= objects [ 0x00000153 ]
-	table [ 4 ]	= objects [ 0x00000156 ]
-	table [ 5 ]	= objects [ 0x00000159 ]
-	table [ 6 ]	= objects [ 0x0000015A ]
-	table [ 7 ]	= objects [ 0x0000015B ]
-	table [ 8 ]	= objects [ 0x0000015C ]
-	table [ 9 ]	= objects [ 0x0000015D ]
+	table [ 1 ]	= objects [ 0x00000148 ]
+	table [ 2 ]	= objects [ 0x0000014B ]
+	table [ 3 ]	= objects [ 0x0000014E ]
+	table [ 4 ]	= objects [ 0x00000151 ]
+	table [ 5 ]	= objects [ 0x00000154 ]
+	table [ 6 ]	= objects [ 0x00000155 ]
+	table [ 7 ]	= objects [ 0x00000156 ]
+	table [ 8 ]	= objects [ 0x00000157 ]
+	table [ 9 ]	= objects [ 0x00000158 ]
 	table [ 10 ]	= [==[augmentUpgradeSlot]==]
 	table [ 11 ]	= [==[augmentUpgradeSlot]==]
-	table [ 12 ]	= objects [ 0x0000015E ]
-	table [ 13 ]	= objects [ 0x0000015F ]
+	table [ 12 ]	= objects [ 0x00000159 ]
+	table [ 13 ]	= objects [ 0x0000015A ]
 
-	table = objects [ 0x0000014D ]
-	table [ "upgradeParams" ] = objects [ 0x0000014E ]
+	table = objects [ 0x00000148 ]
+	table [ "upgradeParams" ] = objects [ 0x00000149 ]
 	table [ "upgradeName" ] = [==[augment_particle_envelope]==]
 
-	table = objects [ 0x0000014E ]
-	table [ "traits" ] = objects [ 0x0000014F ]
+	table = objects [ 0x00000149 ]
+	table [ "traits" ] = objects [ 0x0000014A ]
 
-	table = objects [ 0x0000014F ]
+	table = objects [ 0x0000014A ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000150 ]
-	table [ "upgradeParams" ] = objects [ 0x00000151 ]
+	table = objects [ 0x0000014B ]
+	table [ "upgradeParams" ] = objects [ 0x0000014C ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x00000151 ]
-	table [ "traits" ] = objects [ 0x00000152 ]
+	table = objects [ 0x0000014C ]
+	table [ "traits" ] = objects [ 0x0000014D ]
 
-	table = objects [ 0x00000152 ]
+	table = objects [ 0x0000014D ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000153 ]
-	table [ "upgradeParams" ] = objects [ 0x00000154 ]
+	table = objects [ 0x0000014E ]
+	table [ "upgradeParams" ] = objects [ 0x0000014F ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x00000154 ]
-	table [ "traits" ] = objects [ 0x00000155 ]
+	table = objects [ 0x0000014F ]
+	table [ "traits" ] = objects [ 0x00000150 ]
 
-	table = objects [ 0x00000155 ]
+	table = objects [ 0x00000150 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000156 ]
-	table [ "upgradeParams" ] = objects [ 0x00000157 ]
+	table = objects [ 0x00000151 ]
+	table [ "upgradeParams" ] = objects [ 0x00000152 ]
 	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
 
-	table = objects [ 0x00000157 ]
-	table [ "traits" ] = objects [ 0x00000158 ]
+	table = objects [ 0x00000152 ]
+	table [ "traits" ] = objects [ 0x00000153 ]
 
-	table = objects [ 0x00000158 ]
+	table = objects [ 0x00000153 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000159 ]
+	table = objects [ 0x00000154 ]
 	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
-	table = objects [ 0x0000015A ]
+	table = objects [ 0x00000155 ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
-	table = objects [ 0x0000015B ]
+	table = objects [ 0x00000156 ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
-	table = objects [ 0x0000015C ]
+	table = objects [ 0x00000157 ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
-	table = objects [ 0x0000015D ]
+	table = objects [ 0x00000158 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
-	table = objects [ 0x0000015E ]
+	table = objects [ 0x00000159 ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x0000015F ]
+	table = objects [ 0x0000015A ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x00000160 ]
-	table [ 1 ]	= objects [ 0x00000161 ]
-	table [ 2 ]	= objects [ 0x00000162 ]
-	table [ 3 ]	= objects [ 0x00000163 ]
-	table [ 4 ]	= objects [ 0x00000164 ]
+	table = objects [ 0x0000015B ]
+	table [ 1 ]	= objects [ 0x0000015C ]
+	table [ 2 ]	= objects [ 0x0000015D ]
+	table [ 3 ]	= objects [ 0x0000015E ]
+	table [ 4 ]	= objects [ 0x0000015F ]
 
-	table = objects [ 0x00000161 ]
+	table = objects [ 0x0000015C ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000162 ]
+	table = objects [ 0x0000015D ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x00000163 ]
+	table = objects [ 0x0000015E ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000164 ]
+	table = objects [ 0x0000015F ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x00000165 ]
+	table = objects [ 0x00000160 ]
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x00000166 ]
+	table [ "upgrades" ] = objects [ 0x00000161 ]
 	table [ "id" ] = 6
-	table [ "skills" ] = objects [ 0x0000017C ]
+	table [ "skills" ] = objects [ 0x00000177 ]
 	table [ "deployID" ] = 1
 
-	table = objects [ 0x00000166 ]
-	table [ 1 ]	= objects [ 0x00000167 ]
-	table [ 2 ]	= objects [ 0x0000016A ]
-	table [ 3 ]	= objects [ 0x0000016D ]
-	table [ 4 ]	= objects [ 0x00000170 ]
-	table [ 5 ]	= objects [ 0x00000173 ]
-	table [ 6 ]	= objects [ 0x00000176 ]
-	table [ 7 ]	= objects [ 0x00000177 ]
-	table [ 8 ]	= objects [ 0x00000178 ]
+	table = objects [ 0x00000161 ]
+	table [ 1 ]	= objects [ 0x00000162 ]
+	table [ 2 ]	= objects [ 0x00000165 ]
+	table [ 3 ]	= objects [ 0x00000168 ]
+	table [ 4 ]	= objects [ 0x0000016B ]
+	table [ 5 ]	= objects [ 0x0000016E ]
+	table [ 6 ]	= objects [ 0x00000171 ]
+	table [ 7 ]	= objects [ 0x00000172 ]
+	table [ 8 ]	= objects [ 0x00000173 ]
 	table [ 9 ]	= [==[augmentUpgradeSlot]==]
 	table [ 10 ]	= [==[augmentUpgradeSlot]==]
-	table [ 11 ]	= objects [ 0x00000179 ]
-	table [ 12 ]	= objects [ 0x0000017A ]
-	table [ 13 ]	= objects [ 0x0000017B ]
+	table [ 11 ]	= objects [ 0x00000174 ]
+	table [ 12 ]	= objects [ 0x00000175 ]
+	table [ 13 ]	= objects [ 0x00000176 ]
 
-	table = objects [ 0x00000167 ]
-	table [ "upgradeParams" ] = objects [ 0x00000168 ]
+	table = objects [ 0x00000162 ]
+	table [ "upgradeParams" ] = objects [ 0x00000163 ]
 	table [ "upgradeName" ] = [==[augment_nika]==]
 
-	table = objects [ 0x00000168 ]
-	table [ "traits" ] = objects [ 0x00000169 ]
+	table = objects [ 0x00000163 ]
+	table [ "traits" ] = objects [ 0x00000164 ]
 
-	table = objects [ 0x00000169 ]
+	table = objects [ 0x00000164 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000016A ]
-	table [ "upgradeParams" ] = objects [ 0x0000016B ]
+	table = objects [ 0x00000165 ]
+	table [ "upgradeParams" ] = objects [ 0x00000166 ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x0000016B ]
-	table [ "traits" ] = objects [ 0x0000016C ]
+	table = objects [ 0x00000166 ]
+	table [ "traits" ] = objects [ 0x00000167 ]
 
-	table = objects [ 0x0000016C ]
+	table = objects [ 0x00000167 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000016D ]
-	table [ "upgradeParams" ] = objects [ 0x0000016E ]
+	table = objects [ 0x00000168 ]
+	table [ "upgradeParams" ] = objects [ 0x00000169 ]
 	table [ "upgradeName" ] = [==[augment_anatomy_analysis]==]
 
-	table = objects [ 0x0000016E ]
-	table [ "traits" ] = objects [ 0x0000016F ]
+	table = objects [ 0x00000169 ]
+	table [ "traits" ] = objects [ 0x0000016A ]
 
-	table = objects [ 0x0000016F ]
+	table = objects [ 0x0000016A ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000170 ]
-	table [ "upgradeParams" ] = objects [ 0x00000171 ]
+	table = objects [ 0x0000016B ]
+	table [ "upgradeParams" ] = objects [ 0x0000016C ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x00000171 ]
-	table [ "traits" ] = objects [ 0x00000172 ]
+	table = objects [ 0x0000016C ]
+	table [ "traits" ] = objects [ 0x0000016D ]
 
-	table = objects [ 0x00000172 ]
+	table = objects [ 0x0000016D ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000173 ]
-	table [ "upgradeParams" ] = objects [ 0x00000174 ]
+	table = objects [ 0x0000016E ]
+	table [ "upgradeParams" ] = objects [ 0x0000016F ]
 	table [ "upgradeName" ] = [==[item_tag_pistol]==]
 
+	table = objects [ 0x0000016F ]
+	table [ "traits" ] = objects [ 0x00000170 ]
+
+	table = objects [ 0x00000170 ]
+	table [ "autoEquip" ] = true
+
+	table = objects [ 0x00000171 ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+
+	table = objects [ 0x00000172 ]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+
+	table = objects [ 0x00000173 ]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+
 	table = objects [ 0x00000174 ]
-	table [ "traits" ] = objects [ 0x00000175 ]
+	table [ "upgradeName" ] = [==[item_transport_beacon]==]
 
 	table = objects [ 0x00000175 ]
-	table [ "autoEquip" ] = true
+	table [ "upgradeName" ] = [==[item_laptop_3]==]
 
 	table = objects [ 0x00000176 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x00000177 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ 1 ]	= objects [ 0x00000178 ]
+	table [ 2 ]	= objects [ 0x00000179 ]
+	table [ 3 ]	= objects [ 0x0000017A ]
+	table [ 4 ]	= objects [ 0x0000017B ]
 
 	table = objects [ 0x00000178 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
-
-	table = objects [ 0x00000179 ]
-	table [ "upgradeName" ] = [==[item_transport_beacon]==]
-
-	table = objects [ 0x0000017A ]
-	table [ "upgradeName" ] = [==[item_laptop_3]==]
-
-	table = objects [ 0x0000017B ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
-
-	table = objects [ 0x0000017C ]
-	table [ 1 ]	= objects [ 0x0000017D ]
-	table [ 2 ]	= objects [ 0x0000017E ]
-	table [ 3 ]	= objects [ 0x0000017F ]
-	table [ 4 ]	= objects [ 0x00000180 ]
-
-	table = objects [ 0x0000017D ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x0000017E ]
+	table = objects [ 0x00000179 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x0000017F ]
+	table = objects [ 0x0000017A ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000180 ]
+	table = objects [ 0x0000017B ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x00000181 ]
-	table [ 1 ]	= objects [ 0x00000182 ]
-	table [ 2 ]	= objects [ 0x00000184 ]
-	table [ 3 ]	= objects [ 0x00000186 ]
-	table [ 4 ]	= objects [ 0x00000188 ]
-	table [ 5 ]	= objects [ 0x0000018A ]
-	table [ 6 ]	= objects [ 0x0000018C ]
-	table [ 7 ]	= objects [ 0x0000018E ]
-	table [ 8 ]	= objects [ 0x00000190 ]
+	table = objects [ 0x0000017C ]
+	table [ 1 ]	= objects [ 0x0000017D ]
+	table [ 2 ]	= objects [ 0x0000017F ]
+	table [ 3 ]	= objects [ 0x00000181 ]
+	table [ 4 ]	= objects [ 0x00000183 ]
+	table [ 5 ]	= objects [ 0x00000185 ]
+	table [ 6 ]	= objects [ 0x00000187 ]
+	table [ 7 ]	= objects [ 0x00000189 ]
+	table [ 8 ]	= objects [ 0x0000018B ]
 
-	table = objects [ 0x00000182 ]
+	table = objects [ 0x0000017D ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x00000183 ]
+	table [ "upgrades" ] = objects [ 0x0000017E ]
 
-	table = objects [ 0x00000183 ]
+	table = objects [ 0x0000017E ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x00000184 ]
+	table = objects [ 0x0000017F ]
 	table [ "id" ] = 2
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x00000185 ]
+	table [ "upgrades" ] = objects [ 0x00000180 ]
 
-	table = objects [ 0x00000185 ]
+	table = objects [ 0x00000180 ]
 	table [ 1 ]	= [==[augment_shalem]==]
 
-	table = objects [ 0x00000186 ]
+	table = objects [ 0x00000181 ]
 	table [ "id" ] = 3
 	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x00000187 ]
+	table [ "upgrades" ] = objects [ 0x00000182 ]
 
-	table = objects [ 0x00000187 ]
+	table = objects [ 0x00000182 ]
 	table [ 1 ]	= [==[augment_tony]==]
 
-	table = objects [ 0x00000188 ]
+	table = objects [ 0x00000183 ]
 	table [ "id" ] = 8
 	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x00000189 ]
+	table [ "upgrades" ] = objects [ 0x00000184 ]
 
-	table = objects [ 0x00000189 ]
+	table = objects [ 0x00000184 ]
 	table [ 1 ]	= [==[augment_prism_2]==]
 
-	table = objects [ 0x0000018A ]
+	table = objects [ 0x00000185 ]
 	table [ "id" ] = 7
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x0000018B ]
+	table [ "upgrades" ] = objects [ 0x00000186 ]
 
-	table = objects [ 0x0000018B ]
+	table = objects [ 0x00000186 ]
 	table [ 1 ]	= [==[augment_sharp_1]==]
 
-	table = objects [ 0x0000018C ]
+	table = objects [ 0x00000187 ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x0000018D ]
+	table [ "upgrades" ] = objects [ 0x00000188 ]
 
-	table = objects [ 0x0000018D ]
+	table = objects [ 0x00000188 ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x0000018E ]
+	table = objects [ 0x00000189 ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x0000018F ]
+	table [ "upgrades" ] = objects [ 0x0000018A ]
 
-	table = objects [ 0x0000018F ]
+	table = objects [ 0x0000018A ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x00000190 ]
+	table = objects [ 0x0000018B ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x00000191 ]
+	table [ "upgrades" ] = objects [ 0x0000018C ]
 
-	table = objects [ 0x00000191 ]
+	table = objects [ 0x0000018C ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x00000192 ]
+	table = objects [ 0x0000018D ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[lockpick_1]==]
 	table [ 3 ]	= [==[bless]==]
@@ -2361,17 +2378,17 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ 5 ]	= [==[pwr_manager]==]
 	table [ 6 ]	= [==[hammer]==]
 
-	table = objects [ 0x00000193 ]
-	table [ 1 ]	= objects [ 0x00000194 ]
+	table = objects [ 0x0000018E ]
+	table [ 1 ]	= objects [ 0x0000018F ]
 
-	table = objects [ 0x00000194 ]
+	table = objects [ 0x0000018F ]
 	table [ "eventType" ] = 1
-	table [ "data" ] = objects [ 0x00000195 ]
+	table [ "data" ] = objects [ 0x00000190 ]
 
-	table = objects [ 0x00000195 ]
+	table = objects [ 0x00000190 ]
 	table [ "name" ] = [==[mid_1]==]
 
-	table = objects [ 0x00000196 ]
+	table = objects [ 0x00000191 ]
 	table [ "beginnerPatrols" ] = false
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = false
@@ -2388,7 +2405,7 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "startingPower" ] = 5
 	table [ "daemonQuantity" ] = [==[NORMAL]==]
 	table [ "timeAttack" ] = 0
-	table [ "enabledDLC" ] = objects [ 0x00000197 ]
+	table [ "enabledDLC" ] = objects [ 0x00000192 ]
 	table [ "meleeFromFront" ] = false
 	table [ "koDuration" ] = 0
 	table [ "safesPerLevel" ] = 5
@@ -2399,24 +2416,39 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "savescumming" ] = false
 	table [ "firewallMultiplier" ] = 2
 
-	table = objects [ 0x00000197 ]
-	table [ "dlc1" ] = objects [ 0x00000198 ]
+	table = objects [ 0x00000192 ]
+	table [ "dlc1" ] = objects [ 0x00000193 ]
 
-	table = objects [ 0x00000198 ]
+	table = objects [ 0x00000193 ]
 	table [ "enabled" ] = true
 	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 	table [ "name" ] = [==[Contingency Plan]==]
-	table [ "options" ] = objects [ 0x00000199 ]
+	table [ "options" ] = objects [ 0x00000194 ]
+
+	table = objects [ 0x00000194 ]
+	table [ "programs" ] = objects [ 0x00000195 ]
+	table [ "guards" ] = objects [ 0x00000196 ]
+	table [ "extended_endless" ] = objects [ 0x00000197 ]
+	table [ "extended_campaign" ] = objects [ 0x00000198 ]
+	table [ "endless_mid_mission" ] = objects [ 0x00000199 ]
+	table [ "daemons" ] = objects [ 0x0000019A ]
+	table [ "sidemissions" ] = objects [ 0x0000019B ]
+	table [ "agents" ] = objects [ 0x0000019C ]
+
+	table = objects [ 0x00000195 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000196 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000197 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000198 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x00000199 ]
-	table [ "programs" ] = objects [ 0x0000019A ]
-	table [ "guards" ] = objects [ 0x0000019B ]
-	table [ "extended_endless" ] = objects [ 0x0000019C ]
-	table [ "extended_campaign" ] = objects [ 0x0000019D ]
-	table [ "endless_mid_mission" ] = objects [ 0x0000019E ]
-	table [ "daemons" ] = objects [ 0x0000019F ]
-	table [ "sidemissions" ] = objects [ 0x000001A0 ]
-	table [ "agents" ] = objects [ 0x000001A1 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x0000019A ]
 	table [ "enabled" ] = true
@@ -2428,300 +2460,285 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "enabled" ] = true
 
 	table = objects [ 0x0000019D ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000019E ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000019F ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000001A0 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000001A1 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000001A2 ]
 	table [ "newHiSecExitDay" ] = 7
 	table [ "advanced_scanners" ] = true
 	table [ "extended_endless" ] = true
 	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x000001A3 ]
+	table = objects [ 0x0000019E ]
 	table [ "advancedAlarm" ] = true
-	table [ "needPowerCells" ] = objects [ 0x000001A4 ]
+	table [ "needPowerCells" ] = objects [ 0x0000019F ]
 
-	table = objects [ 0x000001A4 ]
+	table = objects [ 0x0000019F ]
 	table [ "type" ] = [==[objective]==]
 	table [ "text" ] = [==[> Find a Power Relay]==]
 	table [ "req" ] = [==[needPowerCells]==]
 
-	table = objects [ 0x000001A5 ]
-	table [ 1 ]	= objects [ 0x000001A6 ]
-	table [ 2 ]	= objects [ 0x000001A7 ]
-	table [ 3 ]	= objects [ 0x000001A8 ]
-	table [ 4 ]	= objects [ 0x000001A9 ]
-	table [ 5 ]	= objects [ 0x000001AA ]
-	table [ 6 ]	= objects [ 0x000001AB ]
-	table [ 7 ]	= objects [ 0x000001AC ]
-	table [ 8 ]	= objects [ 0x000001AD ]
-	table [ 9 ]	= objects [ 0x000001AE ]
-	table [ 10 ]	= objects [ 0x000001AF ]
-	table [ 11 ]	= objects [ 0x000001B0 ]
-	table [ 12 ]	= objects [ 0x000001B1 ]
-	table [ 13 ]	= objects [ 0x000001B2 ]
-	table [ 14 ]	= objects [ 0x000001B3 ]
-	table [ 15 ]	= objects [ 0x000001B4 ]
-	table [ 16 ]	= objects [ 0x000001B5 ]
+	table = objects [ 0x000001A0 ]
+	table [ 1 ]	= objects [ 0x000001A1 ]
+	table [ 2 ]	= objects [ 0x000001A2 ]
+	table [ 3 ]	= objects [ 0x000001A3 ]
+	table [ 4 ]	= objects [ 0x000001A4 ]
+	table [ 5 ]	= objects [ 0x000001A5 ]
+	table [ 6 ]	= objects [ 0x000001A6 ]
+	table [ 7 ]	= objects [ 0x000001A7 ]
+	table [ 8 ]	= objects [ 0x000001A8 ]
+	table [ 9 ]	= objects [ 0x000001A9 ]
+	table [ 10 ]	= objects [ 0x000001AA ]
+	table [ 11 ]	= objects [ 0x000001AB ]
+	table [ 12 ]	= objects [ 0x000001AC ]
+	table [ 13 ]	= objects [ 0x000001AD ]
+	table [ 14 ]	= objects [ 0x000001AE ]
+	table [ 15 ]	= objects [ 0x000001AF ]
+	table [ 16 ]	= objects [ 0x000001B0 ]
 
-	table = objects [ 0x000001A6 ]
+	table = objects [ 0x000001A1 ]
 	table [ "mapLocation" ] = 52
 	table [ "difficulty" ] = 17
 	table [ "random_idx" ] = 2
 	table [ "name" ] = [==[detention_centre]==]
 
-	table = objects [ 0x000001A7 ]
+	table = objects [ 0x000001A2 ]
 	table [ "difficulty" ] = 17
 	table [ "mapLocation" ] = 14
 	table [ "name" ] = [==[executive_terminals]==]
 	table [ "random_idx" ] = 2
 
-	table = objects [ 0x000001A8 ]
+	table = objects [ 0x000001A3 ]
 	table [ "mapLocation" ] = 4
 	table [ "difficulty" ] = 17
 	table [ "random_idx" ] = 2
 	table [ "name" ] = [==[server_farm]==]
 
-	table = objects [ 0x000001A9 ]
+	table = objects [ 0x000001A4 ]
 	table [ "mapLocation" ] = 23
 	table [ "difficulty" ] = 17
 	table [ "random_idx" ] = 2
 	table [ "name" ] = [==[executive_terminals]==]
 
-	table = objects [ 0x000001AA ]
+	table = objects [ 0x000001A5 ]
 	table [ "mapLocation" ] = 44
 	table [ "name" ] = [==[detention_centre]==]
 	table [ "difficulty" ] = 16
 
-	table = objects [ 0x000001AB ]
+	table = objects [ 0x000001A6 ]
 	table [ "mapLocation" ] = 6
 	table [ "name" ] = [==[vault]==]
 	table [ "difficulty" ] = 17
 
-	table = objects [ 0x000001AC ]
+	table = objects [ 0x000001A7 ]
 	table [ "difficulty" ] = 16
 	table [ "mapLocation" ] = 29
 	table [ "name" ] = [==[ceo_office]==]
 	table [ "random_idx" ] = 1
 
-	table = objects [ 0x000001AD ]
+	table = objects [ 0x000001A8 ]
 	table [ "difficulty" ] = 16
 	table [ "mapLocation" ] = 16
 	table [ "name" ] = [==[vault]==]
 	table [ "random_idx" ] = 2
 
-	table = objects [ 0x000001AE ]
+	table = objects [ 0x000001A9 ]
 	table [ "mapLocation" ] = 8
 	table [ "name" ] = [==[server_farm]==]
 	table [ "difficulty" ] = 16
 
-	table = objects [ 0x000001AF ]
+	table = objects [ 0x000001AA ]
 	table [ "mapLocation" ] = 5
 	table [ "name" ] = [==[cyberlab]==]
 	table [ "difficulty" ] = 17
 
-	table = objects [ 0x000001B0 ]
+	table = objects [ 0x000001AB ]
 	table [ "mapLocation" ] = 45
 	table [ "name" ] = [==[cyberlab]==]
 	table [ "difficulty" ] = 16
 
-	table = objects [ 0x000001B1 ]
+	table = objects [ 0x000001AC ]
 	table [ "difficulty" ] = 16
 	table [ "name" ] = [==[ceo_office]==]
 	table [ "mapLocation" ] = 40
 
-	table = objects [ 0x000001B2 ]
+	table = objects [ 0x000001AD ]
 	table [ "mapLocation" ] = 39
 	table [ "name" ] = [==[nanofab]==]
 	table [ "difficulty" ] = 17
 
-	table = objects [ 0x000001B3 ]
+	table = objects [ 0x000001AE ]
 	table [ "mapLocation" ] = 36
 	table [ "name" ] = [==[nanofab]==]
 	table [ "difficulty" ] = 16
 
-	table = objects [ 0x000001B4 ]
+	table = objects [ 0x000001AF ]
 	table [ "difficulty" ] = 16
 	table [ "mapLocation" ] = 10
 	table [ "name" ] = [==[security]==]
 	table [ "new" ] = true
 
-	table = objects [ 0x000001B5 ]
+	table = objects [ 0x000001B0 ]
 	table [ "difficulty" ] = 16
 	table [ "mapLocation" ] = 35
 	table [ "name" ] = [==[security]==]
 	table [ "new" ] = true
 
-	table = objects [ 0x000001B6 ]
+	table = objects [ 0x000001B1 ]
 	table [ "currentDay" ] = 0
 	table [ "recent_build_number" ] = [==[BUILD[trunk.282332] LUA[282350] USER[85892043@steam]
 OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "miniserversSeen" ] = 0
 	table [ "play_t" ] = 0
 	table [ "previousDay" ] = -1
-	table [ "agency" ] = objects [ 0x000001B7 ]
+	table [ "agency" ] = objects [ 0x000001B2 ]
 	table [ "hours" ] = 0
-	table [ "difficultyOptions" ] = objects [ 0x000001D3 ]
+	table [ "difficultyOptions" ] = objects [ 0x000001CE ]
 	table [ "missionCount" ] = 0
-	table [ "missionParams" ] = objects [ 0x000001DF ]
-	table [ "campaignEvents" ] = objects [ 0x000001E0 ]
+	table [ "missionParams" ] = objects [ 0x000001DA ]
+	table [ "campaignEvents" ] = objects [ 0x000001DB ]
 	table [ "save_time" ] = 1561198526
-	table [ "missionEvents" ] = objects [ 0x00000200 ]
+	table [ "missionEvents" ] = objects [ 0x000001FB ]
 	table [ "creation_time" ] = 1561198526
 	table [ "seed" ] = 2971242240
 	table [ "campaignDifficulty" ] = 3
 	table [ "version" ] = [==[0.17.18]==]
 	table [ "missionsPlayedThisDay" ] = 0
 	table [ "location" ] = 23
-	table [ "situations" ] = objects [ 0x00000201 ]
+	table [ "situations" ] = objects [ 0x000001FC ]
 	table [ "missionTotal" ] = 1
 	table [ "incognitaLevel" ] = 0
 
-	table = objects [ 0x000001B7 ]
+	table = objects [ 0x000001B2 ]
 	table [ "nextID" ] = 100
-	table [ "unitDefs" ] = objects [ 0x000001B8 ]
+	table [ "unitDefs" ] = objects [ 0x000001B3 ]
 	table [ "blocker" ] = false
 	table [ "id" ] = 1
-	table [ "unitDefsPotential" ] = objects [ 0x000001BD ]
+	table [ "unitDefsPotential" ] = objects [ 0x000001B8 ]
 	table [ "cpus" ] = 10
 	table [ "name" ] = [==[]==]
 	table [ "alwaysUnlocked" ] = true
-	table [ "abilities" ] = objects [ 0x000001D2 ]
+	table [ "abilities" ] = objects [ 0x000001CD ]
 	table [ "startLocation" ] = 23
 	table [ "cash" ] = 500
 
-	table = objects [ 0x000001B8 ]
-	table [ 1 ]	= objects [ 0x000001B9 ]
-	table [ 2 ]	= objects [ 0x000001BB ]
+	table = objects [ 0x000001B3 ]
+	table [ 1 ]	= objects [ 0x000001B4 ]
+	table [ 2 ]	= objects [ 0x000001B6 ]
 
-	table = objects [ 0x000001B9 ]
+	table = objects [ 0x000001B4 ]
 	table [ "id" ] = 5
 	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x000001BA ]
+	table [ "upgrades" ] = objects [ 0x000001B5 ]
 
-	table = objects [ 0x000001BA ]
+	table = objects [ 0x000001B5 ]
 	table [ 1 ]	= [==[augment_international_v1]==]
 	table [ 2 ]	= [==[item_tazer]==]
 
-	table = objects [ 0x000001BB ]
+	table = objects [ 0x000001B6 ]
 	table [ "id" ] = 3
 	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x000001BC ]
+	table [ "upgrades" ] = objects [ 0x000001B7 ]
 
-	table = objects [ 0x000001BC ]
+	table = objects [ 0x000001B7 ]
 	table [ 1 ]	= [==[augment_tony]==]
 	table [ 2 ]	= [==[item_tazer]==]
 	table [ 3 ]	= [==[item_shocktrap_tony]==]
 
-	table = objects [ 0x000001BD ]
-	table [ 1 ]	= objects [ 0x000001BE ]
-	table [ 2 ]	= objects [ 0x000001C0 ]
-	table [ 3 ]	= objects [ 0x000001C2 ]
-	table [ 4 ]	= objects [ 0x000001C4 ]
-	table [ 5 ]	= objects [ 0x000001C6 ]
-	table [ 6 ]	= objects [ 0x000001C8 ]
-	table [ 7 ]	= objects [ 0x000001CA ]
-	table [ 8 ]	= objects [ 0x000001CC ]
-	table [ 9 ]	= objects [ 0x000001CE ]
-	table [ 10 ]	= objects [ 0x000001D0 ]
+	table = objects [ 0x000001B8 ]
+	table [ 1 ]	= objects [ 0x000001B9 ]
+	table [ 2 ]	= objects [ 0x000001BB ]
+	table [ 3 ]	= objects [ 0x000001BD ]
+	table [ 4 ]	= objects [ 0x000001BF ]
+	table [ 5 ]	= objects [ 0x000001C1 ]
+	table [ 6 ]	= objects [ 0x000001C3 ]
+	table [ 7 ]	= objects [ 0x000001C5 ]
+	table [ 8 ]	= objects [ 0x000001C7 ]
+	table [ 9 ]	= objects [ 0x000001C9 ]
+	table [ 10 ]	= objects [ 0x000001CB ]
 
-	table = objects [ 0x000001BE ]
+	table = objects [ 0x000001B9 ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x000001BF ]
+	table [ "upgrades" ] = objects [ 0x000001BA ]
 
-	table = objects [ 0x000001BF ]
+	table = objects [ 0x000001BA ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x000001C0 ]
+	table = objects [ 0x000001BB ]
 	table [ "id" ] = 2
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x000001C1 ]
+	table [ "upgrades" ] = objects [ 0x000001BC ]
 
-	table = objects [ 0x000001C1 ]
+	table = objects [ 0x000001BC ]
 	table [ 1 ]	= [==[augment_shalem]==]
 
-	table = objects [ 0x000001C2 ]
+	table = objects [ 0x000001BD ]
 	table [ "id" ] = 4
 	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x000001C3 ]
+	table [ "upgrades" ] = objects [ 0x000001BE ]
 
-	table = objects [ 0x000001C3 ]
+	table = objects [ 0x000001BE ]
 	table [ 1 ]	= [==[augment_banks]==]
 
-	table = objects [ 0x000001C4 ]
+	table = objects [ 0x000001BF ]
 	table [ "id" ] = 6
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x000001C5 ]
+	table [ "upgrades" ] = objects [ 0x000001C0 ]
 
-	table = objects [ 0x000001C5 ]
+	table = objects [ 0x000001C0 ]
 	table [ 1 ]	= [==[augment_nika]==]
 
-	table = objects [ 0x000001C6 ]
+	table = objects [ 0x000001C1 ]
 	table [ "id" ] = 8
 	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x000001C7 ]
+	table [ "upgrades" ] = objects [ 0x000001C2 ]
 
-	table = objects [ 0x000001C7 ]
+	table = objects [ 0x000001C2 ]
 	table [ 1 ]	= [==[augment_prism_2]==]
 
-	table = objects [ 0x000001C8 ]
+	table = objects [ 0x000001C3 ]
 	table [ "id" ] = 7
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x000001C9 ]
+	table [ "upgrades" ] = objects [ 0x000001C4 ]
 
-	table = objects [ 0x000001C9 ]
+	table = objects [ 0x000001C4 ]
 	table [ 1 ]	= [==[augment_sharp_1]==]
 
-	table = objects [ 0x000001CA ]
+	table = objects [ 0x000001C5 ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x000001CB ]
+	table [ "upgrades" ] = objects [ 0x000001C6 ]
 
-	table = objects [ 0x000001CB ]
+	table = objects [ 0x000001C6 ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x000001CC ]
+	table = objects [ 0x000001C7 ]
 	table [ "id" ] = 1001
 	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x000001CD ]
+	table [ "upgrades" ] = objects [ 0x000001C8 ]
 
-	table = objects [ 0x000001CD ]
+	table = objects [ 0x000001C8 ]
 	table [ 1 ]	= [==[augment_particle_envelope]==]
 	table [ 2 ]	= [==[item_transport_beacon]==]
 
-	table = objects [ 0x000001CE ]
+	table = objects [ 0x000001C9 ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x000001CF ]
+	table [ "upgrades" ] = objects [ 0x000001CA ]
 
-	table = objects [ 0x000001CF ]
+	table = objects [ 0x000001CA ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x000001D0 ]
+	table = objects [ 0x000001CB ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x000001D1 ]
+	table [ "upgrades" ] = objects [ 0x000001CC ]
 
-	table = objects [ 0x000001D1 ]
+	table = objects [ 0x000001CC ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x000001D2 ]
+	table = objects [ 0x000001CD ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[lockpick_1]==]
 
-	table = objects [ 0x000001D3 ]
+	table = objects [ 0x000001CE ]
 	table [ "firewallMultiplier" ] = 2
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = true
@@ -2743,30 +2760,45 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "beginnerPatrols" ] = false
 	table [ "hideMapDestinations" ] = false
 	table [ "meleeFromFront" ] = true
-	table [ "enabledDLC" ] = objects [ 0x000001D4 ]
+	table [ "enabledDLC" ] = objects [ 0x000001CF ]
 	table [ "alarmMultiplier" ] = 1
 	table [ "powerPerLevel" ] = 10
 	table [ "savescumming" ] = false
 	table [ "safesPerLevel" ] = 5
 
-	table = objects [ 0x000001D4 ]
-	table [ "dlc1" ] = objects [ 0x000001D5 ]
+	table = objects [ 0x000001CF ]
+	table [ "dlc1" ] = objects [ 0x000001D0 ]
 
-	table = objects [ 0x000001D5 ]
+	table = objects [ 0x000001D0 ]
 	table [ "enabled" ] = true
 	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 	table [ "name" ] = [==[Contingency Plan]==]
-	table [ "options" ] = objects [ 0x000001D6 ]
+	table [ "options" ] = objects [ 0x000001D1 ]
+
+	table = objects [ 0x000001D1 ]
+	table [ "programs" ] = objects [ 0x000001D2 ]
+	table [ "guards" ] = objects [ 0x000001D3 ]
+	table [ "extended_endless" ] = objects [ 0x000001D4 ]
+	table [ "extended_campaign" ] = objects [ 0x000001D5 ]
+	table [ "endless_mid_mission" ] = objects [ 0x000001D6 ]
+	table [ "daemons" ] = objects [ 0x000001D7 ]
+	table [ "agents" ] = objects [ 0x000001D8 ]
+	table [ "sidemissions" ] = objects [ 0x000001D9 ]
+
+	table = objects [ 0x000001D2 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x000001D3 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x000001D4 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x000001D5 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x000001D6 ]
-	table [ "programs" ] = objects [ 0x000001D7 ]
-	table [ "guards" ] = objects [ 0x000001D8 ]
-	table [ "extended_endless" ] = objects [ 0x000001D9 ]
-	table [ "extended_campaign" ] = objects [ 0x000001DA ]
-	table [ "endless_mid_mission" ] = objects [ 0x000001DB ]
-	table [ "daemons" ] = objects [ 0x000001DC ]
-	table [ "agents" ] = objects [ 0x000001DD ]
-	table [ "sidemissions" ] = objects [ 0x000001DE ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x000001D7 ]
 	table [ "enabled" ] = true
@@ -2778,109 +2810,118 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "enabled" ] = true
 
 	table = objects [ 0x000001DA ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000001DB ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000001DC ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000001DD ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000001DE ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000001DF ]
 	table [ "newHiSecExitDay" ] = 7
 	table [ "extended_endless" ] = true
 	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x000001E0 ]
-	table [ 1 ]	= objects [ 0x000001E1 ]
-	table [ 2 ]	= objects [ 0x000001E3 ]
-	table [ 3 ]	= objects [ 0x000001E7 ]
-	table [ 4 ]	= objects [ 0x000001E8 ]
-	table [ 5 ]	= objects [ 0x000001EA ]
-	table [ 6 ]	= objects [ 0x000001EB ]
-	table [ 7 ]	= objects [ 0x000001ED ]
-	table [ 8 ]	= objects [ 0x000001EE ]
-	table [ 9 ]	= objects [ 0x000001EF ]
-	table [ 10 ]	= objects [ 0x000001F1 ]
-	table [ 11 ]	= objects [ 0x000001F4 ]
-	table [ 12 ]	= objects [ 0x000001F6 ]
-	table [ 13 ]	= objects [ 0x000001F8 ]
-	table [ 14 ]	= objects [ 0x000001FA ]
+	table = objects [ 0x000001DB ]
+	table [ 1 ]	= objects [ 0x000001DC ]
+	table [ 2 ]	= objects [ 0x000001DE ]
+	table [ 3 ]	= objects [ 0x000001E2 ]
+	table [ 4 ]	= objects [ 0x000001E3 ]
+	table [ 5 ]	= objects [ 0x000001E5 ]
+	table [ 6 ]	= objects [ 0x000001E6 ]
+	table [ 7 ]	= objects [ 0x000001E8 ]
+	table [ 8 ]	= objects [ 0x000001E9 ]
+	table [ 9 ]	= objects [ 0x000001EA ]
+	table [ 10 ]	= objects [ 0x000001EC ]
+	table [ 11 ]	= objects [ 0x000001EF ]
+	table [ 12 ]	= objects [ 0x000001F1 ]
+	table [ 13 ]	= objects [ 0x000001F3 ]
+	table [ 14 ]	= objects [ 0x000001F5 ]
 
-	table = objects [ 0x000001E1 ]
-	table [ "data" ] = objects [ 0x000001E2 ]
+	table = objects [ 0x000001DC ]
+	table [ "data" ] = objects [ 0x000001DD ]
 	table [ "eventType" ] = 4
 
-	table = objects [ 0x000001E2 ]
+	table = objects [ 0x000001DD ]
 	table [ "value" ] = true
 	table [ "hours" ] = 288
 	table [ "param" ] = [==[advanced_scanners]==]
 
-	table = objects [ 0x000001E3 ]
+	table = objects [ 0x000001DE ]
 	table [ "hours" ] = 288
-	table [ "data" ] = objects [ 0x000001E4 ]
+	table [ "data" ] = objects [ 0x000001DF ]
 	table [ "eventType" ] = 11
 
-	table = objects [ 0x000001E4 ]
+	table = objects [ 0x000001DF ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x000001E5 ]
+	table [ "groups" ] = objects [ 0x000001E0 ]
 
-	table = objects [ 0x000001E5 ]
-	table [ 1 ]	= objects [ 0x000001E6 ]
+	table = objects [ 0x000001E0 ]
+	table [ 1 ]	= objects [ 0x000001E1 ]
 
-	table = objects [ 0x000001E6 ]
+	table = objects [ 0x000001E1 ]
 	table [ "text" ] = [==[Caution. Omni corp has upgraded all Enforcer units with XL-5 Scan Grenades. As well as scanning, the XL-5 emits a disruptive field that disables cloaking and Hologram Technology.]==]
 	table [ "title" ] = [==[ADVANCED SCAN GRENADES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/advanced_scan_grenades.png]==]
 
-	table = objects [ 0x000001E7 ]
+	table = objects [ 0x000001E2 ]
 	table [ "day" ] = 4
 	table [ "eventType" ] = 13
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000001E8 ]
+	table = objects [ 0x000001E3 ]
 	table [ "eventType" ] = 1
-	table [ "data" ] = objects [ 0x000001E9 ]
+	table [ "data" ] = objects [ 0x000001E4 ]
 
-	table = objects [ 0x000001E9 ]
+	table = objects [ 0x000001E4 ]
 	table [ "name" ] = [==[mid_1]==]
 
-	table = objects [ 0x000001EA ]
+	table = objects [ 0x000001E5 ]
 	table [ "data" ] = 72
 	table [ "eventType" ] = 2
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000001EB ]
-	table [ "data" ] = objects [ 0x000001EC ]
+	table = objects [ 0x000001E6 ]
+	table [ "data" ] = objects [ 0x000001E7 ]
 	table [ "eventType" ] = 3
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000001EC ]
+	table = objects [ 0x000001E7 ]
 	table [ "corp" ] = [==[omni2]==]
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x000001ED ]
+	table = objects [ 0x000001E8 ]
 	table [ "eventType" ] = 6
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x000001EE ]
+	table = objects [ 0x000001E9 ]
 	table [ "data" ] = [==[post_mid_]==]
 	table [ "eventType" ] = 7
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x000001EF ]
-	table [ "data" ] = objects [ 0x000001F0 ]
+	table = objects [ 0x000001EA ]
+	table [ "data" ] = objects [ 0x000001EB ]
 	table [ "eventType" ] = 4
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000001F0 ]
+	table = objects [ 0x000001EB ]
 	table [ "param" ] = [==[advancedAlarm]==]
+
+	table = objects [ 0x000001EC ]
+	table [ "data" ] = objects [ 0x000001ED ]
+	table [ "eventType" ] = 4
+	table [ "mission" ] = [==[mid_2]==]
+
+	table = objects [ 0x000001ED ]
+	table [ "value" ] = objects [ 0x000001EE ]
+	table [ "param" ] = [==[needPowerCells]==]
+
+	table = objects [ 0x000001EE ]
+	table [ "type" ] = [==[objective]==]
+	table [ "text" ] = [==[> Find a Power Relay]==]
+	table [ "req" ] = [==[needPowerCells]==]
+
+	table = objects [ 0x000001EF ]
+	table [ "data" ] = objects [ 0x000001F0 ]
+	table [ "eventType" ] = 4
+	table [ "mission" ] = [==[mid_2]==]
+
+	table = objects [ 0x000001F0 ]
+	table [ "value" ] = 1
+	table [ "agency" ] = true
+	table [ "param" ] = [==[extraPrograms]==]
 
 	table = objects [ 0x000001F1 ]
 	table [ "data" ] = objects [ 0x000001F2 ]
@@ -2888,97 +2929,73 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "mission" ] = [==[mid_2]==]
 
 	table = objects [ 0x000001F2 ]
-	table [ "value" ] = objects [ 0x000001F3 ]
-	table [ "param" ] = [==[needPowerCells]==]
-
-	table = objects [ 0x000001F3 ]
-	table [ "type" ] = [==[objective]==]
-	table [ "text" ] = [==[> Find a Power Relay]==]
-	table [ "req" ] = [==[needPowerCells]==]
-
-	table = objects [ 0x000001F4 ]
-	table [ "data" ] = objects [ 0x000001F5 ]
-	table [ "eventType" ] = 4
-	table [ "mission" ] = [==[mid_2]==]
-
-	table = objects [ 0x000001F5 ]
-	table [ "value" ] = 1
-	table [ "agency" ] = true
-	table [ "param" ] = [==[extraPrograms]==]
-
-	table = objects [ 0x000001F6 ]
-	table [ "data" ] = objects [ 0x000001F7 ]
-	table [ "eventType" ] = 4
-	table [ "mission" ] = [==[mid_2]==]
-
-	table = objects [ 0x000001F7 ]
 	table [ "value" ] = 0
 	table [ "editCampaign" ] = true
 	table [ "param" ] = [==[incognitaLevel]==]
 
-	table = objects [ 0x000001F8 ]
-	table [ "data" ] = objects [ 0x000001F9 ]
+	table = objects [ 0x000001F3 ]
+	table [ "data" ] = objects [ 0x000001F4 ]
 	table [ "eventType" ] = 9
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000001F9 ]
+	table = objects [ 0x000001F4 ]
 	table [ "removeMission" ] = [==[mid_2]==]
 	table [ "agent" ] = 100
 
-	table = objects [ 0x000001FA ]
-	table [ "data" ] = objects [ 0x000001FB ]
+	table = objects [ 0x000001F5 ]
+	table [ "data" ] = objects [ 0x000001F6 ]
 	table [ "eventType" ] = 11
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x000001FB ]
+	table = objects [ 0x000001F6 ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x000001FC ]
+	table [ "groups" ] = objects [ 0x000001F7 ]
 
-	table = objects [ 0x000001FC ]
-	table [ 1 ]	= objects [ 0x000001FD ]
-	table [ 2 ]	= objects [ 0x000001FE ]
-	table [ 3 ]	= objects [ 0x000001FF ]
+	table = objects [ 0x000001F7 ]
+	table [ 1 ]	= objects [ 0x000001F8 ]
+	table [ 2 ]	= objects [ 0x000001F9 ]
+	table [ 3 ]	= objects [ 0x000001FA ]
 
-	table = objects [ 0x000001FD ]
+	table = objects [ 0x000001F8 ]
 	table [ "text" ] = [==[The corporations have increased their response to our incursions. Expect higher resistance as the alarm levels increases.]==]
 	table [ "title" ] = [==[ADVANCED ALARM STAGES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/new_alarm.png]==]
 
-	table = objects [ 0x000001FE ]
+	table = objects [ 0x000001F9 ]
 	table [ "text" ] = [==[Incognita's new portable home consumes a lot of power. You will need to find and bring back a Universal Power Cell from each mission.]==]
 	table [ "title" ] = [==[ACQUIRE UNIVERSAL POWER CELLS]==]
 	table [ "img" ] = [==[gui/icons/item_icons/icon-power_cell.png]==]
 
-	table = objects [ 0x000001FF ]
+	table = objects [ 0x000001FA ]
 	table [ "text" ] = [==[It's not all bad news. The Quantum Reservoir has increased Incognita's memory capacity. She has space to install an additional program.]==]
 	table [ "title" ] = [==[INCREASED PROGRAM CAPACITY]==]
 	table [ "img" ] = [==[gui/hud3/hud3_incognita_LG.png]==]
 
-	table = objects [ 0x00000200 ]
+	table = objects [ 0x000001FB ]
 
-	table = objects [ 0x00000201 ]
-	table [ 1 ]	= objects [ 0x00000202 ]
+	table = objects [ 0x000001FC ]
+	table [ 1 ]	= objects [ 0x000001FD ]
 
-	table = objects [ 0x00000202 ]
+	table = objects [ 0x000001FD ]
 	table [ "difficulty" ] = 1
 	table [ "mapLocation" ] = 15
 	table [ "name" ] = [==[executive_terminals]==]
 	table [ "new" ] = true
 
-	table = objects [ 0x00000203 ]
-	table [ 1 ]	= objects [ 0x00000204 ]
-	table [ 2 ]	= objects [ 0x000002A0 ]
-	table [ 3 ]	= objects [ 0x00000328 ]
-	table [ 4 ]	= objects [ 0x000003BE ]
-	table [ 5 ]	= objects [ 0x0000045F ]
-	table [ 6 ]	= objects [ 0x000004ED ]
+	table = objects [ 0x000001FE ]
+	table [ 1 ]	= objects [ 0x000001FF ]
+	table [ 2 ]	= objects [ 0x0000029B ]
+	table [ 3 ]	= objects [ 0x00000323 ]
+	table [ 4 ]	= objects [ 0x000003B9 ]
+	table [ 5 ]	= objects [ 0x0000045A ]
+	table [ 6 ]	= objects [ 0x000004E8 ]
 
-	table = objects [ 0x00000204 ]
+	table = objects [ 0x000001FF ]
 	table [ "customScriptIndex" ] = [==[post_mid_]==]
 	table [ "miniserversSeen" ] = 7
-	table [ "agency" ] = objects [ 0x00000205 ]
+	table [ "agency" ] = objects [ 0x00000200 ]
 	table [ "agentsFound" ] = 2
-	table [ "missionParams" ] = objects [ 0x00000288 ]
+	table [ "missionParams" ] = objects [ 0x00000283 ]
 	table [ "monst3rInject" ] = false
 	table [ "lastEndlessAlert" ] = false
 	table [ "version" ] = [==[0.17.18]==]
@@ -2989,7 +3006,7 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "foundPrisoner" ] = true
 	table [ "previousDay" ] = 5
 	table [ "hours" ] = 153
-	table [ "difficultyOptions" ] = objects [ 0x00000289 ]
+	table [ "difficultyOptions" ] = objects [ 0x00000284 ]
 	table [ "creation_time" ] = 1556944990
 	table [ "save_time" ] = 1557072283
 	table [ "customScriptIndexDay" ] = 2
@@ -2998,10 +3015,10 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "missionTotal" ] = 32
 	table [ "recent_build_number" ] = [==[BUILD[trunk.282332] LUA[282350] USER[85892043@steam]
 OS: Windows (WOW64).6.1.1DB1]==]
-	table [ "missionEvents" ] = objects [ 0x00000295 ]
-	table [ "situations" ] = objects [ 0x00000297 ]
+	table [ "missionEvents" ] = objects [ 0x00000290 ]
+	table [ "situations" ] = objects [ 0x00000292 ]
 	table [ "missionsPlayedThisDay" ] = 0
-	table [ "campaignEvents" ] = objects [ 0x00000298 ]
+	table [ "campaignEvents" ] = objects [ 0x00000293 ]
 	table [ "complete_time" ] = 1557072477
 	table [ "seed" ] = 3187781891
 	table [ "campaignDifficulty" ] = 1
@@ -3009,10 +3026,10 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "location" ] = 19
 	table [ "incognitaLevel" ] = 3
 
-	table = objects [ 0x00000205 ]
+	table = objects [ 0x00000200 ]
 	table [ "items_earned" ] = 16
 	table [ "security_hacked" ] = 186
-	table [ "upgrades" ] = objects [ 0x00000206 ]
+	table [ "upgrades" ] = objects [ 0x00000201 ]
 	table [ "missions_completed" ] = 14
 	table [ "missions_completed_1" ] = 3
 	table [ "missions_completed_2" ] = 2
@@ -3024,555 +3041,555 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "blocker" ] = false
 	table [ "id" ] = 1
 	table [ "missions_completed_3" ] = 10
-	table [ "unitDefs" ] = objects [ 0x00000209 ]
-	table [ "unitDefsPotential" ] = objects [ 0x00000276 ]
+	table [ "unitDefs" ] = objects [ 0x00000204 ]
+	table [ "unitDefsPotential" ] = objects [ 0x00000271 ]
 	table [ "name" ] = [==[]==]
 	table [ "cpus" ] = 20
-	table [ "abilities" ] = objects [ 0x00000287 ]
+	table [ "abilities" ] = objects [ 0x00000282 ]
 	table [ "extraPrograms" ] = 1
 	table [ "guards_kod" ] = 11
 	table [ "monst3rItem" ] = [==[item_tazer_3]==]
 	table [ "alwaysUnlocked" ] = true
 	table [ "cash" ] = 1577
 
+	table = objects [ 0x00000201 ]
+	table [ 1 ]	= objects [ 0x00000202 ]
+	table [ 2 ]	= objects [ 0x00000203 ]
+
+	table = objects [ 0x00000202 ]
+	table [ "upgradeName" ] = [==[item_clip]==]
+
+	table = objects [ 0x00000203 ]
+	table [ "upgradeName" ] = [==[vault_passcard]==]
+
+	table = objects [ 0x00000204 ]
+	table [ 1 ]	= objects [ 0x00000205 ]
+	table [ 2 ]	= objects [ 0x0000021B ]
+	table [ 3 ]	= objects [ 0x00000233 ]
+	table [ 4 ]	= objects [ 0x00000245 ]
+	table [ 5 ]	= objects [ 0x00000253 ]
+	table [ 6 ]	= objects [ 0x00000263 ]
+
+	table = objects [ 0x00000205 ]
+	table [ "id" ] = 3
+	table [ "skills" ] = objects [ 0x00000206 ]
+	table [ "template" ] = [==[engineer_1]==]
+	table [ "upgrades" ] = objects [ 0x0000020B ]
+
 	table = objects [ 0x00000206 ]
 	table [ 1 ]	= objects [ 0x00000207 ]
 	table [ 2 ]	= objects [ 0x00000208 ]
+	table [ 3 ]	= objects [ 0x00000209 ]
+	table [ 4 ]	= objects [ 0x0000020A ]
 
 	table = objects [ 0x00000207 ]
-	table [ "upgradeName" ] = [==[item_clip]==]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
 
 	table = objects [ 0x00000208 ]
-	table [ "upgradeName" ] = [==[vault_passcard]==]
+	table [ "level" ] = 1
+	table [ "skillID" ] = [==[hacking]==]
 
 	table = objects [ 0x00000209 ]
-	table [ 1 ]	= objects [ 0x0000020A ]
-	table [ 2 ]	= objects [ 0x00000220 ]
-	table [ 3 ]	= objects [ 0x00000238 ]
-	table [ 4 ]	= objects [ 0x0000024A ]
-	table [ 5 ]	= objects [ 0x00000258 ]
-	table [ 6 ]	= objects [ 0x00000268 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[inventory]==]
 
 	table = objects [ 0x0000020A ]
-	table [ "id" ] = 3
-	table [ "skills" ] = objects [ 0x0000020B ]
-	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x00000210 ]
+	table [ "level" ] = 4
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x0000020B ]
 	table [ 1 ]	= objects [ 0x0000020C ]
-	table [ 2 ]	= objects [ 0x0000020D ]
-	table [ 3 ]	= objects [ 0x0000020E ]
-	table [ 4 ]	= objects [ 0x0000020F ]
-
-	table = objects [ 0x0000020C ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x0000020D ]
-	table [ "level" ] = 1
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x0000020E ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x0000020F ]
-	table [ "level" ] = 4
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x00000210 ]
-	table [ 1 ]	= objects [ 0x00000211 ]
-	table [ 2 ]	= objects [ 0x00000214 ]
-	table [ 3 ]	= objects [ 0x00000217 ]
-	table [ 4 ]	= objects [ 0x0000021A ]
-	table [ 5 ]	= objects [ 0x0000021D ]
-	table [ 6 ]	= objects [ 0x0000021E ]
-	table [ 7 ]	= objects [ 0x0000021F ]
+	table [ 2 ]	= objects [ 0x0000020F ]
+	table [ 3 ]	= objects [ 0x00000212 ]
+	table [ 4 ]	= objects [ 0x00000215 ]
+	table [ 5 ]	= objects [ 0x00000218 ]
+	table [ 6 ]	= objects [ 0x00000219 ]
+	table [ 7 ]	= objects [ 0x0000021A ]
 	table [ 8 ]	= [==[augmentUpgradeSlot]==]
 	table [ 9 ]	= [==[augmentUpgradeSlot]==]
 
-	table = objects [ 0x00000211 ]
-	table [ "upgradeParams" ] = objects [ 0x00000212 ]
+	table = objects [ 0x0000020C ]
+	table [ "upgradeParams" ] = objects [ 0x0000020D ]
 	table [ "upgradeName" ] = [==[augment_tony]==]
 
-	table = objects [ 0x00000212 ]
-	table [ "traits" ] = objects [ 0x00000213 ]
+	table = objects [ 0x0000020D ]
+	table [ "traits" ] = objects [ 0x0000020E ]
 
-	table = objects [ 0x00000213 ]
+	table = objects [ 0x0000020E ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000214 ]
-	table [ "upgradeParams" ] = objects [ 0x00000215 ]
+	table = objects [ 0x0000020F ]
+	table [ "upgradeParams" ] = objects [ 0x00000210 ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x00000215 ]
-	table [ "traits" ] = objects [ 0x00000216 ]
+	table = objects [ 0x00000210 ]
+	table [ "traits" ] = objects [ 0x00000211 ]
 
-	table = objects [ 0x00000216 ]
+	table = objects [ 0x00000211 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000217 ]
-	table [ "upgradeParams" ] = objects [ 0x00000218 ]
+	table = objects [ 0x00000212 ]
+	table [ "upgradeParams" ] = objects [ 0x00000213 ]
 	table [ "upgradeName" ] = [==[augment_torque_injectors]==]
 
-	table = objects [ 0x00000218 ]
-	table [ "traits" ] = objects [ 0x00000219 ]
+	table = objects [ 0x00000213 ]
+	table [ "traits" ] = objects [ 0x00000214 ]
 
-	table = objects [ 0x00000219 ]
+	table = objects [ 0x00000214 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000021A ]
-	table [ "upgradeParams" ] = objects [ 0x0000021B ]
+	table = objects [ 0x00000215 ]
+	table [ "upgradeParams" ] = objects [ 0x00000216 ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x0000021B ]
-	table [ "traits" ] = objects [ 0x0000021C ]
+	table = objects [ 0x00000216 ]
+	table [ "traits" ] = objects [ 0x00000217 ]
 
-	table = objects [ 0x0000021C ]
+	table = objects [ 0x00000217 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000021D ]
+	table = objects [ 0x00000218 ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x0000021E ]
+	table = objects [ 0x00000219 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+
+	table = objects [ 0x0000021A ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+
+	table = objects [ 0x0000021B ]
+	table [ "id" ] = 5
+	table [ "skills" ] = objects [ 0x0000021C ]
+	table [ "template" ] = [==[engineer_2]==]
+	table [ "upgrades" ] = objects [ 0x00000221 ]
+
+	table = objects [ 0x0000021C ]
+	table [ 1 ]	= objects [ 0x0000021D ]
+	table [ 2 ]	= objects [ 0x0000021E ]
+	table [ 3 ]	= objects [ 0x0000021F ]
+	table [ 4 ]	= objects [ 0x00000220 ]
+
+	table = objects [ 0x0000021D ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
+
+	table = objects [ 0x0000021E ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[hacking]==]
 
 	table = objects [ 0x0000021F ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[inventory]==]
 
 	table = objects [ 0x00000220 ]
-	table [ "id" ] = 5
-	table [ "skills" ] = objects [ 0x00000221 ]
-	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x00000226 ]
+	table [ "level" ] = 4
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x00000221 ]
 	table [ 1 ]	= objects [ 0x00000222 ]
-	table [ 2 ]	= objects [ 0x00000223 ]
-	table [ 3 ]	= objects [ 0x00000224 ]
-	table [ 4 ]	= objects [ 0x00000225 ]
-
-	table = objects [ 0x00000222 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x00000223 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x00000224 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x00000225 ]
-	table [ "level" ] = 4
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x00000226 ]
-	table [ 1 ]	= objects [ 0x00000227 ]
-	table [ 2 ]	= objects [ 0x0000022A ]
-	table [ 3 ]	= objects [ 0x0000022D ]
-	table [ 4 ]	= objects [ 0x00000230 ]
-	table [ 5 ]	= objects [ 0x00000233 ]
-	table [ 6 ]	= objects [ 0x00000234 ]
-	table [ 7 ]	= objects [ 0x00000235 ]
-	table [ 8 ]	= objects [ 0x00000236 ]
-	table [ 9 ]	= objects [ 0x00000237 ]
+	table [ 2 ]	= objects [ 0x00000225 ]
+	table [ 3 ]	= objects [ 0x00000228 ]
+	table [ 4 ]	= objects [ 0x0000022B ]
+	table [ 5 ]	= objects [ 0x0000022E ]
+	table [ 6 ]	= objects [ 0x0000022F ]
+	table [ 7 ]	= objects [ 0x00000230 ]
+	table [ 8 ]	= objects [ 0x00000231 ]
+	table [ 9 ]	= objects [ 0x00000232 ]
 	table [ 10 ]	= [==[augmentUpgradeSlot]==]
 	table [ 11 ]	= [==[augmentUpgradeSlot]==]
 
-	table = objects [ 0x00000227 ]
-	table [ "upgradeParams" ] = objects [ 0x00000228 ]
+	table = objects [ 0x00000222 ]
+	table [ "upgradeParams" ] = objects [ 0x00000223 ]
 	table [ "upgradeName" ] = [==[augment_international_v1]==]
 
-	table = objects [ 0x00000228 ]
-	table [ "traits" ] = objects [ 0x00000229 ]
+	table = objects [ 0x00000223 ]
+	table [ "traits" ] = objects [ 0x00000224 ]
 
-	table = objects [ 0x00000229 ]
+	table = objects [ 0x00000224 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000022A ]
-	table [ "upgradeParams" ] = objects [ 0x0000022B ]
+	table = objects [ 0x00000225 ]
+	table [ "upgradeParams" ] = objects [ 0x00000226 ]
 	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
 
-	table = objects [ 0x0000022B ]
-	table [ "traits" ] = objects [ 0x0000022C ]
+	table = objects [ 0x00000226 ]
+	table [ "traits" ] = objects [ 0x00000227 ]
 
-	table = objects [ 0x0000022C ]
+	table = objects [ 0x00000227 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000022D ]
-	table [ "upgradeParams" ] = objects [ 0x0000022E ]
+	table = objects [ 0x00000228 ]
+	table [ "upgradeParams" ] = objects [ 0x00000229 ]
 	table [ "upgradeName" ] = [==[augment_skeletal_suspension]==]
 
-	table = objects [ 0x0000022E ]
-	table [ "traits" ] = objects [ 0x0000022F ]
+	table = objects [ 0x00000229 ]
+	table [ "traits" ] = objects [ 0x0000022A ]
 
-	table = objects [ 0x0000022F ]
+	table = objects [ 0x0000022A ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000230 ]
-	table [ "upgradeParams" ] = objects [ 0x00000231 ]
+	table = objects [ 0x0000022B ]
+	table [ "upgradeParams" ] = objects [ 0x0000022C ]
 	table [ "upgradeName" ] = [==[augment_torque_injectors]==]
 
-	table = objects [ 0x00000231 ]
-	table [ "traits" ] = objects [ 0x00000232 ]
+	table = objects [ 0x0000022C ]
+	table [ "traits" ] = objects [ 0x0000022D ]
 
-	table = objects [ 0x00000232 ]
+	table = objects [ 0x0000022D ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000233 ]
+	table = objects [ 0x0000022E ]
 	table [ "upgradeName" ] = [==[item_icebreaker]==]
 
-	table = objects [ 0x00000234 ]
+	table = objects [ 0x0000022F ]
 	table [ "upgradeName" ] = [==[item_icebreaker]==]
 
-	table = objects [ 0x00000235 ]
+	table = objects [ 0x00000230 ]
 	table [ "upgradeName" ] = [==[item_emp_pack_3]==]
 
-	table = objects [ 0x00000236 ]
+	table = objects [ 0x00000231 ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x00000237 ]
+	table = objects [ 0x00000232 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
-	table = objects [ 0x00000238 ]
+	table = objects [ 0x00000233 ]
 	table [ "id" ] = 8
-	table [ "skills" ] = objects [ 0x00000239 ]
+	table [ "skills" ] = objects [ 0x00000234 ]
 	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x0000023E ]
+	table [ "upgrades" ] = objects [ 0x00000239 ]
 
-	table = objects [ 0x00000239 ]
-	table [ 1 ]	= objects [ 0x0000023A ]
-	table [ 2 ]	= objects [ 0x0000023B ]
-	table [ 3 ]	= objects [ 0x0000023C ]
-	table [ 4 ]	= objects [ 0x0000023D ]
+	table = objects [ 0x00000234 ]
+	table [ 1 ]	= objects [ 0x00000235 ]
+	table [ 2 ]	= objects [ 0x00000236 ]
+	table [ 3 ]	= objects [ 0x00000237 ]
+	table [ 4 ]	= objects [ 0x00000238 ]
 
-	table = objects [ 0x0000023A ]
+	table = objects [ 0x00000235 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x0000023B ]
+	table = objects [ 0x00000236 ]
 	table [ "level" ] = 3
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x0000023C ]
+	table = objects [ 0x00000237 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x0000023D ]
+	table = objects [ 0x00000238 ]
 	table [ "level" ] = 2
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x0000023E ]
-	table [ 1 ]	= objects [ 0x0000023F ]
-	table [ 2 ]	= objects [ 0x00000242 ]
-	table [ 3 ]	= objects [ 0x00000245 ]
-	table [ 4 ]	= objects [ 0x00000248 ]
-	table [ 5 ]	= objects [ 0x00000249 ]
+	table = objects [ 0x00000239 ]
+	table [ 1 ]	= objects [ 0x0000023A ]
+	table [ 2 ]	= objects [ 0x0000023D ]
+	table [ 3 ]	= objects [ 0x00000240 ]
+	table [ 4 ]	= objects [ 0x00000243 ]
+	table [ 5 ]	= objects [ 0x00000244 ]
 
-	table = objects [ 0x0000023F ]
-	table [ "upgradeParams" ] = objects [ 0x00000240 ]
+	table = objects [ 0x0000023A ]
+	table [ "upgradeParams" ] = objects [ 0x0000023B ]
 	table [ "upgradeName" ] = [==[augment_prism_2]==]
 
-	table = objects [ 0x00000240 ]
-	table [ "traits" ] = objects [ 0x00000241 ]
+	table = objects [ 0x0000023B ]
+	table [ "traits" ] = objects [ 0x0000023C ]
 
-	table = objects [ 0x00000241 ]
+	table = objects [ 0x0000023C ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000242 ]
-	table [ "upgradeParams" ] = objects [ 0x00000243 ]
+	table = objects [ 0x0000023D ]
+	table [ "upgradeParams" ] = objects [ 0x0000023E ]
 	table [ "upgradeName" ] = [==[item_monst3r_gun]==]
 
-	table = objects [ 0x00000243 ]
-	table [ "traits" ] = objects [ 0x00000244 ]
+	table = objects [ 0x0000023E ]
+	table [ "traits" ] = objects [ 0x0000023F ]
 
-	table = objects [ 0x00000244 ]
+	table = objects [ 0x0000023F ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000245 ]
-	table [ "upgradeParams" ] = objects [ 0x00000246 ]
+	table = objects [ 0x00000240 ]
+	table [ "upgradeParams" ] = objects [ 0x00000241 ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x00000246 ]
-	table [ "traits" ] = objects [ 0x00000247 ]
+	table = objects [ 0x00000241 ]
+	table [ "traits" ] = objects [ 0x00000242 ]
 
-	table = objects [ 0x00000247 ]
+	table = objects [ 0x00000242 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000248 ]
+	table = objects [ 0x00000243 ]
 	table [ "upgradeName" ] = [==[item_emp_pack_2]==]
 
-	table = objects [ 0x00000249 ]
+	table = objects [ 0x00000244 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_2]==]
 
-	table = objects [ 0x0000024A ]
+	table = objects [ 0x00000245 ]
 	table [ "id" ] = 2
-	table [ "skills" ] = objects [ 0x0000024B ]
+	table [ "skills" ] = objects [ 0x00000246 ]
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x00000250 ]
+	table [ "upgrades" ] = objects [ 0x0000024B ]
+
+	table = objects [ 0x00000246 ]
+	table [ 1 ]	= objects [ 0x00000247 ]
+	table [ 2 ]	= objects [ 0x00000248 ]
+	table [ 3 ]	= objects [ 0x00000249 ]
+	table [ 4 ]	= objects [ 0x0000024A ]
+
+	table = objects [ 0x00000247 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
+
+	table = objects [ 0x00000248 ]
+	table [ "level" ] = 1
+	table [ "skillID" ] = [==[hacking]==]
+
+	table = objects [ 0x00000249 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[inventory]==]
+
+	table = objects [ 0x0000024A ]
+	table [ "level" ] = 1
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x0000024B ]
 	table [ 1 ]	= objects [ 0x0000024C ]
-	table [ 2 ]	= objects [ 0x0000024D ]
-	table [ 3 ]	= objects [ 0x0000024E ]
-	table [ 4 ]	= objects [ 0x0000024F ]
+	table [ 2 ]	= objects [ 0x0000024F ]
+	table [ 3 ]	= objects [ 0x00000252 ]
 
 	table = objects [ 0x0000024C ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x0000024D ]
-	table [ "level" ] = 1
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x0000024E ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x0000024F ]
-	table [ "level" ] = 1
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x00000250 ]
-	table [ 1 ]	= objects [ 0x00000251 ]
-	table [ 2 ]	= objects [ 0x00000254 ]
-	table [ 3 ]	= objects [ 0x00000257 ]
-
-	table = objects [ 0x00000251 ]
-	table [ "upgradeParams" ] = objects [ 0x00000252 ]
+	table [ "upgradeParams" ] = objects [ 0x0000024D ]
 	table [ "upgradeName" ] = [==[augment_shalem]==]
 
-	table = objects [ 0x00000252 ]
-	table [ "traits" ] = objects [ 0x00000253 ]
+	table = objects [ 0x0000024D ]
+	table [ "traits" ] = objects [ 0x0000024E ]
 
-	table = objects [ 0x00000253 ]
+	table = objects [ 0x0000024E ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000254 ]
-	table [ "upgradeParams" ] = objects [ 0x00000255 ]
+	table = objects [ 0x0000024F ]
+	table [ "upgradeParams" ] = objects [ 0x00000250 ]
 	table [ "upgradeName" ] = [==[item_tazer_3]==]
 
-	table = objects [ 0x00000255 ]
-	table [ "traits" ] = objects [ 0x00000256 ]
+	table = objects [ 0x00000250 ]
+	table [ "traits" ] = objects [ 0x00000251 ]
 
-	table = objects [ 0x00000256 ]
+	table = objects [ 0x00000251 ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000257 ]
+	table = objects [ 0x00000252 ]
 	table [ "upgradeName" ] = [==[item_flashgrenade]==]
 
-	table = objects [ 0x00000258 ]
+	table = objects [ 0x00000253 ]
 	table [ "id" ] = 99
-	table [ "skills" ] = objects [ 0x00000259 ]
+	table [ "skills" ] = objects [ 0x00000254 ]
 	table [ "template" ] = [==[monst3r]==]
-	table [ "upgrades" ] = objects [ 0x0000025E ]
+	table [ "upgrades" ] = objects [ 0x00000259 ]
 
-	table = objects [ 0x00000259 ]
-	table [ 1 ]	= objects [ 0x0000025A ]
-	table [ 2 ]	= objects [ 0x0000025B ]
-	table [ 3 ]	= objects [ 0x0000025C ]
-	table [ 4 ]	= objects [ 0x0000025D ]
+	table = objects [ 0x00000254 ]
+	table [ 1 ]	= objects [ 0x00000255 ]
+	table [ 2 ]	= objects [ 0x00000256 ]
+	table [ 3 ]	= objects [ 0x00000257 ]
+	table [ 4 ]	= objects [ 0x00000258 ]
 
-	table = objects [ 0x0000025A ]
+	table = objects [ 0x00000255 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x0000025B ]
+	table = objects [ 0x00000256 ]
 	table [ "level" ] = 3
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x0000025C ]
+	table = objects [ 0x00000257 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x0000025D ]
+	table = objects [ 0x00000258 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x0000025E ]
-	table [ 1 ]	= objects [ 0x0000025F ]
-	table [ 2 ]	= objects [ 0x00000262 ]
-	table [ 3 ]	= objects [ 0x00000265 ]
+	table = objects [ 0x00000259 ]
+	table [ 1 ]	= objects [ 0x0000025A ]
+	table [ 2 ]	= objects [ 0x0000025D ]
+	table [ 3 ]	= objects [ 0x00000260 ]
 
-	table = objects [ 0x0000025F ]
-	table [ "upgradeParams" ] = objects [ 0x00000260 ]
+	table = objects [ 0x0000025A ]
+	table [ "upgradeParams" ] = objects [ 0x0000025B ]
 	table [ "upgradeName" ] = [==[augment_monst3r]==]
 
-	table = objects [ 0x00000260 ]
-	table [ "traits" ] = objects [ 0x00000261 ]
+	table = objects [ 0x0000025B ]
+	table [ "traits" ] = objects [ 0x0000025C ]
 
-	table = objects [ 0x00000261 ]
+	table = objects [ 0x0000025C ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000262 ]
-	table [ "upgradeParams" ] = objects [ 0x00000263 ]
+	table = objects [ 0x0000025D ]
+	table [ "upgradeParams" ] = objects [ 0x0000025E ]
 	table [ "upgradeName" ] = [==[item_monst3r_gun]==]
 
-	table = objects [ 0x00000263 ]
-	table [ "traits" ] = objects [ 0x00000264 ]
+	table = objects [ 0x0000025E ]
+	table [ "traits" ] = objects [ 0x0000025F ]
 
-	table = objects [ 0x00000264 ]
+	table = objects [ 0x0000025F ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000265 ]
-	table [ "upgradeParams" ] = objects [ 0x00000266 ]
+	table = objects [ 0x00000260 ]
+	table [ "upgradeParams" ] = objects [ 0x00000261 ]
 	table [ "upgradeName" ] = [==[augment_final_level]==]
 
-	table = objects [ 0x00000266 ]
-	table [ "traits" ] = objects [ 0x00000267 ]
+	table = objects [ 0x00000261 ]
+	table [ "traits" ] = objects [ 0x00000262 ]
 
-	table = objects [ 0x00000267 ]
+	table = objects [ 0x00000262 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000268 ]
+	table = objects [ 0x00000263 ]
 	table [ "id" ] = 107
-	table [ "skills" ] = objects [ 0x00000269 ]
+	table [ "skills" ] = objects [ 0x00000264 ]
 	table [ "template" ] = [==[central]==]
-	table [ "upgrades" ] = objects [ 0x0000026E ]
+	table [ "upgrades" ] = objects [ 0x00000269 ]
 
-	table = objects [ 0x00000269 ]
-	table [ 1 ]	= objects [ 0x0000026A ]
-	table [ 2 ]	= objects [ 0x0000026B ]
-	table [ 3 ]	= objects [ 0x0000026C ]
-	table [ 4 ]	= objects [ 0x0000026D ]
+	table = objects [ 0x00000264 ]
+	table [ 1 ]	= objects [ 0x00000265 ]
+	table [ 2 ]	= objects [ 0x00000266 ]
+	table [ 3 ]	= objects [ 0x00000267 ]
+	table [ 4 ]	= objects [ 0x00000268 ]
 
-	table = objects [ 0x0000026A ]
+	table = objects [ 0x00000265 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x0000026B ]
+	table = objects [ 0x00000266 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x0000026C ]
+	table = objects [ 0x00000267 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x0000026D ]
+	table = objects [ 0x00000268 ]
 	table [ "level" ] = 4
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x0000026E ]
-	table [ 1 ]	= objects [ 0x0000026F ]
-	table [ 2 ]	= objects [ 0x00000272 ]
-	table [ 3 ]	= objects [ 0x00000275 ]
+	table = objects [ 0x00000269 ]
+	table [ 1 ]	= objects [ 0x0000026A ]
+	table [ 2 ]	= objects [ 0x0000026D ]
+	table [ 3 ]	= objects [ 0x00000270 ]
 
-	table = objects [ 0x0000026F ]
-	table [ "upgradeParams" ] = objects [ 0x00000270 ]
+	table = objects [ 0x0000026A ]
+	table [ "upgradeParams" ] = objects [ 0x0000026B ]
 	table [ "upgradeName" ] = [==[augment_central]==]
 
-	table = objects [ 0x00000270 ]
-	table [ "traits" ] = objects [ 0x00000271 ]
+	table = objects [ 0x0000026B ]
+	table [ "traits" ] = objects [ 0x0000026C ]
 
-	table = objects [ 0x00000271 ]
+	table = objects [ 0x0000026C ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000272 ]
-	table [ "upgradeParams" ] = objects [ 0x00000273 ]
+	table = objects [ 0x0000026D ]
+	table [ "upgradeParams" ] = objects [ 0x0000026E ]
 	table [ "upgradeName" ] = [==[item_tazer]==]
 
-	table = objects [ 0x00000273 ]
-	table [ "traits" ] = objects [ 0x00000274 ]
+	table = objects [ 0x0000026E ]
+	table [ "traits" ] = objects [ 0x0000026F ]
 
-	table = objects [ 0x00000274 ]
+	table = objects [ 0x0000026F ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000275 ]
+	table = objects [ 0x00000270 ]
 	table [ "upgradeName" ] = [==[item_incognita]==]
 
-	table = objects [ 0x00000276 ]
-	table [ 1 ]	= objects [ 0x00000277 ]
-	table [ 2 ]	= objects [ 0x00000279 ]
-	table [ 3 ]	= objects [ 0x0000027B ]
-	table [ 4 ]	= objects [ 0x0000027D ]
-	table [ 5 ]	= objects [ 0x0000027F ]
-	table [ 6 ]	= objects [ 0x00000281 ]
-	table [ 7 ]	= objects [ 0x00000283 ]
-	table [ 8 ]	= objects [ 0x00000285 ]
+	table = objects [ 0x00000271 ]
+	table [ 1 ]	= objects [ 0x00000272 ]
+	table [ 2 ]	= objects [ 0x00000274 ]
+	table [ 3 ]	= objects [ 0x00000276 ]
+	table [ 4 ]	= objects [ 0x00000278 ]
+	table [ 5 ]	= objects [ 0x0000027A ]
+	table [ 6 ]	= objects [ 0x0000027C ]
+	table [ 7 ]	= objects [ 0x0000027E ]
+	table [ 8 ]	= objects [ 0x00000280 ]
 
-	table = objects [ 0x00000277 ]
+	table = objects [ 0x00000272 ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x00000278 ]
+	table [ "upgrades" ] = objects [ 0x00000273 ]
 
-	table = objects [ 0x00000278 ]
+	table = objects [ 0x00000273 ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x00000279 ]
+	table = objects [ 0x00000274 ]
 	table [ "id" ] = 4
 	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x0000027A ]
+	table [ "upgrades" ] = objects [ 0x00000275 ]
 
-	table = objects [ 0x0000027A ]
+	table = objects [ 0x00000275 ]
 	table [ 1 ]	= [==[augment_banks]==]
 
-	table = objects [ 0x0000027B ]
+	table = objects [ 0x00000276 ]
 	table [ "id" ] = 6
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x0000027C ]
+	table [ "upgrades" ] = objects [ 0x00000277 ]
 
-	table = objects [ 0x0000027C ]
+	table = objects [ 0x00000277 ]
 	table [ 1 ]	= [==[augment_nika]==]
 
-	table = objects [ 0x0000027D ]
+	table = objects [ 0x00000278 ]
 	table [ "id" ] = 7
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x0000027E ]
+	table [ "upgrades" ] = objects [ 0x00000279 ]
 
-	table = objects [ 0x0000027E ]
+	table = objects [ 0x00000279 ]
 	table [ 1 ]	= [==[augment_sharp_1]==]
 
-	table = objects [ 0x0000027F ]
+	table = objects [ 0x0000027A ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x00000280 ]
+	table [ "upgrades" ] = objects [ 0x0000027B ]
 
-	table = objects [ 0x00000280 ]
+	table = objects [ 0x0000027B ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x00000281 ]
+	table = objects [ 0x0000027C ]
 	table [ "id" ] = 1001
 	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x00000282 ]
+	table [ "upgrades" ] = objects [ 0x0000027D ]
 
-	table = objects [ 0x00000282 ]
+	table = objects [ 0x0000027D ]
 	table [ 1 ]	= [==[augment_particle_envelope]==]
 	table [ 2 ]	= [==[item_transport_beacon]==]
 
-	table = objects [ 0x00000283 ]
+	table = objects [ 0x0000027E ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x00000284 ]
+	table [ "upgrades" ] = objects [ 0x0000027F ]
 
-	table = objects [ 0x00000284 ]
+	table = objects [ 0x0000027F ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x00000285 ]
+	table = objects [ 0x00000280 ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x00000286 ]
+	table [ "upgrades" ] = objects [ 0x00000281 ]
 
-	table = objects [ 0x00000286 ]
+	table = objects [ 0x00000281 ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x00000287 ]
+	table = objects [ 0x00000282 ]
 	table [ 1 ]	= [==[faust]==]
 	table [ 2 ]	= [==[brimstone]==]
 	table [ 3 ]	= [==[dagger_2]==]
@@ -3580,12 +3597,12 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ 5 ]	= [==[parasite]==]
 	table [ 6 ]	= [==[love]==]
 
-	table = objects [ 0x00000288 ]
+	table = objects [ 0x00000283 ]
 	table [ "newHiSecExitDay" ] = 7
 	table [ "extended_endless" ] = true
 	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x00000289 ]
+	table = objects [ 0x00000284 ]
 	table [ "beginnerPatrols" ] = true
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = true
@@ -3611,26 +3628,41 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "timeAttack" ] = 0
 	table [ "daemonQuantity" ] = [==[LESS]==]
 	table [ "savescumming" ] = true
-	table [ "enabledDLC" ] = objects [ 0x0000028A ]
+	table [ "enabledDLC" ] = objects [ 0x00000285 ]
 
-	table = objects [ 0x0000028A ]
-	table [ "dlc1" ] = objects [ 0x0000028B ]
+	table = objects [ 0x00000285 ]
+	table [ "dlc1" ] = objects [ 0x00000286 ]
 
-	table = objects [ 0x0000028B ]
+	table = objects [ 0x00000286 ]
 	table [ "enabled" ] = true
-	table [ "options" ] = objects [ 0x0000028C ]
+	table [ "options" ] = objects [ 0x00000287 ]
 	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 	table [ "name" ] = [==[Contingency Plan]==]
 
+	table = objects [ 0x00000287 ]
+	table [ "programs" ] = objects [ 0x00000288 ]
+	table [ "guards" ] = objects [ 0x00000289 ]
+	table [ "extended_endless" ] = objects [ 0x0000028A ]
+	table [ "extended_campaign" ] = objects [ 0x0000028B ]
+	table [ "endless_mid_mission" ] = objects [ 0x0000028C ]
+	table [ "daemons" ] = objects [ 0x0000028D ]
+	table [ "sidemissions" ] = objects [ 0x0000028E ]
+	table [ "agents" ] = objects [ 0x0000028F ]
+
+	table = objects [ 0x00000288 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000289 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x0000028A ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x0000028B ]
+	table [ "enabled" ] = true
+
 	table = objects [ 0x0000028C ]
-	table [ "programs" ] = objects [ 0x0000028D ]
-	table [ "guards" ] = objects [ 0x0000028E ]
-	table [ "extended_endless" ] = objects [ 0x0000028F ]
-	table [ "extended_campaign" ] = objects [ 0x00000290 ]
-	table [ "endless_mid_mission" ] = objects [ 0x00000291 ]
-	table [ "daemons" ] = objects [ 0x00000292 ]
-	table [ "sidemissions" ] = objects [ 0x00000293 ]
-	table [ "agents" ] = objects [ 0x00000294 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x0000028D ]
 	table [ "enabled" ] = true
@@ -3642,73 +3674,58 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "enabled" ] = true
 
 	table = objects [ 0x00000290 ]
-	table [ "enabled" ] = true
+	table [ "advancedAlarm" ] = true
+	table [ "needPowerCells" ] = objects [ 0x00000291 ]
 
 	table = objects [ 0x00000291 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000292 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000293 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000294 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000295 ]
-	table [ "advancedAlarm" ] = true
-	table [ "needPowerCells" ] = objects [ 0x00000296 ]
-
-	table = objects [ 0x00000296 ]
 	table [ "type" ] = [==[objective]==]
 	table [ "text" ] = [==[> Find a Power Relay]==]
 	table [ "req" ] = [==[needPowerCells]==]
 
-	table = objects [ 0x00000297 ]
+	table = objects [ 0x00000292 ]
 
-	table = objects [ 0x00000298 ]
-	table [ 1 ]	= objects [ 0x00000299 ]
-	table [ 2 ]	= objects [ 0x0000029B ]
-	table [ 3 ]	= objects [ 0x0000029F ]
+	table = objects [ 0x00000293 ]
+	table [ 1 ]	= objects [ 0x00000294 ]
+	table [ 2 ]	= objects [ 0x00000296 ]
+	table [ 3 ]	= objects [ 0x0000029A ]
 
-	table = objects [ 0x00000299 ]
-	table [ "data" ] = objects [ 0x0000029A ]
+	table = objects [ 0x00000294 ]
+	table [ "data" ] = objects [ 0x00000295 ]
 	table [ "eventType" ] = 4
 
-	table = objects [ 0x0000029A ]
+	table = objects [ 0x00000295 ]
 	table [ "value" ] = true
 	table [ "hours" ] = 288
 	table [ "param" ] = [==[advanced_scanners]==]
 
-	table = objects [ 0x0000029B ]
+	table = objects [ 0x00000296 ]
 	table [ "hours" ] = 288
-	table [ "data" ] = objects [ 0x0000029C ]
+	table [ "data" ] = objects [ 0x00000297 ]
 	table [ "eventType" ] = 11
 
-	table = objects [ 0x0000029C ]
+	table = objects [ 0x00000297 ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x0000029D ]
+	table [ "groups" ] = objects [ 0x00000298 ]
 
-	table = objects [ 0x0000029D ]
-	table [ 1 ]	= objects [ 0x0000029E ]
+	table = objects [ 0x00000298 ]
+	table [ 1 ]	= objects [ 0x00000299 ]
 
-	table = objects [ 0x0000029E ]
+	table = objects [ 0x00000299 ]
 	table [ "text" ] = [==[Caution. Omni corp has upgraded all Enforcer units with XL-5 Scan Grenades. As well as scanning, the XL-5 emits a disruptive field that disables cloaking and Hologram Technology.]==]
 	table [ "title" ] = [==[ADVANCED SCAN GRENADES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/advanced_scan_grenades.png]==]
 
-	table = objects [ 0x0000029F ]
+	table = objects [ 0x0000029A ]
 	table [ "day" ] = 4
 	table [ "eventType" ] = 13
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000002A0 ]
+	table = objects [ 0x0000029B ]
 	table [ "customScriptIndex" ] = [==[post_mid_]==]
 	table [ "miniserversSeen" ] = 7
-	table [ "campaignEvents" ] = objects [ 0x000002A1 ]
+	table [ "campaignEvents" ] = objects [ 0x0000029C ]
 	table [ "agentsFound" ] = 1
-	table [ "missionParams" ] = objects [ 0x000002A9 ]
+	table [ "missionParams" ] = objects [ 0x000002A4 ]
 	table [ "monst3rInject" ] = false
 	table [ "lastEndlessAlert" ] = false
 	table [ "version" ] = [==[0.17.18]==]
@@ -3719,7 +3736,7 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "foundPrisoner" ] = true
 	table [ "previousDay" ] = 5
 	table [ "hours" ] = 153
-	table [ "difficultyOptions" ] = objects [ 0x000002AA ]
+	table [ "difficultyOptions" ] = objects [ 0x000002A5 ]
 	table [ "creation_time" ] = 1558099330
 	table [ "save_time" ] = 1558721165
 	table [ "customScriptIndexDay" ] = 2
@@ -3728,59 +3745,59 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "missionTotal" ] = 26
 	table [ "recent_build_number" ] = [==[BUILD[trunk.282332] LUA[282350] USER[85892043@steam]
 OS: Windows (WOW64).6.1.1DB1]==]
-	table [ "missionEvents" ] = objects [ 0x000002B6 ]
+	table [ "missionEvents" ] = objects [ 0x000002B1 ]
 	table [ "campaignDifficulty" ] = 3
 	table [ "missionsPlayedThisDay" ] = 0
-	table [ "agency" ] = objects [ 0x000002B8 ]
+	table [ "agency" ] = objects [ 0x000002B3 ]
 	table [ "complete_time" ] = 1558721184
 	table [ "seed" ] = 1118795075
 	table [ "location" ] = 6
 	table [ "result" ] = [==[VICTORY]==]
-	table [ "situations" ] = objects [ 0x00000327 ]
+	table [ "situations" ] = objects [ 0x00000322 ]
 	table [ "incognitaLevel" ] = 3
 
-	table = objects [ 0x000002A1 ]
-	table [ 1 ]	= objects [ 0x000002A2 ]
-	table [ 2 ]	= objects [ 0x000002A4 ]
-	table [ 3 ]	= objects [ 0x000002A8 ]
+	table = objects [ 0x0000029C ]
+	table [ 1 ]	= objects [ 0x0000029D ]
+	table [ 2 ]	= objects [ 0x0000029F ]
+	table [ 3 ]	= objects [ 0x000002A3 ]
 
-	table = objects [ 0x000002A2 ]
-	table [ "data" ] = objects [ 0x000002A3 ]
+	table = objects [ 0x0000029D ]
+	table [ "data" ] = objects [ 0x0000029E ]
 	table [ "eventType" ] = 4
 
-	table = objects [ 0x000002A3 ]
+	table = objects [ 0x0000029E ]
 	table [ "value" ] = true
 	table [ "hours" ] = 288
 	table [ "param" ] = [==[advanced_scanners]==]
 
-	table = objects [ 0x000002A4 ]
+	table = objects [ 0x0000029F ]
 	table [ "hours" ] = 288
-	table [ "data" ] = objects [ 0x000002A5 ]
+	table [ "data" ] = objects [ 0x000002A0 ]
 	table [ "eventType" ] = 11
 
-	table = objects [ 0x000002A5 ]
+	table = objects [ 0x000002A0 ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x000002A6 ]
+	table [ "groups" ] = objects [ 0x000002A1 ]
 
-	table = objects [ 0x000002A6 ]
-	table [ 1 ]	= objects [ 0x000002A7 ]
+	table = objects [ 0x000002A1 ]
+	table [ 1 ]	= objects [ 0x000002A2 ]
 
-	table = objects [ 0x000002A7 ]
+	table = objects [ 0x000002A2 ]
 	table [ "text" ] = [==[Caution. Omni corp has upgraded all Enforcer units with XL-5 Scan Grenades. As well as scanning, the XL-5 emits a disruptive field that disables cloaking and Hologram Technology.]==]
 	table [ "title" ] = [==[ADVANCED SCAN GRENADES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/advanced_scan_grenades.png]==]
 
-	table = objects [ 0x000002A8 ]
+	table = objects [ 0x000002A3 ]
 	table [ "day" ] = 4
 	table [ "eventType" ] = 13
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000002A9 ]
+	table = objects [ 0x000002A4 ]
 	table [ "newHiSecExitDay" ] = 7
 	table [ "extended_endless" ] = true
 	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x000002AA ]
+	table = objects [ 0x000002A5 ]
 	table [ "firewallMultiplier" ] = 2
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = true
@@ -3792,7 +3809,7 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "spawnTable" ] = [==[NORMAL]==]
 	table [ "alarmRaisedOnKO" ] = false
 	table [ "maxHours" ] = 72
-	table [ "enabledDLC" ] = objects [ 0x000002AB ]
+	table [ "enabledDLC" ] = objects [ 0x000002A6 ]
 	table [ "drawInterestPoints" ] = false
 	table [ "savescumming" ] = false
 	table [ "powerPerLevel" ] = 10
@@ -3808,24 +3825,39 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "startingPower" ] = 10
 	table [ "alarmTypes" ] = [==[NORMAL]==]
 
-	table = objects [ 0x000002AB ]
-	table [ "dlc1" ] = objects [ 0x000002AC ]
+	table = objects [ 0x000002A6 ]
+	table [ "dlc1" ] = objects [ 0x000002A7 ]
 
-	table = objects [ 0x000002AC ]
+	table = objects [ 0x000002A7 ]
 	table [ "enabled" ] = true
-	table [ "options" ] = objects [ 0x000002AD ]
+	table [ "options" ] = objects [ 0x000002A8 ]
 	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 	table [ "name" ] = [==[Contingency Plan]==]
 
+	table = objects [ 0x000002A8 ]
+	table [ "programs" ] = objects [ 0x000002A9 ]
+	table [ "guards" ] = objects [ 0x000002AA ]
+	table [ "extended_endless" ] = objects [ 0x000002AB ]
+	table [ "extended_campaign" ] = objects [ 0x000002AC ]
+	table [ "endless_mid_mission" ] = objects [ 0x000002AD ]
+	table [ "daemons" ] = objects [ 0x000002AE ]
+	table [ "sidemissions" ] = objects [ 0x000002AF ]
+	table [ "agents" ] = objects [ 0x000002B0 ]
+
+	table = objects [ 0x000002A9 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x000002AA ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x000002AB ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x000002AC ]
+	table [ "enabled" ] = true
+
 	table = objects [ 0x000002AD ]
-	table [ "programs" ] = objects [ 0x000002AE ]
-	table [ "guards" ] = objects [ 0x000002AF ]
-	table [ "extended_endless" ] = objects [ 0x000002B0 ]
-	table [ "extended_campaign" ] = objects [ 0x000002B1 ]
-	table [ "endless_mid_mission" ] = objects [ 0x000002B2 ]
-	table [ "daemons" ] = objects [ 0x000002B3 ]
-	table [ "sidemissions" ] = objects [ 0x000002B4 ]
-	table [ "agents" ] = objects [ 0x000002B5 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x000002AE ]
 	table [ "enabled" ] = true
@@ -3837,30 +3869,15 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "enabled" ] = true
 
 	table = objects [ 0x000002B1 ]
-	table [ "enabled" ] = true
+	table [ "advancedAlarm" ] = true
+	table [ "needPowerCells" ] = objects [ 0x000002B2 ]
 
 	table = objects [ 0x000002B2 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000002B3 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000002B4 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000002B5 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000002B6 ]
-	table [ "advancedAlarm" ] = true
-	table [ "needPowerCells" ] = objects [ 0x000002B7 ]
-
-	table = objects [ 0x000002B7 ]
 	table [ "type" ] = [==[objective]==]
 	table [ "text" ] = [==[> Find a Power Relay]==]
 	table [ "req" ] = [==[needPowerCells]==]
 
-	table = objects [ 0x000002B8 ]
+	table = objects [ 0x000002B3 ]
 	table [ "items_earned" ] = 18
 	table [ "security_hacked" ] = 263
 	table [ "guards_kod" ] = 33
@@ -3874,471 +3891,471 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "nextID" ] = 100
 	table [ "blocker" ] = false
 	table [ "missions_completed_3" ] = 11
-	table [ "upgrades" ] = objects [ 0x000002B9 ]
-	table [ "unitDefs" ] = objects [ 0x000002C0 ]
-	table [ "unitDefsPotential" ] = objects [ 0x00000313 ]
+	table [ "upgrades" ] = objects [ 0x000002B4 ]
+	table [ "unitDefs" ] = objects [ 0x000002BB ]
+	table [ "unitDefsPotential" ] = objects [ 0x0000030E ]
 	table [ "name" ] = [==[]==]
 	table [ "cpus" ] = 20
-	table [ "abilities" ] = objects [ 0x00000326 ]
+	table [ "abilities" ] = objects [ 0x00000321 ]
 	table [ "extraPrograms" ] = 1
 	table [ "id" ] = 1
 	table [ "monst3rItem" ] = [==[item_defiblance]==]
 	table [ "alwaysUnlocked" ] = true
 	table [ "cash" ] = 1444
 
-	table = objects [ 0x000002B9 ]
-	table [ 1 ]	= objects [ 0x000002BA ]
-	table [ 2 ]	= objects [ 0x000002BD ]
+	table = objects [ 0x000002B4 ]
+	table [ 1 ]	= objects [ 0x000002B5 ]
+	table [ 2 ]	= objects [ 0x000002B8 ]
 
-	table = objects [ 0x000002BA ]
-	table [ "upgradeParams" ] = objects [ 0x000002BB ]
+	table = objects [ 0x000002B5 ]
+	table [ "upgradeParams" ] = objects [ 0x000002B6 ]
 	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
 
-	table = objects [ 0x000002BB ]
-	table [ "traits" ] = objects [ 0x000002BC ]
+	table = objects [ 0x000002B6 ]
+	table [ "traits" ] = objects [ 0x000002B7 ]
 
-	table = objects [ 0x000002BC ]
+	table = objects [ 0x000002B7 ]
 	table [ "installed" ] = false
 	table [ "augment" ] = true
 
-	table = objects [ 0x000002BD ]
-	table [ "upgradeParams" ] = objects [ 0x000002BE ]
+	table = objects [ 0x000002B8 ]
+	table [ "upgradeParams" ] = objects [ 0x000002B9 ]
 	table [ "upgradeName" ] = [==[item_power_tazer_3]==]
 
-	table = objects [ 0x000002BE ]
-	table [ "traits" ] = objects [ 0x000002BF ]
+	table = objects [ 0x000002B9 ]
+	table [ "traits" ] = objects [ 0x000002BA ]
 
-	table = objects [ 0x000002BF ]
+	table = objects [ 0x000002BA ]
 	table [ "autoEquip" ] = true
 
+	table = objects [ 0x000002BB ]
+	table [ 1 ]	= objects [ 0x000002BC ]
+	table [ 2 ]	= objects [ 0x000002CD ]
+	table [ 3 ]	= objects [ 0x000002DD ]
+	table [ 4 ]	= objects [ 0x000002F0 ]
+	table [ 5 ]	= objects [ 0x00000300 ]
+
+	table = objects [ 0x000002BC ]
+	table [ "id" ] = 5
+	table [ "skills" ] = objects [ 0x000002BD ]
+	table [ "template" ] = [==[engineer_2]==]
+	table [ "upgrades" ] = objects [ 0x000002C2 ]
+
+	table = objects [ 0x000002BD ]
+	table [ 1 ]	= objects [ 0x000002BE ]
+	table [ 2 ]	= objects [ 0x000002BF ]
+	table [ 3 ]	= objects [ 0x000002C0 ]
+	table [ 4 ]	= objects [ 0x000002C1 ]
+
+	table = objects [ 0x000002BE ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
+
+	table = objects [ 0x000002BF ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[hacking]==]
+
 	table = objects [ 0x000002C0 ]
-	table [ 1 ]	= objects [ 0x000002C1 ]
-	table [ 2 ]	= objects [ 0x000002D2 ]
-	table [ 3 ]	= objects [ 0x000002E2 ]
-	table [ 4 ]	= objects [ 0x000002F5 ]
-	table [ 5 ]	= objects [ 0x00000305 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[inventory]==]
 
 	table = objects [ 0x000002C1 ]
-	table [ "id" ] = 5
-	table [ "skills" ] = objects [ 0x000002C2 ]
-	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x000002C7 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x000002C2 ]
 	table [ 1 ]	= objects [ 0x000002C3 ]
-	table [ 2 ]	= objects [ 0x000002C4 ]
-	table [ 3 ]	= objects [ 0x000002C5 ]
-	table [ 4 ]	= objects [ 0x000002C6 ]
+	table [ 2 ]	= objects [ 0x000002C6 ]
+	table [ 3 ]	= objects [ 0x000002C9 ]
+	table [ 4 ]	= objects [ 0x000002CA ]
+	table [ 5 ]	= objects [ 0x000002CB ]
+	table [ 6 ]	= objects [ 0x000002CC ]
 
 	table = objects [ 0x000002C3 ]
+	table [ "upgradeParams" ] = objects [ 0x000002C4 ]
+	table [ "upgradeName" ] = [==[augment_international_v1]==]
+
+	table = objects [ 0x000002C4 ]
+	table [ "traits" ] = objects [ 0x000002C5 ]
+
+	table = objects [ 0x000002C5 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x000002C6 ]
+	table [ "upgradeParams" ] = objects [ 0x000002C7 ]
+	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
+
+	table = objects [ 0x000002C7 ]
+	table [ "traits" ] = objects [ 0x000002C8 ]
+
+	table = objects [ 0x000002C8 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x000002C9 ]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
+
+	table = objects [ 0x000002CA ]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
+
+	table = objects [ 0x000002CB ]
+	table [ "upgradeName" ] = [==[item_stim]==]
+
+	table = objects [ 0x000002CC ]
+	table [ "upgradeName" ] = [==[item_emp_pack_3]==]
+
+	table = objects [ 0x000002CD ]
+	table [ "id" ] = 3
+	table [ "skills" ] = objects [ 0x000002CE ]
+	table [ "template" ] = [==[engineer_1]==]
+	table [ "upgrades" ] = objects [ 0x000002D3 ]
+
+	table = objects [ 0x000002CE ]
+	table [ 1 ]	= objects [ 0x000002CF ]
+	table [ 2 ]	= objects [ 0x000002D0 ]
+	table [ 3 ]	= objects [ 0x000002D1 ]
+	table [ 4 ]	= objects [ 0x000002D2 ]
+
+	table = objects [ 0x000002CF ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x000002C4 ]
-	table [ "level" ] = 5
+	table = objects [ 0x000002D0 ]
+	table [ "level" ] = 4
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x000002C5 ]
+	table = objects [ 0x000002D1 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x000002C6 ]
+	table = objects [ 0x000002D2 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x000002C7 ]
-	table [ 1 ]	= objects [ 0x000002C8 ]
-	table [ 2 ]	= objects [ 0x000002CB ]
-	table [ 3 ]	= objects [ 0x000002CE ]
-	table [ 4 ]	= objects [ 0x000002CF ]
-	table [ 5 ]	= objects [ 0x000002D0 ]
-	table [ 6 ]	= objects [ 0x000002D1 ]
-
-	table = objects [ 0x000002C8 ]
-	table [ "upgradeParams" ] = objects [ 0x000002C9 ]
-	table [ "upgradeName" ] = [==[augment_international_v1]==]
-
-	table = objects [ 0x000002C9 ]
-	table [ "traits" ] = objects [ 0x000002CA ]
-
-	table = objects [ 0x000002CA ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000002CB ]
-	table [ "upgradeParams" ] = objects [ 0x000002CC ]
-	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
-
-	table = objects [ 0x000002CC ]
-	table [ "traits" ] = objects [ 0x000002CD ]
-
-	table = objects [ 0x000002CD ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000002CE ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
-
-	table = objects [ 0x000002CF ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
-
-	table = objects [ 0x000002D0 ]
-	table [ "upgradeName" ] = [==[item_stim]==]
-
-	table = objects [ 0x000002D1 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_3]==]
-
-	table = objects [ 0x000002D2 ]
-	table [ "id" ] = 3
-	table [ "skills" ] = objects [ 0x000002D3 ]
-	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x000002D8 ]
 
 	table = objects [ 0x000002D3 ]
 	table [ 1 ]	= objects [ 0x000002D4 ]
-	table [ 2 ]	= objects [ 0x000002D5 ]
-	table [ 3 ]	= objects [ 0x000002D6 ]
-	table [ 4 ]	= objects [ 0x000002D7 ]
+	table [ 2 ]	= objects [ 0x000002D7 ]
+	table [ 3 ]	= objects [ 0x000002D8 ]
+	table [ 4 ]	= objects [ 0x000002DB ]
+	table [ 5 ]	= objects [ 0x000002DC ]
 
 	table = objects [ 0x000002D4 ]
+	table [ "upgradeParams" ] = objects [ 0x000002D5 ]
+	table [ "upgradeName" ] = [==[augment_tony]==]
+
+	table = objects [ 0x000002D5 ]
+	table [ "traits" ] = objects [ 0x000002D6 ]
+
+	table = objects [ 0x000002D6 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x000002D7 ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+
+	table = objects [ 0x000002D8 ]
+	table [ "upgradeParams" ] = objects [ 0x000002D9 ]
+	table [ "upgradeName" ] = [==[augment_net_downlink]==]
+
+	table = objects [ 0x000002D9 ]
+	table [ "traits" ] = objects [ 0x000002DA ]
+
+	table = objects [ 0x000002DA ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x000002DB ]
+	table [ "upgradeName" ] = [==[item_icebreaker]==]
+
+	table = objects [ 0x000002DC ]
+	table [ "upgradeName" ] = [==[item_emp_pack_3]==]
+
+	table = objects [ 0x000002DD ]
+	table [ "id" ] = 8
+	table [ "skills" ] = objects [ 0x000002DE ]
+	table [ "template" ] = [==[disguise_1]==]
+	table [ "upgrades" ] = objects [ 0x000002E3 ]
+
+	table = objects [ 0x000002DE ]
+	table [ 1 ]	= objects [ 0x000002DF ]
+	table [ 2 ]	= objects [ 0x000002E0 ]
+	table [ 3 ]	= objects [ 0x000002E1 ]
+	table [ 4 ]	= objects [ 0x000002E2 ]
+
+	table = objects [ 0x000002DF ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x000002D5 ]
-	table [ "level" ] = 4
+	table = objects [ 0x000002E0 ]
+	table [ "level" ] = 2
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x000002D6 ]
+	table = objects [ 0x000002E1 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x000002D7 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x000002D8 ]
-	table [ 1 ]	= objects [ 0x000002D9 ]
-	table [ 2 ]	= objects [ 0x000002DC ]
-	table [ 3 ]	= objects [ 0x000002DD ]
-	table [ 4 ]	= objects [ 0x000002E0 ]
-	table [ 5 ]	= objects [ 0x000002E1 ]
-
-	table = objects [ 0x000002D9 ]
-	table [ "upgradeParams" ] = objects [ 0x000002DA ]
-	table [ "upgradeName" ] = [==[augment_tony]==]
-
-	table = objects [ 0x000002DA ]
-	table [ "traits" ] = objects [ 0x000002DB ]
-
-	table = objects [ 0x000002DB ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000002DC ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
-
-	table = objects [ 0x000002DD ]
-	table [ "upgradeParams" ] = objects [ 0x000002DE ]
-	table [ "upgradeName" ] = [==[augment_net_downlink]==]
-
-	table = objects [ 0x000002DE ]
-	table [ "traits" ] = objects [ 0x000002DF ]
-
-	table = objects [ 0x000002DF ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000002E0 ]
-	table [ "upgradeName" ] = [==[item_icebreaker]==]
-
-	table = objects [ 0x000002E1 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_3]==]
-
 	table = objects [ 0x000002E2 ]
-	table [ "id" ] = 8
-	table [ "skills" ] = objects [ 0x000002E3 ]
-	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x000002E8 ]
+	table [ "level" ] = 2
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x000002E3 ]
 	table [ 1 ]	= objects [ 0x000002E4 ]
-	table [ 2 ]	= objects [ 0x000002E5 ]
-	table [ 3 ]	= objects [ 0x000002E6 ]
-	table [ 4 ]	= objects [ 0x000002E7 ]
+	table [ 2 ]	= objects [ 0x000002E7 ]
+	table [ 3 ]	= objects [ 0x000002E8 ]
+	table [ 4 ]	= objects [ 0x000002E9 ]
+	table [ 5 ]	= objects [ 0x000002EA ]
+	table [ 6 ]	= objects [ 0x000002EB ]
+	table [ 7 ]	= objects [ 0x000002EC ]
+	table [ 8 ]	= objects [ 0x000002EF ]
 
 	table = objects [ 0x000002E4 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x000002E5 ]
-	table [ "level" ] = 2
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x000002E6 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x000002E7 ]
-	table [ "level" ] = 2
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x000002E8 ]
-	table [ 1 ]	= objects [ 0x000002E9 ]
-	table [ 2 ]	= objects [ 0x000002EC ]
-	table [ 3 ]	= objects [ 0x000002ED ]
-	table [ 4 ]	= objects [ 0x000002EE ]
-	table [ 5 ]	= objects [ 0x000002EF ]
-	table [ 6 ]	= objects [ 0x000002F0 ]
-	table [ 7 ]	= objects [ 0x000002F1 ]
-	table [ 8 ]	= objects [ 0x000002F4 ]
-
-	table = objects [ 0x000002E9 ]
-	table [ "upgradeParams" ] = objects [ 0x000002EA ]
+	table [ "upgradeParams" ] = objects [ 0x000002E5 ]
 	table [ "upgradeName" ] = [==[augment_prism_2]==]
 
-	table = objects [ 0x000002EA ]
-	table [ "traits" ] = objects [ 0x000002EB ]
+	table = objects [ 0x000002E5 ]
+	table [ "traits" ] = objects [ 0x000002E6 ]
 
-	table = objects [ 0x000002EB ]
+	table = objects [ 0x000002E6 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000002EC ]
+	table = objects [ 0x000002E7 ]
 	table [ "upgradeName" ] = [==[item_stim_4]==]
 
-	table = objects [ 0x000002ED ]
+	table = objects [ 0x000002E8 ]
 	table [ "upgradeName" ] = [==[item_lockdecoder]==]
 
-	table = objects [ 0x000002EE ]
+	table = objects [ 0x000002E9 ]
 	table [ "upgradeName" ] = [==[item_stim_4]==]
 
-	table = objects [ 0x000002EF ]
+	table = objects [ 0x000002EA ]
 	table [ "upgradeName" ] = [==[item_stim_4]==]
 
-	table = objects [ 0x000002F0 ]
+	table = objects [ 0x000002EB ]
 	table [ "upgradeName" ] = [==[item_stim_4]==]
 
-	table = objects [ 0x000002F1 ]
-	table [ "upgradeParams" ] = objects [ 0x000002F2 ]
+	table = objects [ 0x000002EC ]
+	table [ "upgradeParams" ] = objects [ 0x000002ED ]
 	table [ "upgradeName" ] = [==[augment_microslam_apparatus]==]
 
-	table = objects [ 0x000002F2 ]
-	table [ "traits" ] = objects [ 0x000002F3 ]
+	table = objects [ 0x000002ED ]
+	table [ "traits" ] = objects [ 0x000002EE ]
 
-	table = objects [ 0x000002F3 ]
+	table = objects [ 0x000002EE ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000002F4 ]
+	table = objects [ 0x000002EF ]
 	table [ "upgradeName" ] = [==[item_emp_pack]==]
 
-	table = objects [ 0x000002F5 ]
+	table = objects [ 0x000002F0 ]
 	table [ "id" ] = 99
-	table [ "skills" ] = objects [ 0x000002F6 ]
+	table [ "skills" ] = objects [ 0x000002F1 ]
 	table [ "template" ] = [==[monst3r]==]
-	table [ "upgrades" ] = objects [ 0x000002FB ]
+	table [ "upgrades" ] = objects [ 0x000002F6 ]
 
-	table = objects [ 0x000002F6 ]
-	table [ 1 ]	= objects [ 0x000002F7 ]
-	table [ 2 ]	= objects [ 0x000002F8 ]
-	table [ 3 ]	= objects [ 0x000002F9 ]
-	table [ 4 ]	= objects [ 0x000002FA ]
+	table = objects [ 0x000002F1 ]
+	table [ 1 ]	= objects [ 0x000002F2 ]
+	table [ 2 ]	= objects [ 0x000002F3 ]
+	table [ 3 ]	= objects [ 0x000002F4 ]
+	table [ 4 ]	= objects [ 0x000002F5 ]
 
-	table = objects [ 0x000002F7 ]
+	table = objects [ 0x000002F2 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x000002F8 ]
+	table = objects [ 0x000002F3 ]
 	table [ "level" ] = 3
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x000002F9 ]
+	table = objects [ 0x000002F4 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x000002FA ]
+	table = objects [ 0x000002F5 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x000002FB ]
-	table [ 1 ]	= objects [ 0x000002FC ]
-	table [ 2 ]	= objects [ 0x000002FF ]
-	table [ 3 ]	= objects [ 0x00000302 ]
+	table = objects [ 0x000002F6 ]
+	table [ 1 ]	= objects [ 0x000002F7 ]
+	table [ 2 ]	= objects [ 0x000002FA ]
+	table [ 3 ]	= objects [ 0x000002FD ]
 
-	table = objects [ 0x000002FC ]
-	table [ "upgradeParams" ] = objects [ 0x000002FD ]
+	table = objects [ 0x000002F7 ]
+	table [ "upgradeParams" ] = objects [ 0x000002F8 ]
 	table [ "upgradeName" ] = [==[augment_monst3r]==]
 
-	table = objects [ 0x000002FD ]
-	table [ "traits" ] = objects [ 0x000002FE ]
+	table = objects [ 0x000002F8 ]
+	table [ "traits" ] = objects [ 0x000002F9 ]
 
-	table = objects [ 0x000002FE ]
+	table = objects [ 0x000002F9 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000002FF ]
-	table [ "upgradeParams" ] = objects [ 0x00000300 ]
+	table = objects [ 0x000002FA ]
+	table [ "upgradeParams" ] = objects [ 0x000002FB ]
 	table [ "upgradeName" ] = [==[item_monst3r_gun]==]
 
-	table = objects [ 0x00000300 ]
-	table [ "traits" ] = objects [ 0x00000301 ]
+	table = objects [ 0x000002FB ]
+	table [ "traits" ] = objects [ 0x000002FC ]
 
-	table = objects [ 0x00000301 ]
+	table = objects [ 0x000002FC ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000302 ]
-	table [ "upgradeParams" ] = objects [ 0x00000303 ]
+	table = objects [ 0x000002FD ]
+	table [ "upgradeParams" ] = objects [ 0x000002FE ]
 	table [ "upgradeName" ] = [==[augment_final_level]==]
 
-	table = objects [ 0x00000303 ]
-	table [ "traits" ] = objects [ 0x00000304 ]
+	table = objects [ 0x000002FE ]
+	table [ "traits" ] = objects [ 0x000002FF ]
 
-	table = objects [ 0x00000304 ]
+	table = objects [ 0x000002FF ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000305 ]
+	table = objects [ 0x00000300 ]
 	table [ "id" ] = 107
-	table [ "skills" ] = objects [ 0x00000306 ]
+	table [ "skills" ] = objects [ 0x00000301 ]
 	table [ "template" ] = [==[central]==]
-	table [ "upgrades" ] = objects [ 0x0000030B ]
+	table [ "upgrades" ] = objects [ 0x00000306 ]
 
-	table = objects [ 0x00000306 ]
-	table [ 1 ]	= objects [ 0x00000307 ]
-	table [ 2 ]	= objects [ 0x00000308 ]
-	table [ 3 ]	= objects [ 0x00000309 ]
-	table [ 4 ]	= objects [ 0x0000030A ]
+	table = objects [ 0x00000301 ]
+	table [ 1 ]	= objects [ 0x00000302 ]
+	table [ 2 ]	= objects [ 0x00000303 ]
+	table [ 3 ]	= objects [ 0x00000304 ]
+	table [ 4 ]	= objects [ 0x00000305 ]
 
-	table = objects [ 0x00000307 ]
+	table = objects [ 0x00000302 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000308 ]
+	table = objects [ 0x00000303 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x00000309 ]
+	table = objects [ 0x00000304 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x0000030A ]
+	table = objects [ 0x00000305 ]
 	table [ "level" ] = 4
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x0000030B ]
-	table [ 1 ]	= objects [ 0x0000030C ]
-	table [ 2 ]	= objects [ 0x0000030F ]
-	table [ 3 ]	= objects [ 0x00000312 ]
+	table = objects [ 0x00000306 ]
+	table [ 1 ]	= objects [ 0x00000307 ]
+	table [ 2 ]	= objects [ 0x0000030A ]
+	table [ 3 ]	= objects [ 0x0000030D ]
 
-	table = objects [ 0x0000030C ]
-	table [ "upgradeParams" ] = objects [ 0x0000030D ]
+	table = objects [ 0x00000307 ]
+	table [ "upgradeParams" ] = objects [ 0x00000308 ]
 	table [ "upgradeName" ] = [==[augment_central]==]
 
-	table = objects [ 0x0000030D ]
-	table [ "traits" ] = objects [ 0x0000030E ]
+	table = objects [ 0x00000308 ]
+	table [ "traits" ] = objects [ 0x00000309 ]
 
-	table = objects [ 0x0000030E ]
+	table = objects [ 0x00000309 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000030F ]
-	table [ "upgradeParams" ] = objects [ 0x00000310 ]
+	table = objects [ 0x0000030A ]
+	table [ "upgradeParams" ] = objects [ 0x0000030B ]
 	table [ "upgradeName" ] = [==[item_tazer]==]
 
-	table = objects [ 0x00000310 ]
-	table [ "traits" ] = objects [ 0x00000311 ]
+	table = objects [ 0x0000030B ]
+	table [ "traits" ] = objects [ 0x0000030C ]
 
-	table = objects [ 0x00000311 ]
+	table = objects [ 0x0000030C ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000312 ]
+	table = objects [ 0x0000030D ]
 	table [ "upgradeName" ] = [==[item_incognita]==]
 
-	table = objects [ 0x00000313 ]
-	table [ 1 ]	= objects [ 0x00000314 ]
-	table [ 2 ]	= objects [ 0x00000316 ]
-	table [ 3 ]	= objects [ 0x00000318 ]
-	table [ 4 ]	= objects [ 0x0000031A ]
-	table [ 5 ]	= objects [ 0x0000031C ]
-	table [ 6 ]	= objects [ 0x0000031E ]
-	table [ 7 ]	= objects [ 0x00000320 ]
-	table [ 8 ]	= objects [ 0x00000322 ]
-	table [ 9 ]	= objects [ 0x00000324 ]
+	table = objects [ 0x0000030E ]
+	table [ 1 ]	= objects [ 0x0000030F ]
+	table [ 2 ]	= objects [ 0x00000311 ]
+	table [ 3 ]	= objects [ 0x00000313 ]
+	table [ 4 ]	= objects [ 0x00000315 ]
+	table [ 5 ]	= objects [ 0x00000317 ]
+	table [ 6 ]	= objects [ 0x00000319 ]
+	table [ 7 ]	= objects [ 0x0000031B ]
+	table [ 8 ]	= objects [ 0x0000031D ]
+	table [ 9 ]	= objects [ 0x0000031F ]
 
-	table = objects [ 0x00000314 ]
+	table = objects [ 0x0000030F ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x00000315 ]
+	table [ "upgrades" ] = objects [ 0x00000310 ]
 
-	table = objects [ 0x00000315 ]
+	table = objects [ 0x00000310 ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x00000316 ]
+	table = objects [ 0x00000311 ]
 	table [ "id" ] = 2
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x00000317 ]
+	table [ "upgrades" ] = objects [ 0x00000312 ]
 
-	table = objects [ 0x00000317 ]
+	table = objects [ 0x00000312 ]
 	table [ 1 ]	= [==[augment_shalem]==]
 
-	table = objects [ 0x00000318 ]
+	table = objects [ 0x00000313 ]
 	table [ "id" ] = 4
 	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x00000319 ]
+	table [ "upgrades" ] = objects [ 0x00000314 ]
 
-	table = objects [ 0x00000319 ]
+	table = objects [ 0x00000314 ]
 	table [ 1 ]	= [==[augment_banks]==]
 
-	table = objects [ 0x0000031A ]
+	table = objects [ 0x00000315 ]
 	table [ "id" ] = 6
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x0000031B ]
+	table [ "upgrades" ] = objects [ 0x00000316 ]
 
-	table = objects [ 0x0000031B ]
+	table = objects [ 0x00000316 ]
 	table [ 1 ]	= [==[augment_nika]==]
 
-	table = objects [ 0x0000031C ]
+	table = objects [ 0x00000317 ]
 	table [ "id" ] = 7
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x0000031D ]
+	table [ "upgrades" ] = objects [ 0x00000318 ]
 
-	table = objects [ 0x0000031D ]
+	table = objects [ 0x00000318 ]
 	table [ 1 ]	= [==[augment_sharp_1]==]
 
-	table = objects [ 0x0000031E ]
+	table = objects [ 0x00000319 ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x0000031F ]
+	table [ "upgrades" ] = objects [ 0x0000031A ]
 
-	table = objects [ 0x0000031F ]
+	table = objects [ 0x0000031A ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x00000320 ]
+	table = objects [ 0x0000031B ]
 	table [ "id" ] = 1001
 	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x00000321 ]
+	table [ "upgrades" ] = objects [ 0x0000031C ]
 
-	table = objects [ 0x00000321 ]
+	table = objects [ 0x0000031C ]
 	table [ 1 ]	= [==[augment_particle_envelope]==]
 	table [ 2 ]	= [==[item_transport_beacon]==]
 
-	table = objects [ 0x00000322 ]
+	table = objects [ 0x0000031D ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x00000323 ]
+	table [ "upgrades" ] = objects [ 0x0000031E ]
 
-	table = objects [ 0x00000323 ]
+	table = objects [ 0x0000031E ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x00000324 ]
+	table = objects [ 0x0000031F ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x00000325 ]
+	table [ "upgrades" ] = objects [ 0x00000320 ]
 
-	table = objects [ 0x00000325 ]
+	table = objects [ 0x00000320 ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x00000326 ]
+	table = objects [ 0x00000321 ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[lockpick_1]==]
 	table [ 3 ]	= [==[parasite]==]
@@ -4347,14 +4364,14 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ 6 ]	= [==[pwr_manager]==]
 	table [ 7 ]	= [==[love]==]
 
-	table = objects [ 0x00000327 ]
+	table = objects [ 0x00000322 ]
 
-	table = objects [ 0x00000328 ]
+	table = objects [ 0x00000323 ]
 	table [ "customScriptIndex" ] = [==[post_mid_]==]
 	table [ "miniserversSeen" ] = 9
-	table [ "campaignEvents" ] = objects [ 0x00000329 ]
+	table [ "campaignEvents" ] = objects [ 0x00000324 ]
 	table [ "agentsFound" ] = 1
-	table [ "missionParams" ] = objects [ 0x00000331 ]
+	table [ "missionParams" ] = objects [ 0x0000032C ]
 	table [ "monst3rInject" ] = false
 	table [ "lastEndlessAlert" ] = false
 	table [ "creation_time" ] = 1558763667
@@ -4368,67 +4385,67 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "previousDay" ] = 5
 	table [ "version" ] = [==[0.17.18]==]
 	table [ "hours" ] = 151
-	table [ "difficultyOptions" ] = objects [ 0x00000332 ]
+	table [ "difficultyOptions" ] = objects [ 0x0000032D ]
 	table [ "missionTotal" ] = 29
 	table [ "result" ] = [==[VICTORY]==]
 	table [ "customScriptIndexDay" ] = 2
 	table [ "missionCount" ] = 19
-	table [ "situations" ] = objects [ 0x0000033E ]
+	table [ "situations" ] = objects [ 0x00000339 ]
 	table [ "chessTimer" ] = 0
 	table [ "seed" ] = 2057627395
-	table [ "missionEvents" ] = objects [ 0x0000033F ]
+	table [ "missionEvents" ] = objects [ 0x0000033A ]
 	table [ "extendedCampaignHours" ] = 72
 	table [ "save_time" ] = 1559135122
 	table [ "currentDay" ] = 6
 	table [ "complete_time" ] = 1559135185
 	table [ "missionsPlayedThisDay" ] = 0
 	table [ "campaignDifficulty" ] = 7
-	table [ "agency" ] = objects [ 0x00000341 ]
+	table [ "agency" ] = objects [ 0x0000033C ]
 	table [ "location" ] = 36
 	table [ "incognitaLevel" ] = 3
 
-	table = objects [ 0x00000329 ]
-	table [ 1 ]	= objects [ 0x0000032A ]
-	table [ 2 ]	= objects [ 0x0000032C ]
-	table [ 3 ]	= objects [ 0x00000330 ]
+	table = objects [ 0x00000324 ]
+	table [ 1 ]	= objects [ 0x00000325 ]
+	table [ 2 ]	= objects [ 0x00000327 ]
+	table [ 3 ]	= objects [ 0x0000032B ]
 
-	table = objects [ 0x0000032A ]
-	table [ "data" ] = objects [ 0x0000032B ]
+	table = objects [ 0x00000325 ]
+	table [ "data" ] = objects [ 0x00000326 ]
 	table [ "eventType" ] = 4
 
-	table = objects [ 0x0000032B ]
+	table = objects [ 0x00000326 ]
 	table [ "value" ] = true
 	table [ "hours" ] = 288
 	table [ "param" ] = [==[advanced_scanners]==]
 
-	table = objects [ 0x0000032C ]
+	table = objects [ 0x00000327 ]
 	table [ "hours" ] = 288
-	table [ "data" ] = objects [ 0x0000032D ]
+	table [ "data" ] = objects [ 0x00000328 ]
 	table [ "eventType" ] = 11
 
-	table = objects [ 0x0000032D ]
+	table = objects [ 0x00000328 ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x0000032E ]
+	table [ "groups" ] = objects [ 0x00000329 ]
 
-	table = objects [ 0x0000032E ]
-	table [ 1 ]	= objects [ 0x0000032F ]
+	table = objects [ 0x00000329 ]
+	table [ 1 ]	= objects [ 0x0000032A ]
 
-	table = objects [ 0x0000032F ]
+	table = objects [ 0x0000032A ]
 	table [ "text" ] = [==[Caution. Omni corp has upgraded all Enforcer units with XL-5 Scan Grenades. As well as scanning, the XL-5 emits a disruptive field that disables cloaking and Hologram Technology.]==]
 	table [ "title" ] = [==[ADVANCED SCAN GRENADES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/advanced_scan_grenades.png]==]
 
-	table = objects [ 0x00000330 ]
+	table = objects [ 0x0000032B ]
 	table [ "day" ] = 4
 	table [ "eventType" ] = 13
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x00000331 ]
+	table = objects [ 0x0000032C ]
 	table [ "newHiSecExitDay" ] = 7
 	table [ "extended_endless" ] = true
 	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x00000332 ]
+	table = objects [ 0x0000032D ]
 	table [ "firewallMultiplier" ] = 2
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = true
@@ -4445,7 +4462,7 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "startingPower" ] = 10
 	table [ "daemonQuantity" ] = [==[NORMAL]==]
 	table [ "timeAttack" ] = 7200
-	table [ "enabledDLC" ] = objects [ 0x00000333 ]
+	table [ "enabledDLC" ] = objects [ 0x0000032E ]
 	table [ "startingCredits" ] = 500
 	table [ "koDuration" ] = 0
 	table [ "safesPerLevel" ] = 5
@@ -4456,24 +4473,39 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "savescumming" ] = false
 	table [ "beginnerPatrols" ] = false
 
-	table = objects [ 0x00000333 ]
-	table [ "dlc1" ] = objects [ 0x00000334 ]
+	table = objects [ 0x0000032E ]
+	table [ "dlc1" ] = objects [ 0x0000032F ]
 
-	table = objects [ 0x00000334 ]
+	table = objects [ 0x0000032F ]
 	table [ "enabled" ] = true
 	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 	table [ "name" ] = [==[Contingency Plan]==]
-	table [ "options" ] = objects [ 0x00000335 ]
+	table [ "options" ] = objects [ 0x00000330 ]
+
+	table = objects [ 0x00000330 ]
+	table [ "programs" ] = objects [ 0x00000331 ]
+	table [ "guards" ] = objects [ 0x00000332 ]
+	table [ "extended_endless" ] = objects [ 0x00000333 ]
+	table [ "extended_campaign" ] = objects [ 0x00000334 ]
+	table [ "endless_mid_mission" ] = objects [ 0x00000335 ]
+	table [ "daemons" ] = objects [ 0x00000336 ]
+	table [ "agents" ] = objects [ 0x00000337 ]
+	table [ "sidemissions" ] = objects [ 0x00000338 ]
+
+	table = objects [ 0x00000331 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000332 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000333 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000334 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x00000335 ]
-	table [ "programs" ] = objects [ 0x00000336 ]
-	table [ "guards" ] = objects [ 0x00000337 ]
-	table [ "extended_endless" ] = objects [ 0x00000338 ]
-	table [ "extended_campaign" ] = objects [ 0x00000339 ]
-	table [ "endless_mid_mission" ] = objects [ 0x0000033A ]
-	table [ "daemons" ] = objects [ 0x0000033B ]
-	table [ "agents" ] = objects [ 0x0000033C ]
-	table [ "sidemissions" ] = objects [ 0x0000033D ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x00000336 ]
 	table [ "enabled" ] = true
@@ -4485,35 +4517,20 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "enabled" ] = true
 
 	table = objects [ 0x00000339 ]
-	table [ "enabled" ] = true
 
 	table = objects [ 0x0000033A ]
-	table [ "enabled" ] = true
+	table [ "advancedAlarm" ] = true
+	table [ "needPowerCells" ] = objects [ 0x0000033B ]
 
 	table = objects [ 0x0000033B ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000033C ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000033D ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000033E ]
-
-	table = objects [ 0x0000033F ]
-	table [ "advancedAlarm" ] = true
-	table [ "needPowerCells" ] = objects [ 0x00000340 ]
-
-	table = objects [ 0x00000340 ]
 	table [ "type" ] = [==[objective]==]
 	table [ "text" ] = [==[> Find a Power Relay]==]
 	table [ "req" ] = [==[needPowerCells]==]
 
-	table = objects [ 0x00000341 ]
+	table = objects [ 0x0000033C ]
 	table [ "items_earned" ] = 24
-	table [ "unitDefs" ] = objects [ 0x00000342 ]
-	table [ "upgrades" ] = objects [ 0x000003A5 ]
+	table [ "unitDefs" ] = objects [ 0x0000033D ]
+	table [ "upgrades" ] = objects [ 0x000003A0 ]
 	table [ "missions_completed" ] = 18
 	table [ "missions_completed_1" ] = 1
 	table [ "startLocation" ] = 23
@@ -4525,8 +4542,8 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "id" ] = 1
 	table [ "missions_completed_3" ] = 15
 	table [ "security_hacked" ] = 272
-	table [ "unitDefsPotential" ] = objects [ 0x000003AA ]
-	table [ "abilities" ] = objects [ 0x000003BD ]
+	table [ "unitDefsPotential" ] = objects [ 0x000003A5 ]
+	table [ "abilities" ] = objects [ 0x000003B8 ]
 	table [ "cpus" ] = 15
 	table [ "name" ] = [==[]==]
 	table [ "extraPrograms" ] = 1
@@ -4535,263 +4552,280 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "alwaysUnlocked" ] = true
 	table [ "cash" ] = 10439
 
+	table = objects [ 0x0000033D ]
+	table [ 1 ]	= objects [ 0x0000033E ]
+	table [ 2 ]	= objects [ 0x00000356 ]
+	table [ 3 ]	= objects [ 0x00000371 ]
+	table [ 4 ]	= objects [ 0x00000381 ]
+	table [ 5 ]	= objects [ 0x00000392 ]
+
+	table = objects [ 0x0000033E ]
+	table [ "id" ] = 5
+	table [ "skills" ] = objects [ 0x0000033F ]
+	table [ "template" ] = [==[engineer_2]==]
+	table [ "upgrades" ] = objects [ 0x00000344 ]
+
+	table = objects [ 0x0000033F ]
+	table [ 1 ]	= objects [ 0x00000340 ]
+	table [ 2 ]	= objects [ 0x00000341 ]
+	table [ 3 ]	= objects [ 0x00000342 ]
+	table [ 4 ]	= objects [ 0x00000343 ]
+
+	table = objects [ 0x00000340 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
+
+	table = objects [ 0x00000341 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[hacking]==]
+
 	table = objects [ 0x00000342 ]
-	table [ 1 ]	= objects [ 0x00000343 ]
-	table [ 2 ]	= objects [ 0x0000035B ]
-	table [ 3 ]	= objects [ 0x00000376 ]
-	table [ 4 ]	= objects [ 0x00000386 ]
-	table [ 5 ]	= objects [ 0x00000397 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[inventory]==]
 
 	table = objects [ 0x00000343 ]
-	table [ "id" ] = 5
-	table [ "skills" ] = objects [ 0x00000344 ]
-	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x00000349 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x00000344 ]
 	table [ 1 ]	= objects [ 0x00000345 ]
-	table [ 2 ]	= objects [ 0x00000346 ]
-	table [ 3 ]	= objects [ 0x00000347 ]
-	table [ 4 ]	= objects [ 0x00000348 ]
-
-	table = objects [ 0x00000345 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x00000346 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x00000347 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x00000348 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x00000349 ]
-	table [ 1 ]	= objects [ 0x0000034A ]
-	table [ 2 ]	= objects [ 0x0000034D ]
-	table [ 3 ]	= objects [ 0x00000350 ]
-	table [ 4 ]	= objects [ 0x00000353 ]
-	table [ 5 ]	= objects [ 0x00000356 ]
-	table [ 6 ]	= objects [ 0x00000357 ]
-	table [ 7 ]	= objects [ 0x00000358 ]
-	table [ 8 ]	= objects [ 0x00000359 ]
-	table [ 9 ]	= objects [ 0x0000035A ]
+	table [ 2 ]	= objects [ 0x00000348 ]
+	table [ 3 ]	= objects [ 0x0000034B ]
+	table [ 4 ]	= objects [ 0x0000034E ]
+	table [ 5 ]	= objects [ 0x00000351 ]
+	table [ 6 ]	= objects [ 0x00000352 ]
+	table [ 7 ]	= objects [ 0x00000353 ]
+	table [ 8 ]	= objects [ 0x00000354 ]
+	table [ 9 ]	= objects [ 0x00000355 ]
 	table [ 10 ]	= [==[augmentUpgradeSlot]==]
 	table [ 11 ]	= [==[augmentUpgradeSlot]==]
 
-	table = objects [ 0x0000034A ]
-	table [ "upgradeParams" ] = objects [ 0x0000034B ]
+	table = objects [ 0x00000345 ]
+	table [ "upgradeParams" ] = objects [ 0x00000346 ]
 	table [ "upgradeName" ] = [==[augment_international_v1]==]
 
-	table = objects [ 0x0000034B ]
-	table [ "traits" ] = objects [ 0x0000034C ]
+	table = objects [ 0x00000346 ]
+	table [ "traits" ] = objects [ 0x00000347 ]
 
-	table = objects [ 0x0000034C ]
+	table = objects [ 0x00000347 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000034D ]
-	table [ "upgradeParams" ] = objects [ 0x0000034E ]
+	table = objects [ 0x00000348 ]
+	table [ "upgradeParams" ] = objects [ 0x00000349 ]
 	table [ "upgradeName" ] = [==[augment_anatomy_analysis]==]
 
-	table = objects [ 0x0000034E ]
-	table [ "traits" ] = objects [ 0x0000034F ]
+	table = objects [ 0x00000349 ]
+	table [ "traits" ] = objects [ 0x0000034A ]
 
-	table = objects [ 0x0000034F ]
+	table = objects [ 0x0000034A ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000350 ]
-	table [ "upgradeParams" ] = objects [ 0x00000351 ]
+	table = objects [ 0x0000034B ]
+	table [ "upgradeParams" ] = objects [ 0x0000034C ]
 	table [ "upgradeName" ] = [==[augment_torque_injectors]==]
 
-	table = objects [ 0x00000351 ]
-	table [ "traits" ] = objects [ 0x00000352 ]
+	table = objects [ 0x0000034C ]
+	table [ "traits" ] = objects [ 0x0000034D ]
 
-	table = objects [ 0x00000352 ]
+	table = objects [ 0x0000034D ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000353 ]
-	table [ "upgradeParams" ] = objects [ 0x00000354 ]
+	table = objects [ 0x0000034E ]
+	table [ "upgradeParams" ] = objects [ 0x0000034F ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x00000354 ]
-	table [ "traits" ] = objects [ 0x00000355 ]
+	table = objects [ 0x0000034F ]
+	table [ "traits" ] = objects [ 0x00000350 ]
 
-	table = objects [ 0x00000355 ]
+	table = objects [ 0x00000350 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000356 ]
+	table = objects [ 0x00000351 ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x00000357 ]
+	table = objects [ 0x00000352 ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x00000358 ]
+	table = objects [ 0x00000353 ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x00000359 ]
+	table = objects [ 0x00000354 ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
-	table = objects [ 0x0000035A ]
+	table = objects [ 0x00000355 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
-	table = objects [ 0x0000035B ]
+	table = objects [ 0x00000356 ]
 	table [ "id" ] = 3
-	table [ "skills" ] = objects [ 0x0000035C ]
+	table [ "skills" ] = objects [ 0x00000357 ]
 	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x00000361 ]
+	table [ "upgrades" ] = objects [ 0x0000035C ]
+
+	table = objects [ 0x00000357 ]
+	table [ 1 ]	= objects [ 0x00000358 ]
+	table [ 2 ]	= objects [ 0x00000359 ]
+	table [ 3 ]	= objects [ 0x0000035A ]
+	table [ 4 ]	= objects [ 0x0000035B ]
+
+	table = objects [ 0x00000358 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
+
+	table = objects [ 0x00000359 ]
+	table [ "level" ] = 4
+	table [ "skillID" ] = [==[hacking]==]
+
+	table = objects [ 0x0000035A ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[inventory]==]
+
+	table = objects [ 0x0000035B ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x0000035C ]
 	table [ 1 ]	= objects [ 0x0000035D ]
-	table [ 2 ]	= objects [ 0x0000035E ]
-	table [ 3 ]	= objects [ 0x0000035F ]
-	table [ 4 ]	= objects [ 0x00000360 ]
-
-	table = objects [ 0x0000035D ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x0000035E ]
-	table [ "level" ] = 4
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x0000035F ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x00000360 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x00000361 ]
-	table [ 1 ]	= objects [ 0x00000362 ]
-	table [ 2 ]	= objects [ 0x00000365 ]
-	table [ 3 ]	= objects [ 0x00000368 ]
-	table [ 4 ]	= objects [ 0x0000036B ]
-	table [ 5 ]	= objects [ 0x0000036E ]
-	table [ 6 ]	= objects [ 0x0000036F ]
-	table [ 7 ]	= objects [ 0x00000370 ]
-	table [ 8 ]	= objects [ 0x00000371 ]
-	table [ 9 ]	= objects [ 0x00000372 ]
-	table [ 10 ]	= objects [ 0x00000373 ]
+	table [ 2 ]	= objects [ 0x00000360 ]
+	table [ 3 ]	= objects [ 0x00000363 ]
+	table [ 4 ]	= objects [ 0x00000366 ]
+	table [ 5 ]	= objects [ 0x00000369 ]
+	table [ 6 ]	= objects [ 0x0000036A ]
+	table [ 7 ]	= objects [ 0x0000036B ]
+	table [ 8 ]	= objects [ 0x0000036C ]
+	table [ 9 ]	= objects [ 0x0000036D ]
+	table [ 10 ]	= objects [ 0x0000036E ]
 	table [ 11 ]	= [==[augmentUpgradeSlot]==]
 	table [ 12 ]	= [==[augmentUpgradeSlot]==]
 
-	table = objects [ 0x00000362 ]
-	table [ "upgradeParams" ] = objects [ 0x00000363 ]
+	table = objects [ 0x0000035D ]
+	table [ "upgradeParams" ] = objects [ 0x0000035E ]
 	table [ "upgradeName" ] = [==[augment_tony]==]
 
-	table = objects [ 0x00000363 ]
-	table [ "traits" ] = objects [ 0x00000364 ]
+	table = objects [ 0x0000035E ]
+	table [ "traits" ] = objects [ 0x0000035F ]
 
-	table = objects [ 0x00000364 ]
+	table = objects [ 0x0000035F ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000365 ]
-	table [ "upgradeParams" ] = objects [ 0x00000366 ]
+	table = objects [ 0x00000360 ]
+	table [ "upgradeParams" ] = objects [ 0x00000361 ]
 	table [ "upgradeName" ] = [==[augment_skeletal_suspension]==]
 
-	table = objects [ 0x00000366 ]
-	table [ "traits" ] = objects [ 0x00000367 ]
+	table = objects [ 0x00000361 ]
+	table [ "traits" ] = objects [ 0x00000362 ]
 
-	table = objects [ 0x00000367 ]
+	table = objects [ 0x00000362 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000368 ]
-	table [ "upgradeParams" ] = objects [ 0x00000369 ]
+	table = objects [ 0x00000363 ]
+	table [ "upgradeParams" ] = objects [ 0x00000364 ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x00000369 ]
-	table [ "traits" ] = objects [ 0x0000036A ]
+	table = objects [ 0x00000364 ]
+	table [ "traits" ] = objects [ 0x00000365 ]
 
-	table = objects [ 0x0000036A ]
+	table = objects [ 0x00000365 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000036B ]
-	table [ "upgradeParams" ] = objects [ 0x0000036C ]
+	table = objects [ 0x00000366 ]
+	table [ "upgradeParams" ] = objects [ 0x00000367 ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x0000036C ]
-	table [ "traits" ] = objects [ 0x0000036D ]
+	table = objects [ 0x00000367 ]
+	table [ "traits" ] = objects [ 0x00000368 ]
 
-	table = objects [ 0x0000036D ]
+	table = objects [ 0x00000368 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000036E ]
+	table = objects [ 0x00000369 ]
 	table [ "upgradeName" ] = [==[item_stim_2]==]
 
-	table = objects [ 0x0000036F ]
+	table = objects [ 0x0000036A ]
 	table [ "upgradeName" ] = [==[item_emp_pack_3]==]
 
-	table = objects [ 0x00000370 ]
+	table = objects [ 0x0000036B ]
 	table [ "upgradeName" ] = [==[item_emp_pack]==]
 
-	table = objects [ 0x00000371 ]
+	table = objects [ 0x0000036C ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
-	table = objects [ 0x00000372 ]
+	table = objects [ 0x0000036D ]
 	table [ "upgradeName" ] = [==[item_icebreaker_2]==]
 
-	table = objects [ 0x00000373 ]
-	table [ "upgradeParams" ] = objects [ 0x00000374 ]
+	table = objects [ 0x0000036E ]
+	table [ "upgradeParams" ] = objects [ 0x0000036F ]
 	table [ "upgradeName" ] = [==[item_tag_pistol]==]
 
-	table = objects [ 0x00000374 ]
-	table [ "traits" ] = objects [ 0x00000375 ]
+	table = objects [ 0x0000036F ]
+	table [ "traits" ] = objects [ 0x00000370 ]
 
-	table = objects [ 0x00000375 ]
+	table = objects [ 0x00000370 ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000376 ]
+	table = objects [ 0x00000371 ]
 	table [ "id" ] = 1001
-	table [ "skills" ] = objects [ 0x00000377 ]
+	table [ "skills" ] = objects [ 0x00000372 ]
 	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x0000037C ]
+	table [ "upgrades" ] = objects [ 0x00000377 ]
 
-	table = objects [ 0x00000377 ]
-	table [ 1 ]	= objects [ 0x00000378 ]
-	table [ 2 ]	= objects [ 0x00000379 ]
-	table [ 3 ]	= objects [ 0x0000037A ]
-	table [ 4 ]	= objects [ 0x0000037B ]
+	table = objects [ 0x00000372 ]
+	table [ 1 ]	= objects [ 0x00000373 ]
+	table [ 2 ]	= objects [ 0x00000374 ]
+	table [ 3 ]	= objects [ 0x00000375 ]
+	table [ 4 ]	= objects [ 0x00000376 ]
 
-	table = objects [ 0x00000378 ]
+	table = objects [ 0x00000373 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000379 ]
+	table = objects [ 0x00000374 ]
 	table [ "level" ] = 4
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x0000037A ]
+	table = objects [ 0x00000375 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x0000037B ]
+	table = objects [ 0x00000376 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x0000037C ]
-	table [ 1 ]	= objects [ 0x0000037D ]
-	table [ 2 ]	= objects [ 0x00000380 ]
-	table [ 3 ]	= objects [ 0x00000381 ]
-	table [ 4 ]	= objects [ 0x00000382 ]
-	table [ 5 ]	= objects [ 0x00000385 ]
+	table = objects [ 0x00000377 ]
+	table [ 1 ]	= objects [ 0x00000378 ]
+	table [ 2 ]	= objects [ 0x0000037B ]
+	table [ 3 ]	= objects [ 0x0000037C ]
+	table [ 4 ]	= objects [ 0x0000037D ]
+	table [ 5 ]	= objects [ 0x00000380 ]
 	table [ 6 ]	= [==[augmentUpgradeSlot]==]
+
+	table = objects [ 0x00000378 ]
+	table [ "upgradeParams" ] = objects [ 0x00000379 ]
+	table [ "upgradeName" ] = [==[augment_particle_envelope]==]
+
+	table = objects [ 0x00000379 ]
+	table [ "traits" ] = objects [ 0x0000037A ]
+
+	table = objects [ 0x0000037A ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x0000037B ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_2]==]
+
+	table = objects [ 0x0000037C ]
+	table [ "upgradeName" ] = [==[item_stim_2]==]
 
 	table = objects [ 0x0000037D ]
 	table [ "upgradeParams" ] = objects [ 0x0000037E ]
-	table [ "upgradeName" ] = [==[augment_particle_envelope]==]
+	table [ "upgradeName" ] = [==[augment_torque_injectors]==]
 
 	table = objects [ 0x0000037E ]
 	table [ "traits" ] = objects [ 0x0000037F ]
@@ -4801,141 +4835,141 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "augment" ] = true
 
 	table = objects [ 0x00000380 ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_2]==]
-
-	table = objects [ 0x00000381 ]
-	table [ "upgradeName" ] = [==[item_stim_2]==]
-
-	table = objects [ 0x00000382 ]
-	table [ "upgradeParams" ] = objects [ 0x00000383 ]
-	table [ "upgradeName" ] = [==[augment_torque_injectors]==]
-
-	table = objects [ 0x00000383 ]
-	table [ "traits" ] = objects [ 0x00000384 ]
-
-	table = objects [ 0x00000384 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x00000385 ]
 	table [ "upgradeName" ] = [==[item_transport_beacon]==]
 
-	table = objects [ 0x00000386 ]
+	table = objects [ 0x00000381 ]
 	table [ "id" ] = 99
-	table [ "skills" ] = objects [ 0x00000387 ]
+	table [ "skills" ] = objects [ 0x00000382 ]
 	table [ "template" ] = [==[monst3r]==]
-	table [ "upgrades" ] = objects [ 0x0000038C ]
+	table [ "upgrades" ] = objects [ 0x00000387 ]
 
-	table = objects [ 0x00000387 ]
-	table [ 1 ]	= objects [ 0x00000388 ]
-	table [ 2 ]	= objects [ 0x00000389 ]
-	table [ 3 ]	= objects [ 0x0000038A ]
-	table [ 4 ]	= objects [ 0x0000038B ]
+	table = objects [ 0x00000382 ]
+	table [ 1 ]	= objects [ 0x00000383 ]
+	table [ 2 ]	= objects [ 0x00000384 ]
+	table [ 3 ]	= objects [ 0x00000385 ]
+	table [ 4 ]	= objects [ 0x00000386 ]
 
-	table = objects [ 0x00000388 ]
+	table = objects [ 0x00000383 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000389 ]
+	table = objects [ 0x00000384 ]
 	table [ "level" ] = 3
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x0000038A ]
+	table = objects [ 0x00000385 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x0000038B ]
+	table = objects [ 0x00000386 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x0000038C ]
-	table [ 1 ]	= objects [ 0x0000038D ]
-	table [ 2 ]	= objects [ 0x00000390 ]
-	table [ 3 ]	= objects [ 0x00000391 ]
-	table [ 4 ]	= objects [ 0x00000394 ]
+	table = objects [ 0x00000387 ]
+	table [ 1 ]	= objects [ 0x00000388 ]
+	table [ 2 ]	= objects [ 0x0000038B ]
+	table [ 3 ]	= objects [ 0x0000038C ]
+	table [ 4 ]	= objects [ 0x0000038F ]
 
-	table = objects [ 0x0000038D ]
-	table [ "upgradeParams" ] = objects [ 0x0000038E ]
+	table = objects [ 0x00000388 ]
+	table [ "upgradeParams" ] = objects [ 0x00000389 ]
 	table [ "upgradeName" ] = [==[augment_monst3r]==]
 
-	table = objects [ 0x0000038E ]
-	table [ "traits" ] = objects [ 0x0000038F ]
+	table = objects [ 0x00000389 ]
+	table [ "traits" ] = objects [ 0x0000038A ]
 
-	table = objects [ 0x0000038F ]
+	table = objects [ 0x0000038A ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000390 ]
+	table = objects [ 0x0000038B ]
 	table [ "upgradeName" ] = [==[item_flashgrenade]==]
 
-	table = objects [ 0x00000391 ]
-	table [ "upgradeParams" ] = objects [ 0x00000392 ]
+	table = objects [ 0x0000038C ]
+	table [ "upgradeParams" ] = objects [ 0x0000038D ]
 	table [ "upgradeName" ] = [==[item_monst3r_gun]==]
 
-	table = objects [ 0x00000392 ]
-	table [ "traits" ] = objects [ 0x00000393 ]
+	table = objects [ 0x0000038D ]
+	table [ "traits" ] = objects [ 0x0000038E ]
 
-	table = objects [ 0x00000393 ]
+	table = objects [ 0x0000038E ]
 	table [ "autoEquip" ] = false
 
-	table = objects [ 0x00000394 ]
-	table [ "upgradeParams" ] = objects [ 0x00000395 ]
+	table = objects [ 0x0000038F ]
+	table [ "upgradeParams" ] = objects [ 0x00000390 ]
 	table [ "upgradeName" ] = [==[augment_final_level]==]
 
-	table = objects [ 0x00000395 ]
-	table [ "traits" ] = objects [ 0x00000396 ]
+	table = objects [ 0x00000390 ]
+	table [ "traits" ] = objects [ 0x00000391 ]
 
-	table = objects [ 0x00000396 ]
+	table = objects [ 0x00000391 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000397 ]
+	table = objects [ 0x00000392 ]
 	table [ "id" ] = 107
-	table [ "skills" ] = objects [ 0x00000398 ]
+	table [ "skills" ] = objects [ 0x00000393 ]
 	table [ "template" ] = [==[central]==]
-	table [ "upgrades" ] = objects [ 0x0000039D ]
+	table [ "upgrades" ] = objects [ 0x00000398 ]
 
-	table = objects [ 0x00000398 ]
-	table [ 1 ]	= objects [ 0x00000399 ]
-	table [ 2 ]	= objects [ 0x0000039A ]
-	table [ 3 ]	= objects [ 0x0000039B ]
-	table [ 4 ]	= objects [ 0x0000039C ]
+	table = objects [ 0x00000393 ]
+	table [ 1 ]	= objects [ 0x00000394 ]
+	table [ 2 ]	= objects [ 0x00000395 ]
+	table [ 3 ]	= objects [ 0x00000396 ]
+	table [ 4 ]	= objects [ 0x00000397 ]
 
-	table = objects [ 0x00000399 ]
+	table = objects [ 0x00000394 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x0000039A ]
+	table = objects [ 0x00000395 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x0000039B ]
+	table = objects [ 0x00000396 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x0000039C ]
+	table = objects [ 0x00000397 ]
 	table [ "level" ] = 4
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x0000039D ]
-	table [ 1 ]	= objects [ 0x0000039E ]
-	table [ 2 ]	= objects [ 0x000003A1 ]
-	table [ 3 ]	= objects [ 0x000003A4 ]
+	table = objects [ 0x00000398 ]
+	table [ 1 ]	= objects [ 0x00000399 ]
+	table [ 2 ]	= objects [ 0x0000039C ]
+	table [ 3 ]	= objects [ 0x0000039F ]
 
-	table = objects [ 0x0000039E ]
-	table [ "upgradeParams" ] = objects [ 0x0000039F ]
+	table = objects [ 0x00000399 ]
+	table [ "upgradeParams" ] = objects [ 0x0000039A ]
 	table [ "upgradeName" ] = [==[augment_central]==]
 
-	table = objects [ 0x0000039F ]
-	table [ "traits" ] = objects [ 0x000003A0 ]
+	table = objects [ 0x0000039A ]
+	table [ "traits" ] = objects [ 0x0000039B ]
 
-	table = objects [ 0x000003A0 ]
+	table = objects [ 0x0000039B ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
+	table = objects [ 0x0000039C ]
+	table [ "upgradeParams" ] = objects [ 0x0000039D ]
+	table [ "upgradeName" ] = [==[item_tazer]==]
+
+	table = objects [ 0x0000039D ]
+	table [ "traits" ] = objects [ 0x0000039E ]
+
+	table = objects [ 0x0000039E ]
+	table [ "autoEquip" ] = true
+
+	table = objects [ 0x0000039F ]
+	table [ "upgradeName" ] = [==[item_incognita]==]
+
+	table = objects [ 0x000003A0 ]
+	table [ 1 ]	= objects [ 0x000003A1 ]
+	table [ 2 ]	= objects [ 0x000003A4 ]
+
 	table = objects [ 0x000003A1 ]
 	table [ "upgradeParams" ] = objects [ 0x000003A2 ]
-	table [ "upgradeName" ] = [==[item_tazer]==]
+	table [ "upgradeName" ] = [==[item_tazer_2]==]
 
 	table = objects [ 0x000003A2 ]
 	table [ "traits" ] = objects [ 0x000003A3 ]
@@ -4944,109 +4978,92 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "autoEquip" ] = true
 
 	table = objects [ 0x000003A4 ]
-	table [ "upgradeName" ] = [==[item_incognita]==]
+	table [ "upgradeName" ] = [==[vault_passcard]==]
 
 	table = objects [ 0x000003A5 ]
 	table [ 1 ]	= objects [ 0x000003A6 ]
-	table [ 2 ]	= objects [ 0x000003A9 ]
+	table [ 2 ]	= objects [ 0x000003A8 ]
+	table [ 3 ]	= objects [ 0x000003AA ]
+	table [ 4 ]	= objects [ 0x000003AC ]
+	table [ 5 ]	= objects [ 0x000003AE ]
+	table [ 6 ]	= objects [ 0x000003B0 ]
+	table [ 7 ]	= objects [ 0x000003B2 ]
+	table [ 8 ]	= objects [ 0x000003B4 ]
+	table [ 9 ]	= objects [ 0x000003B6 ]
 
 	table = objects [ 0x000003A6 ]
-	table [ "upgradeParams" ] = objects [ 0x000003A7 ]
-	table [ "upgradeName" ] = [==[item_tazer_2]==]
-
-	table = objects [ 0x000003A7 ]
-	table [ "traits" ] = objects [ 0x000003A8 ]
-
-	table = objects [ 0x000003A8 ]
-	table [ "autoEquip" ] = true
-
-	table = objects [ 0x000003A9 ]
-	table [ "upgradeName" ] = [==[vault_passcard]==]
-
-	table = objects [ 0x000003AA ]
-	table [ 1 ]	= objects [ 0x000003AB ]
-	table [ 2 ]	= objects [ 0x000003AD ]
-	table [ 3 ]	= objects [ 0x000003AF ]
-	table [ 4 ]	= objects [ 0x000003B1 ]
-	table [ 5 ]	= objects [ 0x000003B3 ]
-	table [ 6 ]	= objects [ 0x000003B5 ]
-	table [ 7 ]	= objects [ 0x000003B7 ]
-	table [ 8 ]	= objects [ 0x000003B9 ]
-	table [ 9 ]	= objects [ 0x000003BB ]
-
-	table = objects [ 0x000003AB ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x000003AC ]
+	table [ "upgrades" ] = objects [ 0x000003A7 ]
 
-	table = objects [ 0x000003AC ]
+	table = objects [ 0x000003A7 ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x000003AD ]
+	table = objects [ 0x000003A8 ]
 	table [ "id" ] = 2
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x000003AE ]
+	table [ "upgrades" ] = objects [ 0x000003A9 ]
 
-	table = objects [ 0x000003AE ]
+	table = objects [ 0x000003A9 ]
 	table [ 1 ]	= [==[augment_shalem]==]
 
-	table = objects [ 0x000003AF ]
+	table = objects [ 0x000003AA ]
 	table [ "id" ] = 4
 	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x000003B0 ]
+	table [ "upgrades" ] = objects [ 0x000003AB ]
 
-	table = objects [ 0x000003B0 ]
+	table = objects [ 0x000003AB ]
 	table [ 1 ]	= [==[augment_banks]==]
 
-	table = objects [ 0x000003B1 ]
+	table = objects [ 0x000003AC ]
 	table [ "id" ] = 6
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x000003B2 ]
+	table [ "upgrades" ] = objects [ 0x000003AD ]
 
-	table = objects [ 0x000003B2 ]
+	table = objects [ 0x000003AD ]
 	table [ 1 ]	= [==[augment_nika]==]
 
-	table = objects [ 0x000003B3 ]
+	table = objects [ 0x000003AE ]
 	table [ "id" ] = 8
 	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x000003B4 ]
+	table [ "upgrades" ] = objects [ 0x000003AF ]
 
-	table = objects [ 0x000003B4 ]
+	table = objects [ 0x000003AF ]
 	table [ 1 ]	= [==[augment_prism_2]==]
 
-	table = objects [ 0x000003B5 ]
+	table = objects [ 0x000003B0 ]
 	table [ "id" ] = 7
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x000003B6 ]
+	table [ "upgrades" ] = objects [ 0x000003B1 ]
 
-	table = objects [ 0x000003B6 ]
+	table = objects [ 0x000003B1 ]
 	table [ 1 ]	= [==[augment_sharp_1]==]
 
-	table = objects [ 0x000003B7 ]
+	table = objects [ 0x000003B2 ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x000003B8 ]
+	table [ "upgrades" ] = objects [ 0x000003B3 ]
 
-	table = objects [ 0x000003B8 ]
+	table = objects [ 0x000003B3 ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x000003B9 ]
+	table = objects [ 0x000003B4 ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x000003BA ]
+	table [ "upgrades" ] = objects [ 0x000003B5 ]
 
-	table = objects [ 0x000003BA ]
+	table = objects [ 0x000003B5 ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x000003BB ]
+	table = objects [ 0x000003B6 ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x000003BC ]
+	table [ "upgrades" ] = objects [ 0x000003B7 ]
 
-	table = objects [ 0x000003BC ]
+	table = objects [ 0x000003B7 ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x000003BD ]
+	table = objects [ 0x000003B8 ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[lockpick_1]==]
 	table [ 3 ]	= [==[parasite]==]
@@ -5055,12 +5072,12 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ 6 ]	= [==[bless]==]
 	table [ 7 ]	= [==[love]==]
 
-	table = objects [ 0x000003BE ]
+	table = objects [ 0x000003B9 ]
 	table [ "customScriptIndex" ] = [==[post_mid_]==]
 	table [ "miniserversSeen" ] = 9
-	table [ "agency" ] = objects [ 0x000003BF ]
+	table [ "agency" ] = objects [ 0x000003BA ]
 	table [ "agentsFound" ] = 1
-	table [ "missionParams" ] = objects [ 0x00000447 ]
+	table [ "missionParams" ] = objects [ 0x00000442 ]
 	table [ "monst3rInject" ] = false
 	table [ "lastEndlessAlert" ] = false
 	table [ "version" ] = [==[0.17.17]==]
@@ -5078,12 +5095,12 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "customScriptIndexDay" ] = 2
 	table [ "missionCount" ] = 19
 	table [ "lastMissionIndex" ] = 2
-	table [ "difficultyOptions" ] = objects [ 0x00000448 ]
+	table [ "difficultyOptions" ] = objects [ 0x00000443 ]
 	table [ "extendedCampaignHours" ] = 72
-	table [ "missionEvents" ] = objects [ 0x00000454 ]
-	table [ "situations" ] = objects [ 0x00000456 ]
+	table [ "missionEvents" ] = objects [ 0x0000044F ]
+	table [ "situations" ] = objects [ 0x00000451 ]
 	table [ "seed" ] = 2502857220
-	table [ "campaignEvents" ] = objects [ 0x00000457 ]
+	table [ "campaignEvents" ] = objects [ 0x00000452 ]
 	table [ "complete_time" ] = 1464326925
 	table [ "missionsPlayedThisDay" ] = 0
 	table [ "location" ] = 13
@@ -5091,10 +5108,10 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "campaignDifficulty" ] = 4
 	table [ "incognitaLevel" ] = 3
 
-	table = objects [ 0x000003BF ]
+	table = objects [ 0x000003BA ]
 	table [ "items_earned" ] = 24
 	table [ "security_hacked" ] = 279
-	table [ "upgrades" ] = objects [ 0x000003C0 ]
+	table [ "upgrades" ] = objects [ 0x000003BB ]
 	table [ "missions_completed" ] = 18
 	table [ "missions_completed_1" ] = 2
 	table [ "missions_completed_2" ] = 2
@@ -5106,575 +5123,575 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "blocker" ] = false
 	table [ "id" ] = 1
 	table [ "guards_kod" ] = 21
-	table [ "unitDefs" ] = objects [ 0x000003C3 ]
-	table [ "unitDefsPotential" ] = objects [ 0x00000433 ]
+	table [ "unitDefs" ] = objects [ 0x000003BE ]
+	table [ "unitDefsPotential" ] = objects [ 0x0000042E ]
 	table [ "name" ] = [==[]==]
 	table [ "cpus" ] = 17
-	table [ "abilities" ] = objects [ 0x00000446 ]
+	table [ "abilities" ] = objects [ 0x00000441 ]
 	table [ "extraPrograms" ] = 1
 	table [ "missions_completed_3" ] = 15
 	table [ "monst3rItem" ] = [==[augment_distributed_processing]==]
 	table [ "alwaysUnlocked" ] = true
 	table [ "cash" ] = 6473
 
+	table = objects [ 0x000003BB ]
+	table [ 1 ]	= objects [ 0x000003BC ]
+	table [ 2 ]	= objects [ 0x000003BD ]
+
+	table = objects [ 0x000003BC ]
+	table [ "upgradeName" ] = [==[vault_passcard]==]
+
+	table = objects [ 0x000003BD ]
+	table [ "upgradeName" ] = [==[vault_passcard]==]
+
+	table = objects [ 0x000003BE ]
+	table [ 1 ]	= objects [ 0x000003BF ]
+	table [ 2 ]	= objects [ 0x000003D8 ]
+	table [ 3 ]	= objects [ 0x000003F0 ]
+	table [ 4 ]	= objects [ 0x0000040D ]
+	table [ 5 ]	= objects [ 0x0000041F ]
+
+	table = objects [ 0x000003BF ]
+	table [ "id" ] = 8
+	table [ "skills" ] = objects [ 0x000003C0 ]
+	table [ "template" ] = [==[disguise_1_a]==]
+	table [ "upgrades" ] = objects [ 0x000003C5 ]
+
 	table = objects [ 0x000003C0 ]
 	table [ 1 ]	= objects [ 0x000003C1 ]
 	table [ 2 ]	= objects [ 0x000003C2 ]
+	table [ 3 ]	= objects [ 0x000003C3 ]
+	table [ 4 ]	= objects [ 0x000003C4 ]
 
 	table = objects [ 0x000003C1 ]
-	table [ "upgradeName" ] = [==[vault_passcard]==]
-
-	table = objects [ 0x000003C2 ]
-	table [ "upgradeName" ] = [==[vault_passcard]==]
-
-	table = objects [ 0x000003C3 ]
-	table [ 1 ]	= objects [ 0x000003C4 ]
-	table [ 2 ]	= objects [ 0x000003DD ]
-	table [ 3 ]	= objects [ 0x000003F5 ]
-	table [ 4 ]	= objects [ 0x00000412 ]
-	table [ 5 ]	= objects [ 0x00000424 ]
-
-	table = objects [ 0x000003C4 ]
-	table [ "id" ] = 8
-	table [ "skills" ] = objects [ 0x000003C5 ]
-	table [ "template" ] = [==[disguise_1_a]==]
-	table [ "upgrades" ] = objects [ 0x000003CA ]
-
-	table = objects [ 0x000003C5 ]
-	table [ 1 ]	= objects [ 0x000003C6 ]
-	table [ 2 ]	= objects [ 0x000003C7 ]
-	table [ 3 ]	= objects [ 0x000003C8 ]
-	table [ 4 ]	= objects [ 0x000003C9 ]
-
-	table = objects [ 0x000003C6 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x000003C7 ]
+	table = objects [ 0x000003C2 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x000003C8 ]
+	table = objects [ 0x000003C3 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x000003C9 ]
+	table = objects [ 0x000003C4 ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x000003CA ]
-	table [ 1 ]	= objects [ 0x000003CB ]
-	table [ 2 ]	= objects [ 0x000003CE ]
-	table [ 3 ]	= objects [ 0x000003CF ]
-	table [ 4 ]	= objects [ 0x000003D2 ]
-	table [ 5 ]	= objects [ 0x000003D5 ]
-	table [ 6 ]	= objects [ 0x000003D8 ]
-	table [ 7 ]	= objects [ 0x000003D9 ]
-	table [ 8 ]	= objects [ 0x000003DA ]
-	table [ 9 ]	= objects [ 0x000003DB ]
-	table [ 10 ]	= objects [ 0x000003DC ]
+	table = objects [ 0x000003C5 ]
+	table [ 1 ]	= objects [ 0x000003C6 ]
+	table [ 2 ]	= objects [ 0x000003C9 ]
+	table [ 3 ]	= objects [ 0x000003CA ]
+	table [ 4 ]	= objects [ 0x000003CD ]
+	table [ 5 ]	= objects [ 0x000003D0 ]
+	table [ 6 ]	= objects [ 0x000003D3 ]
+	table [ 7 ]	= objects [ 0x000003D4 ]
+	table [ 8 ]	= objects [ 0x000003D5 ]
+	table [ 9 ]	= objects [ 0x000003D6 ]
+	table [ 10 ]	= objects [ 0x000003D7 ]
 	table [ 11 ]	= [==[augmentUpgradeSlot]==]
 	table [ 12 ]	= [==[augmentUpgradeSlot]==]
 	table [ 13 ]	= [==[augmentUpgradeSlot]==]
 	table [ 14 ]	= [==[augmentUpgradeSlot]==]
 
-	table = objects [ 0x000003CB ]
-	table [ "upgradeParams" ] = objects [ 0x000003CC ]
+	table = objects [ 0x000003C6 ]
+	table [ "upgradeParams" ] = objects [ 0x000003C7 ]
 	table [ "upgradeName" ] = [==[augment_torque_injectors]==]
 
-	table = objects [ 0x000003CC ]
-	table [ "traits" ] = objects [ 0x000003CD ]
+	table = objects [ 0x000003C7 ]
+	table [ "traits" ] = objects [ 0x000003C8 ]
 
-	table = objects [ 0x000003CD ]
+	table = objects [ 0x000003C8 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000003CE ]
+	table = objects [ 0x000003C9 ]
 	table [ "upgradeName" ] = [==[item_prism_1]==]
 
-	table = objects [ 0x000003CF ]
-	table [ "upgradeParams" ] = objects [ 0x000003D0 ]
+	table = objects [ 0x000003CA ]
+	table [ "upgradeParams" ] = objects [ 0x000003CB ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x000003D0 ]
-	table [ "traits" ] = objects [ 0x000003D1 ]
+	table = objects [ 0x000003CB ]
+	table [ "traits" ] = objects [ 0x000003CC ]
 
-	table = objects [ 0x000003D1 ]
+	table = objects [ 0x000003CC ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000003D2 ]
-	table [ "upgradeParams" ] = objects [ 0x000003D3 ]
+	table = objects [ 0x000003CD ]
+	table [ "upgradeParams" ] = objects [ 0x000003CE ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x000003D3 ]
-	table [ "traits" ] = objects [ 0x000003D4 ]
+	table = objects [ 0x000003CE ]
+	table [ "traits" ] = objects [ 0x000003CF ]
 
-	table = objects [ 0x000003D4 ]
+	table = objects [ 0x000003CF ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000003D5 ]
-	table [ "upgradeParams" ] = objects [ 0x000003D6 ]
+	table = objects [ 0x000003D0 ]
+	table [ "upgradeParams" ] = objects [ 0x000003D1 ]
 	table [ "upgradeName" ] = [==[augment_microslam_apparatus]==]
 
-	table = objects [ 0x000003D6 ]
-	table [ "traits" ] = objects [ 0x000003D7 ]
+	table = objects [ 0x000003D1 ]
+	table [ "traits" ] = objects [ 0x000003D2 ]
 
-	table = objects [ 0x000003D7 ]
+	table = objects [ 0x000003D2 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000003D8 ]
+	table = objects [ 0x000003D3 ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x000003D9 ]
+	table = objects [ 0x000003D4 ]
 	table [ "upgradeName" ] = [==[item_stim_4]==]
 
-	table = objects [ 0x000003DA ]
+	table = objects [ 0x000003D5 ]
 	table [ "upgradeName" ] = [==[item_stim]==]
 
-	table = objects [ 0x000003DB ]
+	table = objects [ 0x000003D6 ]
 	table [ "upgradeName" ] = [==[item_clip]==]
 
-	table = objects [ 0x000003DC ]
+	table = objects [ 0x000003D7 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
-	table = objects [ 0x000003DD ]
+	table = objects [ 0x000003D8 ]
 	table [ "id" ] = 5
-	table [ "skills" ] = objects [ 0x000003DE ]
+	table [ "skills" ] = objects [ 0x000003D9 ]
 	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x000003E3 ]
+	table [ "upgrades" ] = objects [ 0x000003DE ]
+
+	table = objects [ 0x000003D9 ]
+	table [ 1 ]	= objects [ 0x000003DA ]
+	table [ 2 ]	= objects [ 0x000003DB ]
+	table [ 3 ]	= objects [ 0x000003DC ]
+	table [ 4 ]	= objects [ 0x000003DD ]
+
+	table = objects [ 0x000003DA ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
+
+	table = objects [ 0x000003DB ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[hacking]==]
+
+	table = objects [ 0x000003DC ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[inventory]==]
+
+	table = objects [ 0x000003DD ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x000003DE ]
 	table [ 1 ]	= objects [ 0x000003DF ]
-	table [ 2 ]	= objects [ 0x000003E0 ]
-	table [ 3 ]	= objects [ 0x000003E1 ]
-	table [ 4 ]	= objects [ 0x000003E2 ]
-
-	table = objects [ 0x000003DF ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x000003E0 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x000003E1 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x000003E2 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x000003E3 ]
-	table [ 1 ]	= objects [ 0x000003E4 ]
-	table [ 2 ]	= objects [ 0x000003E7 ]
-	table [ 3 ]	= objects [ 0x000003EA ]
-	table [ 4 ]	= objects [ 0x000003ED ]
-	table [ 5 ]	= objects [ 0x000003F0 ]
-	table [ 6 ]	= objects [ 0x000003F1 ]
-	table [ 7 ]	= objects [ 0x000003F2 ]
-	table [ 8 ]	= objects [ 0x000003F3 ]
-	table [ 9 ]	= objects [ 0x000003F4 ]
+	table [ 2 ]	= objects [ 0x000003E2 ]
+	table [ 3 ]	= objects [ 0x000003E5 ]
+	table [ 4 ]	= objects [ 0x000003E8 ]
+	table [ 5 ]	= objects [ 0x000003EB ]
+	table [ 6 ]	= objects [ 0x000003EC ]
+	table [ 7 ]	= objects [ 0x000003ED ]
+	table [ 8 ]	= objects [ 0x000003EE ]
+	table [ 9 ]	= objects [ 0x000003EF ]
 	table [ 10 ]	= [==[augmentUpgradeSlot]==]
 	table [ 11 ]	= [==[augmentUpgradeSlot]==]
 
-	table = objects [ 0x000003E4 ]
-	table [ "upgradeParams" ] = objects [ 0x000003E5 ]
+	table = objects [ 0x000003DF ]
+	table [ "upgradeParams" ] = objects [ 0x000003E0 ]
 	table [ "upgradeName" ] = [==[augment_international_v1]==]
 
-	table = objects [ 0x000003E5 ]
-	table [ "traits" ] = objects [ 0x000003E6 ]
+	table = objects [ 0x000003E0 ]
+	table [ "traits" ] = objects [ 0x000003E1 ]
 
-	table = objects [ 0x000003E6 ]
+	table = objects [ 0x000003E1 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000003E7 ]
-	table [ "upgradeParams" ] = objects [ 0x000003E8 ]
+	table = objects [ 0x000003E2 ]
+	table [ "upgradeParams" ] = objects [ 0x000003E3 ]
 	table [ "upgradeName" ] = [==[augment_torque_injectors]==]
 
-	table = objects [ 0x000003E8 ]
-	table [ "traits" ] = objects [ 0x000003E9 ]
+	table = objects [ 0x000003E3 ]
+	table [ "traits" ] = objects [ 0x000003E4 ]
 
-	table = objects [ 0x000003E9 ]
+	table = objects [ 0x000003E4 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000003EA ]
-	table [ "upgradeParams" ] = objects [ 0x000003EB ]
+	table = objects [ 0x000003E5 ]
+	table [ "upgradeParams" ] = objects [ 0x000003E6 ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x000003EB ]
-	table [ "traits" ] = objects [ 0x000003EC ]
+	table = objects [ 0x000003E6 ]
+	table [ "traits" ] = objects [ 0x000003E7 ]
 
-	table = objects [ 0x000003EC ]
+	table = objects [ 0x000003E7 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000003ED ]
-	table [ "upgradeParams" ] = objects [ 0x000003EE ]
+	table = objects [ 0x000003E8 ]
+	table [ "upgradeParams" ] = objects [ 0x000003E9 ]
 	table [ "upgradeName" ] = [==[item_power_tazer_3]==]
 
-	table = objects [ 0x000003EE ]
-	table [ "traits" ] = objects [ 0x000003EF ]
+	table = objects [ 0x000003E9 ]
+	table [ "traits" ] = objects [ 0x000003EA ]
 
-	table = objects [ 0x000003EF ]
+	table = objects [ 0x000003EA ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x000003F0 ]
+	table = objects [ 0x000003EB ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
-	table = objects [ 0x000003F1 ]
+	table = objects [ 0x000003EC ]
 	table [ "upgradeName" ] = [==[item_emp_pack_2]==]
 
-	table = objects [ 0x000003F2 ]
+	table = objects [ 0x000003ED ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
-	table = objects [ 0x000003F3 ]
+	table = objects [ 0x000003EE ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
-	table = objects [ 0x000003F4 ]
+	table = objects [ 0x000003EF ]
 	table [ "upgradeName" ] = [==[item_stim_4]==]
 
-	table = objects [ 0x000003F5 ]
+	table = objects [ 0x000003F0 ]
 	table [ "id" ] = 7
-	table [ "skills" ] = objects [ 0x000003F6 ]
+	table [ "skills" ] = objects [ 0x000003F1 ]
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x000003FB ]
+	table [ "upgrades" ] = objects [ 0x000003F6 ]
+
+	table = objects [ 0x000003F1 ]
+	table [ 1 ]	= objects [ 0x000003F2 ]
+	table [ 2 ]	= objects [ 0x000003F3 ]
+	table [ 3 ]	= objects [ 0x000003F4 ]
+	table [ 4 ]	= objects [ 0x000003F5 ]
+
+	table = objects [ 0x000003F2 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
+
+	table = objects [ 0x000003F3 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[hacking]==]
+
+	table = objects [ 0x000003F4 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[inventory]==]
+
+	table = objects [ 0x000003F5 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x000003F6 ]
 	table [ 1 ]	= objects [ 0x000003F7 ]
-	table [ 2 ]	= objects [ 0x000003F8 ]
-	table [ 3 ]	= objects [ 0x000003F9 ]
-	table [ 4 ]	= objects [ 0x000003FA ]
+	table [ 2 ]	= objects [ 0x000003FA ]
+	table [ 3 ]	= objects [ 0x000003FD ]
+	table [ 4 ]	= objects [ 0x00000400 ]
+	table [ 5 ]	= objects [ 0x00000403 ]
+	table [ 6 ]	= objects [ 0x00000406 ]
+	table [ 7 ]	= objects [ 0x00000409 ]
+	table [ 8 ]	= objects [ 0x0000040A ]
+	table [ 9 ]	= objects [ 0x0000040B ]
+	table [ 10 ]	= objects [ 0x0000040C ]
 
 	table = objects [ 0x000003F7 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x000003F8 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x000003F9 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x000003FA ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x000003FB ]
-	table [ 1 ]	= objects [ 0x000003FC ]
-	table [ 2 ]	= objects [ 0x000003FF ]
-	table [ 3 ]	= objects [ 0x00000402 ]
-	table [ 4 ]	= objects [ 0x00000405 ]
-	table [ 5 ]	= objects [ 0x00000408 ]
-	table [ 6 ]	= objects [ 0x0000040B ]
-	table [ 7 ]	= objects [ 0x0000040E ]
-	table [ 8 ]	= objects [ 0x0000040F ]
-	table [ 9 ]	= objects [ 0x00000410 ]
-	table [ 10 ]	= objects [ 0x00000411 ]
-
-	table = objects [ 0x000003FC ]
-	table [ "upgradeParams" ] = objects [ 0x000003FD ]
+	table [ "upgradeParams" ] = objects [ 0x000003F8 ]
 	table [ "upgradeName" ] = [==[augment_sharp_1]==]
 
-	table = objects [ 0x000003FD ]
-	table [ "traits" ] = objects [ 0x000003FE ]
+	table = objects [ 0x000003F8 ]
+	table [ "traits" ] = objects [ 0x000003F9 ]
 
-	table = objects [ 0x000003FE ]
+	table = objects [ 0x000003F9 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000003FF ]
-	table [ "upgradeParams" ] = objects [ 0x00000400 ]
+	table = objects [ 0x000003FA ]
+	table [ "upgradeParams" ] = objects [ 0x000003FB ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x00000400 ]
-	table [ "traits" ] = objects [ 0x00000401 ]
+	table = objects [ 0x000003FB ]
+	table [ "traits" ] = objects [ 0x000003FC ]
 
-	table = objects [ 0x00000401 ]
+	table = objects [ 0x000003FC ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000402 ]
-	table [ "upgradeParams" ] = objects [ 0x00000403 ]
+	table = objects [ 0x000003FD ]
+	table [ "upgradeParams" ] = objects [ 0x000003FE ]
 	table [ "upgradeName" ] = [==[item_monst3r_gun]==]
 
-	table = objects [ 0x00000403 ]
-	table [ "traits" ] = objects [ 0x00000404 ]
+	table = objects [ 0x000003FE ]
+	table [ "traits" ] = objects [ 0x000003FF ]
 
-	table = objects [ 0x00000404 ]
+	table = objects [ 0x000003FF ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000405 ]
-	table [ "upgradeParams" ] = objects [ 0x00000406 ]
+	table = objects [ 0x00000400 ]
+	table [ "upgradeParams" ] = objects [ 0x00000401 ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x00000406 ]
-	table [ "traits" ] = objects [ 0x00000407 ]
+	table = objects [ 0x00000401 ]
+	table [ "traits" ] = objects [ 0x00000402 ]
 
-	table = objects [ 0x00000407 ]
+	table = objects [ 0x00000402 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000408 ]
-	table [ "upgradeParams" ] = objects [ 0x00000409 ]
+	table = objects [ 0x00000403 ]
+	table [ "upgradeParams" ] = objects [ 0x00000404 ]
 	table [ "upgradeName" ] = [==[augment_penetration_scanner]==]
 
-	table = objects [ 0x00000409 ]
-	table [ "traits" ] = objects [ 0x0000040A ]
+	table = objects [ 0x00000404 ]
+	table [ "traits" ] = objects [ 0x00000405 ]
 
-	table = objects [ 0x0000040A ]
+	table = objects [ 0x00000405 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000040B ]
-	table [ "upgradeParams" ] = objects [ 0x0000040C ]
+	table = objects [ 0x00000406 ]
+	table [ "upgradeParams" ] = objects [ 0x00000407 ]
 	table [ "upgradeName" ] = [==[augment_distributed_processing]==]
 
-	table = objects [ 0x0000040C ]
-	table [ "traits" ] = objects [ 0x0000040D ]
+	table = objects [ 0x00000407 ]
+	table [ "traits" ] = objects [ 0x00000408 ]
 
-	table = objects [ 0x0000040D ]
+	table = objects [ 0x00000408 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000040E ]
+	table = objects [ 0x00000409 ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
-	table = objects [ 0x0000040F ]
+	table = objects [ 0x0000040A ]
 	table [ "upgradeName" ] = [==[item_emp_pack_2]==]
 
-	table = objects [ 0x00000410 ]
+	table = objects [ 0x0000040B ]
 	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
 
-	table = objects [ 0x00000411 ]
+	table = objects [ 0x0000040C ]
 	table [ "upgradeName" ] = [==[item_emp_pack]==]
 
-	table = objects [ 0x00000412 ]
+	table = objects [ 0x0000040D ]
 	table [ "id" ] = 99
-	table [ "skills" ] = objects [ 0x00000413 ]
+	table [ "skills" ] = objects [ 0x0000040E ]
 	table [ "template" ] = [==[monst3r]==]
-	table [ "upgrades" ] = objects [ 0x00000418 ]
+	table [ "upgrades" ] = objects [ 0x00000413 ]
 
-	table = objects [ 0x00000413 ]
-	table [ 1 ]	= objects [ 0x00000414 ]
-	table [ 2 ]	= objects [ 0x00000415 ]
-	table [ 3 ]	= objects [ 0x00000416 ]
-	table [ 4 ]	= objects [ 0x00000417 ]
+	table = objects [ 0x0000040E ]
+	table [ 1 ]	= objects [ 0x0000040F ]
+	table [ 2 ]	= objects [ 0x00000410 ]
+	table [ 3 ]	= objects [ 0x00000411 ]
+	table [ 4 ]	= objects [ 0x00000412 ]
 
-	table = objects [ 0x00000414 ]
+	table = objects [ 0x0000040F ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000415 ]
+	table = objects [ 0x00000410 ]
 	table [ "level" ] = 3
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x00000416 ]
+	table = objects [ 0x00000411 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000417 ]
+	table = objects [ 0x00000412 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x00000418 ]
-	table [ 1 ]	= objects [ 0x00000419 ]
-	table [ 2 ]	= objects [ 0x0000041C ]
-	table [ 3 ]	= objects [ 0x0000041F ]
-	table [ 4 ]	= objects [ 0x00000420 ]
-	table [ 5 ]	= objects [ 0x00000421 ]
+	table = objects [ 0x00000413 ]
+	table [ 1 ]	= objects [ 0x00000414 ]
+	table [ 2 ]	= objects [ 0x00000417 ]
+	table [ 3 ]	= objects [ 0x0000041A ]
+	table [ 4 ]	= objects [ 0x0000041B ]
+	table [ 5 ]	= objects [ 0x0000041C ]
 
-	table = objects [ 0x00000419 ]
-	table [ "upgradeParams" ] = objects [ 0x0000041A ]
+	table = objects [ 0x00000414 ]
+	table [ "upgradeParams" ] = objects [ 0x00000415 ]
 	table [ "upgradeName" ] = [==[augment_monst3r]==]
 
-	table = objects [ 0x0000041A ]
-	table [ "traits" ] = objects [ 0x0000041B ]
+	table = objects [ 0x00000415 ]
+	table [ "traits" ] = objects [ 0x00000416 ]
 
-	table = objects [ 0x0000041B ]
+	table = objects [ 0x00000416 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
+	table = objects [ 0x00000417 ]
+	table [ "upgradeParams" ] = objects [ 0x00000418 ]
+	table [ "upgradeName" ] = [==[item_monst3r_gun]==]
+
+	table = objects [ 0x00000418 ]
+	table [ "traits" ] = objects [ 0x00000419 ]
+
+	table = objects [ 0x00000419 ]
+	table [ "autoEquip" ] = true
+
+	table = objects [ 0x0000041A ]
+	table [ "upgradeName" ] = [==[item_clip]==]
+
+	table = objects [ 0x0000041B ]
+	table [ "upgradeName" ] = [==[item_stim]==]
+
 	table = objects [ 0x0000041C ]
 	table [ "upgradeParams" ] = objects [ 0x0000041D ]
-	table [ "upgradeName" ] = [==[item_monst3r_gun]==]
+	table [ "upgradeName" ] = [==[augment_final_level]==]
 
 	table = objects [ 0x0000041D ]
 	table [ "traits" ] = objects [ 0x0000041E ]
 
 	table = objects [ 0x0000041E ]
-	table [ "autoEquip" ] = true
-
-	table = objects [ 0x0000041F ]
-	table [ "upgradeName" ] = [==[item_clip]==]
-
-	table = objects [ 0x00000420 ]
-	table [ "upgradeName" ] = [==[item_stim]==]
-
-	table = objects [ 0x00000421 ]
-	table [ "upgradeParams" ] = objects [ 0x00000422 ]
-	table [ "upgradeName" ] = [==[augment_final_level]==]
-
-	table = objects [ 0x00000422 ]
-	table [ "traits" ] = objects [ 0x00000423 ]
-
-	table = objects [ 0x00000423 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000424 ]
+	table = objects [ 0x0000041F ]
 	table [ "id" ] = 107
-	table [ "skills" ] = objects [ 0x00000425 ]
+	table [ "skills" ] = objects [ 0x00000420 ]
 	table [ "template" ] = [==[central]==]
-	table [ "upgrades" ] = objects [ 0x0000042A ]
+	table [ "upgrades" ] = objects [ 0x00000425 ]
 
-	table = objects [ 0x00000425 ]
-	table [ 1 ]	= objects [ 0x00000426 ]
-	table [ 2 ]	= objects [ 0x00000427 ]
-	table [ 3 ]	= objects [ 0x00000428 ]
-	table [ 4 ]	= objects [ 0x00000429 ]
+	table = objects [ 0x00000420 ]
+	table [ 1 ]	= objects [ 0x00000421 ]
+	table [ 2 ]	= objects [ 0x00000422 ]
+	table [ 3 ]	= objects [ 0x00000423 ]
+	table [ 4 ]	= objects [ 0x00000424 ]
 
-	table = objects [ 0x00000426 ]
+	table = objects [ 0x00000421 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000427 ]
+	table = objects [ 0x00000422 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x00000428 ]
+	table = objects [ 0x00000423 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000429 ]
+	table = objects [ 0x00000424 ]
 	table [ "level" ] = 4
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x0000042A ]
-	table [ 1 ]	= objects [ 0x0000042B ]
-	table [ 2 ]	= objects [ 0x0000042E ]
-	table [ 3 ]	= objects [ 0x00000431 ]
-	table [ 4 ]	= objects [ 0x00000432 ]
+	table = objects [ 0x00000425 ]
+	table [ 1 ]	= objects [ 0x00000426 ]
+	table [ 2 ]	= objects [ 0x00000429 ]
+	table [ 3 ]	= objects [ 0x0000042C ]
+	table [ 4 ]	= objects [ 0x0000042D ]
 
-	table = objects [ 0x0000042B ]
-	table [ "upgradeParams" ] = objects [ 0x0000042C ]
+	table = objects [ 0x00000426 ]
+	table [ "upgradeParams" ] = objects [ 0x00000427 ]
 	table [ "upgradeName" ] = [==[augment_central]==]
 
-	table = objects [ 0x0000042C ]
-	table [ "traits" ] = objects [ 0x0000042D ]
+	table = objects [ 0x00000427 ]
+	table [ "traits" ] = objects [ 0x00000428 ]
 
-	table = objects [ 0x0000042D ]
+	table = objects [ 0x00000428 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000042E ]
-	table [ "upgradeParams" ] = objects [ 0x0000042F ]
+	table = objects [ 0x00000429 ]
+	table [ "upgradeParams" ] = objects [ 0x0000042A ]
 	table [ "upgradeName" ] = [==[item_tazer]==]
 
-	table = objects [ 0x0000042F ]
-	table [ "traits" ] = objects [ 0x00000430 ]
+	table = objects [ 0x0000042A ]
+	table [ "traits" ] = objects [ 0x0000042B ]
 
-	table = objects [ 0x00000430 ]
+	table = objects [ 0x0000042B ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000431 ]
+	table = objects [ 0x0000042C ]
 	table [ "upgradeName" ] = [==[item_incognita]==]
 
-	table = objects [ 0x00000432 ]
+	table = objects [ 0x0000042D ]
 	table [ "upgradeName" ] = [==[item_icebreaker]==]
 
-	table = objects [ 0x00000433 ]
-	table [ 1 ]	= objects [ 0x00000434 ]
-	table [ 2 ]	= objects [ 0x00000436 ]
-	table [ 3 ]	= objects [ 0x00000438 ]
-	table [ 4 ]	= objects [ 0x0000043A ]
-	table [ 5 ]	= objects [ 0x0000043C ]
-	table [ 6 ]	= objects [ 0x0000043E ]
-	table [ 7 ]	= objects [ 0x00000440 ]
-	table [ 8 ]	= objects [ 0x00000442 ]
-	table [ 9 ]	= objects [ 0x00000444 ]
+	table = objects [ 0x0000042E ]
+	table [ 1 ]	= objects [ 0x0000042F ]
+	table [ 2 ]	= objects [ 0x00000431 ]
+	table [ 3 ]	= objects [ 0x00000433 ]
+	table [ 4 ]	= objects [ 0x00000435 ]
+	table [ 5 ]	= objects [ 0x00000437 ]
+	table [ 6 ]	= objects [ 0x00000439 ]
+	table [ 7 ]	= objects [ 0x0000043B ]
+	table [ 8 ]	= objects [ 0x0000043D ]
+	table [ 9 ]	= objects [ 0x0000043F ]
 
-	table = objects [ 0x00000434 ]
+	table = objects [ 0x0000042F ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x00000435 ]
+	table [ "upgrades" ] = objects [ 0x00000430 ]
 
-	table = objects [ 0x00000435 ]
+	table = objects [ 0x00000430 ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x00000436 ]
+	table = objects [ 0x00000431 ]
 	table [ "id" ] = 2
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x00000437 ]
+	table [ "upgrades" ] = objects [ 0x00000432 ]
 
-	table = objects [ 0x00000437 ]
+	table = objects [ 0x00000432 ]
 	table [ 1 ]	= [==[augment_shalem]==]
 
-	table = objects [ 0x00000438 ]
+	table = objects [ 0x00000433 ]
 	table [ "id" ] = 4
 	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x00000439 ]
+	table [ "upgrades" ] = objects [ 0x00000434 ]
 
-	table = objects [ 0x00000439 ]
+	table = objects [ 0x00000434 ]
 	table [ 1 ]	= [==[augment_banks]==]
 
-	table = objects [ 0x0000043A ]
+	table = objects [ 0x00000435 ]
 	table [ "id" ] = 6
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x0000043B ]
+	table [ "upgrades" ] = objects [ 0x00000436 ]
 
-	table = objects [ 0x0000043B ]
+	table = objects [ 0x00000436 ]
 	table [ 1 ]	= [==[augment_nika]==]
 
-	table = objects [ 0x0000043C ]
+	table = objects [ 0x00000437 ]
 	table [ "id" ] = 3
 	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x0000043D ]
+	table [ "upgrades" ] = objects [ 0x00000438 ]
 
-	table = objects [ 0x0000043D ]
+	table = objects [ 0x00000438 ]
 	table [ 1 ]	= [==[augment_tony]==]
 
-	table = objects [ 0x0000043E ]
+	table = objects [ 0x00000439 ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x0000043F ]
+	table [ "upgrades" ] = objects [ 0x0000043A ]
 
-	table = objects [ 0x0000043F ]
+	table = objects [ 0x0000043A ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x00000440 ]
+	table = objects [ 0x0000043B ]
 	table [ "id" ] = 1001
 	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x00000441 ]
+	table [ "upgrades" ] = objects [ 0x0000043C ]
 
-	table = objects [ 0x00000441 ]
+	table = objects [ 0x0000043C ]
 	table [ 1 ]	= [==[augment_particle_envelope]==]
 	table [ 2 ]	= [==[item_transport_beacon]==]
 
-	table = objects [ 0x00000442 ]
+	table = objects [ 0x0000043D ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x00000443 ]
+	table [ "upgrades" ] = objects [ 0x0000043E ]
 
-	table = objects [ 0x00000443 ]
+	table = objects [ 0x0000043E ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x00000444 ]
+	table = objects [ 0x0000043F ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x00000445 ]
+	table [ "upgrades" ] = objects [ 0x00000440 ]
 
-	table = objects [ 0x00000445 ]
+	table = objects [ 0x00000440 ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x00000446 ]
+	table = objects [ 0x00000441 ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[lockpick_2]==]
 	table [ 3 ]	= [==[dagger]==]
@@ -5683,12 +5700,12 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ 6 ]	= [==[golem_17_10]==]
 	table [ 7 ]	= [==[love]==]
 
-	table = objects [ 0x00000447 ]
+	table = objects [ 0x00000442 ]
 	table [ "newHiSecExitDay" ] = 7
 	table [ "extended_endless" ] = true
 	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x00000448 ]
+	table = objects [ 0x00000443 ]
 	table [ "firewallMultiplier" ] = 2
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = false
@@ -5705,7 +5722,7 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "startingPower" ] = 5
 	table [ "daemonQuantity" ] = [==[NORMAL]==]
 	table [ "timeAttack" ] = 0
-	table [ "enabledDLC" ] = objects [ 0x00000449 ]
+	table [ "enabledDLC" ] = objects [ 0x00000444 ]
 	table [ "meleeFromFront" ] = false
 	table [ "koDuration" ] = 0
 	table [ "safesPerLevel" ] = 5
@@ -5716,24 +5733,39 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "savescumming" ] = false
 	table [ "beginnerPatrols" ] = false
 
+	table = objects [ 0x00000444 ]
+	table [ "dlc1" ] = objects [ 0x00000445 ]
+
+	table = objects [ 0x00000445 ]
+	table [ "enabled" ] = true
+	table [ "name" ] = [==[Contingency Plan]==]
+	table [ "options" ] = objects [ 0x00000446 ]
+	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
+
+	table = objects [ 0x00000446 ]
+	table [ "programs" ] = objects [ 0x00000447 ]
+	table [ "guards" ] = objects [ 0x00000448 ]
+	table [ "extended_endless" ] = objects [ 0x00000449 ]
+	table [ "extended_campaign" ] = objects [ 0x0000044A ]
+	table [ "endless_mid_mission" ] = objects [ 0x0000044B ]
+	table [ "daemons" ] = objects [ 0x0000044C ]
+	table [ "sidemissions" ] = objects [ 0x0000044D ]
+	table [ "agents" ] = objects [ 0x0000044E ]
+
+	table = objects [ 0x00000447 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000448 ]
+	table [ "enabled" ] = true
+
 	table = objects [ 0x00000449 ]
-	table [ "dlc1" ] = objects [ 0x0000044A ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x0000044A ]
 	table [ "enabled" ] = true
-	table [ "name" ] = [==[Contingency Plan]==]
-	table [ "options" ] = objects [ 0x0000044B ]
-	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 
 	table = objects [ 0x0000044B ]
-	table [ "programs" ] = objects [ 0x0000044C ]
-	table [ "guards" ] = objects [ 0x0000044D ]
-	table [ "extended_endless" ] = objects [ 0x0000044E ]
-	table [ "extended_campaign" ] = objects [ 0x0000044F ]
-	table [ "endless_mid_mission" ] = objects [ 0x00000450 ]
-	table [ "daemons" ] = objects [ 0x00000451 ]
-	table [ "sidemissions" ] = objects [ 0x00000452 ]
-	table [ "agents" ] = objects [ 0x00000453 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x0000044C ]
 	table [ "enabled" ] = true
@@ -5745,73 +5777,58 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "enabled" ] = true
 
 	table = objects [ 0x0000044F ]
-	table [ "enabled" ] = true
+	table [ "advancedAlarm" ] = true
+	table [ "needPowerCells" ] = objects [ 0x00000450 ]
 
 	table = objects [ 0x00000450 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000451 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000452 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000453 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000454 ]
-	table [ "advancedAlarm" ] = true
-	table [ "needPowerCells" ] = objects [ 0x00000455 ]
-
-	table = objects [ 0x00000455 ]
 	table [ "type" ] = [==[objective]==]
 	table [ "text" ] = [==[> Find a Power Relay]==]
 	table [ "req" ] = [==[needPowerCells]==]
 
-	table = objects [ 0x00000456 ]
+	table = objects [ 0x00000451 ]
 
-	table = objects [ 0x00000457 ]
-	table [ 1 ]	= objects [ 0x00000458 ]
-	table [ 2 ]	= objects [ 0x0000045A ]
-	table [ 3 ]	= objects [ 0x0000045E ]
+	table = objects [ 0x00000452 ]
+	table [ 1 ]	= objects [ 0x00000453 ]
+	table [ 2 ]	= objects [ 0x00000455 ]
+	table [ 3 ]	= objects [ 0x00000459 ]
 
-	table = objects [ 0x00000458 ]
-	table [ "data" ] = objects [ 0x00000459 ]
+	table = objects [ 0x00000453 ]
+	table [ "data" ] = objects [ 0x00000454 ]
 	table [ "eventType" ] = 4
 
-	table = objects [ 0x00000459 ]
+	table = objects [ 0x00000454 ]
 	table [ "value" ] = true
 	table [ "hours" ] = 288
 	table [ "param" ] = [==[advanced_scanners]==]
 
-	table = objects [ 0x0000045A ]
+	table = objects [ 0x00000455 ]
 	table [ "hours" ] = 288
-	table [ "data" ] = objects [ 0x0000045B ]
+	table [ "data" ] = objects [ 0x00000456 ]
 	table [ "eventType" ] = 11
 
-	table = objects [ 0x0000045B ]
+	table = objects [ 0x00000456 ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x0000045C ]
+	table [ "groups" ] = objects [ 0x00000457 ]
 
-	table = objects [ 0x0000045C ]
-	table [ 1 ]	= objects [ 0x0000045D ]
+	table = objects [ 0x00000457 ]
+	table [ 1 ]	= objects [ 0x00000458 ]
 
-	table = objects [ 0x0000045D ]
+	table = objects [ 0x00000458 ]
 	table [ "text" ] = [==[Caution. Omni corp has upgraded all Enforcer units with XL-5 Scan Grenades. As well as scanning, the XL-5 emits a disruptive field that disables cloaking and Hologram Technology.]==]
 	table [ "title" ] = [==[ADVANCED SCAN GRENADES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/advanced_scan_grenades.png]==]
 
-	table = objects [ 0x0000045E ]
+	table = objects [ 0x00000459 ]
 	table [ "day" ] = 4
 	table [ "eventType" ] = 13
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x0000045F ]
+	table = objects [ 0x0000045A ]
 	table [ "customScriptIndex" ] = [==[post_mid_]==]
 	table [ "miniserversSeen" ] = 7
-	table [ "agency" ] = objects [ 0x00000460 ]
+	table [ "agency" ] = objects [ 0x0000045B ]
 	table [ "agentsFound" ] = 2
-	table [ "missionParams" ] = objects [ 0x000004D5 ]
+	table [ "missionParams" ] = objects [ 0x000004D0 ]
 	table [ "save_time" ] = 1539503167
 	table [ "lastEndlessAlert" ] = false
 	table [ "version" ] = [==[0.17.18]==]
@@ -5829,12 +5846,12 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "customScriptIndexDay" ] = 2
 	table [ "missionTotal" ] = 26
 	table [ "currentDay" ] = 6
-	table [ "difficultyOptions" ] = objects [ 0x000004D6 ]
+	table [ "difficultyOptions" ] = objects [ 0x000004D1 ]
 	table [ "extendedCampaignHours" ] = 72
-	table [ "missionEvents" ] = objects [ 0x000004E2 ]
-	table [ "situations" ] = objects [ 0x000004E4 ]
+	table [ "missionEvents" ] = objects [ 0x000004DD ]
+	table [ "situations" ] = objects [ 0x000004DF ]
 	table [ "missionsPlayedThisDay" ] = 0
-	table [ "campaignEvents" ] = objects [ 0x000004E5 ]
+	table [ "campaignEvents" ] = objects [ 0x000004E0 ]
 	table [ "complete_time" ] = 1539503359
 	table [ "seed" ] = 4133534722
 	table [ "location" ] = 31
@@ -5842,10 +5859,10 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "monst3rInject" ] = false
 	table [ "incognitaLevel" ] = 3
 
-	table = objects [ 0x00000460 ]
+	table = objects [ 0x0000045B ]
 	table [ "items_earned" ] = 19
-	table [ "unitDefs" ] = objects [ 0x00000461 ]
-	table [ "upgrades" ] = objects [ 0x000004C2 ]
+	table [ "unitDefs" ] = objects [ 0x0000045C ]
+	table [ "upgrades" ] = objects [ 0x000004BD ]
 	table [ "missions_completed" ] = 15
 	table [ "missions_completed_1" ] = 2
 	table [ "startLocation" ] = 23
@@ -5858,9 +5875,9 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "id" ] = 1
 	table [ "missions_completed_3" ] = 13
 	table [ "security_hacked" ] = 270
-	table [ "unitDefsPotential" ] = objects [ 0x000004C3 ]
+	table [ "unitDefsPotential" ] = objects [ 0x000004BE ]
 	table [ "cpus" ] = 20
-	table [ "abilities" ] = objects [ 0x000004D4 ]
+	table [ "abilities" ] = objects [ 0x000004CF ]
 	table [ "name" ] = [==[]==]
 	table [ "extraPrograms" ] = 1
 	table [ "guards_kod" ] = 27
@@ -5868,487 +5885,487 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "alwaysUnlocked" ] = true
 	table [ "cash" ] = 1010
 
-	table = objects [ 0x00000461 ]
-	table [ 1 ]	= objects [ 0x00000462 ]
-	table [ 2 ]	= objects [ 0x00000472 ]
-	table [ 3 ]	= objects [ 0x00000489 ]
-	table [ 4 ]	= objects [ 0x0000049A ]
-	table [ 5 ]	= objects [ 0x000004A4 ]
-	table [ 6 ]	= objects [ 0x000004B4 ]
+	table = objects [ 0x0000045C ]
+	table [ 1 ]	= objects [ 0x0000045D ]
+	table [ 2 ]	= objects [ 0x0000046D ]
+	table [ 3 ]	= objects [ 0x00000484 ]
+	table [ 4 ]	= objects [ 0x00000495 ]
+	table [ 5 ]	= objects [ 0x0000049F ]
+	table [ 6 ]	= objects [ 0x000004AF ]
 
-	table = objects [ 0x00000462 ]
+	table = objects [ 0x0000045D ]
 	table [ "id" ] = 3
-	table [ "skills" ] = objects [ 0x00000463 ]
+	table [ "skills" ] = objects [ 0x0000045E ]
 	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x00000468 ]
+	table [ "upgrades" ] = objects [ 0x00000463 ]
 
-	table = objects [ 0x00000463 ]
-	table [ 1 ]	= objects [ 0x00000464 ]
-	table [ 2 ]	= objects [ 0x00000465 ]
-	table [ 3 ]	= objects [ 0x00000466 ]
-	table [ 4 ]	= objects [ 0x00000467 ]
+	table = objects [ 0x0000045E ]
+	table [ 1 ]	= objects [ 0x0000045F ]
+	table [ 2 ]	= objects [ 0x00000460 ]
+	table [ 3 ]	= objects [ 0x00000461 ]
+	table [ 4 ]	= objects [ 0x00000462 ]
 
-	table = objects [ 0x00000464 ]
+	table = objects [ 0x0000045F ]
 	table [ "skillID" ] = [==[stealth]==]
 	table [ "level" ] = 5
 
-	table = objects [ 0x00000465 ]
+	table = objects [ 0x00000460 ]
 	table [ "skillID" ] = [==[hacking]==]
 	table [ "level" ] = 3
 
-	table = objects [ 0x00000466 ]
+	table = objects [ 0x00000461 ]
 	table [ "skillID" ] = [==[inventory]==]
 	table [ "level" ] = 5
 
-	table = objects [ 0x00000467 ]
+	table = objects [ 0x00000462 ]
 	table [ "skillID" ] = [==[anarchy]==]
 	table [ "level" ] = 5
 
-	table = objects [ 0x00000468 ]
-	table [ 1 ]	= objects [ 0x00000469 ]
-	table [ 2 ]	= objects [ 0x0000046C ]
-	table [ 3 ]	= objects [ 0x0000046D ]
-	table [ 4 ]	= objects [ 0x0000046E ]
-	table [ 5 ]	= objects [ 0x0000046F ]
+	table = objects [ 0x00000463 ]
+	table [ 1 ]	= objects [ 0x00000464 ]
+	table [ 2 ]	= objects [ 0x00000467 ]
+	table [ 3 ]	= objects [ 0x00000468 ]
+	table [ 4 ]	= objects [ 0x00000469 ]
+	table [ 5 ]	= objects [ 0x0000046A ]
 	table [ 6 ]	= [==[augmentUpgradeSlot]==]
 	table [ 7 ]	= [==[augmentUpgradeSlot]==]
 
-	table = objects [ 0x00000469 ]
-	table [ "upgradeParams" ] = objects [ 0x0000046A ]
+	table = objects [ 0x00000464 ]
+	table [ "upgradeParams" ] = objects [ 0x00000465 ]
 	table [ "upgradeName" ] = [==[augment_tony]==]
 
-	table = objects [ 0x0000046A ]
-	table [ "traits" ] = objects [ 0x0000046B ]
+	table = objects [ 0x00000465 ]
+	table [ "traits" ] = objects [ 0x00000466 ]
 
-	table = objects [ 0x0000046B ]
+	table = objects [ 0x00000466 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000046C ]
+	table = objects [ 0x00000467 ]
 	table [ "upgradeName" ] = [==[item_emp_pack_2]==]
 
-	table = objects [ 0x0000046D ]
+	table = objects [ 0x00000468 ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x0000046E ]
+	table = objects [ 0x00000469 ]
 	table [ "upgradeName" ] = [==[item_icebreaker_2]==]
 
-	table = objects [ 0x0000046F ]
-	table [ "upgradeParams" ] = objects [ 0x00000470 ]
+	table = objects [ 0x0000046A ]
+	table [ "upgradeParams" ] = objects [ 0x0000046B ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x00000470 ]
-	table [ "traits" ] = objects [ 0x00000471 ]
+	table = objects [ 0x0000046B ]
+	table [ "traits" ] = objects [ 0x0000046C ]
 
-	table = objects [ 0x00000471 ]
+	table = objects [ 0x0000046C ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000472 ]
+	table = objects [ 0x0000046D ]
 	table [ "id" ] = 5
-	table [ "skills" ] = objects [ 0x00000473 ]
+	table [ "skills" ] = objects [ 0x0000046E ]
 	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x00000478 ]
+	table [ "upgrades" ] = objects [ 0x00000473 ]
 
-	table = objects [ 0x00000473 ]
-	table [ 1 ]	= objects [ 0x00000474 ]
-	table [ 2 ]	= objects [ 0x00000475 ]
-	table [ 3 ]	= objects [ 0x00000476 ]
-	table [ 4 ]	= objects [ 0x00000477 ]
+	table = objects [ 0x0000046E ]
+	table [ 1 ]	= objects [ 0x0000046F ]
+	table [ 2 ]	= objects [ 0x00000470 ]
+	table [ 3 ]	= objects [ 0x00000471 ]
+	table [ 4 ]	= objects [ 0x00000472 ]
 
-	table = objects [ 0x00000474 ]
+	table = objects [ 0x0000046F ]
 	table [ "skillID" ] = [==[stealth]==]
 	table [ "level" ] = 5
 
-	table = objects [ 0x00000475 ]
+	table = objects [ 0x00000470 ]
 	table [ "skillID" ] = [==[hacking]==]
 	table [ "level" ] = 5
 
-	table = objects [ 0x00000476 ]
+	table = objects [ 0x00000471 ]
 	table [ "skillID" ] = [==[inventory]==]
 	table [ "level" ] = 5
 
-	table = objects [ 0x00000477 ]
+	table = objects [ 0x00000472 ]
 	table [ "skillID" ] = [==[anarchy]==]
 	table [ "level" ] = 5
 
-	table = objects [ 0x00000478 ]
-	table [ 1 ]	= objects [ 0x00000479 ]
-	table [ 2 ]	= objects [ 0x0000047C ]
-	table [ 3 ]	= objects [ 0x0000047F ]
-	table [ 4 ]	= objects [ 0x00000482 ]
-	table [ 5 ]	= objects [ 0x00000483 ]
-	table [ 6 ]	= objects [ 0x00000484 ]
-	table [ 7 ]	= objects [ 0x00000487 ]
-	table [ 8 ]	= objects [ 0x00000488 ]
+	table = objects [ 0x00000473 ]
+	table [ 1 ]	= objects [ 0x00000474 ]
+	table [ 2 ]	= objects [ 0x00000477 ]
+	table [ 3 ]	= objects [ 0x0000047A ]
+	table [ 4 ]	= objects [ 0x0000047D ]
+	table [ 5 ]	= objects [ 0x0000047E ]
+	table [ 6 ]	= objects [ 0x0000047F ]
+	table [ 7 ]	= objects [ 0x00000482 ]
+	table [ 8 ]	= objects [ 0x00000483 ]
 	table [ 9 ]	= [==[augmentUpgradeSlot]==]
 	table [ 10 ]	= [==[augmentUpgradeSlot]==]
 
-	table = objects [ 0x00000479 ]
-	table [ "upgradeParams" ] = objects [ 0x0000047A ]
+	table = objects [ 0x00000474 ]
+	table [ "upgradeParams" ] = objects [ 0x00000475 ]
 	table [ "upgradeName" ] = [==[augment_international_v1]==]
 
-	table = objects [ 0x0000047A ]
-	table [ "traits" ] = objects [ 0x0000047B ]
+	table = objects [ 0x00000475 ]
+	table [ "traits" ] = objects [ 0x00000476 ]
 
-	table = objects [ 0x0000047B ]
+	table = objects [ 0x00000476 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000047C ]
-	table [ "upgradeParams" ] = objects [ 0x0000047D ]
+	table = objects [ 0x00000477 ]
+	table [ "upgradeParams" ] = objects [ 0x00000478 ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x0000047D ]
-	table [ "traits" ] = objects [ 0x0000047E ]
+	table = objects [ 0x00000478 ]
+	table [ "traits" ] = objects [ 0x00000479 ]
 
-	table = objects [ 0x0000047E ]
+	table = objects [ 0x00000479 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
+
+	table = objects [ 0x0000047A ]
+	table [ "upgradeParams" ] = objects [ 0x0000047B ]
+	table [ "upgradeName" ] = [==[augment_net_downlink]==]
+
+	table = objects [ 0x0000047B ]
+	table [ "traits" ] = objects [ 0x0000047C ]
+
+	table = objects [ 0x0000047C ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x0000047D ]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+
+	table = objects [ 0x0000047E ]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
 
 	table = objects [ 0x0000047F ]
 	table [ "upgradeParams" ] = objects [ 0x00000480 ]
-	table [ "upgradeName" ] = [==[augment_net_downlink]==]
+	table [ "upgradeName" ] = [==[item_tag_pistol]==]
 
 	table = objects [ 0x00000480 ]
 	table [ "traits" ] = objects [ 0x00000481 ]
 
 	table = objects [ 0x00000481 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x00000482 ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
-
-	table = objects [ 0x00000483 ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
-
-	table = objects [ 0x00000484 ]
-	table [ "upgradeParams" ] = objects [ 0x00000485 ]
-	table [ "upgradeName" ] = [==[item_tag_pistol]==]
-
-	table = objects [ 0x00000485 ]
-	table [ "traits" ] = objects [ 0x00000486 ]
-
-	table = objects [ 0x00000486 ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000487 ]
+	table = objects [ 0x00000482 ]
 	table [ "upgradeName" ] = [==[item_stim_4]==]
+
+	table = objects [ 0x00000483 ]
+	table [ "upgradeName" ] = [==[item_stim_4]==]
+
+	table = objects [ 0x00000484 ]
+	table [ "id" ] = 8
+	table [ "skills" ] = objects [ 0x00000485 ]
+	table [ "template" ] = [==[disguise_1]==]
+	table [ "upgrades" ] = objects [ 0x0000048A ]
+
+	table = objects [ 0x00000485 ]
+	table [ 1 ]	= objects [ 0x00000486 ]
+	table [ 2 ]	= objects [ 0x00000487 ]
+	table [ 3 ]	= objects [ 0x00000488 ]
+	table [ 4 ]	= objects [ 0x00000489 ]
+
+	table = objects [ 0x00000486 ]
+	table [ "skillID" ] = [==[stealth]==]
+	table [ "level" ] = 4
+
+	table = objects [ 0x00000487 ]
+	table [ "skillID" ] = [==[hacking]==]
+	table [ "level" ] = 1
 
 	table = objects [ 0x00000488 ]
-	table [ "upgradeName" ] = [==[item_stim_4]==]
+	table [ "skillID" ] = [==[inventory]==]
+	table [ "level" ] = 3
 
 	table = objects [ 0x00000489 ]
-	table [ "id" ] = 8
-	table [ "skills" ] = objects [ 0x0000048A ]
-	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x0000048F ]
+	table [ "skillID" ] = [==[anarchy]==]
+	table [ "level" ] = 2
 
 	table = objects [ 0x0000048A ]
 	table [ 1 ]	= objects [ 0x0000048B ]
-	table [ 2 ]	= objects [ 0x0000048C ]
-	table [ 3 ]	= objects [ 0x0000048D ]
-	table [ 4 ]	= objects [ 0x0000048E ]
+	table [ 2 ]	= objects [ 0x0000048E ]
+	table [ 3 ]	= objects [ 0x0000048F ]
+	table [ 4 ]	= objects [ 0x00000492 ]
 
 	table = objects [ 0x0000048B ]
-	table [ "skillID" ] = [==[stealth]==]
-	table [ "level" ] = 4
-
-	table = objects [ 0x0000048C ]
-	table [ "skillID" ] = [==[hacking]==]
-	table [ "level" ] = 1
-
-	table = objects [ 0x0000048D ]
-	table [ "skillID" ] = [==[inventory]==]
-	table [ "level" ] = 3
-
-	table = objects [ 0x0000048E ]
-	table [ "skillID" ] = [==[anarchy]==]
-	table [ "level" ] = 2
-
-	table = objects [ 0x0000048F ]
-	table [ 1 ]	= objects [ 0x00000490 ]
-	table [ 2 ]	= objects [ 0x00000493 ]
-	table [ 3 ]	= objects [ 0x00000494 ]
-	table [ 4 ]	= objects [ 0x00000497 ]
-
-	table = objects [ 0x00000490 ]
-	table [ "upgradeParams" ] = objects [ 0x00000491 ]
+	table [ "upgradeParams" ] = objects [ 0x0000048C ]
 	table [ "upgradeName" ] = [==[augment_prism_2]==]
 
-	table = objects [ 0x00000491 ]
-	table [ "traits" ] = objects [ 0x00000492 ]
+	table = objects [ 0x0000048C ]
+	table [ "traits" ] = objects [ 0x0000048D ]
 
-	table = objects [ 0x00000492 ]
+	table = objects [ 0x0000048D ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000493 ]
+	table = objects [ 0x0000048E ]
 	table [ "upgradeName" ] = [==[item_stim_4]==]
 
-	table = objects [ 0x00000494 ]
-	table [ "upgradeParams" ] = objects [ 0x00000495 ]
+	table = objects [ 0x0000048F ]
+	table [ "upgradeParams" ] = objects [ 0x00000490 ]
 	table [ "upgradeName" ] = [==[item_power_tazer_4]==]
 
-	table = objects [ 0x00000495 ]
-	table [ "traits" ] = objects [ 0x00000496 ]
+	table = objects [ 0x00000490 ]
+	table [ "traits" ] = objects [ 0x00000491 ]
 
-	table = objects [ 0x00000496 ]
+	table = objects [ 0x00000491 ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x00000497 ]
-	table [ "upgradeParams" ] = objects [ 0x00000498 ]
+	table = objects [ 0x00000492 ]
+	table [ "upgradeParams" ] = objects [ 0x00000493 ]
 	table [ "upgradeName" ] = [==[item_tag_pistol]==]
 
-	table = objects [ 0x00000498 ]
-	table [ "traits" ] = objects [ 0x00000499 ]
+	table = objects [ 0x00000493 ]
+	table [ "traits" ] = objects [ 0x00000494 ]
 
-	table = objects [ 0x00000499 ]
+	table = objects [ 0x00000494 ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x0000049A ]
+	table = objects [ 0x00000495 ]
 	table [ "id" ] = 7
-	table [ "skills" ] = objects [ 0x0000049B ]
+	table [ "skills" ] = objects [ 0x00000496 ]
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x000004A0 ]
+	table [ "upgrades" ] = objects [ 0x0000049B ]
+
+	table = objects [ 0x00000496 ]
+	table [ 1 ]	= objects [ 0x00000497 ]
+	table [ 2 ]	= objects [ 0x00000498 ]
+	table [ 3 ]	= objects [ 0x00000499 ]
+	table [ 4 ]	= objects [ 0x0000049A ]
+
+	table = objects [ 0x00000497 ]
+	table [ "skillID" ] = [==[stealth]==]
+	table [ "level" ] = 4
+
+	table = objects [ 0x00000498 ]
+	table [ "skillID" ] = [==[hacking]==]
+	table [ "level" ] = 2
+
+	table = objects [ 0x00000499 ]
+	table [ "skillID" ] = [==[inventory]==]
+	table [ "level" ] = 2
+
+	table = objects [ 0x0000049A ]
+	table [ "skillID" ] = [==[anarchy]==]
+	table [ "level" ] = 2
 
 	table = objects [ 0x0000049B ]
 	table [ 1 ]	= objects [ 0x0000049C ]
-	table [ 2 ]	= objects [ 0x0000049D ]
-	table [ 3 ]	= objects [ 0x0000049E ]
-	table [ 4 ]	= objects [ 0x0000049F ]
 
 	table = objects [ 0x0000049C ]
-	table [ "skillID" ] = [==[stealth]==]
-	table [ "level" ] = 4
+	table [ "upgradeParams" ] = objects [ 0x0000049D ]
+	table [ "upgradeName" ] = [==[augment_sharp_1]==]
 
 	table = objects [ 0x0000049D ]
-	table [ "skillID" ] = [==[hacking]==]
-	table [ "level" ] = 2
+	table [ "traits" ] = objects [ 0x0000049E ]
 
 	table = objects [ 0x0000049E ]
-	table [ "skillID" ] = [==[inventory]==]
-	table [ "level" ] = 2
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x0000049F ]
-	table [ "skillID" ] = [==[anarchy]==]
-	table [ "level" ] = 2
+	table [ "id" ] = 99
+	table [ "skills" ] = objects [ 0x000004A0 ]
+	table [ "template" ] = [==[monst3r]==]
+	table [ "upgrades" ] = objects [ 0x000004A5 ]
 
 	table = objects [ 0x000004A0 ]
 	table [ 1 ]	= objects [ 0x000004A1 ]
+	table [ 2 ]	= objects [ 0x000004A2 ]
+	table [ 3 ]	= objects [ 0x000004A3 ]
+	table [ 4 ]	= objects [ 0x000004A4 ]
 
 	table = objects [ 0x000004A1 ]
-	table [ "upgradeParams" ] = objects [ 0x000004A2 ]
-	table [ "upgradeName" ] = [==[augment_sharp_1]==]
-
-	table = objects [ 0x000004A2 ]
-	table [ "traits" ] = objects [ 0x000004A3 ]
-
-	table = objects [ 0x000004A3 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000004A4 ]
-	table [ "id" ] = 99
-	table [ "skills" ] = objects [ 0x000004A5 ]
-	table [ "template" ] = [==[monst3r]==]
-	table [ "upgrades" ] = objects [ 0x000004AA ]
-
-	table = objects [ 0x000004A5 ]
-	table [ 1 ]	= objects [ 0x000004A6 ]
-	table [ 2 ]	= objects [ 0x000004A7 ]
-	table [ 3 ]	= objects [ 0x000004A8 ]
-	table [ 4 ]	= objects [ 0x000004A9 ]
-
-	table = objects [ 0x000004A6 ]
 	table [ "skillID" ] = [==[stealth]==]
 	table [ "level" ] = 1
 
-	table = objects [ 0x000004A7 ]
+	table = objects [ 0x000004A2 ]
 	table [ "skillID" ] = [==[hacking]==]
 	table [ "level" ] = 3
 
-	table = objects [ 0x000004A8 ]
+	table = objects [ 0x000004A3 ]
 	table [ "skillID" ] = [==[inventory]==]
 	table [ "level" ] = 1
 
-	table = objects [ 0x000004A9 ]
+	table = objects [ 0x000004A4 ]
 	table [ "skillID" ] = [==[anarchy]==]
 	table [ "level" ] = 1
 
-	table = objects [ 0x000004AA ]
-	table [ 1 ]	= objects [ 0x000004AB ]
-	table [ 2 ]	= objects [ 0x000004AE ]
-	table [ 3 ]	= objects [ 0x000004B1 ]
+	table = objects [ 0x000004A5 ]
+	table [ 1 ]	= objects [ 0x000004A6 ]
+	table [ 2 ]	= objects [ 0x000004A9 ]
+	table [ 3 ]	= objects [ 0x000004AC ]
 
-	table = objects [ 0x000004AB ]
-	table [ "upgradeParams" ] = objects [ 0x000004AC ]
+	table = objects [ 0x000004A6 ]
+	table [ "upgradeParams" ] = objects [ 0x000004A7 ]
 	table [ "upgradeName" ] = [==[augment_monst3r]==]
 
-	table = objects [ 0x000004AC ]
-	table [ "traits" ] = objects [ 0x000004AD ]
+	table = objects [ 0x000004A7 ]
+	table [ "traits" ] = objects [ 0x000004A8 ]
 
-	table = objects [ 0x000004AD ]
+	table = objects [ 0x000004A8 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000004AE ]
-	table [ "upgradeParams" ] = objects [ 0x000004AF ]
+	table = objects [ 0x000004A9 ]
+	table [ "upgradeParams" ] = objects [ 0x000004AA ]
 	table [ "upgradeName" ] = [==[item_monst3r_gun]==]
 
-	table = objects [ 0x000004AF ]
-	table [ "traits" ] = objects [ 0x000004B0 ]
+	table = objects [ 0x000004AA ]
+	table [ "traits" ] = objects [ 0x000004AB ]
 
-	table = objects [ 0x000004B0 ]
+	table = objects [ 0x000004AB ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x000004B1 ]
-	table [ "upgradeParams" ] = objects [ 0x000004B2 ]
+	table = objects [ 0x000004AC ]
+	table [ "upgradeParams" ] = objects [ 0x000004AD ]
 	table [ "upgradeName" ] = [==[augment_final_level]==]
 
-	table = objects [ 0x000004B2 ]
-	table [ "traits" ] = objects [ 0x000004B3 ]
+	table = objects [ 0x000004AD ]
+	table [ "traits" ] = objects [ 0x000004AE ]
 
-	table = objects [ 0x000004B3 ]
+	table = objects [ 0x000004AE ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000004B4 ]
+	table = objects [ 0x000004AF ]
 	table [ "id" ] = 107
-	table [ "skills" ] = objects [ 0x000004B5 ]
+	table [ "skills" ] = objects [ 0x000004B0 ]
 	table [ "template" ] = [==[central]==]
-	table [ "upgrades" ] = objects [ 0x000004BA ]
+	table [ "upgrades" ] = objects [ 0x000004B5 ]
 
-	table = objects [ 0x000004B5 ]
-	table [ 1 ]	= objects [ 0x000004B6 ]
-	table [ 2 ]	= objects [ 0x000004B7 ]
-	table [ 3 ]	= objects [ 0x000004B8 ]
-	table [ 4 ]	= objects [ 0x000004B9 ]
+	table = objects [ 0x000004B0 ]
+	table [ 1 ]	= objects [ 0x000004B1 ]
+	table [ 2 ]	= objects [ 0x000004B2 ]
+	table [ 3 ]	= objects [ 0x000004B3 ]
+	table [ 4 ]	= objects [ 0x000004B4 ]
 
-	table = objects [ 0x000004B6 ]
+	table = objects [ 0x000004B1 ]
 	table [ "skillID" ] = [==[stealth]==]
 	table [ "level" ] = 1
 
-	table = objects [ 0x000004B7 ]
+	table = objects [ 0x000004B2 ]
 	table [ "skillID" ] = [==[hacking]==]
 	table [ "level" ] = 1
 
-	table = objects [ 0x000004B8 ]
+	table = objects [ 0x000004B3 ]
 	table [ "skillID" ] = [==[inventory]==]
 	table [ "level" ] = 1
 
-	table = objects [ 0x000004B9 ]
+	table = objects [ 0x000004B4 ]
 	table [ "skillID" ] = [==[anarchy]==]
 	table [ "level" ] = 4
 
-	table = objects [ 0x000004BA ]
-	table [ 1 ]	= objects [ 0x000004BB ]
-	table [ 2 ]	= objects [ 0x000004BE ]
-	table [ 3 ]	= objects [ 0x000004C1 ]
+	table = objects [ 0x000004B5 ]
+	table [ 1 ]	= objects [ 0x000004B6 ]
+	table [ 2 ]	= objects [ 0x000004B9 ]
+	table [ 3 ]	= objects [ 0x000004BC ]
 
-	table = objects [ 0x000004BB ]
-	table [ "upgradeParams" ] = objects [ 0x000004BC ]
+	table = objects [ 0x000004B6 ]
+	table [ "upgradeParams" ] = objects [ 0x000004B7 ]
 	table [ "upgradeName" ] = [==[augment_central]==]
 
-	table = objects [ 0x000004BC ]
-	table [ "traits" ] = objects [ 0x000004BD ]
+	table = objects [ 0x000004B7 ]
+	table [ "traits" ] = objects [ 0x000004B8 ]
 
-	table = objects [ 0x000004BD ]
+	table = objects [ 0x000004B8 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000004BE ]
-	table [ "upgradeParams" ] = objects [ 0x000004BF ]
+	table = objects [ 0x000004B9 ]
+	table [ "upgradeParams" ] = objects [ 0x000004BA ]
 	table [ "upgradeName" ] = [==[item_tazer]==]
 
-	table = objects [ 0x000004BF ]
-	table [ "traits" ] = objects [ 0x000004C0 ]
+	table = objects [ 0x000004BA ]
+	table [ "traits" ] = objects [ 0x000004BB ]
 
-	table = objects [ 0x000004C0 ]
+	table = objects [ 0x000004BB ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x000004C1 ]
+	table = objects [ 0x000004BC ]
 	table [ "upgradeName" ] = [==[item_incognita]==]
 
-	table = objects [ 0x000004C2 ]
+	table = objects [ 0x000004BD ]
 
-	table = objects [ 0x000004C3 ]
-	table [ 1 ]	= objects [ 0x000004C4 ]
-	table [ 2 ]	= objects [ 0x000004C6 ]
-	table [ 3 ]	= objects [ 0x000004C8 ]
-	table [ 4 ]	= objects [ 0x000004CA ]
-	table [ 5 ]	= objects [ 0x000004CC ]
-	table [ 6 ]	= objects [ 0x000004CE ]
-	table [ 7 ]	= objects [ 0x000004D0 ]
-	table [ 8 ]	= objects [ 0x000004D2 ]
+	table = objects [ 0x000004BE ]
+	table [ 1 ]	= objects [ 0x000004BF ]
+	table [ 2 ]	= objects [ 0x000004C1 ]
+	table [ 3 ]	= objects [ 0x000004C3 ]
+	table [ 4 ]	= objects [ 0x000004C5 ]
+	table [ 5 ]	= objects [ 0x000004C7 ]
+	table [ 6 ]	= objects [ 0x000004C9 ]
+	table [ 7 ]	= objects [ 0x000004CB ]
+	table [ 8 ]	= objects [ 0x000004CD ]
 
-	table = objects [ 0x000004C4 ]
+	table = objects [ 0x000004BF ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x000004C5 ]
+	table [ "upgrades" ] = objects [ 0x000004C0 ]
 
-	table = objects [ 0x000004C5 ]
+	table = objects [ 0x000004C0 ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x000004C6 ]
+	table = objects [ 0x000004C1 ]
 	table [ "id" ] = 2
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x000004C7 ]
+	table [ "upgrades" ] = objects [ 0x000004C2 ]
 
-	table = objects [ 0x000004C7 ]
+	table = objects [ 0x000004C2 ]
 	table [ 1 ]	= [==[augment_shalem]==]
 
-	table = objects [ 0x000004C8 ]
+	table = objects [ 0x000004C3 ]
 	table [ "id" ] = 4
 	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x000004C9 ]
+	table [ "upgrades" ] = objects [ 0x000004C4 ]
 
-	table = objects [ 0x000004C9 ]
+	table = objects [ 0x000004C4 ]
 	table [ 1 ]	= [==[augment_banks]==]
 
-	table = objects [ 0x000004CA ]
+	table = objects [ 0x000004C5 ]
 	table [ "id" ] = 6
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x000004CB ]
+	table [ "upgrades" ] = objects [ 0x000004C6 ]
 
-	table = objects [ 0x000004CB ]
+	table = objects [ 0x000004C6 ]
 	table [ 1 ]	= [==[augment_nika]==]
 
-	table = objects [ 0x000004CC ]
+	table = objects [ 0x000004C7 ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x000004CD ]
+	table [ "upgrades" ] = objects [ 0x000004C8 ]
 
-	table = objects [ 0x000004CD ]
+	table = objects [ 0x000004C8 ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x000004CE ]
+	table = objects [ 0x000004C9 ]
 	table [ "id" ] = 1001
 	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x000004CF ]
+	table [ "upgrades" ] = objects [ 0x000004CA ]
 
-	table = objects [ 0x000004CF ]
+	table = objects [ 0x000004CA ]
 	table [ 1 ]	= [==[augment_particle_envelope]==]
 	table [ 2 ]	= [==[item_transport_beacon]==]
 
-	table = objects [ 0x000004D0 ]
+	table = objects [ 0x000004CB ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x000004D1 ]
+	table [ "upgrades" ] = objects [ 0x000004CC ]
 
-	table = objects [ 0x000004D1 ]
+	table = objects [ 0x000004CC ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x000004D2 ]
+	table = objects [ 0x000004CD ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x000004D3 ]
+	table [ "upgrades" ] = objects [ 0x000004CE ]
 
-	table = objects [ 0x000004D3 ]
+	table = objects [ 0x000004CE ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x000004D4 ]
+	table = objects [ 0x000004CF ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[lockpick_1]==]
 	table [ 3 ]	= [==[emergency_drip]==]
@@ -6356,12 +6373,12 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ 5 ]	= [==[hammer]==]
 	table [ 6 ]	= [==[love]==]
 
-	table = objects [ 0x000004D5 ]
+	table = objects [ 0x000004D0 ]
 	table [ "newHiSecExitDay" ] = 7
 	table [ "extended_endless" ] = true
 	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x000004D6 ]
+	table = objects [ 0x000004D1 ]
 	table [ "firewallMultiplier" ] = 2
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = false
@@ -6378,7 +6395,7 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "startingPower" ] = 5
 	table [ "daemonQuantity" ] = [==[NORMAL]==]
 	table [ "timeAttack" ] = 0
-	table [ "enabledDLC" ] = objects [ 0x000004D7 ]
+	table [ "enabledDLC" ] = objects [ 0x000004D2 ]
 	table [ "meleeFromFront" ] = false
 	table [ "koDuration" ] = 0
 	table [ "safesPerLevel" ] = 5
@@ -6389,24 +6406,39 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "savescumming" ] = false
 	table [ "beginnerPatrols" ] = false
 
-	table = objects [ 0x000004D7 ]
-	table [ "dlc1" ] = objects [ 0x000004D8 ]
+	table = objects [ 0x000004D2 ]
+	table [ "dlc1" ] = objects [ 0x000004D3 ]
 
-	table = objects [ 0x000004D8 ]
+	table = objects [ 0x000004D3 ]
 	table [ "enabled" ] = true
-	table [ "options" ] = objects [ 0x000004D9 ]
+	table [ "options" ] = objects [ 0x000004D4 ]
 	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 	table [ "name" ] = [==[Contingency Plan]==]
 
+	table = objects [ 0x000004D4 ]
+	table [ "programs" ] = objects [ 0x000004D5 ]
+	table [ "guards" ] = objects [ 0x000004D6 ]
+	table [ "extended_endless" ] = objects [ 0x000004D7 ]
+	table [ "extended_campaign" ] = objects [ 0x000004D8 ]
+	table [ "endless_mid_mission" ] = objects [ 0x000004D9 ]
+	table [ "daemons" ] = objects [ 0x000004DA ]
+	table [ "sidemissions" ] = objects [ 0x000004DB ]
+	table [ "agents" ] = objects [ 0x000004DC ]
+
+	table = objects [ 0x000004D5 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x000004D6 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x000004D7 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x000004D8 ]
+	table [ "enabled" ] = true
+
 	table = objects [ 0x000004D9 ]
-	table [ "programs" ] = objects [ 0x000004DA ]
-	table [ "guards" ] = objects [ 0x000004DB ]
-	table [ "extended_endless" ] = objects [ 0x000004DC ]
-	table [ "extended_campaign" ] = objects [ 0x000004DD ]
-	table [ "endless_mid_mission" ] = objects [ 0x000004DE ]
-	table [ "daemons" ] = objects [ 0x000004DF ]
-	table [ "sidemissions" ] = objects [ 0x000004E0 ]
-	table [ "agents" ] = objects [ 0x000004E1 ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x000004DA ]
 	table [ "enabled" ] = true
@@ -6418,73 +6450,58 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "enabled" ] = true
 
 	table = objects [ 0x000004DD ]
-	table [ "enabled" ] = true
+	table [ "advancedAlarm" ] = true
+	table [ "needPowerCells" ] = objects [ 0x000004DE ]
 
 	table = objects [ 0x000004DE ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000004DF ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000004E0 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000004E1 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x000004E2 ]
-	table [ "advancedAlarm" ] = true
-	table [ "needPowerCells" ] = objects [ 0x000004E3 ]
-
-	table = objects [ 0x000004E3 ]
 	table [ "type" ] = [==[objective]==]
 	table [ "text" ] = [==[> Find a Power Relay]==]
 	table [ "req" ] = [==[needPowerCells]==]
 
-	table = objects [ 0x000004E4 ]
+	table = objects [ 0x000004DF ]
 
-	table = objects [ 0x000004E5 ]
-	table [ 1 ]	= objects [ 0x000004E6 ]
-	table [ 2 ]	= objects [ 0x000004E8 ]
-	table [ 3 ]	= objects [ 0x000004EC ]
+	table = objects [ 0x000004E0 ]
+	table [ 1 ]	= objects [ 0x000004E1 ]
+	table [ 2 ]	= objects [ 0x000004E3 ]
+	table [ 3 ]	= objects [ 0x000004E7 ]
 
-	table = objects [ 0x000004E6 ]
-	table [ "data" ] = objects [ 0x000004E7 ]
+	table = objects [ 0x000004E1 ]
+	table [ "data" ] = objects [ 0x000004E2 ]
 	table [ "eventType" ] = 4
 
-	table = objects [ 0x000004E7 ]
+	table = objects [ 0x000004E2 ]
 	table [ "value" ] = true
 	table [ "hours" ] = 288
 	table [ "param" ] = [==[advanced_scanners]==]
 
-	table = objects [ 0x000004E8 ]
+	table = objects [ 0x000004E3 ]
 	table [ "hours" ] = 288
-	table [ "data" ] = objects [ 0x000004E9 ]
+	table [ "data" ] = objects [ 0x000004E4 ]
 	table [ "eventType" ] = 11
 
-	table = objects [ 0x000004E9 ]
+	table = objects [ 0x000004E4 ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x000004EA ]
+	table [ "groups" ] = objects [ 0x000004E5 ]
 
-	table = objects [ 0x000004EA ]
-	table [ 1 ]	= objects [ 0x000004EB ]
+	table = objects [ 0x000004E5 ]
+	table [ 1 ]	= objects [ 0x000004E6 ]
 
-	table = objects [ 0x000004EB ]
+	table = objects [ 0x000004E6 ]
 	table [ "text" ] = [==[Caution. Omni corp has upgraded all Enforcer units with XL-5 Scan Grenades. As well as scanning, the XL-5 emits a disruptive field that disables cloaking and Hologram Technology.]==]
 	table [ "title" ] = [==[ADVANCED SCAN GRENADES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/advanced_scan_grenades.png]==]
 
-	table = objects [ 0x000004EC ]
+	table = objects [ 0x000004E7 ]
 	table [ "day" ] = 4
 	table [ "eventType" ] = 13
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000004ED ]
+	table = objects [ 0x000004E8 ]
 	table [ "customScriptIndex" ] = [==[post_mid_]==]
 	table [ "miniserversSeen" ] = 8
-	table [ "campaignEvents" ] = objects [ 0x000004EE ]
+	table [ "campaignEvents" ] = objects [ 0x000004E9 ]
 	table [ "agentsFound" ] = 2
-	table [ "missionParams" ] = objects [ 0x000004F6 ]
+	table [ "missionParams" ] = objects [ 0x000004F1 ]
 	table [ "monst3rInject" ] = false
 	table [ "lastEndlessAlert" ] = false
 	table [ "version" ] = [==[0.17.17]==]
@@ -6504,73 +6521,73 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "currentDay" ] = 6
 	table [ "missionCount" ] = 17
 	table [ "extendedCampaignHours" ] = 72
-	table [ "missionEvents" ] = objects [ 0x000004F7 ]
-	table [ "situations" ] = objects [ 0x000004F9 ]
+	table [ "missionEvents" ] = objects [ 0x000004F2 ]
+	table [ "situations" ] = objects [ 0x000004F4 ]
 	table [ "missionsPlayedThisDay" ] = 0
-	table [ "agency" ] = objects [ 0x000004FA ]
+	table [ "agency" ] = objects [ 0x000004F5 ]
 	table [ "complete_time" ] = 1510992407
 	table [ "seed" ] = 2958650754
 	table [ "campaignDifficulty" ] = 1
-	table [ "difficultyOptions" ] = objects [ 0x00000573 ]
+	table [ "difficultyOptions" ] = objects [ 0x0000056E ]
 	table [ "location" ] = 6
 	table [ "incognitaLevel" ] = 3
 
-	table = objects [ 0x000004EE ]
-	table [ 1 ]	= objects [ 0x000004EF ]
-	table [ 2 ]	= objects [ 0x000004F1 ]
-	table [ 3 ]	= objects [ 0x000004F5 ]
+	table = objects [ 0x000004E9 ]
+	table [ 1 ]	= objects [ 0x000004EA ]
+	table [ 2 ]	= objects [ 0x000004EC ]
+	table [ 3 ]	= objects [ 0x000004F0 ]
 
-	table = objects [ 0x000004EF ]
-	table [ "data" ] = objects [ 0x000004F0 ]
+	table = objects [ 0x000004EA ]
+	table [ "data" ] = objects [ 0x000004EB ]
 	table [ "eventType" ] = 4
 
-	table = objects [ 0x000004F0 ]
+	table = objects [ 0x000004EB ]
 	table [ "value" ] = true
 	table [ "hours" ] = 288
 	table [ "param" ] = [==[advanced_scanners]==]
 
-	table = objects [ 0x000004F1 ]
+	table = objects [ 0x000004EC ]
 	table [ "hours" ] = 288
-	table [ "data" ] = objects [ 0x000004F2 ]
+	table [ "data" ] = objects [ 0x000004ED ]
 	table [ "eventType" ] = 11
 
-	table = objects [ 0x000004F2 ]
+	table = objects [ 0x000004ED ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x000004F3 ]
+	table [ "groups" ] = objects [ 0x000004EE ]
 
-	table = objects [ 0x000004F3 ]
-	table [ 1 ]	= objects [ 0x000004F4 ]
+	table = objects [ 0x000004EE ]
+	table [ 1 ]	= objects [ 0x000004EF ]
 
-	table = objects [ 0x000004F4 ]
+	table = objects [ 0x000004EF ]
 	table [ "text" ] = [==[Caution. Omni corp has upgraded all Enforcer units with XL-5 Scan Grenades. As well as scanning, the XL-5 emits a disruptive field that disables cloaking and Hologram Technology.]==]
 	table [ "title" ] = [==[ADVANCED SCAN GRENADES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/advanced_scan_grenades.png]==]
 
-	table = objects [ 0x000004F5 ]
+	table = objects [ 0x000004F0 ]
 	table [ "day" ] = 4
 	table [ "eventType" ] = 13
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x000004F6 ]
+	table = objects [ 0x000004F1 ]
 	table [ "newHiSecExitDay" ] = 7
 	table [ "extended_endless" ] = true
 	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x000004F7 ]
+	table = objects [ 0x000004F2 ]
 	table [ "advancedAlarm" ] = true
-	table [ "needPowerCells" ] = objects [ 0x000004F8 ]
+	table [ "needPowerCells" ] = objects [ 0x000004F3 ]
 
-	table = objects [ 0x000004F8 ]
+	table = objects [ 0x000004F3 ]
 	table [ "type" ] = [==[objective]==]
 	table [ "text" ] = [==[> Find a Power Relay]==]
 	table [ "req" ] = [==[needPowerCells]==]
 
-	table = objects [ 0x000004F9 ]
+	table = objects [ 0x000004F4 ]
 
-	table = objects [ 0x000004FA ]
+	table = objects [ 0x000004F5 ]
 	table [ "items_earned" ] = 20
-	table [ "unitDefs" ] = objects [ 0x000004FB ]
-	table [ "upgrades" ] = objects [ 0x00000560 ]
+	table [ "unitDefs" ] = objects [ 0x000004F6 ]
+	table [ "upgrades" ] = objects [ 0x0000055B ]
 	table [ "missions_completed" ] = 16
 	table [ "missions_completed_1" ] = 2
 	table [ "startLocation" ] = 23
@@ -6583,8 +6600,8 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "missions_completed_3" ] = 11
 	table [ "id" ] = 1
 	table [ "security_hacked" ] = 292
-	table [ "unitDefsPotential" ] = objects [ 0x00000561 ]
-	table [ "abilities" ] = objects [ 0x00000572 ]
+	table [ "unitDefsPotential" ] = objects [ 0x0000055C ]
+	table [ "abilities" ] = objects [ 0x0000056D ]
 	table [ "cpus" ] = 19
 	table [ "name" ] = [==[]==]
 	table [ "extraPrograms" ] = 1
@@ -6593,503 +6610,503 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "alwaysUnlocked" ] = true
 	table [ "cash" ] = 1106
 
+	table = objects [ 0x000004F6 ]
+	table [ 1 ]	= objects [ 0x000004F7 ]
+	table [ 2 ]	= objects [ 0x00000508 ]
+	table [ 3 ]	= objects [ 0x0000051A ]
+	table [ 4 ]	= objects [ 0x0000052B ]
+	table [ 5 ]	= objects [ 0x0000053D ]
+	table [ 6 ]	= objects [ 0x0000054D ]
+
+	table = objects [ 0x000004F7 ]
+	table [ "id" ] = 3
+	table [ "skills" ] = objects [ 0x000004F8 ]
+	table [ "template" ] = [==[engineer_1]==]
+	table [ "upgrades" ] = objects [ 0x000004FD ]
+
+	table = objects [ 0x000004F8 ]
+	table [ 1 ]	= objects [ 0x000004F9 ]
+	table [ 2 ]	= objects [ 0x000004FA ]
+	table [ 3 ]	= objects [ 0x000004FB ]
+	table [ 4 ]	= objects [ 0x000004FC ]
+
+	table = objects [ 0x000004F9 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[stealth]==]
+
+	table = objects [ 0x000004FA ]
+	table [ "level" ] = 4
+	table [ "skillID" ] = [==[hacking]==]
+
 	table = objects [ 0x000004FB ]
-	table [ 1 ]	= objects [ 0x000004FC ]
-	table [ 2 ]	= objects [ 0x0000050D ]
-	table [ 3 ]	= objects [ 0x0000051F ]
-	table [ 4 ]	= objects [ 0x00000530 ]
-	table [ 5 ]	= objects [ 0x00000542 ]
-	table [ 6 ]	= objects [ 0x00000552 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[inventory]==]
 
 	table = objects [ 0x000004FC ]
-	table [ "id" ] = 3
-	table [ "skills" ] = objects [ 0x000004FD ]
-	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x00000502 ]
+	table [ "level" ] = 5
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x000004FD ]
 	table [ 1 ]	= objects [ 0x000004FE ]
-	table [ 2 ]	= objects [ 0x000004FF ]
-	table [ 3 ]	= objects [ 0x00000500 ]
-	table [ 4 ]	= objects [ 0x00000501 ]
+	table [ 2 ]	= objects [ 0x00000501 ]
+	table [ 3 ]	= objects [ 0x00000504 ]
+	table [ 4 ]	= objects [ 0x00000505 ]
+	table [ 5 ]	= objects [ 0x00000506 ]
+	table [ 6 ]	= objects [ 0x00000507 ]
 
 	table = objects [ 0x000004FE ]
+	table [ "upgradeParams" ] = objects [ 0x000004FF ]
+	table [ "upgradeName" ] = [==[augment_tony]==]
+
+	table = objects [ 0x000004FF ]
+	table [ "traits" ] = objects [ 0x00000500 ]
+
+	table = objects [ 0x00000500 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x00000501 ]
+	table [ "upgradeParams" ] = objects [ 0x00000502 ]
+	table [ "upgradeName" ] = [==[augment_net_downlink]==]
+
+	table = objects [ 0x00000502 ]
+	table [ "traits" ] = objects [ 0x00000503 ]
+
+	table = objects [ 0x00000503 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x00000504 ]
+	table [ "upgradeName" ] = [==[item_emp_pack_2]==]
+
+	table = objects [ 0x00000505 ]
+	table [ "upgradeName" ] = [==[item_stim_2]==]
+
+	table = objects [ 0x00000506 ]
+	table [ "upgradeName" ] = [==[item_emp_pack]==]
+
+	table = objects [ 0x00000507 ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_1]==]
+
+	table = objects [ 0x00000508 ]
+	table [ "id" ] = 5
+	table [ "skills" ] = objects [ 0x00000509 ]
+	table [ "template" ] = [==[engineer_2]==]
+	table [ "upgrades" ] = objects [ 0x0000050E ]
+
+	table = objects [ 0x00000509 ]
+	table [ 1 ]	= objects [ 0x0000050A ]
+	table [ 2 ]	= objects [ 0x0000050B ]
+	table [ 3 ]	= objects [ 0x0000050C ]
+	table [ 4 ]	= objects [ 0x0000050D ]
+
+	table = objects [ 0x0000050A ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x000004FF ]
-	table [ "level" ] = 4
+	table = objects [ 0x0000050B ]
+	table [ "level" ] = 5
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x00000500 ]
+	table = objects [ 0x0000050C ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000501 ]
+	table = objects [ 0x0000050D ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x00000502 ]
-	table [ 1 ]	= objects [ 0x00000503 ]
-	table [ 2 ]	= objects [ 0x00000506 ]
-	table [ 3 ]	= objects [ 0x00000509 ]
-	table [ 4 ]	= objects [ 0x0000050A ]
-	table [ 5 ]	= objects [ 0x0000050B ]
-	table [ 6 ]	= objects [ 0x0000050C ]
-
-	table = objects [ 0x00000503 ]
-	table [ "upgradeParams" ] = objects [ 0x00000504 ]
-	table [ "upgradeName" ] = [==[augment_tony]==]
-
-	table = objects [ 0x00000504 ]
-	table [ "traits" ] = objects [ 0x00000505 ]
-
-	table = objects [ 0x00000505 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x00000506 ]
-	table [ "upgradeParams" ] = objects [ 0x00000507 ]
-	table [ "upgradeName" ] = [==[augment_net_downlink]==]
-
-	table = objects [ 0x00000507 ]
-	table [ "traits" ] = objects [ 0x00000508 ]
-
-	table = objects [ 0x00000508 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x00000509 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_2]==]
-
-	table = objects [ 0x0000050A ]
-	table [ "upgradeName" ] = [==[item_stim_2]==]
-
-	table = objects [ 0x0000050B ]
-	table [ "upgradeName" ] = [==[item_emp_pack]==]
-
-	table = objects [ 0x0000050C ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_1]==]
-
-	table = objects [ 0x0000050D ]
-	table [ "id" ] = 5
-	table [ "skills" ] = objects [ 0x0000050E ]
-	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x00000513 ]
 
 	table = objects [ 0x0000050E ]
 	table [ 1 ]	= objects [ 0x0000050F ]
-	table [ 2 ]	= objects [ 0x00000510 ]
-	table [ 3 ]	= objects [ 0x00000511 ]
-	table [ 4 ]	= objects [ 0x00000512 ]
+	table [ 2 ]	= objects [ 0x00000512 ]
+	table [ 3 ]	= objects [ 0x00000515 ]
+	table [ 4 ]	= objects [ 0x00000516 ]
+	table [ 5 ]	= objects [ 0x00000517 ]
+	table [ 6 ]	= objects [ 0x00000518 ]
+	table [ 7 ]	= objects [ 0x00000519 ]
+	table [ 8 ]	= [==[augmentUpgradeSlot]==]
 
 	table = objects [ 0x0000050F ]
+	table [ "upgradeParams" ] = objects [ 0x00000510 ]
+	table [ "upgradeName" ] = [==[augment_international_v1]==]
+
+	table = objects [ 0x00000510 ]
+	table [ "traits" ] = objects [ 0x00000511 ]
+
+	table = objects [ 0x00000511 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x00000512 ]
+	table [ "upgradeParams" ] = objects [ 0x00000513 ]
+	table [ "upgradeName" ] = [==[augment_net_downlink]==]
+
+	table = objects [ 0x00000513 ]
+	table [ "traits" ] = objects [ 0x00000514 ]
+
+	table = objects [ 0x00000514 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x00000515 ]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+
+	table = objects [ 0x00000516 ]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
+
+	table = objects [ 0x00000517 ]
+	table [ "upgradeName" ] = [==[item_emp_pack_3]==]
+
+	table = objects [ 0x00000518 ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+
+	table = objects [ 0x00000519 ]
+	table [ "upgradeName" ] = [==[item_laptop_3]==]
+
+	table = objects [ 0x0000051A ]
+	table [ "id" ] = 4
+	table [ "skills" ] = objects [ 0x0000051B ]
+	table [ "template" ] = [==[stealth_2]==]
+	table [ "upgrades" ] = objects [ 0x00000520 ]
+
+	table = objects [ 0x0000051B ]
+	table [ 1 ]	= objects [ 0x0000051C ]
+	table [ 2 ]	= objects [ 0x0000051D ]
+	table [ 3 ]	= objects [ 0x0000051E ]
+	table [ 4 ]	= objects [ 0x0000051F ]
+
+	table = objects [ 0x0000051C ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000510 ]
-	table [ "level" ] = 5
+	table = objects [ 0x0000051D ]
+	table [ "level" ] = 2
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x00000511 ]
+	table = objects [ 0x0000051E ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000512 ]
+	table = objects [ 0x0000051F ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x00000513 ]
-	table [ 1 ]	= objects [ 0x00000514 ]
-	table [ 2 ]	= objects [ 0x00000517 ]
-	table [ 3 ]	= objects [ 0x0000051A ]
-	table [ 4 ]	= objects [ 0x0000051B ]
-	table [ 5 ]	= objects [ 0x0000051C ]
-	table [ 6 ]	= objects [ 0x0000051D ]
-	table [ 7 ]	= objects [ 0x0000051E ]
-	table [ 8 ]	= [==[augmentUpgradeSlot]==]
-
-	table = objects [ 0x00000514 ]
-	table [ "upgradeParams" ] = objects [ 0x00000515 ]
-	table [ "upgradeName" ] = [==[augment_international_v1]==]
-
-	table = objects [ 0x00000515 ]
-	table [ "traits" ] = objects [ 0x00000516 ]
-
-	table = objects [ 0x00000516 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x00000517 ]
-	table [ "upgradeParams" ] = objects [ 0x00000518 ]
-	table [ "upgradeName" ] = [==[augment_net_downlink]==]
-
-	table = objects [ 0x00000518 ]
-	table [ "traits" ] = objects [ 0x00000519 ]
-
-	table = objects [ 0x00000519 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x0000051A ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
-
-	table = objects [ 0x0000051B ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
-
-	table = objects [ 0x0000051C ]
-	table [ "upgradeName" ] = [==[item_emp_pack_3]==]
-
-	table = objects [ 0x0000051D ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
-
-	table = objects [ 0x0000051E ]
-	table [ "upgradeName" ] = [==[item_laptop_3]==]
-
-	table = objects [ 0x0000051F ]
-	table [ "id" ] = 4
-	table [ "skills" ] = objects [ 0x00000520 ]
-	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x00000525 ]
 
 	table = objects [ 0x00000520 ]
 	table [ 1 ]	= objects [ 0x00000521 ]
-	table [ 2 ]	= objects [ 0x00000522 ]
-	table [ 3 ]	= objects [ 0x00000523 ]
-	table [ 4 ]	= objects [ 0x00000524 ]
+	table [ 2 ]	= objects [ 0x00000524 ]
+	table [ 3 ]	= objects [ 0x00000527 ]
+	table [ 4 ]	= objects [ 0x00000528 ]
+	table [ 5 ]	= objects [ 0x00000529 ]
+	table [ 6 ]	= objects [ 0x0000052A ]
 
 	table = objects [ 0x00000521 ]
+	table [ "upgradeParams" ] = objects [ 0x00000522 ]
+	table [ "upgradeName" ] = [==[augment_banks]==]
+
+	table = objects [ 0x00000522 ]
+	table [ "traits" ] = objects [ 0x00000523 ]
+
+	table = objects [ 0x00000523 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x00000524 ]
+	table [ "upgradeParams" ] = objects [ 0x00000525 ]
+	table [ "upgradeName" ] = [==[augment_net_downlink]==]
+
+	table = objects [ 0x00000525 ]
+	table [ "traits" ] = objects [ 0x00000526 ]
+
+	table = objects [ 0x00000526 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x00000527 ]
+	table [ "upgradeName" ] = [==[item_emp_pack]==]
+
+	table = objects [ 0x00000528 ]
+	table [ "upgradeName" ] = [==[item_icebreaker]==]
+
+	table = objects [ 0x00000529 ]
+	table [ "upgradeName" ] = [==[item_stim]==]
+
+	table = objects [ 0x0000052A ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_1]==]
+
+	table = objects [ 0x0000052B ]
+	table [ "id" ] = 8
+	table [ "skills" ] = objects [ 0x0000052C ]
+	table [ "template" ] = [==[disguise_1]==]
+	table [ "upgrades" ] = objects [ 0x00000531 ]
+
+	table = objects [ 0x0000052C ]
+	table [ 1 ]	= objects [ 0x0000052D ]
+	table [ 2 ]	= objects [ 0x0000052E ]
+	table [ 3 ]	= objects [ 0x0000052F ]
+	table [ 4 ]	= objects [ 0x00000530 ]
+
+	table = objects [ 0x0000052D ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000522 ]
-	table [ "level" ] = 2
+	table = objects [ 0x0000052E ]
+	table [ "level" ] = 1
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x00000523 ]
+	table = objects [ 0x0000052F ]
 	table [ "level" ] = 5
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000524 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x00000525 ]
-	table [ 1 ]	= objects [ 0x00000526 ]
-	table [ 2 ]	= objects [ 0x00000529 ]
-	table [ 3 ]	= objects [ 0x0000052C ]
-	table [ 4 ]	= objects [ 0x0000052D ]
-	table [ 5 ]	= objects [ 0x0000052E ]
-	table [ 6 ]	= objects [ 0x0000052F ]
-
-	table = objects [ 0x00000526 ]
-	table [ "upgradeParams" ] = objects [ 0x00000527 ]
-	table [ "upgradeName" ] = [==[augment_banks]==]
-
-	table = objects [ 0x00000527 ]
-	table [ "traits" ] = objects [ 0x00000528 ]
-
-	table = objects [ 0x00000528 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x00000529 ]
-	table [ "upgradeParams" ] = objects [ 0x0000052A ]
-	table [ "upgradeName" ] = [==[augment_net_downlink]==]
-
-	table = objects [ 0x0000052A ]
-	table [ "traits" ] = objects [ 0x0000052B ]
-
-	table = objects [ 0x0000052B ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x0000052C ]
-	table [ "upgradeName" ] = [==[item_emp_pack]==]
-
-	table = objects [ 0x0000052D ]
-	table [ "upgradeName" ] = [==[item_icebreaker]==]
-
-	table = objects [ 0x0000052E ]
-	table [ "upgradeName" ] = [==[item_stim]==]
-
-	table = objects [ 0x0000052F ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_1]==]
-
 	table = objects [ 0x00000530 ]
-	table [ "id" ] = 8
-	table [ "skills" ] = objects [ 0x00000531 ]
-	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x00000536 ]
+	table [ "level" ] = 2
+	table [ "skillID" ] = [==[anarchy]==]
 
 	table = objects [ 0x00000531 ]
 	table [ 1 ]	= objects [ 0x00000532 ]
-	table [ 2 ]	= objects [ 0x00000533 ]
-	table [ 3 ]	= objects [ 0x00000534 ]
-	table [ 4 ]	= objects [ 0x00000535 ]
+	table [ 2 ]	= objects [ 0x00000535 ]
+	table [ 3 ]	= objects [ 0x00000538 ]
+	table [ 4 ]	= objects [ 0x0000053B ]
+	table [ 5 ]	= objects [ 0x0000053C ]
 
 	table = objects [ 0x00000532 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x00000533 ]
-	table [ "level" ] = 1
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x00000534 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x00000535 ]
-	table [ "level" ] = 2
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x00000536 ]
-	table [ 1 ]	= objects [ 0x00000537 ]
-	table [ 2 ]	= objects [ 0x0000053A ]
-	table [ 3 ]	= objects [ 0x0000053D ]
-	table [ 4 ]	= objects [ 0x00000540 ]
-	table [ 5 ]	= objects [ 0x00000541 ]
-
-	table = objects [ 0x00000537 ]
-	table [ "upgradeParams" ] = objects [ 0x00000538 ]
+	table [ "upgradeParams" ] = objects [ 0x00000533 ]
 	table [ "upgradeName" ] = [==[augment_prism_2]==]
 
-	table = objects [ 0x00000538 ]
-	table [ "traits" ] = objects [ 0x00000539 ]
+	table = objects [ 0x00000533 ]
+	table [ "traits" ] = objects [ 0x00000534 ]
 
-	table = objects [ 0x00000539 ]
+	table = objects [ 0x00000534 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000053A ]
-	table [ "upgradeParams" ] = objects [ 0x0000053B ]
+	table = objects [ 0x00000535 ]
+	table [ "upgradeParams" ] = objects [ 0x00000536 ]
 	table [ "upgradeName" ] = [==[item_dartgun_ammo]==]
 
-	table = objects [ 0x0000053B ]
-	table [ "traits" ] = objects [ 0x0000053C ]
+	table = objects [ 0x00000536 ]
+	table [ "traits" ] = objects [ 0x00000537 ]
 
-	table = objects [ 0x0000053C ]
+	table = objects [ 0x00000537 ]
 	table [ "autoEquip" ] = true
 	table [ "ammo" ] = 2
 
-	table = objects [ 0x0000053D ]
-	table [ "upgradeParams" ] = objects [ 0x0000053E ]
+	table = objects [ 0x00000538 ]
+	table [ "upgradeParams" ] = objects [ 0x00000539 ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x0000053E ]
-	table [ "traits" ] = objects [ 0x0000053F ]
+	table = objects [ 0x00000539 ]
+	table [ "traits" ] = objects [ 0x0000053A ]
 
-	table = objects [ 0x0000053F ]
+	table = objects [ 0x0000053A ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000540 ]
+	table = objects [ 0x0000053B ]
 	table [ "upgradeName" ] = [==[item_stim]==]
 
-	table = objects [ 0x00000541 ]
+	table = objects [ 0x0000053C ]
 	table [ "upgradeName" ] = [==[item_stim_3]==]
 
-	table = objects [ 0x00000542 ]
+	table = objects [ 0x0000053D ]
 	table [ "id" ] = 99
-	table [ "skills" ] = objects [ 0x00000543 ]
+	table [ "skills" ] = objects [ 0x0000053E ]
 	table [ "template" ] = [==[monst3r]==]
-	table [ "upgrades" ] = objects [ 0x00000548 ]
+	table [ "upgrades" ] = objects [ 0x00000543 ]
 
-	table = objects [ 0x00000543 ]
-	table [ 1 ]	= objects [ 0x00000544 ]
-	table [ 2 ]	= objects [ 0x00000545 ]
-	table [ 3 ]	= objects [ 0x00000546 ]
-	table [ 4 ]	= objects [ 0x00000547 ]
+	table = objects [ 0x0000053E ]
+	table [ 1 ]	= objects [ 0x0000053F ]
+	table [ 2 ]	= objects [ 0x00000540 ]
+	table [ 3 ]	= objects [ 0x00000541 ]
+	table [ 4 ]	= objects [ 0x00000542 ]
 
-	table = objects [ 0x00000544 ]
+	table = objects [ 0x0000053F ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000545 ]
+	table = objects [ 0x00000540 ]
 	table [ "level" ] = 3
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x00000546 ]
+	table = objects [ 0x00000541 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000547 ]
+	table = objects [ 0x00000542 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x00000548 ]
-	table [ 1 ]	= objects [ 0x00000549 ]
-	table [ 2 ]	= objects [ 0x0000054C ]
-	table [ 3 ]	= objects [ 0x0000054F ]
+	table = objects [ 0x00000543 ]
+	table [ 1 ]	= objects [ 0x00000544 ]
+	table [ 2 ]	= objects [ 0x00000547 ]
+	table [ 3 ]	= objects [ 0x0000054A ]
 
-	table = objects [ 0x00000549 ]
-	table [ "upgradeParams" ] = objects [ 0x0000054A ]
+	table = objects [ 0x00000544 ]
+	table [ "upgradeParams" ] = objects [ 0x00000545 ]
 	table [ "upgradeName" ] = [==[augment_monst3r]==]
 
-	table = objects [ 0x0000054A ]
-	table [ "traits" ] = objects [ 0x0000054B ]
+	table = objects [ 0x00000545 ]
+	table [ "traits" ] = objects [ 0x00000546 ]
 
-	table = objects [ 0x0000054B ]
+	table = objects [ 0x00000546 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000054C ]
-	table [ "upgradeParams" ] = objects [ 0x0000054D ]
+	table = objects [ 0x00000547 ]
+	table [ "upgradeParams" ] = objects [ 0x00000548 ]
 	table [ "upgradeName" ] = [==[item_monst3r_gun]==]
 
-	table = objects [ 0x0000054D ]
-	table [ "traits" ] = objects [ 0x0000054E ]
+	table = objects [ 0x00000548 ]
+	table [ "traits" ] = objects [ 0x00000549 ]
 
-	table = objects [ 0x0000054E ]
+	table = objects [ 0x00000549 ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x0000054F ]
-	table [ "upgradeParams" ] = objects [ 0x00000550 ]
+	table = objects [ 0x0000054A ]
+	table [ "upgradeParams" ] = objects [ 0x0000054B ]
 	table [ "upgradeName" ] = [==[augment_final_level]==]
 
-	table = objects [ 0x00000550 ]
-	table [ "traits" ] = objects [ 0x00000551 ]
+	table = objects [ 0x0000054B ]
+	table [ "traits" ] = objects [ 0x0000054C ]
 
-	table = objects [ 0x00000551 ]
+	table = objects [ 0x0000054C ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x00000552 ]
+	table = objects [ 0x0000054D ]
 	table [ "id" ] = 107
-	table [ "skills" ] = objects [ 0x00000553 ]
+	table [ "skills" ] = objects [ 0x0000054E ]
 	table [ "template" ] = [==[central]==]
-	table [ "upgrades" ] = objects [ 0x00000558 ]
+	table [ "upgrades" ] = objects [ 0x00000553 ]
 
-	table = objects [ 0x00000553 ]
-	table [ 1 ]	= objects [ 0x00000554 ]
-	table [ 2 ]	= objects [ 0x00000555 ]
-	table [ 3 ]	= objects [ 0x00000556 ]
-	table [ 4 ]	= objects [ 0x00000557 ]
+	table = objects [ 0x0000054E ]
+	table [ 1 ]	= objects [ 0x0000054F ]
+	table [ 2 ]	= objects [ 0x00000550 ]
+	table [ 3 ]	= objects [ 0x00000551 ]
+	table [ 4 ]	= objects [ 0x00000552 ]
 
-	table = objects [ 0x00000554 ]
+	table = objects [ 0x0000054F ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[stealth]==]
 
-	table = objects [ 0x00000555 ]
+	table = objects [ 0x00000550 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[hacking]==]
 
-	table = objects [ 0x00000556 ]
+	table = objects [ 0x00000551 ]
 	table [ "level" ] = 1
 	table [ "skillID" ] = [==[inventory]==]
 
-	table = objects [ 0x00000557 ]
+	table = objects [ 0x00000552 ]
 	table [ "level" ] = 4
 	table [ "skillID" ] = [==[anarchy]==]
 
-	table = objects [ 0x00000558 ]
-	table [ 1 ]	= objects [ 0x00000559 ]
-	table [ 2 ]	= objects [ 0x0000055C ]
-	table [ 3 ]	= objects [ 0x0000055F ]
+	table = objects [ 0x00000553 ]
+	table [ 1 ]	= objects [ 0x00000554 ]
+	table [ 2 ]	= objects [ 0x00000557 ]
+	table [ 3 ]	= objects [ 0x0000055A ]
 
-	table = objects [ 0x00000559 ]
-	table [ "upgradeParams" ] = objects [ 0x0000055A ]
+	table = objects [ 0x00000554 ]
+	table [ "upgradeParams" ] = objects [ 0x00000555 ]
 	table [ "upgradeName" ] = [==[augment_central]==]
 
-	table = objects [ 0x0000055A ]
-	table [ "traits" ] = objects [ 0x0000055B ]
+	table = objects [ 0x00000555 ]
+	table [ "traits" ] = objects [ 0x00000556 ]
 
-	table = objects [ 0x0000055B ]
+	table = objects [ 0x00000556 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x0000055C ]
-	table [ "upgradeParams" ] = objects [ 0x0000055D ]
+	table = objects [ 0x00000557 ]
+	table [ "upgradeParams" ] = objects [ 0x00000558 ]
 	table [ "upgradeName" ] = [==[item_tazer]==]
 
-	table = objects [ 0x0000055D ]
-	table [ "traits" ] = objects [ 0x0000055E ]
+	table = objects [ 0x00000558 ]
+	table [ "traits" ] = objects [ 0x00000559 ]
 
-	table = objects [ 0x0000055E ]
+	table = objects [ 0x00000559 ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x0000055F ]
+	table = objects [ 0x0000055A ]
 	table [ "upgradeName" ] = [==[item_incognita]==]
 
-	table = objects [ 0x00000560 ]
+	table = objects [ 0x0000055B ]
 
-	table = objects [ 0x00000561 ]
-	table [ 1 ]	= objects [ 0x00000562 ]
-	table [ 2 ]	= objects [ 0x00000564 ]
-	table [ 3 ]	= objects [ 0x00000566 ]
-	table [ 4 ]	= objects [ 0x00000568 ]
-	table [ 5 ]	= objects [ 0x0000056A ]
-	table [ 6 ]	= objects [ 0x0000056C ]
-	table [ 7 ]	= objects [ 0x0000056E ]
-	table [ 8 ]	= objects [ 0x00000570 ]
+	table = objects [ 0x0000055C ]
+	table [ 1 ]	= objects [ 0x0000055D ]
+	table [ 2 ]	= objects [ 0x0000055F ]
+	table [ 3 ]	= objects [ 0x00000561 ]
+	table [ 4 ]	= objects [ 0x00000563 ]
+	table [ 5 ]	= objects [ 0x00000565 ]
+	table [ 6 ]	= objects [ 0x00000567 ]
+	table [ 7 ]	= objects [ 0x00000569 ]
+	table [ 8 ]	= objects [ 0x0000056B ]
 
-	table = objects [ 0x00000562 ]
+	table = objects [ 0x0000055D ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x00000563 ]
+	table [ "upgrades" ] = objects [ 0x0000055E ]
 
-	table = objects [ 0x00000563 ]
+	table = objects [ 0x0000055E ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x00000564 ]
+	table = objects [ 0x0000055F ]
 	table [ "id" ] = 2
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x00000565 ]
+	table [ "upgrades" ] = objects [ 0x00000560 ]
 
-	table = objects [ 0x00000565 ]
+	table = objects [ 0x00000560 ]
 	table [ 1 ]	= [==[augment_shalem]==]
 
-	table = objects [ 0x00000566 ]
+	table = objects [ 0x00000561 ]
 	table [ "id" ] = 6
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x00000567 ]
+	table [ "upgrades" ] = objects [ 0x00000562 ]
 
-	table = objects [ 0x00000567 ]
+	table = objects [ 0x00000562 ]
 	table [ 1 ]	= [==[augment_nika]==]
 
-	table = objects [ 0x00000568 ]
+	table = objects [ 0x00000563 ]
 	table [ "id" ] = 7
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x00000569 ]
+	table [ "upgrades" ] = objects [ 0x00000564 ]
 
-	table = objects [ 0x00000569 ]
+	table = objects [ 0x00000564 ]
 	table [ 1 ]	= [==[augment_sharp_1]==]
 
-	table = objects [ 0x0000056A ]
+	table = objects [ 0x00000565 ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x0000056B ]
+	table [ "upgrades" ] = objects [ 0x00000566 ]
 
-	table = objects [ 0x0000056B ]
+	table = objects [ 0x00000566 ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x0000056C ]
+	table = objects [ 0x00000567 ]
 	table [ "id" ] = 1001
 	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x0000056D ]
+	table [ "upgrades" ] = objects [ 0x00000568 ]
 
-	table = objects [ 0x0000056D ]
+	table = objects [ 0x00000568 ]
 	table [ 1 ]	= [==[augment_particle_envelope]==]
 	table [ 2 ]	= [==[item_transport_beacon]==]
 
-	table = objects [ 0x0000056E ]
+	table = objects [ 0x00000569 ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x0000056F ]
+	table [ "upgrades" ] = objects [ 0x0000056A ]
 
-	table = objects [ 0x0000056F ]
+	table = objects [ 0x0000056A ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x00000570 ]
+	table = objects [ 0x0000056B ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x00000571 ]
+	table [ "upgrades" ] = objects [ 0x0000056C ]
 
-	table = objects [ 0x00000571 ]
+	table = objects [ 0x0000056C ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x00000572 ]
+	table = objects [ 0x0000056D ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[parasite]==]
 	table [ 3 ]	= [==[esp]==]
@@ -7098,7 +7115,7 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ 6 ]	= [==[pwr_manager]==]
 	table [ 7 ]	= [==[love]==]
 
-	table = objects [ 0x00000573 ]
+	table = objects [ 0x0000056E ]
 	table [ "beginnerPatrols" ] = true
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = true
@@ -7120,30 +7137,45 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "firewallMultiplier" ] = 0.5
 	table [ "koDuration" ] = 1
 	table [ "startingCredits" ] = 500
-	table [ "enabledDLC" ] = objects [ 0x00000574 ]
+	table [ "enabledDLC" ] = objects [ 0x0000056F ]
 	table [ "timeAttack" ] = 0
 	table [ "daemonQuantity" ] = [==[LESS]==]
 	table [ "savescumming" ] = true
 	table [ "hideMapDestinations" ] = false
 
-	table = objects [ 0x00000574 ]
-	table [ "dlc1" ] = objects [ 0x00000575 ]
+	table = objects [ 0x0000056F ]
+	table [ "dlc1" ] = objects [ 0x00000570 ]
 
-	table = objects [ 0x00000575 ]
+	table = objects [ 0x00000570 ]
 	table [ "enabled" ] = true
-	table [ "options" ] = objects [ 0x00000576 ]
+	table [ "options" ] = objects [ 0x00000571 ]
 	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 	table [ "name" ] = [==[Contingency Plan]==]
 
+	table = objects [ 0x00000571 ]
+	table [ "programs" ] = objects [ 0x00000572 ]
+	table [ "guards" ] = objects [ 0x00000573 ]
+	table [ "extended_endless" ] = objects [ 0x00000574 ]
+	table [ "extended_campaign" ] = objects [ 0x00000575 ]
+	table [ "endless_mid_mission" ] = objects [ 0x00000576 ]
+	table [ "daemons" ] = objects [ 0x00000577 ]
+	table [ "agents" ] = objects [ 0x00000578 ]
+	table [ "sidemissions" ] = objects [ 0x00000579 ]
+
+	table = objects [ 0x00000572 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000573 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000574 ]
+	table [ "enabled" ] = true
+
+	table = objects [ 0x00000575 ]
+	table [ "enabled" ] = true
+
 	table = objects [ 0x00000576 ]
-	table [ "programs" ] = objects [ 0x00000577 ]
-	table [ "guards" ] = objects [ 0x00000578 ]
-	table [ "extended_endless" ] = objects [ 0x00000579 ]
-	table [ "extended_campaign" ] = objects [ 0x0000057A ]
-	table [ "endless_mid_mission" ] = objects [ 0x0000057B ]
-	table [ "daemons" ] = objects [ 0x0000057C ]
-	table [ "agents" ] = objects [ 0x0000057D ]
-	table [ "sidemissions" ] = objects [ 0x0000057E ]
+	table [ "enabled" ] = true
 
 	table = objects [ 0x00000577 ]
 	table [ "enabled" ] = true
@@ -7155,226 +7187,210 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "enabled" ] = true
 
 	table = objects [ 0x0000057A ]
-	table [ "enabled" ] = true
+	table [ 1 ]	= objects [ 0x0000057B ]
+	table [ 2 ]	= objects [ 0x0000061F ]
 
 	table = objects [ 0x0000057B ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000057C ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000057D ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000057E ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000057F ]
-	table [ 1 ]	= objects [ 0x00000580 ]
-	table [ 2 ]	= objects [ 0x0000062A ]
-
-	table = objects [ 0x00000580 ]
 	table [ "customScriptIndex" ] = [==[post_mid_]==]
 	table [ "miniserversSeen" ] = 20
-	table [ "campaignEvents" ] = objects [ 0x00000581 ]
+	table [ "agency" ] = objects [ 0x0000057C ]
 	table [ "agentsFound" ] = 2
-	table [ "missionParams" ] = objects [ 0x00000584 ]
-	table [ "save_time" ] = 1561602156
+	table [ "missionParams" ] = objects [ 0x000005FD ]
+	table [ "save_time" ] = 1561789755
 	table [ "lastEndlessAlert" ] = false
 	table [ "creation_time" ] = 1559449330
 	table [ "currentDay" ] = 15
 	table [ "recent_build_number" ] = [==[BUILD[trunk.282332] LUA[282350] USER[85892043@steam]
 OS: Windows (WOW64).6.1.1DB1]==]
-	table [ "preMissionNetWorth" ] = 110987
+	table [ "play_t" ] = 61071008
 	table [ "foundPrisoner" ] = true
-	table [ "previousDay" ] = 14
-	table [ "campaignDifficulty" ] = 6
-	table [ "hours" ] = 362
-	table [ "difficultyOptions" ] = objects [ 0x00000585 ]
-	table [ "missionCount" ] = 37
+	table [ "previousDay" ] = 15
 	table [ "monst3rInject" ] = false
+	table [ "hours" ] = 374
+	table [ "difficultyOptions" ] = objects [ 0x000005FE ]
+	table [ "campaignDifficulty" ] = 6
+	table [ "endlessAlert" ] = true
 	table [ "customScriptIndexDay" ] = 12
 	table [ "missionTotal" ] = 63
 	table [ "extendedCampaignHours" ] = 72
-	table [ "play_t" ] = 58181470
-	table [ "situation" ] = objects [ 0x00000591 ]
-	table [ "missionEvents" ] = objects [ 0x00000592 ]
-	table [ "endlessAlert" ] = true
-	table [ "missionsPlayedThisDay" ] = 0
-	table [ "agency" ] = objects [ 0x00000594 ]
-	table [ "location" ] = 37
-	table [ "seed" ] = 3154618240
-	table [ "situations" ] = objects [ 0x0000061A ]
+	table [ "preMissionNetWorth" ] = 110492
+	table [ "situation" ] = objects [ 0x0000060A ]
+	table [ "missionEvents" ] = objects [ 0x0000060B ]
+	table [ "location" ] = 10
+	table [ "missionsPlayedThisDay" ] = 1
+	table [ "campaignEvents" ] = objects [ 0x0000060D ]
 	table [ "version" ] = [==[0.17.18]==]
+	table [ "seed" ] = 3154618241
+	table [ "situations" ] = objects [ 0x00000610 ]
+	table [ "missionCount" ] = 38
 	table [ "missionVersion" ] = [==[0.17.18]==]
 	table [ "incognitaLevel" ] = 12
 
-	table = objects [ 0x00000581 ]
-	table [ 1 ]	= objects [ 0x00000582 ]
-
-	table = objects [ 0x00000582 ]
-	table [ "eventType" ] = 1
-	table [ "data" ] = objects [ 0x00000583 ]
-
-	table = objects [ 0x00000583 ]
-	table [ "name" ] = [==[mid_1]==]
-
-	table = objects [ 0x00000584 ]
-	table [ "newHiSecExitDay" ] = 7
-	table [ "advanced_scanners" ] = true
-	table [ "extended_endless" ] = true
-	table [ "contingency_plan" ] = true
-
-	table = objects [ 0x00000585 ]
-	table [ "beginnerPatrols" ] = false
-	table [ "roomCount" ] = 10
-	table [ "dangerZones" ] = false
-	table [ "countermeasuresFinal" ] = true
-	table [ "autoAlarm" ] = true
-	table [ "consolesPerLevel" ] = 5
-	table [ "creditMultiplier" ] = 0.75
-	table [ "rewindsLeft" ] = 99
-	table [ "spawnTable" ] = [==[MORE]==]
-	table [ "alarmRaisedOnKO" ] = true
-	table [ "maxHours" ] = math.huge
-	table [ "alarmTypes" ] = [==[NORMAL]==]
-	table [ "drawInterestPoints" ] = false
-	table [ "startingPower" ] = 5
-	table [ "daemonQuantity" ] = [==[NORMAL]==]
-	table [ "timeAttack" ] = 0
-	table [ "enabledDLC" ] = objects [ 0x00000586 ]
-	table [ "meleeFromFront" ] = false
-	table [ "koDuration" ] = 0
-	table [ "safesPerLevel" ] = 5
-	table [ "startingCredits" ] = 500
-	table [ "hideMapDestinations" ] = false
-	table [ "alarmMultiplier" ] = 1
-	table [ "powerPerLevel" ] = 10
-	table [ "savescumming" ] = false
-	table [ "firewallMultiplier" ] = 2
-
-	table = objects [ 0x00000586 ]
-	table [ "dlc1" ] = objects [ 0x00000587 ]
-
-	table = objects [ 0x00000587 ]
-	table [ "enabled" ] = true
-	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
-	table [ "name" ] = [==[Contingency Plan]==]
-	table [ "options" ] = objects [ 0x00000588 ]
-
-	table = objects [ 0x00000588 ]
-	table [ "programs" ] = objects [ 0x00000589 ]
-	table [ "guards" ] = objects [ 0x0000058A ]
-	table [ "extended_endless" ] = objects [ 0x0000058B ]
-	table [ "extended_campaign" ] = objects [ 0x0000058C ]
-	table [ "endless_mid_mission" ] = objects [ 0x0000058D ]
-	table [ "daemons" ] = objects [ 0x0000058E ]
-	table [ "sidemissions" ] = objects [ 0x0000058F ]
-	table [ "agents" ] = objects [ 0x00000590 ]
-
-	table = objects [ 0x00000589 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000058A ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000058B ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000058C ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000058D ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000058E ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x0000058F ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000590 ]
-	table [ "enabled" ] = true
-
-	table = objects [ 0x00000591 ]
-	table [ "difficulty" ] = 16
-	table [ "name" ] = [==[security]==]
-	table [ "random_idx" ] = 2
-	table [ "mapLocation" ] = 10
-
-	table = objects [ 0x00000592 ]
-	table [ "advancedAlarm" ] = true
-	table [ "needPowerCells" ] = objects [ 0x00000593 ]
-
-	table = objects [ 0x00000593 ]
-	table [ "type" ] = [==[objective]==]
-	table [ "text" ] = [==[> Find a Power Relay]==]
-	table [ "req" ] = [==[needPowerCells]==]
-
-	table = objects [ 0x00000594 ]
-	table [ "items_earned" ] = 54
-	table [ "security_hacked" ] = 459
-	table [ "upgrades" ] = objects [ 0x00000595 ]
-	table [ "missions_completed" ] = 36
+	table = objects [ 0x0000057C ]
+	table [ "items_earned" ] = 56
+	table [ "security_hacked" ] = 471
+	table [ "upgrades" ] = objects [ 0x0000057D ]
+	table [ "missions_completed" ] = 37
 	table [ "missions_completed_1" ] = 3
 	table [ "missions_completed_2" ] = 1
-	table [ "safes_looted" ] = 279
-	table [ "credits_earned" ] = 91947
+	table [ "safes_looted" ] = 291
+	table [ "credits_earned" ] = 94902
 	table [ "startLocation" ] = 23
 	table [ "nextID" ] = 100
 	table [ "blocker" ] = false
+	table [ "missions_completed_3" ] = 34
+	table [ "unitDefs" ] = objects [ 0x00000584 ]
 	table [ "id" ] = 1
-	table [ "missions_completed_3" ] = 33
-	table [ "unitDefs" ] = objects [ 0x0000059D ]
-	table [ "unitDefsPotential" ] = objects [ 0x00000608 ]
+	table [ "unitDefsPotential" ] = objects [ 0x000005EB ]
+	table [ "cpus" ] = 17
 	table [ "name" ] = [==[]==]
-	table [ "cpus" ] = 1
-	table [ "abilities" ] = objects [ 0x00000619 ]
+	table [ "abilities" ] = objects [ 0x000005FC ]
 	table [ "extraPrograms" ] = 1
 	table [ "guards_kod" ] = 31
 	table [ "programs_earned" ] = 5
 	table [ "alwaysUnlocked" ] = true
-	table [ "cash" ] = 29337
+	table [ "cash" ] = 35642
 
-	table = objects [ 0x00000595 ]
-	table [ 1 ]	= objects [ 0x00000596 ]
-	table [ 2 ]	= objects [ 0x00000599 ]
-	table [ 3 ]	= objects [ 0x0000059A ]
+	table = objects [ 0x0000057D ]
+	table [ 1 ]	= objects [ 0x0000057E ]
+	table [ 2 ]	= objects [ 0x00000581 ]
 
-	table = objects [ 0x00000596 ]
-	table [ "upgradeParams" ] = objects [ 0x00000597 ]
+	table = objects [ 0x0000057E ]
+	table [ "upgradeParams" ] = objects [ 0x0000057F ]
 	table [ "upgradeName" ] = [==[item_prototype_drive]==]
 
-	table = objects [ 0x00000597 ]
-	table [ "traits" ] = objects [ 0x00000598 ]
+	table = objects [ 0x0000057F ]
+	table [ "traits" ] = objects [ 0x00000580 ]
 
-	table = objects [ 0x00000598 ]
+	table = objects [ 0x00000580 ]
 	table [ "icebreak" ] = 0
 
-	table = objects [ 0x00000599 ]
-	table [ "upgradeName" ] = [==[item_portabledrive_3]==]
-
-	table = objects [ 0x0000059A ]
-	table [ "upgradeParams" ] = objects [ 0x0000059B ]
+	table = objects [ 0x00000581 ]
+	table [ "upgradeParams" ] = objects [ 0x00000582 ]
 	table [ "upgradeName" ] = [==[item_tag_pistol]==]
 
-	table = objects [ 0x0000059B ]
-	table [ "traits" ] = objects [ 0x0000059C ]
+	table = objects [ 0x00000582 ]
+	table [ "traits" ] = objects [ 0x00000583 ]
 
-	table = objects [ 0x0000059C ]
+	table = objects [ 0x00000583 ]
 	table [ "autoEquip" ] = true
 
+	table = objects [ 0x00000584 ]
+	table [ 1 ]	= objects [ 0x00000585 ]
+	table [ 2 ]	= objects [ 0x0000059E ]
+	table [ 3 ]	= objects [ 0x000005B7 ]
+	table [ 4 ]	= objects [ 0x000005D1 ]
+
+	table = objects [ 0x00000585 ]
+	table [ "template" ] = [==[engineer_2]==]
+	table [ "upgrades" ] = objects [ 0x00000586 ]
+	table [ "id" ] = 5
+	table [ "skills" ] = objects [ 0x00000599 ]
+	table [ "deployID" ] = 1
+
+	table = objects [ 0x00000586 ]
+	table [ 1 ]	= objects [ 0x00000587 ]
+	table [ 2 ]	= objects [ 0x0000058A ]
+	table [ 3 ]	= objects [ 0x0000058D ]
+	table [ 4 ]	= objects [ 0x00000590 ]
+	table [ 5 ]	= [==[augmentUpgradeSlot]==]
+	table [ 6 ]	= [==[augmentUpgradeSlot]==]
+	table [ 7 ]	= objects [ 0x00000593 ]
+	table [ 8 ]	= objects [ 0x00000594 ]
+	table [ 9 ]	= objects [ 0x00000595 ]
+	table [ 10 ]	= objects [ 0x00000596 ]
+	table [ 11 ]	= objects [ 0x00000597 ]
+	table [ 12 ]	= objects [ 0x00000598 ]
+
+	table = objects [ 0x00000587 ]
+	table [ "upgradeParams" ] = objects [ 0x00000588 ]
+	table [ "upgradeName" ] = [==[augment_international_v1]==]
+
+	table = objects [ 0x00000588 ]
+	table [ "traits" ] = objects [ 0x00000589 ]
+
+	table = objects [ 0x00000589 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x0000058A ]
+	table [ "upgradeParams" ] = objects [ 0x0000058B ]
+	table [ "upgradeName" ] = [==[augment_net_downlink]==]
+
+	table = objects [ 0x0000058B ]
+	table [ "traits" ] = objects [ 0x0000058C ]
+
+	table = objects [ 0x0000058C ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x0000058D ]
+	table [ "upgradeParams" ] = objects [ 0x0000058E ]
+	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
+
+	table = objects [ 0x0000058E ]
+	table [ "traits" ] = objects [ 0x0000058F ]
+
+	table = objects [ 0x0000058F ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x00000590 ]
+	table [ "upgradeParams" ] = objects [ 0x00000591 ]
+	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
+
+	table = objects [ 0x00000591 ]
+	table [ "traits" ] = objects [ 0x00000592 ]
+
+	table = objects [ 0x00000592 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
+
+	table = objects [ 0x00000593 ]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+
+	table = objects [ 0x00000594 ]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+
+	table = objects [ 0x00000595 ]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+
+	table = objects [ 0x00000596 ]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+
+	table = objects [ 0x00000597 ]
+	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+
+	table = objects [ 0x00000598 ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+
+	table = objects [ 0x00000599 ]
+	table [ 1 ]	= objects [ 0x0000059A ]
+	table [ 2 ]	= objects [ 0x0000059B ]
+	table [ 3 ]	= objects [ 0x0000059C ]
+	table [ 4 ]	= objects [ 0x0000059D ]
+
+	table = objects [ 0x0000059A ]
+	table [ "skillID" ] = [==[stealth]==]
+	table [ "level" ] = 5
+
+	table = objects [ 0x0000059B ]
+	table [ "skillID" ] = [==[hacking]==]
+	table [ "level" ] = 5
+
+	table = objects [ 0x0000059C ]
+	table [ "skillID" ] = [==[inventory]==]
+	table [ "level" ] = 5
+
 	table = objects [ 0x0000059D ]
-	table [ 1 ]	= objects [ 0x0000059E ]
-	table [ 2 ]	= objects [ 0x000005B8 ]
-	table [ 3 ]	= objects [ 0x000005D2 ]
-	table [ 4 ]	= objects [ 0x000005EC ]
+	table [ "skillID" ] = [==[anarchy]==]
+	table [ "level" ] = 5
 
 	table = objects [ 0x0000059E ]
-	table [ "template" ] = [==[engineer_2]==]
+	table [ "template" ] = [==[stealth_2]==]
 	table [ "upgrades" ] = objects [ 0x0000059F ]
-	table [ "id" ] = 5
-	table [ "skills" ] = objects [ 0x000005B3 ]
+	table [ "id" ] = 4
+	table [ "skills" ] = objects [ 0x000005B2 ]
 	table [ "deployID" ] = 1
 
 	table = objects [ 0x0000059F ]
@@ -7384,17 +7400,16 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ 4 ]	= objects [ 0x000005A9 ]
 	table [ 5 ]	= objects [ 0x000005AC ]
 	table [ 6 ]	= objects [ 0x000005AD ]
-	table [ 7 ]	= objects [ 0x000005AE ]
-	table [ 8 ]	= objects [ 0x000005AF ]
-	table [ 9 ]	= objects [ 0x000005B0 ]
-	table [ 10 ]	= objects [ 0x000005B1 ]
-	table [ 11 ]	= [==[augmentUpgradeSlot]==]
-	table [ 12 ]	= [==[augmentUpgradeSlot]==]
-	table [ 13 ]	= objects [ 0x000005B2 ]
+	table [ 7 ]	= [==[augmentUpgradeSlot]==]
+	table [ 8 ]	= [==[augmentUpgradeSlot]==]
+	table [ 9 ]	= objects [ 0x000005AE ]
+	table [ 10 ]	= objects [ 0x000005AF ]
+	table [ 11 ]	= objects [ 0x000005B0 ]
+	table [ 12 ]	= objects [ 0x000005B1 ]
 
 	table = objects [ 0x000005A0 ]
 	table [ "upgradeParams" ] = objects [ 0x000005A1 ]
-	table [ "upgradeName" ] = [==[augment_international_v1]==]
+	table [ "upgradeName" ] = [==[augment_banks]==]
 
 	table = objects [ 0x000005A1 ]
 	table [ "traits" ] = objects [ 0x000005A2 ]
@@ -7437,457 +7452,337 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "augment" ] = true
 
 	table = objects [ 0x000005AC ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x000005AD ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x000005AE ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
 	table = objects [ 0x000005AF ]
 	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
 	table = objects [ 0x000005B0 ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
 	table = objects [ 0x000005B1 ]
 	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
 
 	table = objects [ 0x000005B2 ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
+	table [ 1 ]	= objects [ 0x000005B3 ]
+	table [ 2 ]	= objects [ 0x000005B4 ]
+	table [ 3 ]	= objects [ 0x000005B5 ]
+	table [ 4 ]	= objects [ 0x000005B6 ]
 
 	table = objects [ 0x000005B3 ]
-	table [ 1 ]	= objects [ 0x000005B4 ]
-	table [ 2 ]	= objects [ 0x000005B5 ]
-	table [ 3 ]	= objects [ 0x000005B6 ]
-	table [ 4 ]	= objects [ 0x000005B7 ]
+	table [ "skillID" ] = [==[stealth]==]
+	table [ "level" ] = 5
 
 	table = objects [ 0x000005B4 ]
+	table [ "skillID" ] = [==[hacking]==]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
 
 	table = objects [ 0x000005B5 ]
+	table [ "skillID" ] = [==[inventory]==]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[hacking]==]
 
 	table = objects [ 0x000005B6 ]
+	table [ "skillID" ] = [==[anarchy]==]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
 
 	table = objects [ 0x000005B7 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x000005B8 ]
-	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x000005B9 ]
-	table [ "id" ] = 4
-	table [ "skills" ] = objects [ 0x000005CD ]
+	table [ "template" ] = [==[derek]==]
+	table [ "upgrades" ] = objects [ 0x000005B8 ]
+	table [ "id" ] = 1001
+	table [ "skills" ] = objects [ 0x000005CC ]
 	table [ "deployID" ] = 1
 
+	table = objects [ 0x000005B8 ]
+	table [ 1 ]	= objects [ 0x000005B9 ]
+	table [ 2 ]	= objects [ 0x000005BC ]
+	table [ 3 ]	= objects [ 0x000005BF ]
+	table [ 4 ]	= objects [ 0x000005C2 ]
+	table [ 5 ]	= objects [ 0x000005C5 ]
+	table [ 6 ]	= objects [ 0x000005C6 ]
+	table [ 7 ]	= [==[augmentUpgradeSlot]==]
+	table [ 8 ]	= [==[augmentUpgradeSlot]==]
+	table [ 9 ]	= objects [ 0x000005C7 ]
+	table [ 10 ]	= objects [ 0x000005C8 ]
+	table [ 11 ]	= objects [ 0x000005C9 ]
+	table [ 12 ]	= objects [ 0x000005CA ]
+	table [ 13 ]	= objects [ 0x000005CB ]
+
 	table = objects [ 0x000005B9 ]
-	table [ 1 ]	= objects [ 0x000005BA ]
-	table [ 2 ]	= objects [ 0x000005BD ]
-	table [ 3 ]	= objects [ 0x000005C0 ]
-	table [ 4 ]	= objects [ 0x000005C3 ]
-	table [ 5 ]	= objects [ 0x000005C6 ]
-	table [ 6 ]	= objects [ 0x000005C7 ]
-	table [ 7 ]	= objects [ 0x000005C8 ]
-	table [ 8 ]	= objects [ 0x000005C9 ]
-	table [ 9 ]	= objects [ 0x000005CA ]
-	table [ 10 ]	= objects [ 0x000005CB ]
-	table [ 11 ]	= [==[augmentUpgradeSlot]==]
-	table [ 12 ]	= [==[augmentUpgradeSlot]==]
-	table [ 13 ]	= objects [ 0x000005CC ]
+	table [ "upgradeParams" ] = objects [ 0x000005BA ]
+	table [ "upgradeName" ] = [==[augment_particle_envelope]==]
 
 	table = objects [ 0x000005BA ]
-	table [ "upgradeParams" ] = objects [ 0x000005BB ]
-	table [ "upgradeName" ] = [==[augment_banks]==]
+	table [ "traits" ] = objects [ 0x000005BB ]
 
 	table = objects [ 0x000005BB ]
-	table [ "traits" ] = objects [ 0x000005BC ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x000005BC ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000005BD ]
-	table [ "upgradeParams" ] = objects [ 0x000005BE ]
+	table [ "upgradeParams" ] = objects [ 0x000005BD ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
+	table = objects [ 0x000005BD ]
+	table [ "traits" ] = objects [ 0x000005BE ]
+
 	table = objects [ 0x000005BE ]
-	table [ "traits" ] = objects [ 0x000005BF ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x000005BF ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000005C0 ]
-	table [ "upgradeParams" ] = objects [ 0x000005C1 ]
+	table [ "upgradeParams" ] = objects [ 0x000005C0 ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
+	table = objects [ 0x000005C0 ]
+	table [ "traits" ] = objects [ 0x000005C1 ]
+
 	table = objects [ 0x000005C1 ]
-	table [ "traits" ] = objects [ 0x000005C2 ]
+	table [ "installed" ] = true
+	table [ "augment" ] = true
 
 	table = objects [ 0x000005C2 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000005C3 ]
-	table [ "upgradeParams" ] = objects [ 0x000005C4 ]
+	table [ "upgradeParams" ] = objects [ 0x000005C3 ]
 	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
 
-	table = objects [ 0x000005C4 ]
-	table [ "traits" ] = objects [ 0x000005C5 ]
+	table = objects [ 0x000005C3 ]
+	table [ "traits" ] = objects [ 0x000005C4 ]
 
-	table = objects [ 0x000005C5 ]
+	table = objects [ 0x000005C4 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
+
+	table = objects [ 0x000005C5 ]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x000005C6 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x000005C7 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
 	table = objects [ 0x000005C8 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
 
 	table = objects [ 0x000005C9 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
 
 	table = objects [ 0x000005CA ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
 
 	table = objects [ 0x000005CB ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+	table [ "upgradeName" ] = [==[item_stim_3]==]
 
 	table = objects [ 0x000005CC ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
+	table [ 1 ]	= objects [ 0x000005CD ]
+	table [ 2 ]	= objects [ 0x000005CE ]
+	table [ 3 ]	= objects [ 0x000005CF ]
+	table [ 4 ]	= objects [ 0x000005D0 ]
 
 	table = objects [ 0x000005CD ]
-	table [ 1 ]	= objects [ 0x000005CE ]
-	table [ 2 ]	= objects [ 0x000005CF ]
-	table [ 3 ]	= objects [ 0x000005D0 ]
-	table [ 4 ]	= objects [ 0x000005D1 ]
+	table [ "skillID" ] = [==[stealth]==]
+	table [ "level" ] = 5
 
 	table = objects [ 0x000005CE ]
+	table [ "skillID" ] = [==[hacking]==]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
 
 	table = objects [ 0x000005CF ]
+	table [ "skillID" ] = [==[inventory]==]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[hacking]==]
 
 	table = objects [ 0x000005D0 ]
+	table [ "skillID" ] = [==[anarchy]==]
 	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
 
 	table = objects [ 0x000005D1 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
+	table [ "template" ] = [==[sharpshooter_2]==]
+	table [ "upgrades" ] = objects [ 0x000005D2 ]
+	table [ "id" ] = 6
+	table [ "skills" ] = objects [ 0x000005E6 ]
+	table [ "deployID" ] = 1
 
 	table = objects [ 0x000005D2 ]
-	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x000005D3 ]
-	table [ "id" ] = 1001
-	table [ "skills" ] = objects [ 0x000005E7 ]
-	table [ "deployID" ] = 1
+	table [ 1 ]	= objects [ 0x000005D3 ]
+	table [ 2 ]	= objects [ 0x000005D6 ]
+	table [ 3 ]	= objects [ 0x000005D9 ]
+	table [ 4 ]	= objects [ 0x000005DC ]
+	table [ 5 ]	= objects [ 0x000005DF ]
+	table [ 6 ]	= objects [ 0x000005E2 ]
+	table [ 7 ]	= objects [ 0x000005E3 ]
+	table [ 8 ]	= [==[augmentUpgradeSlot]==]
+	table [ 9 ]	= [==[augmentUpgradeSlot]==]
+	table [ 10 ]	= objects [ 0x000005E4 ]
+	table [ 11 ]	= objects [ 0x000005E5 ]
 
 	table = objects [ 0x000005D3 ]
-	table [ 1 ]	= objects [ 0x000005D4 ]
-	table [ 2 ]	= objects [ 0x000005D7 ]
-	table [ 3 ]	= objects [ 0x000005DA ]
-	table [ 4 ]	= objects [ 0x000005DD ]
-	table [ 5 ]	= objects [ 0x000005E0 ]
-	table [ 6 ]	= objects [ 0x000005E1 ]
-	table [ 7 ]	= objects [ 0x000005E2 ]
-	table [ 8 ]	= objects [ 0x000005E3 ]
-	table [ 9 ]	= objects [ 0x000005E4 ]
-	table [ 10 ]	= [==[augmentUpgradeSlot]==]
-	table [ 11 ]	= [==[augmentUpgradeSlot]==]
-	table [ 12 ]	= objects [ 0x000005E5 ]
-	table [ 13 ]	= objects [ 0x000005E6 ]
-
-	table = objects [ 0x000005D4 ]
-	table [ "upgradeParams" ] = objects [ 0x000005D5 ]
-	table [ "upgradeName" ] = [==[augment_particle_envelope]==]
-
-	table = objects [ 0x000005D5 ]
-	table [ "traits" ] = objects [ 0x000005D6 ]
-
-	table = objects [ 0x000005D6 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000005D7 ]
-	table [ "upgradeParams" ] = objects [ 0x000005D8 ]
-	table [ "upgradeName" ] = [==[augment_net_downlink]==]
-
-	table = objects [ 0x000005D8 ]
-	table [ "traits" ] = objects [ 0x000005D9 ]
-
-	table = objects [ 0x000005D9 ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000005DA ]
-	table [ "upgradeParams" ] = objects [ 0x000005DB ]
-	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
-
-	table = objects [ 0x000005DB ]
-	table [ "traits" ] = objects [ 0x000005DC ]
-
-	table = objects [ 0x000005DC ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000005DD ]
-	table [ "upgradeParams" ] = objects [ 0x000005DE ]
-	table [ "upgradeName" ] = [==[augment_chameleon_movement]==]
-
-	table = objects [ 0x000005DE ]
-	table [ "traits" ] = objects [ 0x000005DF ]
-
-	table = objects [ 0x000005DF ]
-	table [ "installed" ] = true
-	table [ "augment" ] = true
-
-	table = objects [ 0x000005E0 ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
-
-	table = objects [ 0x000005E1 ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
-
-	table = objects [ 0x000005E2 ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
-
-	table = objects [ 0x000005E3 ]
-	table [ "upgradeName" ] = [==[item_icebreaker_3]==]
-
-	table = objects [ 0x000005E4 ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
-
-	table = objects [ 0x000005E5 ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
-
-	table = objects [ 0x000005E6 ]
-	table [ "upgradeName" ] = [==[item_stim_3]==]
-
-	table = objects [ 0x000005E7 ]
-	table [ 1 ]	= objects [ 0x000005E8 ]
-	table [ 2 ]	= objects [ 0x000005E9 ]
-	table [ 3 ]	= objects [ 0x000005EA ]
-	table [ 4 ]	= objects [ 0x000005EB ]
-
-	table = objects [ 0x000005E8 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x000005E9 ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x000005EA ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x000005EB ]
-	table [ "level" ] = 5
-	table [ "skillID" ] = [==[anarchy]==]
-
-	table = objects [ 0x000005EC ]
-	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x000005ED ]
-	table [ "id" ] = 6
-	table [ "skills" ] = objects [ 0x00000603 ]
-	table [ "deployID" ] = 1
-
-	table = objects [ 0x000005ED ]
-	table [ 1 ]	= objects [ 0x000005EE ]
-	table [ 2 ]	= objects [ 0x000005F1 ]
-	table [ 3 ]	= objects [ 0x000005F4 ]
-	table [ 4 ]	= objects [ 0x000005F7 ]
-	table [ 5 ]	= objects [ 0x000005FA ]
-	table [ 6 ]	= objects [ 0x000005FD ]
-	table [ 7 ]	= objects [ 0x000005FE ]
-	table [ 8 ]	= objects [ 0x000005FF ]
-	table [ 9 ]	= [==[augmentUpgradeSlot]==]
-	table [ 10 ]	= [==[augmentUpgradeSlot]==]
-	table [ 11 ]	= objects [ 0x00000600 ]
-	table [ 12 ]	= objects [ 0x00000601 ]
-	table [ 13 ]	= objects [ 0x00000602 ]
-
-	table = objects [ 0x000005EE ]
-	table [ "upgradeParams" ] = objects [ 0x000005EF ]
+	table [ "upgradeParams" ] = objects [ 0x000005D4 ]
 	table [ "upgradeName" ] = [==[augment_nika]==]
 
-	table = objects [ 0x000005EF ]
-	table [ "traits" ] = objects [ 0x000005F0 ]
+	table = objects [ 0x000005D4 ]
+	table [ "traits" ] = objects [ 0x000005D5 ]
 
-	table = objects [ 0x000005F0 ]
+	table = objects [ 0x000005D5 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000005F1 ]
-	table [ "upgradeParams" ] = objects [ 0x000005F2 ]
+	table = objects [ 0x000005D6 ]
+	table [ "upgradeParams" ] = objects [ 0x000005D7 ]
 	table [ "upgradeName" ] = [==[augment_net_downlink]==]
 
-	table = objects [ 0x000005F2 ]
-	table [ "traits" ] = objects [ 0x000005F3 ]
+	table = objects [ 0x000005D7 ]
+	table [ "traits" ] = objects [ 0x000005D8 ]
 
-	table = objects [ 0x000005F3 ]
+	table = objects [ 0x000005D8 ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000005F4 ]
-	table [ "upgradeParams" ] = objects [ 0x000005F5 ]
+	table = objects [ 0x000005D9 ]
+	table [ "upgradeParams" ] = objects [ 0x000005DA ]
 	table [ "upgradeName" ] = [==[augment_anatomy_analysis]==]
 
-	table = objects [ 0x000005F5 ]
-	table [ "traits" ] = objects [ 0x000005F6 ]
+	table = objects [ 0x000005DA ]
+	table [ "traits" ] = objects [ 0x000005DB ]
 
-	table = objects [ 0x000005F6 ]
+	table = objects [ 0x000005DB ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000005F7 ]
-	table [ "upgradeParams" ] = objects [ 0x000005F8 ]
+	table = objects [ 0x000005DC ]
+	table [ "upgradeParams" ] = objects [ 0x000005DD ]
 	table [ "upgradeName" ] = [==[augment_subdermal_cloak]==]
 
-	table = objects [ 0x000005F8 ]
-	table [ "traits" ] = objects [ 0x000005F9 ]
+	table = objects [ 0x000005DD ]
+	table [ "traits" ] = objects [ 0x000005DE ]
 
-	table = objects [ 0x000005F9 ]
+	table = objects [ 0x000005DE ]
 	table [ "installed" ] = true
 	table [ "augment" ] = true
 
-	table = objects [ 0x000005FA ]
-	table [ "upgradeParams" ] = objects [ 0x000005FB ]
+	table = objects [ 0x000005DF ]
+	table [ "upgradeParams" ] = objects [ 0x000005E0 ]
 	table [ "upgradeName" ] = [==[item_tag_pistol]==]
 
-	table = objects [ 0x000005FB ]
-	table [ "traits" ] = objects [ 0x000005FC ]
+	table = objects [ 0x000005E0 ]
+	table [ "traits" ] = objects [ 0x000005E1 ]
 
-	table = objects [ 0x000005FC ]
+	table = objects [ 0x000005E1 ]
 	table [ "autoEquip" ] = true
 
-	table = objects [ 0x000005FD ]
+	table = objects [ 0x000005E2 ]
 	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
 
-	table = objects [ 0x000005FE ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
-
-	table = objects [ 0x000005FF ]
-	table [ "upgradeName" ] = [==[item_emp_pack_4]==]
-
-	table = objects [ 0x00000600 ]
-	table [ "upgradeName" ] = [==[item_transport_beacon]==]
-
-	table = objects [ 0x00000601 ]
+	table = objects [ 0x000005E3 ]
 	table [ "upgradeName" ] = [==[item_laptop_3]==]
 
-	table = objects [ 0x00000602 ]
-	table [ "upgradeName" ] = [==[item_cloakingrig_3_17_5]==]
+	table = objects [ 0x000005E4 ]
+	table [ "upgradeName" ] = [==[item_transport_beacon]==]
 
-	table = objects [ 0x00000603 ]
-	table [ 1 ]	= objects [ 0x00000604 ]
-	table [ 2 ]	= objects [ 0x00000605 ]
-	table [ 3 ]	= objects [ 0x00000606 ]
-	table [ 4 ]	= objects [ 0x00000607 ]
+	table = objects [ 0x000005E5 ]
+	table [ "upgradeName" ] = [==[item_laptop_3]==]
 
-	table = objects [ 0x00000604 ]
-	table [ "level" ] = 5
+	table = objects [ 0x000005E6 ]
+	table [ 1 ]	= objects [ 0x000005E7 ]
+	table [ 2 ]	= objects [ 0x000005E8 ]
+	table [ 3 ]	= objects [ 0x000005E9 ]
+	table [ 4 ]	= objects [ 0x000005EA ]
+
+	table = objects [ 0x000005E7 ]
 	table [ "skillID" ] = [==[stealth]==]
-
-	table = objects [ 0x00000605 ]
 	table [ "level" ] = 5
+
+	table = objects [ 0x000005E8 ]
 	table [ "skillID" ] = [==[hacking]==]
-
-	table = objects [ 0x00000606 ]
 	table [ "level" ] = 5
+
+	table = objects [ 0x000005E9 ]
 	table [ "skillID" ] = [==[inventory]==]
-
-	table = objects [ 0x00000607 ]
 	table [ "level" ] = 5
+
+	table = objects [ 0x000005EA ]
 	table [ "skillID" ] = [==[anarchy]==]
+	table [ "level" ] = 5
 
-	table = objects [ 0x00000608 ]
-	table [ 1 ]	= objects [ 0x00000609 ]
-	table [ 2 ]	= objects [ 0x0000060B ]
-	table [ 3 ]	= objects [ 0x0000060D ]
-	table [ 4 ]	= objects [ 0x0000060F ]
-	table [ 5 ]	= objects [ 0x00000611 ]
-	table [ 6 ]	= objects [ 0x00000613 ]
-	table [ 7 ]	= objects [ 0x00000615 ]
-	table [ 8 ]	= objects [ 0x00000617 ]
+	table = objects [ 0x000005EB ]
+	table [ 1 ]	= objects [ 0x000005EC ]
+	table [ 2 ]	= objects [ 0x000005EE ]
+	table [ 3 ]	= objects [ 0x000005F0 ]
+	table [ 4 ]	= objects [ 0x000005F2 ]
+	table [ 5 ]	= objects [ 0x000005F4 ]
+	table [ 6 ]	= objects [ 0x000005F6 ]
+	table [ 7 ]	= objects [ 0x000005F8 ]
+	table [ 8 ]	= objects [ 0x000005FA ]
 
-	table = objects [ 0x00000609 ]
+	table = objects [ 0x000005EC ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x0000060A ]
+	table [ "upgrades" ] = objects [ 0x000005ED ]
 
-	table = objects [ 0x0000060A ]
+	table = objects [ 0x000005ED ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x0000060B ]
+	table = objects [ 0x000005EE ]
 	table [ "id" ] = 2
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x0000060C ]
+	table [ "upgrades" ] = objects [ 0x000005EF ]
 
-	table = objects [ 0x0000060C ]
+	table = objects [ 0x000005EF ]
 	table [ 1 ]	= [==[augment_shalem]==]
 
-	table = objects [ 0x0000060D ]
+	table = objects [ 0x000005F0 ]
 	table [ "id" ] = 3
 	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x0000060E ]
+	table [ "upgrades" ] = objects [ 0x000005F1 ]
 
-	table = objects [ 0x0000060E ]
+	table = objects [ 0x000005F1 ]
 	table [ 1 ]	= [==[augment_tony]==]
 
-	table = objects [ 0x0000060F ]
+	table = objects [ 0x000005F2 ]
 	table [ "id" ] = 8
 	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x00000610 ]
+	table [ "upgrades" ] = objects [ 0x000005F3 ]
 
-	table = objects [ 0x00000610 ]
+	table = objects [ 0x000005F3 ]
 	table [ 1 ]	= [==[augment_prism_2]==]
 
-	table = objects [ 0x00000611 ]
+	table = objects [ 0x000005F4 ]
 	table [ "id" ] = 7
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x00000612 ]
+	table [ "upgrades" ] = objects [ 0x000005F5 ]
 
-	table = objects [ 0x00000612 ]
+	table = objects [ 0x000005F5 ]
 	table [ 1 ]	= [==[augment_sharp_1]==]
 
-	table = objects [ 0x00000613 ]
+	table = objects [ 0x000005F6 ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x00000614 ]
+	table [ "upgrades" ] = objects [ 0x000005F7 ]
 
-	table = objects [ 0x00000614 ]
+	table = objects [ 0x000005F7 ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x00000615 ]
+	table = objects [ 0x000005F8 ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x00000616 ]
+	table [ "upgrades" ] = objects [ 0x000005F9 ]
 
-	table = objects [ 0x00000616 ]
+	table = objects [ 0x000005F9 ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x00000617 ]
+	table = objects [ 0x000005FA ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x00000618 ]
+	table [ "upgrades" ] = objects [ 0x000005FB ]
 
-	table = objects [ 0x00000618 ]
+	table = objects [ 0x000005FB ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x00000619 ]
+	table = objects [ 0x000005FC ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[lockpick_1]==]
 	table [ 3 ]	= [==[bless]==]
@@ -7895,291 +7790,386 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ 5 ]	= [==[pwr_manager]==]
 	table [ 6 ]	= [==[hammer]==]
 
-	table = objects [ 0x0000061A ]
-	table [ 1 ]	= objects [ 0x0000061B ]
-	table [ 2 ]	= objects [ 0x0000061C ]
-	table [ 3 ]	= objects [ 0x0000061D ]
-	table [ 4 ]	= objects [ 0x0000061E ]
-	table [ 5 ]	= objects [ 0x0000061F ]
-	table [ 6 ]	= objects [ 0x00000620 ]
-	table [ 7 ]	= objects [ 0x00000621 ]
-	table [ 8 ]	= objects [ 0x00000622 ]
-	table [ 9 ]	= objects [ 0x00000623 ]
-	table [ 10 ]	= objects [ 0x00000624 ]
-	table [ 11 ]	= objects [ 0x00000625 ]
-	table [ 12 ]	= objects [ 0x00000626 ]
-	table [ 13 ]	= objects [ 0x00000627 ]
-	table [ 14 ]	= objects [ 0x00000628 ]
-	table [ 15 ]	= objects [ 0x00000629 ]
+	table = objects [ 0x000005FD ]
+	table [ "newHiSecExitDay" ] = 7
+	table [ "advanced_scanners" ] = true
+	table [ "extended_endless" ] = true
+	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x0000061B ]
-	table [ "mapLocation" ] = 52
-	table [ "difficulty" ] = 17
-	table [ "random_idx" ] = 2
-	table [ "name" ] = [==[detention_centre]==]
+	table = objects [ 0x000005FE ]
+	table [ "beginnerPatrols" ] = false
+	table [ "roomCount" ] = 10
+	table [ "dangerZones" ] = false
+	table [ "countermeasuresFinal" ] = true
+	table [ "autoAlarm" ] = true
+	table [ "consolesPerLevel" ] = 5
+	table [ "creditMultiplier" ] = 0.75
+	table [ "rewindsLeft" ] = 99
+	table [ "spawnTable" ] = [==[MORE]==]
+	table [ "alarmRaisedOnKO" ] = true
+	table [ "maxHours" ] = math.huge
+	table [ "alarmTypes" ] = [==[NORMAL]==]
+	table [ "drawInterestPoints" ] = false
+	table [ "startingPower" ] = 5
+	table [ "daemonQuantity" ] = [==[NORMAL]==]
+	table [ "timeAttack" ] = 0
+	table [ "enabledDLC" ] = objects [ 0x000005FF ]
+	table [ "meleeFromFront" ] = false
+	table [ "koDuration" ] = 0
+	table [ "safesPerLevel" ] = 5
+	table [ "startingCredits" ] = 500
+	table [ "hideMapDestinations" ] = false
+	table [ "alarmMultiplier" ] = 1
+	table [ "powerPerLevel" ] = 10
+	table [ "savescumming" ] = false
+	table [ "firewallMultiplier" ] = 2
 
-	table = objects [ 0x0000061C ]
-	table [ "difficulty" ] = 17
-	table [ "mapLocation" ] = 14
-	table [ "name" ] = [==[executive_terminals]==]
-	table [ "random_idx" ] = 2
+	table = objects [ 0x000005FF ]
+	table [ "dlc1" ] = objects [ 0x00000600 ]
 
-	table = objects [ 0x0000061D ]
-	table [ "mapLocation" ] = 4
-	table [ "difficulty" ] = 17
-	table [ "random_idx" ] = 2
-	table [ "name" ] = [==[server_farm]==]
+	table = objects [ 0x00000600 ]
+	table [ "enabled" ] = true
+	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
+	table [ "name" ] = [==[Contingency Plan]==]
+	table [ "options" ] = objects [ 0x00000601 ]
 
-	table = objects [ 0x0000061E ]
-	table [ "mapLocation" ] = 23
-	table [ "difficulty" ] = 17
-	table [ "random_idx" ] = 2
-	table [ "name" ] = [==[executive_terminals]==]
+	table = objects [ 0x00000601 ]
+	table [ "programs" ] = objects [ 0x00000602 ]
+	table [ "guards" ] = objects [ 0x00000603 ]
+	table [ "extended_endless" ] = objects [ 0x00000604 ]
+	table [ "extended_campaign" ] = objects [ 0x00000605 ]
+	table [ "endless_mid_mission" ] = objects [ 0x00000606 ]
+	table [ "daemons" ] = objects [ 0x00000607 ]
+	table [ "sidemissions" ] = objects [ 0x00000608 ]
+	table [ "agents" ] = objects [ 0x00000609 ]
 
-	table = objects [ 0x0000061F ]
-	table [ "mapLocation" ] = 44
-	table [ "name" ] = [==[detention_centre]==]
-	table [ "difficulty" ] = 16
+	table = objects [ 0x00000602 ]
+	table [ "enabled" ] = true
 
-	table = objects [ 0x00000620 ]
-	table [ "mapLocation" ] = 6
-	table [ "name" ] = [==[vault]==]
-	table [ "difficulty" ] = 17
+	table = objects [ 0x00000603 ]
+	table [ "enabled" ] = true
 
-	table = objects [ 0x00000621 ]
-	table [ "difficulty" ] = 16
-	table [ "mapLocation" ] = 29
-	table [ "name" ] = [==[ceo_office]==]
-	table [ "random_idx" ] = 1
+	table = objects [ 0x00000604 ]
+	table [ "enabled" ] = true
 
-	table = objects [ 0x00000622 ]
-	table [ "difficulty" ] = 16
-	table [ "mapLocation" ] = 16
-	table [ "name" ] = [==[vault]==]
-	table [ "random_idx" ] = 2
+	table = objects [ 0x00000605 ]
+	table [ "enabled" ] = true
 
-	table = objects [ 0x00000623 ]
-	table [ "mapLocation" ] = 8
-	table [ "name" ] = [==[server_farm]==]
-	table [ "difficulty" ] = 16
+	table = objects [ 0x00000606 ]
+	table [ "enabled" ] = true
 
-	table = objects [ 0x00000624 ]
-	table [ "mapLocation" ] = 5
-	table [ "name" ] = [==[cyberlab]==]
-	table [ "difficulty" ] = 17
+	table = objects [ 0x00000607 ]
+	table [ "enabled" ] = true
 
-	table = objects [ 0x00000625 ]
-	table [ "mapLocation" ] = 45
-	table [ "name" ] = [==[cyberlab]==]
-	table [ "difficulty" ] = 16
+	table = objects [ 0x00000608 ]
+	table [ "enabled" ] = true
 
-	table = objects [ 0x00000626 ]
-	table [ "difficulty" ] = 16
-	table [ "name" ] = [==[ceo_office]==]
-	table [ "mapLocation" ] = 40
+	table = objects [ 0x00000609 ]
+	table [ "enabled" ] = true
 
-	table = objects [ 0x00000627 ]
-	table [ "mapLocation" ] = 39
-	table [ "name" ] = [==[nanofab]==]
-	table [ "difficulty" ] = 17
-
-	table = objects [ 0x00000628 ]
-	table [ "mapLocation" ] = 36
-	table [ "name" ] = [==[nanofab]==]
-	table [ "difficulty" ] = 16
-
-	table = objects [ 0x00000629 ]
+	table = objects [ 0x0000060A ]
 	table [ "difficulty" ] = 16
 	table [ "name" ] = [==[security]==]
 	table [ "random_idx" ] = 2
 	table [ "mapLocation" ] = 35
 
-	table = objects [ 0x0000062A ]
+	table = objects [ 0x0000060B ]
+	table [ "advancedAlarm" ] = true
+	table [ "needPowerCells" ] = objects [ 0x0000060C ]
+
+	table = objects [ 0x0000060C ]
+	table [ "type" ] = [==[objective]==]
+	table [ "text" ] = [==[> Find a Power Relay]==]
+	table [ "req" ] = [==[needPowerCells]==]
+
+	table = objects [ 0x0000060D ]
+	table [ 1 ]	= objects [ 0x0000060E ]
+
+	table = objects [ 0x0000060E ]
+	table [ "eventType" ] = 1
+	table [ "data" ] = objects [ 0x0000060F ]
+
+	table = objects [ 0x0000060F ]
+	table [ "name" ] = [==[mid_1]==]
+
+	table = objects [ 0x00000610 ]
+	table [ 1 ]	= objects [ 0x00000611 ]
+	table [ 2 ]	= objects [ 0x00000612 ]
+	table [ 3 ]	= objects [ 0x00000613 ]
+	table [ 4 ]	= objects [ 0x00000614 ]
+	table [ 5 ]	= objects [ 0x00000615 ]
+	table [ 6 ]	= objects [ 0x00000616 ]
+	table [ 7 ]	= objects [ 0x00000617 ]
+	table [ 8 ]	= objects [ 0x00000618 ]
+	table [ 9 ]	= objects [ 0x00000619 ]
+	table [ 10 ]	= objects [ 0x0000061A ]
+	table [ 11 ]	= objects [ 0x0000061B ]
+	table [ 12 ]	= objects [ 0x0000061C ]
+	table [ 13 ]	= objects [ 0x0000061D ]
+	table [ 14 ]	= objects [ 0x0000061E ]
+
+	table = objects [ 0x00000611 ]
+	table [ "mapLocation" ] = 52
+	table [ "difficulty" ] = 17
+	table [ "random_idx" ] = 2
+	table [ "name" ] = [==[detention_centre]==]
+
+	table = objects [ 0x00000612 ]
+	table [ "difficulty" ] = 17
+	table [ "mapLocation" ] = 14
+	table [ "name" ] = [==[executive_terminals]==]
+	table [ "random_idx" ] = 2
+
+	table = objects [ 0x00000613 ]
+	table [ "mapLocation" ] = 4
+	table [ "difficulty" ] = 17
+	table [ "random_idx" ] = 2
+	table [ "name" ] = [==[server_farm]==]
+
+	table = objects [ 0x00000614 ]
+	table [ "mapLocation" ] = 23
+	table [ "difficulty" ] = 17
+	table [ "random_idx" ] = 2
+	table [ "name" ] = [==[executive_terminals]==]
+
+	table = objects [ 0x00000615 ]
+	table [ "mapLocation" ] = 44
+	table [ "name" ] = [==[detention_centre]==]
+	table [ "difficulty" ] = 16
+
+	table = objects [ 0x00000616 ]
+	table [ "mapLocation" ] = 6
+	table [ "name" ] = [==[vault]==]
+	table [ "difficulty" ] = 17
+
+	table = objects [ 0x00000617 ]
+	table [ "difficulty" ] = 16
+	table [ "mapLocation" ] = 29
+	table [ "name" ] = [==[ceo_office]==]
+	table [ "random_idx" ] = 1
+
+	table = objects [ 0x00000618 ]
+	table [ "difficulty" ] = 16
+	table [ "mapLocation" ] = 16
+	table [ "name" ] = [==[vault]==]
+	table [ "random_idx" ] = 2
+
+	table = objects [ 0x00000619 ]
+	table [ "mapLocation" ] = 8
+	table [ "name" ] = [==[server_farm]==]
+	table [ "difficulty" ] = 16
+
+	table = objects [ 0x0000061A ]
+	table [ "mapLocation" ] = 5
+	table [ "name" ] = [==[cyberlab]==]
+	table [ "difficulty" ] = 17
+
+	table = objects [ 0x0000061B ]
+	table [ "mapLocation" ] = 45
+	table [ "name" ] = [==[cyberlab]==]
+	table [ "difficulty" ] = 16
+
+	table = objects [ 0x0000061C ]
+	table [ "difficulty" ] = 16
+	table [ "name" ] = [==[ceo_office]==]
+	table [ "mapLocation" ] = 40
+
+	table = objects [ 0x0000061D ]
+	table [ "mapLocation" ] = 39
+	table [ "name" ] = [==[nanofab]==]
+	table [ "difficulty" ] = 17
+
+	table = objects [ 0x0000061E ]
+	table [ "mapLocation" ] = 36
+	table [ "name" ] = [==[nanofab]==]
+	table [ "difficulty" ] = 16
+
+	table = objects [ 0x0000061F ]
 	table [ "currentDay" ] = 0
 	table [ "recent_build_number" ] = [==[BUILD[trunk.282332] LUA[282350] USER[85892043@steam]
 OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "miniserversSeen" ] = 0
 	table [ "play_t" ] = 0
 	table [ "previousDay" ] = -1
-	table [ "campaignEvents" ] = objects [ 0x0000062B ]
+	table [ "campaignEvents" ] = objects [ 0x00000620 ]
 	table [ "hours" ] = 0
-	table [ "difficultyOptions" ] = objects [ 0x0000064B ]
-	table [ "agency" ] = objects [ 0x00000657 ]
-	table [ "situation" ] = objects [ 0x00000673 ]
+	table [ "difficultyOptions" ] = objects [ 0x00000640 ]
+	table [ "agency" ] = objects [ 0x0000064C ]
+	table [ "situation" ] = objects [ 0x00000668 ]
 	table [ "missionVersion" ] = [==[0.17.18]==]
 	table [ "missionTotal" ] = 1
-	table [ "missionParams" ] = objects [ 0x00000674 ]
+	table [ "missionParams" ] = objects [ 0x00000669 ]
 	table [ "preMissionNetWorth" ] = 4300
 	table [ "save_time" ] = 1561198549
-	table [ "missionEvents" ] = objects [ 0x00000675 ]
+	table [ "missionEvents" ] = objects [ 0x0000066A ]
 	table [ "campaignDifficulty" ] = 3
 	table [ "seed" ] = 2971242240
 	table [ "creation_time" ] = 1561198526
 	table [ "version" ] = [==[0.17.18]==]
 	table [ "missionsPlayedThisDay" ] = 0
 	table [ "location" ] = 23
-	table [ "situations" ] = objects [ 0x00000676 ]
+	table [ "situations" ] = objects [ 0x0000066B ]
 	table [ "missionCount" ] = 0
 	table [ "incognitaLevel" ] = 0
 
-	table = objects [ 0x0000062B ]
-	table [ 1 ]	= objects [ 0x0000062C ]
-	table [ 2 ]	= objects [ 0x0000062E ]
-	table [ 3 ]	= objects [ 0x00000632 ]
-	table [ 4 ]	= objects [ 0x00000633 ]
-	table [ 5 ]	= objects [ 0x00000635 ]
-	table [ 6 ]	= objects [ 0x00000636 ]
-	table [ 7 ]	= objects [ 0x00000638 ]
-	table [ 8 ]	= objects [ 0x00000639 ]
-	table [ 9 ]	= objects [ 0x0000063A ]
-	table [ 10 ]	= objects [ 0x0000063C ]
-	table [ 11 ]	= objects [ 0x0000063F ]
-	table [ 12 ]	= objects [ 0x00000641 ]
-	table [ 13 ]	= objects [ 0x00000643 ]
-	table [ 14 ]	= objects [ 0x00000645 ]
+	table = objects [ 0x00000620 ]
+	table [ 1 ]	= objects [ 0x00000621 ]
+	table [ 2 ]	= objects [ 0x00000623 ]
+	table [ 3 ]	= objects [ 0x00000627 ]
+	table [ 4 ]	= objects [ 0x00000628 ]
+	table [ 5 ]	= objects [ 0x0000062A ]
+	table [ 6 ]	= objects [ 0x0000062B ]
+	table [ 7 ]	= objects [ 0x0000062D ]
+	table [ 8 ]	= objects [ 0x0000062E ]
+	table [ 9 ]	= objects [ 0x0000062F ]
+	table [ 10 ]	= objects [ 0x00000631 ]
+	table [ 11 ]	= objects [ 0x00000634 ]
+	table [ 12 ]	= objects [ 0x00000636 ]
+	table [ 13 ]	= objects [ 0x00000638 ]
+	table [ 14 ]	= objects [ 0x0000063A ]
 
-	table = objects [ 0x0000062C ]
-	table [ "data" ] = objects [ 0x0000062D ]
+	table = objects [ 0x00000621 ]
+	table [ "data" ] = objects [ 0x00000622 ]
 	table [ "eventType" ] = 4
 
-	table = objects [ 0x0000062D ]
+	table = objects [ 0x00000622 ]
 	table [ "value" ] = true
 	table [ "hours" ] = 288
 	table [ "param" ] = [==[advanced_scanners]==]
 
-	table = objects [ 0x0000062E ]
+	table = objects [ 0x00000623 ]
 	table [ "hours" ] = 288
-	table [ "data" ] = objects [ 0x0000062F ]
+	table [ "data" ] = objects [ 0x00000624 ]
 	table [ "eventType" ] = 11
 
-	table = objects [ 0x0000062F ]
+	table = objects [ 0x00000624 ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x00000630 ]
+	table [ "groups" ] = objects [ 0x00000625 ]
 
-	table = objects [ 0x00000630 ]
-	table [ 1 ]	= objects [ 0x00000631 ]
+	table = objects [ 0x00000625 ]
+	table [ 1 ]	= objects [ 0x00000626 ]
 
-	table = objects [ 0x00000631 ]
+	table = objects [ 0x00000626 ]
 	table [ "text" ] = [==[Caution. Omni corp has upgraded all Enforcer units with XL-5 Scan Grenades. As well as scanning, the XL-5 emits a disruptive field that disables cloaking and Hologram Technology.]==]
 	table [ "title" ] = [==[ADVANCED SCAN GRENADES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/advanced_scan_grenades.png]==]
 
-	table = objects [ 0x00000632 ]
+	table = objects [ 0x00000627 ]
 	table [ "day" ] = 4
 	table [ "eventType" ] = 13
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x00000633 ]
+	table = objects [ 0x00000628 ]
 	table [ "eventType" ] = 1
-	table [ "data" ] = objects [ 0x00000634 ]
+	table [ "data" ] = objects [ 0x00000629 ]
 
-	table = objects [ 0x00000634 ]
+	table = objects [ 0x00000629 ]
 	table [ "name" ] = [==[mid_1]==]
 
-	table = objects [ 0x00000635 ]
+	table = objects [ 0x0000062A ]
 	table [ "data" ] = 72
 	table [ "eventType" ] = 2
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x00000636 ]
-	table [ "data" ] = objects [ 0x00000637 ]
+	table = objects [ 0x0000062B ]
+	table [ "data" ] = objects [ 0x0000062C ]
 	table [ "eventType" ] = 3
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x00000637 ]
+	table = objects [ 0x0000062C ]
 	table [ "corp" ] = [==[omni2]==]
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x00000638 ]
+	table = objects [ 0x0000062D ]
 	table [ "eventType" ] = 6
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x00000639 ]
+	table = objects [ 0x0000062E ]
 	table [ "data" ] = [==[post_mid_]==]
 	table [ "eventType" ] = 7
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x0000063A ]
-	table [ "data" ] = objects [ 0x0000063B ]
+	table = objects [ 0x0000062F ]
+	table [ "data" ] = objects [ 0x00000630 ]
 	table [ "eventType" ] = 4
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x0000063B ]
+	table = objects [ 0x00000630 ]
 	table [ "param" ] = [==[advancedAlarm]==]
 
-	table = objects [ 0x0000063C ]
-	table [ "data" ] = objects [ 0x0000063D ]
+	table = objects [ 0x00000631 ]
+	table [ "data" ] = objects [ 0x00000632 ]
 	table [ "eventType" ] = 4
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x0000063D ]
-	table [ "value" ] = objects [ 0x0000063E ]
+	table = objects [ 0x00000632 ]
+	table [ "value" ] = objects [ 0x00000633 ]
 	table [ "param" ] = [==[needPowerCells]==]
 
-	table = objects [ 0x0000063E ]
+	table = objects [ 0x00000633 ]
 	table [ "type" ] = [==[objective]==]
 	table [ "text" ] = [==[> Find a Power Relay]==]
 	table [ "req" ] = [==[needPowerCells]==]
 
-	table = objects [ 0x0000063F ]
-	table [ "data" ] = objects [ 0x00000640 ]
+	table = objects [ 0x00000634 ]
+	table [ "data" ] = objects [ 0x00000635 ]
 	table [ "eventType" ] = 4
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x00000640 ]
+	table = objects [ 0x00000635 ]
 	table [ "value" ] = 1
 	table [ "agency" ] = true
 	table [ "param" ] = [==[extraPrograms]==]
 
-	table = objects [ 0x00000641 ]
-	table [ "data" ] = objects [ 0x00000642 ]
+	table = objects [ 0x00000636 ]
+	table [ "data" ] = objects [ 0x00000637 ]
 	table [ "eventType" ] = 4
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x00000642 ]
+	table = objects [ 0x00000637 ]
 	table [ "value" ] = 0
 	table [ "editCampaign" ] = true
 	table [ "param" ] = [==[incognitaLevel]==]
 
-	table = objects [ 0x00000643 ]
-	table [ "data" ] = objects [ 0x00000644 ]
+	table = objects [ 0x00000638 ]
+	table [ "data" ] = objects [ 0x00000639 ]
 	table [ "eventType" ] = 9
 	table [ "mission" ] = [==[mid_1]==]
 
-	table = objects [ 0x00000644 ]
+	table = objects [ 0x00000639 ]
 	table [ "removeMission" ] = [==[mid_2]==]
 	table [ "agent" ] = 100
 
-	table = objects [ 0x00000645 ]
-	table [ "data" ] = objects [ 0x00000646 ]
+	table = objects [ 0x0000063A ]
+	table [ "data" ] = objects [ 0x0000063B ]
 	table [ "eventType" ] = 11
 	table [ "mission" ] = [==[mid_2]==]
 
-	table = objects [ 0x00000646 ]
+	table = objects [ 0x0000063B ]
 	table [ "title" ] = [==[SITUATION UPDATE]==]
-	table [ "groups" ] = objects [ 0x00000647 ]
+	table [ "groups" ] = objects [ 0x0000063C ]
 
-	table = objects [ 0x00000647 ]
-	table [ 1 ]	= objects [ 0x00000648 ]
-	table [ 2 ]	= objects [ 0x00000649 ]
-	table [ 3 ]	= objects [ 0x0000064A ]
+	table = objects [ 0x0000063C ]
+	table [ 1 ]	= objects [ 0x0000063D ]
+	table [ 2 ]	= objects [ 0x0000063E ]
+	table [ 3 ]	= objects [ 0x0000063F ]
 
-	table = objects [ 0x00000648 ]
+	table = objects [ 0x0000063D ]
 	table [ "text" ] = [==[The corporations have increased their response to our incursions. Expect higher resistance as the alarm levels increases.]==]
 	table [ "title" ] = [==[ADVANCED ALARM STAGES]==]
 	table [ "img" ] = [==[gui/menu pages/map_screen/new_alarm.png]==]
 
-	table = objects [ 0x00000649 ]
+	table = objects [ 0x0000063E ]
 	table [ "text" ] = [==[Incognita's new portable home consumes a lot of power. You will need to find and bring back a Universal Power Cell from each mission.]==]
 	table [ "title" ] = [==[ACQUIRE UNIVERSAL POWER CELLS]==]
 	table [ "img" ] = [==[gui/icons/item_icons/icon-power_cell.png]==]
 
-	table = objects [ 0x0000064A ]
+	table = objects [ 0x0000063F ]
 	table [ "text" ] = [==[It's not all bad news. The Quantum Reservoir has increased Incognita's memory capacity. She has space to install an additional program.]==]
 	table [ "title" ] = [==[INCREASED PROGRAM CAPACITY]==]
 	table [ "img" ] = [==[gui/hud3/hud3_incognita_LG.png]==]
 
-	table = objects [ 0x0000064B ]
+	table = objects [ 0x00000640 ]
 	table [ "firewallMultiplier" ] = 2
 	table [ "roomCount" ] = 10
 	table [ "dangerZones" ] = true
@@ -8201,201 +8191,201 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "beginnerPatrols" ] = false
 	table [ "hideMapDestinations" ] = false
 	table [ "meleeFromFront" ] = true
-	table [ "enabledDLC" ] = objects [ 0x0000064C ]
+	table [ "enabledDLC" ] = objects [ 0x00000641 ]
 	table [ "alarmMultiplier" ] = 1
 	table [ "powerPerLevel" ] = 10
 	table [ "savescumming" ] = false
 	table [ "safesPerLevel" ] = 5
 
-	table = objects [ 0x0000064C ]
-	table [ "dlc1" ] = objects [ 0x0000064D ]
+	table = objects [ 0x00000641 ]
+	table [ "dlc1" ] = objects [ 0x00000642 ]
 
-	table = objects [ 0x0000064D ]
+	table = objects [ 0x00000642 ]
 	table [ "enabled" ] = true
 	table [ "icon" ] = [==[gui/icons/contingency_plan.png]==]
 	table [ "name" ] = [==[Contingency Plan]==]
-	table [ "options" ] = objects [ 0x0000064E ]
+	table [ "options" ] = objects [ 0x00000643 ]
 
-	table = objects [ 0x0000064E ]
-	table [ "programs" ] = objects [ 0x0000064F ]
-	table [ "guards" ] = objects [ 0x00000650 ]
-	table [ "extended_endless" ] = objects [ 0x00000651 ]
-	table [ "extended_campaign" ] = objects [ 0x00000652 ]
-	table [ "endless_mid_mission" ] = objects [ 0x00000653 ]
-	table [ "daemons" ] = objects [ 0x00000654 ]
-	table [ "agents" ] = objects [ 0x00000655 ]
-	table [ "sidemissions" ] = objects [ 0x00000656 ]
+	table = objects [ 0x00000643 ]
+	table [ "programs" ] = objects [ 0x00000644 ]
+	table [ "guards" ] = objects [ 0x00000645 ]
+	table [ "extended_endless" ] = objects [ 0x00000646 ]
+	table [ "extended_campaign" ] = objects [ 0x00000647 ]
+	table [ "endless_mid_mission" ] = objects [ 0x00000648 ]
+	table [ "daemons" ] = objects [ 0x00000649 ]
+	table [ "agents" ] = objects [ 0x0000064A ]
+	table [ "sidemissions" ] = objects [ 0x0000064B ]
 
-	table = objects [ 0x0000064F ]
+	table = objects [ 0x00000644 ]
 	table [ "enabled" ] = true
 
-	table = objects [ 0x00000650 ]
+	table = objects [ 0x00000645 ]
 	table [ "enabled" ] = true
 
-	table = objects [ 0x00000651 ]
+	table = objects [ 0x00000646 ]
 	table [ "enabled" ] = true
 
-	table = objects [ 0x00000652 ]
+	table = objects [ 0x00000647 ]
 	table [ "enabled" ] = true
 
-	table = objects [ 0x00000653 ]
+	table = objects [ 0x00000648 ]
 	table [ "enabled" ] = true
 
-	table = objects [ 0x00000654 ]
+	table = objects [ 0x00000649 ]
 	table [ "enabled" ] = true
 
-	table = objects [ 0x00000655 ]
+	table = objects [ 0x0000064A ]
 	table [ "enabled" ] = true
 
-	table = objects [ 0x00000656 ]
+	table = objects [ 0x0000064B ]
 	table [ "enabled" ] = true
 
-	table = objects [ 0x00000657 ]
+	table = objects [ 0x0000064C ]
 	table [ "nextID" ] = 100
-	table [ "unitDefs" ] = objects [ 0x00000658 ]
+	table [ "unitDefs" ] = objects [ 0x0000064D ]
 	table [ "blocker" ] = false
 	table [ "id" ] = 1
-	table [ "unitDefsPotential" ] = objects [ 0x0000065D ]
+	table [ "unitDefsPotential" ] = objects [ 0x00000652 ]
 	table [ "cpus" ] = 10
 	table [ "name" ] = [==[]==]
 	table [ "alwaysUnlocked" ] = true
-	table [ "abilities" ] = objects [ 0x00000672 ]
+	table [ "abilities" ] = objects [ 0x00000667 ]
 	table [ "startLocation" ] = 23
 	table [ "cash" ] = 500
 
-	table = objects [ 0x00000658 ]
-	table [ 1 ]	= objects [ 0x00000659 ]
-	table [ 2 ]	= objects [ 0x0000065B ]
+	table = objects [ 0x0000064D ]
+	table [ 1 ]	= objects [ 0x0000064E ]
+	table [ 2 ]	= objects [ 0x00000650 ]
 
-	table = objects [ 0x00000659 ]
+	table = objects [ 0x0000064E ]
 	table [ "id" ] = 5
 	table [ "template" ] = [==[engineer_2]==]
-	table [ "upgrades" ] = objects [ 0x0000065A ]
+	table [ "upgrades" ] = objects [ 0x0000064F ]
 
-	table = objects [ 0x0000065A ]
+	table = objects [ 0x0000064F ]
 	table [ 1 ]	= [==[augment_international_v1]==]
 	table [ 2 ]	= [==[item_tazer]==]
 
-	table = objects [ 0x0000065B ]
+	table = objects [ 0x00000650 ]
 	table [ "id" ] = 3
 	table [ "template" ] = [==[engineer_1]==]
-	table [ "upgrades" ] = objects [ 0x0000065C ]
+	table [ "upgrades" ] = objects [ 0x00000651 ]
 
-	table = objects [ 0x0000065C ]
+	table = objects [ 0x00000651 ]
 	table [ 1 ]	= [==[augment_tony]==]
 	table [ 2 ]	= [==[item_tazer]==]
 	table [ 3 ]	= [==[item_shocktrap_tony]==]
 
-	table = objects [ 0x0000065D ]
-	table [ 1 ]	= objects [ 0x0000065E ]
-	table [ 2 ]	= objects [ 0x00000660 ]
-	table [ 3 ]	= objects [ 0x00000662 ]
-	table [ 4 ]	= objects [ 0x00000664 ]
-	table [ 5 ]	= objects [ 0x00000666 ]
-	table [ 6 ]	= objects [ 0x00000668 ]
-	table [ 7 ]	= objects [ 0x0000066A ]
-	table [ 8 ]	= objects [ 0x0000066C ]
-	table [ 9 ]	= objects [ 0x0000066E ]
-	table [ 10 ]	= objects [ 0x00000670 ]
+	table = objects [ 0x00000652 ]
+	table [ 1 ]	= objects [ 0x00000653 ]
+	table [ 2 ]	= objects [ 0x00000655 ]
+	table [ 3 ]	= objects [ 0x00000657 ]
+	table [ 4 ]	= objects [ 0x00000659 ]
+	table [ 5 ]	= objects [ 0x0000065B ]
+	table [ 6 ]	= objects [ 0x0000065D ]
+	table [ 7 ]	= objects [ 0x0000065F ]
+	table [ 8 ]	= objects [ 0x00000661 ]
+	table [ 9 ]	= objects [ 0x00000663 ]
+	table [ 10 ]	= objects [ 0x00000665 ]
 
-	table = objects [ 0x0000065E ]
+	table = objects [ 0x00000653 ]
 	table [ "id" ] = 1
 	table [ "template" ] = [==[stealth_1]==]
-	table [ "upgrades" ] = objects [ 0x0000065F ]
+	table [ "upgrades" ] = objects [ 0x00000654 ]
 
-	table = objects [ 0x0000065F ]
+	table = objects [ 0x00000654 ]
 	table [ 1 ]	= [==[augment_deckard]==]
 
-	table = objects [ 0x00000660 ]
+	table = objects [ 0x00000655 ]
 	table [ "id" ] = 2
 	table [ "template" ] = [==[sharpshooter_1]==]
-	table [ "upgrades" ] = objects [ 0x00000661 ]
+	table [ "upgrades" ] = objects [ 0x00000656 ]
 
-	table = objects [ 0x00000661 ]
+	table = objects [ 0x00000656 ]
 	table [ 1 ]	= [==[augment_shalem]==]
 
-	table = objects [ 0x00000662 ]
+	table = objects [ 0x00000657 ]
 	table [ "id" ] = 4
 	table [ "template" ] = [==[stealth_2]==]
-	table [ "upgrades" ] = objects [ 0x00000663 ]
+	table [ "upgrades" ] = objects [ 0x00000658 ]
 
-	table = objects [ 0x00000663 ]
+	table = objects [ 0x00000658 ]
 	table [ 1 ]	= [==[augment_banks]==]
 
-	table = objects [ 0x00000664 ]
+	table = objects [ 0x00000659 ]
 	table [ "id" ] = 6
 	table [ "template" ] = [==[sharpshooter_2]==]
-	table [ "upgrades" ] = objects [ 0x00000665 ]
+	table [ "upgrades" ] = objects [ 0x0000065A ]
 
-	table = objects [ 0x00000665 ]
+	table = objects [ 0x0000065A ]
 	table [ 1 ]	= [==[augment_nika]==]
 
-	table = objects [ 0x00000666 ]
+	table = objects [ 0x0000065B ]
 	table [ "id" ] = 8
 	table [ "template" ] = [==[disguise_1]==]
-	table [ "upgrades" ] = objects [ 0x00000667 ]
+	table [ "upgrades" ] = objects [ 0x0000065C ]
 
-	table = objects [ 0x00000667 ]
+	table = objects [ 0x0000065C ]
 	table [ 1 ]	= [==[augment_prism_2]==]
 
-	table = objects [ 0x00000668 ]
+	table = objects [ 0x0000065D ]
 	table [ "id" ] = 7
 	table [ "template" ] = [==[cyborg_1]==]
-	table [ "upgrades" ] = objects [ 0x00000669 ]
+	table [ "upgrades" ] = objects [ 0x0000065E ]
 
-	table = objects [ 0x00000669 ]
+	table = objects [ 0x0000065E ]
 	table [ 1 ]	= [==[augment_sharp_1]==]
 
-	table = objects [ 0x0000066A ]
+	table = objects [ 0x0000065F ]
 	table [ "id" ] = 1000
 	table [ "template" ] = [==[olivia]==]
-	table [ "upgrades" ] = objects [ 0x0000066B ]
+	table [ "upgrades" ] = objects [ 0x00000660 ]
 
-	table = objects [ 0x0000066B ]
+	table = objects [ 0x00000660 ]
 	table [ 1 ]	= [==[augment_ambient_turbine]==]
 
-	table = objects [ 0x0000066C ]
+	table = objects [ 0x00000661 ]
 	table [ "id" ] = 1001
 	table [ "template" ] = [==[derek]==]
-	table [ "upgrades" ] = objects [ 0x0000066D ]
+	table [ "upgrades" ] = objects [ 0x00000662 ]
 
-	table = objects [ 0x0000066D ]
+	table = objects [ 0x00000662 ]
 	table [ 1 ]	= [==[augment_particle_envelope]==]
 	table [ 2 ]	= [==[item_transport_beacon]==]
 
-	table = objects [ 0x0000066E ]
+	table = objects [ 0x00000663 ]
 	table [ "id" ] = 1002
 	table [ "template" ] = [==[rush]==]
-	table [ "upgrades" ] = objects [ 0x0000066F ]
+	table [ "upgrades" ] = objects [ 0x00000664 ]
 
-	table = objects [ 0x0000066F ]
+	table = objects [ 0x00000664 ]
 	table [ 1 ]	= [==[augment_kinetic_capacitor]==]
 
-	table = objects [ 0x00000670 ]
+	table = objects [ 0x00000665 ]
 	table [ "id" ] = 1003
 	table [ "template" ] = [==[draco]==]
-	table [ "upgrades" ] = objects [ 0x00000671 ]
+	table [ "upgrades" ] = objects [ 0x00000666 ]
 
-	table = objects [ 0x00000671 ]
+	table = objects [ 0x00000666 ]
 	table [ 1 ]	= [==[augment_neural_mapper]==]
 
-	table = objects [ 0x00000672 ]
+	table = objects [ 0x00000667 ]
 	table [ 1 ]	= [==[fusion_17_10]==]
 	table [ 2 ]	= [==[lockpick_1]==]
 
-	table = objects [ 0x00000673 ]
+	table = objects [ 0x00000668 ]
 	table [ "mapLocation" ] = 15
 	table [ "name" ] = [==[executive_terminals]==]
 	table [ "difficulty" ] = 1
 
-	table = objects [ 0x00000674 ]
+	table = objects [ 0x00000669 ]
 	table [ "newHiSecExitDay" ] = 7
 	table [ "extended_endless" ] = true
 	table [ "contingency_plan" ] = true
 
-	table = objects [ 0x00000675 ]
+	table = objects [ 0x0000066A ]
 
-	table = objects [ 0x00000676 ]
+	table = objects [ 0x0000066B ]
 
 end
 
@@ -10045,17 +10035,6 @@ local objects = {
 	[ 0x00000669 ] = {},
 	[ 0x0000066A ] = {},
 	[ 0x0000066B ] = {},
-	[ 0x0000066C ] = {},
-	[ 0x0000066D ] = {},
-	[ 0x0000066E ] = {},
-	[ 0x0000066F ] = {},
-	[ 0x00000670 ] = {},
-	[ 0x00000671 ] = {},
-	[ 0x00000672 ] = {},
-	[ 0x00000673 ] = {},
-	[ 0x00000674 ] = {},
-	[ 0x00000675 ] = {},
-	[ 0x00000676 ] = {},
 
 }
 
