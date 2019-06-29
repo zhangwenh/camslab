@@ -43,7 +43,7 @@ local function init ( objects )
 	table [ "agency" ] = objects [ 0x00000009 ]
 	table [ "hours" ] = 386
 	table [ "difficultyOptions" ] = objects [ 0x0000008B ]
-	table [ "save_time" ] = 1561794911
+	table [ "save_time" ] = 1561795331
 	table [ "version" ] = [==[0.17.18]==]
 	table [ "missionTotal" ] = 65
 	table [ "recent_build_number" ] = [==[BUILD[trunk.282332] LUA[282350] USER[85892043@steam]
@@ -801,6 +801,7 @@ OS: Windows (WOW64).6.1.1DB1]==]
 
 	table = objects [ 0x000000A4 ]
 	table [ "mapLocation" ] = 45
+	table [ "random_idx" ] = 2
 	table [ "name" ] = [==[cyberlab]==]
 	table [ "difficulty" ] = 17
 
@@ -823,13 +824,12 @@ OS: Windows (WOW64).6.1.1DB1]==]
 	table [ "difficulty" ] = 17
 	table [ "mapLocation" ] = 32
 	table [ "name" ] = [==[security]==]
-	table [ "new" ] = true
 
 	table = objects [ 0x000000A9 ]
-	table [ "difficulty" ] = 18
 	table [ "mapLocation" ] = 30
+	table [ "random_idx" ] = 1
 	table [ "name" ] = [==[security]==]
-	table [ "new" ] = true
+	table [ "difficulty" ] = 18
 
 	table = objects [ 0x000000AA ]
 	table [ "currentDay" ] = 0
