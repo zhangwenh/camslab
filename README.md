@@ -34,7 +34,7 @@
     9/23	studycard p49-54
     9/24	document c1
     9/25	document c2
-    9/26	
+    9/26	document c3
     9/27	
     9/28	
     9/29	
