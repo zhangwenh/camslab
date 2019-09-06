@@ -25,9 +25,9 @@
 ``` bash
     9/15	studycard p1-6
     9/16	studycard p7-12
-    9/17	studycard p7-12
-    9/18	
-    9/19	
+    9/17	studycard p13-18
+    9/18	studycard p19-24
+    9/19	studycard p25-30
     9/20	
     9/21	
     9/22	
