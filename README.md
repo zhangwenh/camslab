@@ -23,9 +23,9 @@
 
 > 完成情况记录
 ``` bash
-    9/15	
-    9/16	
-    9/17	
+    9/15	studycard p1-6
+    9/16	studycard p7-12
+    9/17	studycard p7-12
     9/18	
     9/19	
     9/20	
