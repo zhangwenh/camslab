@@ -24,15 +24,14 @@
 
 > 完成情况记录
 ``` bash
-    9/15	studycard p1-6
+    9/15	studycard p43-54
     9/16	studycard p7-12
     9/17	studycard p13-18
     9/18	studycard p19-24
     9/19	studycard p25-30
     9/20	studycard p31-36
-    9/21	studycard p37-42
-    9/22	studycard p43-48
-    9/23	studycard p49-54
+    9/21	studycard p37-43
+    9/22	
     9/24	document c1
     9/25	document c2
     9/26	document c3
