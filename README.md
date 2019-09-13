@@ -19,26 +19,28 @@
     9/15-23 studycard每天6页（18题），9天完成
     9/24-28	document精读每天一章（平均80页），5天完成
     9/29-30	笔记阅读，以及document书后习题（120题），2天完成
-    10/1	exam练习题137
+    10/1	FATF 40项建议
+    10/2	exam练习题137
 ```
 
 > 完成情况记录
 ``` bash
     9/15	studycard p43-54
-    9/16	studycard p7-12
-    9/17	studycard p13-18
-    9/18	studycard p19-24
-    9/19	studycard p25-30
-    9/20	studycard p31-36
-    9/21	studycard p37-43
-    9/22	
+    9/16	studycard p1-6
+    9/17	studycard p7-12
+    9/18	studycard p13-18
+    9/19	studycard p19-24
+    9/20	studycard p25-30
+    9/21	studycard p31-36
+    9/22	studycard p37-43
     9/24	document c1
     9/25	document c2
     9/26	document c3
     9/27	document c4
-    9/28	document c5、c7
+    9/28	document c5
     9/29	笔记阅读
     9/30	document书后习题
+
 ```
 
 > 特殊情况记录
@@ -59,4 +61,5 @@
     9/28	
     9/29	
     9/30	
+    
 ```
