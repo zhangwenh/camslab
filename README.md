@@ -25,7 +25,7 @@
 
 > 完成情况记录
 ``` bash
-    9/15	studycard p43-54
+    9/15	studycard p43-54，document c5
     9/16	studycard p1-6
     9/17	studycard p7-12
     9/18	studycard p13-18
@@ -37,7 +37,7 @@
     9/25	document c2
     9/26	document c3
     9/27	document c4
-    9/28	document c5
+    9/28	
     9/29	笔记阅读
     9/30	document书后习题
 
@@ -61,5 +61,5 @@
     9/28	
     9/29	
     9/30	
-    
+
 ```
