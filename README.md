@@ -27,19 +27,20 @@
 ``` bash
     9/15	studycard p43-54
     9/16	document c5
-    9/17	studycard p1-6
-    9/18	studycard p7-12
-    9/19	studycard p13-18
-    9/20	studycard p19-24
-    9/21	studycard p25-30
-    9/22	studycard p31-36
-    9/24	studycard p37-43
-    9/25	document c1
-    9/26	document c2
-    9/27	document c3
-    9/28	document c4
-    9/29	笔记阅读
-    9/30	document书后习题
+    9/17-20	琐事耽误
+    9/21    studycard p1-6
+    9/22	studycard p7-12
+    9/23	studycard p13-18
+    9/24	studycard p19-24
+    9/25	studycard p25-30
+    9/26	studycard p31-36
+    9/27	studycard p37-43
+    9/28	document c1
+    9/29	document c2
+    9/30	document c3
+    10/1	document c4
+    10/2	笔记阅读
+    10/3	document书后习题
 
 ```
 
