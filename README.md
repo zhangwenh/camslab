@@ -27,9 +27,8 @@
 ``` bash
     9/15	studycard p43-54
     9/16	document c5
-    9/17-20	琐事耽误
-    9/21    studycard p1-6
-    9/22	studycard p7-12
+    9/17-21	琐事耽误
+    9/22    studycard p1-12
     9/23	studycard p13-18
     9/24	studycard p19-24
     9/25	studycard p25-30
