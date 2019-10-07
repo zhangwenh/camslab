@@ -16,11 +16,11 @@
 
 > 具体计划
 ``` bash
-    9/15-27 studycard每天6页（18题），9天完成
-    9/28-1	document精读每天一章（平均80页），5天完成
-    10/2-3	笔记阅读，以及document书后习题（120题），2天完成
-    10/4	FATF 40项建议
-    10/5	exam练习题137
+    10/7        studycard每天6页
+    10/8-11	    document精读每天一章（平均80页），5天完成
+    10/12-13	笔记阅读，以及document书后习题（120题），2天完成
+    10/14       FATF 40项建议
+    10/15       exam练习题137
 ```
 
 > 完成情况记录
@@ -29,16 +29,11 @@
     9/16	document c5
     9/17-21	琐事耽误
     9/22    studycard p1-12
-    9/23	studycard p13-18
-    9/24	studycard p19-24
-    9/25	studycard p25-30
-    9/26	studycard p31-36
-    9/27	studycard p37-43
-    9/28	document c1
-    9/29	document c2
-    9/30	document c3
-    10/1	document c4
-    10/2	笔记阅读
-    10/3	document书后习题
-
+    10/7	studycard p13-fin
+    10/8	document c1
+    10/9	document c2
+    10/10	document c3
+    10/11	document c4
+    10/12	笔记阅读
+    10/13	document书后习题
 ```
